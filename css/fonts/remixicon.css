@@ -596,7 +596,7 @@
 .ri-external-link-line:before { content: "\ec26"; }
 .ri-eye-close-fill:before { content: "\ec27"; }
 .ri-eye-close-line:before { content: "\ec28"; }
-.ri-eye-fill:before { content: "\ec29"; }
+.ri-eye-line:before { content: "\ec29"; }
 .ri-eye-line:before { content: "\ec2a"; }
 .ri-eye-off-fill:before { content: "\ec2b"; }
 .ri-eye-off-line:before { content: "\ec2c"; }
@@ -865,7 +865,7 @@
 .ri-headphone-line:before { content: "\ed33"; }
 .ri-heart-2-fill:before { content: "\ed34"; }
 .ri-heart-2-line:before { content: "\ed35"; }
-.ri-heart-fill:before { content: "\ed36"; }
+.ri-home-heart-line:before { content: "\ed36"; }
 .ri-heart-line:before { content: "\ed37"; }
 .ri-heavy-showers-fill:before { content: "\ed38"; }
 .ri-heavy-showers-line:before { content: "\ed39"; }
@@ -1701,7 +1701,7 @@
 .ri-upload-line:before { content: "\f077"; }
 .ri-user-2-fill:before { content: "\f078"; }
 .ri-user-2-line:before { content: "\f079"; }
-.ri-user-3-fill:before { content: "\f07a"; }
+.ri-user-5-line:before { content: "\f07a"; }
 .ri-user-3-line:before { content: "\f07b"; }
 .ri-user-4-fill:before { content: "\f07c"; }
 .ri-user-4-line:before { content: "\f07d"; }
