@@ -110,25 +110,46 @@
 
 <style>
 
+/* 默认样式，适用于电脑 */
+.bordered {
+  border: 2px solid #49259c;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  width: 1400px;
+  height: auto;
+  overflow: hidden;
+}
+
+.window {
+  flex: 1;
+  height: 100%;
+}
+
+/* 媒体查询，适用于手机 */
+@media screen and (max-width: 768px) {
   .bordered {
-    border: 2px solid #49259c;
-    padding: 20px;
-    display: flex;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-left: auto;
+    /* 手机样式规则 */
+    width: 100%;
+    max-width: none;
+    flex-direction: row; /* 将元素水平排列 */
     justify-content: center; /* 在主轴上居中对齐 */
-    align-items: center; /* 在交叉轴上居中对齐 */
-    width:1400px; /* 设置宽度 */
-    height:auto; /* 设置高度 */
-    overflow: hidden;
+    align-items: flex-start; /* 在交叉轴上顶部对齐 */
+    flex-wrap: wrap; /* 允许元素换行 */
   }
 
   .window {
-      flex: 1; /* 子元素占据可用空间的比例，平均分配空间 */
-      height: 100%;
-    }
+    /* 手机样式规则 */
+    width: 100%;
+    margin: 10px;
+  }
+}
+  
 
   .image-container {
     margin-right: 20px;
