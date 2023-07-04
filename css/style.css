@@ -835,3 +835,21 @@ pre .clojure .title {
 pre .deletion {
   color: #dc322f;
 }
+.post-meta-detail{
+	font-size: 14.5px;
+	line-height: 24px;
+	opacity: .8;
+	display: inline-block;
+}
+.post-meta-detail i{
+	margin-right: 3px;
+}
+.post-meta-detail-categories-space{
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.tag.post-meta-detail-tag {
+	margin-bottom: 0;
+	margin-right: 7px;
+	font-size: 12px;
+}
