@@ -117,13 +117,27 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 40px;
-    margin-left: 500px;
+    margin-left: auto;
     justify-content: center; /* 在主轴上居中对齐 */
     align-items: center; /* 在交叉轴上居中对齐 */
     width:1100px; /* 设置宽度 */
     height:auto; /* 设置高度 */
     overflow: hidden;
   }
+
+  /* 媒体查询 */
+@media screen and (max-width: 768px) {
+  /* 当屏幕宽度小于等于 768px 时应用以下样式 */
+
+  .bordered {
+    width: 100%; /* 设置宽度为100%以适应屏幕 */
+    margin: 0; /* 移除左右边距 */
+    margin-top: 20px; /* 调整上边距 */
+    padding: 10px; /* 调整内边距 */
+    flex-direction: column; /* 修改主轴方向为垂直布局 */
+    text-align: left; /* 调整文本对齐方式 */
+  }
+}
 
   .image-container {
     margin-right: 20px;
