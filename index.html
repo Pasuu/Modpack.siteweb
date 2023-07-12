@@ -90,13 +90,41 @@
 
 <script src="https://cdn.staticfile.org/typed.js/2.0.12/typed.min.js"></script>
 
+<style>
+  #myButton {
+    position: fixed;
+      bottom: 20px;
+      left: 8rem;
+      padding: 10px;
+    background-color: #00000093;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 9999;
+    border: none;
+  }
+  #myImage {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 650px;
+    object-fit: contain;
+    background-color: rgb(255, 255, 255);
+    z-index: 9998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+</style>
+
 
 <!-- Subtitle -->
 
   <script>
     try {
       var typed = new Typed("#subtitle", {
-        strings: ['⽣活细碎，万物成诗', '生活需要长远的清醒', '折芦花赠远，零落一身秋'],
+        strings: ['人间烟火气，最抚凡人心', '过度倾诉会被嫌弃的', '一世浮生一刹那，一程山水一年华'],
         startDelay: 0,
         typeSpeed: 200,
         loop: true,
@@ -109,7 +137,7 @@
   </script>
 
       <h5 style="text-align: center;">寻找汉化,请选择<b>Modpack</b></h5>
-      <h5 style="text-align: center;"><hr>查看当前正在汉化的内容,请选择<b>进行中</b></h5>
+      <h5 style="text-align: center;"><hr>查看当前正在汉化的Modpack,请选择<b>进行中</b></h5>
       <h5 style="text-align: center;"><hr>搜寻汉化,请使用<b>Ctrl+F</b></h5>
         
     
@@ -196,6 +224,22 @@
 <script src="/js/jquery-3.6.0.min.js"></script>
  
 <script src="/js/lazyload.min.js"></script>
+
+<button id="myButton">赞助</button>
+<img id="myImage" src="https://imgback.yoimiya.site//ota/2023/07/12/FGtryhxw.jpg">
+
+<script>
+  var button = document.getElementById("myButton");
+  var image = document.getElementById("myImage");
+
+  button.addEventListener("click", function() {
+    image.style.display = "block";
+  });
+  
+  image.addEventListener("click", function() {
+    image.style.display = "none";
+  });
+</script>
 
 <!-- Tocbot -->
 
