@@ -228,15 +228,30 @@
   // 隐藏图片
   image.style.display = "none";
 
-  button.addEventListener("click", function() {
-    // 切换显示状态
+  // 点击按钮切换显示状态
+  button.addEventListener("click", function(event) {
+    event.stopPropagation(); // 防止事件冒泡到文档上
+    toggleImage();
+  });
+
+  // 点击文档中的任何位置隐藏图片
+  document.addEventListener("click", function(event) {
+    var target = event.target;
+    if (target !== image && !image.contains(target)) {
+      image.style.display = "none";
+    }
+  });
+
+  // 切换图片显示状态
+  function toggleImage() {
     if (image.style.display === "none") {
       image.style.display = "flex";
     } else {
       image.style.display = "none";
     }
-  });
+  }
 </script>
+
 
 <!-- Tocbot -->
 
