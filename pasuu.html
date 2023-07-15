@@ -243,6 +243,24 @@
     justify-content: center;
     align-items: center;
   }
+
+  @media screen and (max-width: 768px) {
+    #myImage {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    height: 225px;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 9998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 </style>
 
 
