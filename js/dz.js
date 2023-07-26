@@ -74,7 +74,7 @@ function dz() {
           ((n === y && t >= n.max / 2 && ((i.x -= 0.03 * o), (i.y -= 0.03 * l)),
             (d = (n.max - t) / n.max),
             r.beginPath(),
-            r.lineWidth = 1.2,
+            r.lineWidth = 0.4,
             r.strokeStyle = "rgb(" + d * 241 + "," + d * 156 + "," + 0 + ")",
             r.moveTo(i.x, i.y),
             r.lineTo(n.x, n.y),
