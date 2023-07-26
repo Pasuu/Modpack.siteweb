@@ -52,46 +52,37 @@ function dz() {
     c = (m.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight);
   }
 
-// 获取 .bordered 元素的位置和尺寸信息
-var bordered = document.querySelector(".bordered");
-var borderedRect = bordered.getBoundingClientRect();
-var borderedLeft = borderedRect.left;
-var borderedTop = borderedRect.top;
-var borderedRight = borderedRect.right;
-var borderedBottom = borderedRect.bottom;
-
-function i() {
-  r.clearRect(0, 0, a, c);
-  r.globalCompositeOperation = "source-over"; // 恢复默认的合成模式
-
-  var n, e, t, o, l;
-  s.forEach(function (i, x) {
-    i.x += i.xa;
-    i.y += i.ya;
-    i.xa *= i.x > a || i.x < 0 ? -1 : 1;
-    i.ya *= i.y > c || i.y < 0 ? -1 : 1;
-    r.fillRect(i.x - 0.5, i.y - 0.5, 1, 1);
-
-    // 检测粒子线条与 .bordered 元素边框的位置关系
-    // 如果线条的起点在 .bordered 元素内，或者终点在 .bordered 元素内，则设置合成模式为 destination-out，从而不绘制线条
-    if (
-      (i.x >= borderedLeft && i.x <= borderedRight && i.y >= borderedTop && i.y <= borderedBottom) ||
-      (n && n.x >= borderedLeft && n.x <= borderedRight && n.y >= borderedTop && n.y <= borderedBottom)
-    ) {
-      r.globalCompositeOperation = "destination-out"; // 设置合成模式为 destination-out
-    } else {
-      r.globalCompositeOperation = "source-over"; // 恢复默认的合成模式
-      for (e = x + 1; e < u.length; e++) {
-        (n = u[e]), (o = i.x - n.x), (l = i.y - n.y), (t = o * o + l * l);
-        if (t < n.max) {
-          // 绘制线条
-          // ...
-        }
+  function i() {
+    r.clearRect(0, 0, a, c);
+    var n, e, t, o, l;
+    s.forEach(function(i, x) {
+      for (
+        i.x += i.xa,
+        i.y += i.ya,
+        i.xa *= i.x > a || i.x < 0 ? -1 : 1,
+        i.ya *= i.y > c || i.y < 0 ? -1 : 1,
+        r.fillRect(i.x - 0.5, i.y - 0.5, 1, 1),
+        e = x + 1;
+        e < u.length;
+        e++
+      ) {
+        (n = u[e]), null !== n.x && null !== n.y &&
+        ((o = i.x - n.x),
+        (l = i.y - n.y),
+        (t = o * o + l * l),
+        t < n.max &&
+          ((n === y && t >= n.max / 2 && ((i.x -= 0.03 * o), (i.y -= 0.03 * l)),
+            (d = (n.max - t) / n.max),
+            r.beginPath(),
+            r.lineWidth = d / 2,
+            r.strokeStyle = "rgb(" + d * 241 + "," + d * 156 + "," + 0 + ")",
+            r.moveTo(i.x, i.y),
+            r.lineTo(n.x, n.y),
+            r.stroke())));
       }
-    }
-  });
-  x(i);
-}
+    }),
+    x(i);
+  }
 
   var a,
     c,
