@@ -35,7 +35,7 @@ function dz() {
   }
 
    // 根据设备类型设置粒子数量
-  var count = isMobile.any() ? 10 : 150;
+  var count = isMobile.any() ? 150 : 10;
 
   function t() {
     var t = e("script"),
