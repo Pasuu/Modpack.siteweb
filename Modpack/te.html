@@ -170,6 +170,12 @@
     flex-wrap: wrap; /* 允许元素换行 */
   }
 
+  /* 这里移动 flex-wrap 和 overflow-wrap 的应用到具体的文本元素，例如 <p> 和 <span> */
+    .bordered p, .bordered span {
+    flex: 1;
+    word-wrap: break-word;
+  }
+
   .window {
     /* 手机样式规则 */
     width: 100%;
