@@ -34,22 +34,22 @@ function dz() {
     return document.getElementsByTagName(n);
   }
 
-   // 根据设备类型设置粒子数量
-  var count = isMobile.any() ? 150 : 10;
+// 根据设备类型和网页宽度设置粒子数量
+var count = isMobile.any() || window.innerWidth <= 768 ? 40 : 150;
 
-  function t() {
-    var t = e("script"),
-      o = t.length,
-      i = t[o - 1];
-    return {
-      l: o,
-      z: n(i, "zIndex", -1),
-      o: n(i, "opacity", 0.5),
-      c: n(i, "color", "241 156 0"),
-      count: count, // 将粒子数量修改为 count 的值
-      pointSize: 1.3,
-    };
-  }
+function t() {
+  var t = e("script"),
+    o = t.length,
+    i = t[o - 1];
+  return {
+    l: o,
+    z: n(i, "zIndex", -1),
+    o: n(i, "opacity", 0.5),
+    c: n(i, "color", "241 156 0"),
+    count: count, // 将粒子数量修改为 count 的值，根据设备类型和网页宽度自动选择
+    pointSize: 1.5,
+  };
+}
 
   function o() {
     a = (m.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth),
