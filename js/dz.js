@@ -35,7 +35,7 @@ function dz() {
   }
 
    // 根据设备类型设置粒子数量
-  var count = isMobile.any() ? 60 : 150;
+  var count = isMobile.any() ? 10 : 150;
 
   function t() {
     var t = e("script"),
@@ -47,7 +47,7 @@ function dz() {
       o: n(i, "opacity", 0.5),
       c: n(i, "color", "241 156 0"),
       count: count, // 将粒子数量修改为 count 的值
-      pointSize: 1,
+      pointSize: 1.3,
     };
   }
 
