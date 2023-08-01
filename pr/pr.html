@@ -234,7 +234,16 @@
         Copyright©2023 Pasuu by Modpack.top 版权所有<img src="https://imgback.yoimiya.site//ota/2023/07/25/5ggOwVDQ.webp" alt="user" height="21px" width="21px" style="margin-bottom: -5px;"></a>
       </li>
     </ul>
-    
+  
+    <ul>
+      <li>
+        <div>
+        "网站已经运行 "
+        <span id="days"></span>
+        </div>
+      </li>
+    </ul>
+
   </div>
 </footer>    
     </main>
@@ -358,6 +367,31 @@
       image.style.display = "none";
     }
   }
+</script>
+
+<script>
+var s0 = '2020-06-14';
+  s1 = new Date(s0.replace(/-/g, "/"));
+  s2 = new Date();
+  var days = s2.getTime() - s1.getTime();
+
+  var date = new Date;
+  var year = date.getFullYear();
+  document.getElementById('year').innerHTML = year;
+
+  var BootDate = new Date("2020-06-14");
+  function ShowRunTime(id) {
+    var NowDate = new Date();
+    var RunDateM = parseInt(NowDate - BootDate);
+    var RunDays = Math.floor(RunDateM / (24 * 3600 * 1000));
+    var RunHours = Math.floor(RunDateM % (24 * 3600 * 1000) / (3600 * 1000));
+    var RunMinutes = Math.floor(RunDateM % (24 * 3600 * 1000) % (3600 * 1000) / (60 * 1000));
+    var RunSeconds = Math.round(RunDateM % (24 * 3600 * 1000) % (3600 * 1000) % (60 * 1000) / 1000);
+    var days = RunDays + "天" + RunHours + "时" + RunMinutes + "分" + RunSeconds + "秒";
+    document.getElementById(id).innerHTML = days;
+  }
+  ShowRunTime('days');
+  setInterval("ShowRunTime('days')", 1000);
 </script>
 
 
