@@ -137,7 +137,7 @@
       <li>
         <div>
         "网站已经运行 "
-        <span id="days">0天0时0分0秒</span>
+        <span id="days"></span>
         </div>
       </li>
     </ul>
@@ -291,7 +291,9 @@ var s0 = '2023-07-02';
     document.getElementById(id).innerHTML = days;
   }
   ShowRunTime('days');
-  setInterval("ShowRunTime('days')", 1000);
+  setInterval(function() {
+    ShowRunTime('days');
+  }, 1000);
 </script>
 
 

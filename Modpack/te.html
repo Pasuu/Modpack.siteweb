@@ -2252,7 +2252,9 @@ var s0 = '2023-07-02';
     document.getElementById(id).innerHTML = days;
   }
   ShowRunTime('days');
-  setInterval("ShowRunTime('days')", 1000);
+  setInterval(function() {
+    ShowRunTime('days');
+  }, 1000);
 </script>
 
 
