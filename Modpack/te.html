@@ -2152,11 +2152,15 @@
   }
 
   .comment-widget {
-      position: fixed; /* 确保评论窗口固定在页面中 */
-      width: 800px;    /* 设置评论窗口的宽度 */
-      height: 600px;   /* 设置评论窗口的高度 */
-      margin: 0 auto;
-      overflow: auto;  /* 设置溢出内容时显示滚动条 */
+    position: fixed; /* 确保评论窗口固定在页面中 */
+    top: 50%;       /* 放置在页面顶部的50%位置 */
+    left: 50%;      /* 放置在页面左侧的50%位置 */
+    transform: translate(-50%, -50%); /* 将评论窗口向左上方移动一半的宽高，使其居中 */
+    width: 650px;   /* 设置评论窗口的宽度 */
+    height: 450px;  /* 设置评论窗口的高度 */
+    margin: 0 auto;
+    background-color: #8f51e0; /* 背景色为淡紫色 */
+    overflow: auto; /* 设置溢出内容时显示滚动条 */
   }
 
   </style>
