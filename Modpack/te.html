@@ -2221,11 +2221,14 @@ const commentWidget = document.querySelector(".comment-widget");
 
 // 添加点击事件处理程序
 messElement.addEventListener("click", function() {
-  // 获取计算样式
-  const widgetStyle = window.getComputedStyle(commentWidget);
+  // 获取计算样式对象
+  const widgetStyle = getComputedStyle(commentWidget);
+
+  // 获取 display 属性
+  const displayProperty = widgetStyle.getPropertyValue("display");
 
   // 判断显示状态
-  if (widgetStyle.display === "none") {
+  if (displayProperty === "none") {
     commentWidget.style.display = "block";
   } else {
     commentWidget.style.display = "none";
