@@ -2157,10 +2157,11 @@
     left: 50%;      /* 放置在页面左侧的50%位置 */
     transform: translate(-50%, -50%); /* 将评论窗口向左上方移动一半的宽高，使其居中 */
     width: 650px;   /* 设置评论窗口的宽度 */
-    height: 450px;  /* 设置评论窗口的高度 */
+    height: 700px;  /* 设置评论窗口的高度 */
     margin: 0 auto;
     background-color: #e1e1e1; /* 背景色为淡紫色 */
     overflow: auto; /* 设置溢出内容时显示滚动条 */
+    display: none; /* 初始状态隐藏 */
   }
 
   </style>
@@ -2215,25 +2216,19 @@
 </nav>
 
 <script>
-// 获取 mess 元素和 comment-widget 元素
-const messElement = document.getElementById("mess");
-const commentWidget = document.querySelector(".comment-widget");
+  // 获取 mess 元素和 comment-widget 元素
+  const messElement = document.getElementById("mess");
+  const commentWidget = document.querySelector(".comment-widget");
 
-// 添加点击事件处理程序
-messElement.addEventListener("click", function() {
-  // 获取计算样式对象
-  const widgetStyle = getComputedStyle(commentWidget);
-
-  // 获取 display 属性
-  const displayProperty = widgetStyle.getPropertyValue("display");
-
-  // 判断显示状态
-  if (displayProperty === "none") {
-    commentWidget.style.display = "block";
-  } else {
-    commentWidget.style.display = "none";
-  }
-});
+  // 添加点击事件处理程序
+  messElement.addEventListener("click", function() {
+    // 切换 comment-widget 元素的显示状态
+    if (commentWidget.style.display === "none") {
+      commentWidget.style.display = "block";
+    } else {
+      commentWidget.style.display = "none";
+    }
+  });
     </script>
  
 <div class="comment-widget">
