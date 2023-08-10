@@ -2215,19 +2215,22 @@
 </nav>
 
 <script>
-  // 获取 mess 元素和 comment-widget 元素
-  const messElement = document.getElementById("mess");
-  const commentWidget = document.getElementById("comment-widget");
-  
-  // 添加点击事件处理程序
-  messElement.addEventListener("click", function() {
-    // 切换 comment-widget 元素的显示状态
-    if (commentWidget.style.display === "none") {
-      commentWidget.style.display = "block";
-    } else {
-      commentWidget.style.display = "none";
-    }
-  });
+// 获取 mess 元素和 comment-widget 元素
+const messElement = document.getElementById("mess");
+const commentWidget = document.querySelector(".comment-widget");
+
+// 添加点击事件处理程序
+messElement.addEventListener("click", function() {
+  // 获取计算样式
+  const widgetStyle = window.getComputedStyle(commentWidget);
+
+  // 判断显示状态
+  if (widgetStyle.display === "none") {
+    commentWidget.style.display = "block";
+  } else {
+    commentWidget.style.display = "none";
+  }
+});
     </script>
  
 <div class="comment-widget" style="display: none;">
