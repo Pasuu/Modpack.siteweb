@@ -2110,6 +2110,56 @@
   </div>
 </footer>       
     </main>
+
+<style>
+/* mess 元素的样式 */
+  .mess {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 4.2rem;
+    background-color: #c5bebe9c;
+    line-height: 4rem;
+    opacity: 0.8;
+    transition: opacity 1s ease;
+    margin-top: 1rem; /* 调整与上方元素的间距 */
+  }
+  
+  .mess:hover {
+    opacity: 1;
+  }
+  
+  .mess:hover img {
+    -webkit-animation: rocket .3s ease-in-out;
+    animation: rocket .3s ease-in-out;
+  }
+  
+  /* mess 元素动画 */
+  @-webkit-keyframes rocket {
+    0% { transform: translateY(0); opacity: 1; }
+    45% { transform: translateY(-3.2rem); opacity: 0; }
+    55% { transform: translateY(3.2rem); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes rocket {
+    0% { transform: translateY(0); opacity: 1; }
+    45% { transform: translateY(-3.2rem); opacity: 0; }
+    55% { transform: translateY(3.2rem); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .comment-widget {
+      width: 500px;    /* 设置评论窗口的宽度 */
+      height: 400px;   /* 设置评论窗口的高度 */
+      margin: 0 auto;
+      overflow: auto;  /* 设置溢出内容时显示滚动条 */
+  }
+
+  </style>
+
     <div class="float_btns">
       <div class="totop" id="totop">
  <img src="https://imgback.yoimiya.site//ota/2023/07/25/mhHF3ILF.webp" alt="arrow-up-fill" style="margin-bottom: -8px;" width="24px" height="24px"/>
@@ -2120,7 +2170,48 @@
     <img src="https://imgback.yoimiya.site//ota/2023/07/25/v2eqXg3J.webp" alt="moon-fill" style="margin-bottom: -8px;" width="24px" height="24px"/>
 </div>
 
-    </div>
+<div class="mess" id="mess">
+  <img src="https://imgback.yoimiya.site//ota/2023/08/10/38NoNhPQ.png" alt="mess" style="margin-bottom: -8px;" width="24px" height="24px"/>
+</div>
+
+<div class="comment-widget">
+  <!-- 来必力City版安装代码 -->
+  <div id="lv-container" data-id="city" data-uid="MTAyMC81ODc5NS8zNTI1Nw==">
+    <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+  
+         if (typeof LivereTower === 'function') { return; }
+  
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+  
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+    </script>
+  <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+  </div>
+  <!-- City版安装代码已完成 -->
+  </div>  
+
+  <script>
+// 获取 mess 元素和 comment-widget 元素
+const messElement = document.getElementById("mess");
+const commentWidget = document.getElementById("comment-widget");
+
+// 添加点击事件处理程序
+messElement.addEventListener("click", function() {
+  // 切换 comment-widget 元素的显示状态
+  if (commentWidget.style.display === "none") {
+    commentWidget.style.display = "block";
+  } else {
+    commentWidget.style.display = "none";
+  }
+});
+  </script>
+
+</div>
     <aside class="sidebar on">
       <button class="navbar-toggle"></button>
 <nav class="navbar">
