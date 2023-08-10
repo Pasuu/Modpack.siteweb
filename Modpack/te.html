@@ -2216,14 +2216,14 @@
 </nav>
 
 <script>
-  // 获取 mess 元素和 comment-widget 元素
   const messElement = document.getElementById("mess");
   const commentWidget = document.querySelector(".comment-widget");
 
-  // 添加点击事件处理程序
   messElement.addEventListener("click", function() {
-    // 切换 comment-widget 元素的显示状态
-    if (commentWidget.style.display === "none") {
+    const computedStyle = window.getComputedStyle(commentWidget);
+    const display = computedStyle.getPropertyValue("display");
+
+    if (display === "none") {
       commentWidget.style.display = "block";
     } else {
       commentWidget.style.display = "none";
