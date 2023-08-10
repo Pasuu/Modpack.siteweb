@@ -2220,6 +2220,13 @@
   const commentWidget = document.querySelector(".comment-widget");
 
   messElement.addEventListener("click", function() {
+    const commentWidget = document.querySelector(".comment-widget"); // 重新获取一次评论窗口元素
+
+    if (!commentWidget) {
+      console.error("评论窗口元素未找到！");
+      return;
+    }
+
     const computedStyle = window.getComputedStyle(commentWidget);
     const display = computedStyle.getPropertyValue("display");
 
