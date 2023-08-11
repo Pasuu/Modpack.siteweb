@@ -197,6 +197,19 @@
     width: 100%;
     margin: 10px;
   }
+  
+  .comment-widget {
+    position: fixed; /* 确保评论窗口固定在页面中 */
+    top: 40%;       /* 放置在页面顶部的50%位置 */
+    left: 50%;      /* 放置在页面左侧的50%位置 */
+    transform: translate(-50%, -50%); /* 将评论窗口向左上方移动一半的宽高，使其居中 */
+    width: 300px;   /* 设置评论窗口的宽度 */
+    height: 500px;  /* 设置评论窗口的高度 */
+    margin: 0 auto;
+    background-color: #e1e1e1; /* 背景色为淡紫色 */
+    overflow: auto; /* 设置溢出内容时显示滚动条 */
+    display: none; /* 初始状态隐藏 */
+  }
 }
   
 
@@ -214,18 +227,6 @@
     flex-grow: 1; /* 占据剩余空间 */
   } 
 
-  .comment-widget {
-    position: fixed; /* 确保评论窗口固定在页面中 */
-    top: 40%;       /* 放置在页面顶部的50%位置 */
-    left: 50%;      /* 放置在页面左侧的50%位置 */
-    transform: translate(-50%, -50%); /* 将评论窗口向左上方移动一半的宽高，使其居中 */
-    width: 300px;   /* 设置评论窗口的宽度 */
-    height: 500px;  /* 设置评论窗口的高度 */
-    margin: 0 auto;
-    background-color: #e1e1e1; /* 背景色为淡紫色 */
-    overflow: auto; /* 设置溢出内容时显示滚动条 */
-    display: none; /* 初始状态隐藏 */
-  }
 </style>
   
 <div class="count-wrapper">
