@@ -71,6 +71,34 @@
     var s = document.getElementsByTagName("script")[0]; 
     s.parentNode.insertBefore(hm, s);
   })();
+
+  var initialDisplayStates = []; // 用于保存初始页面每个 bordered 框的显示状态
+
+window.onload = function() {
+  var contentBoxes = document.getElementsByClassName('bordered');
+  for (var i = 0; i < contentBoxes.length; i++) {
+    initialDisplayStates[i] = contentBoxes[i].style.display;
+  }
+};
+
+function search(keyword) {
+  var contentBoxes = document.getElementsByClassName('bordered');
+  for (var i = 0; i < contentBoxes.length; i++) {
+    var content = contentBoxes[i].textContent;
+    if (content.includes(keyword)) {
+      contentBoxes[i].style.display = 'flex'; // 使用 flex 显示方式，将 bordered 内元素横排
+    } else {
+      contentBoxes[i].style.display = 'none';
+    }
+  }
+}
+
+function showAll() {
+  var contentBoxes = document.getElementsByClassName('bordered');
+  for (var i = 0; i < contentBoxes.length; i++) {
+    contentBoxes[i].style.display = initialDisplayStates[i]; // 恢复初始页面的显示状态
+  }
+}
   </script>
       
       <link rel="shortcut icon" href="https://imgback.yoimiya.site//ota/2023/07/03/j0g7hfkN.ico" />
@@ -226,7 +254,12 @@
     text-align: left;
     flex-grow: 1; /* 占据剩余空间 */
   } 
-
+  .search000 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 </style>
   
 <div class="count-wrapper">
@@ -235,6 +268,10 @@
 </div>
   <h5 style="font-size:xx-small; text-align: center;">注：并非所有汉化都是全汉化</h5>
   <h5 style="text-align: center;">该网页所有汉化资源均获得<b>授权</b></h5><hr>
+
+  <div class="search000">
+  <input type="text" id="searchInput" placeholder="输入关键词" onkeyup="search(this.value)">
+</div>
 
 <div class="bordered">
   <div class="image-container"  class="window" id="Chroma Sky 2">
