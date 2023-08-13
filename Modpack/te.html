@@ -32,9 +32,9 @@
     width: 950px;   /* 设置评论窗口的宽度 */
     height: 700px;  /* 设置评论窗口的高度 */
     margin: 0 auto;
-    background-color: #e1e1e1; /* 背景色为淡紫色 */
-    overflow: auto; /* 设置溢出内容时显示滚动条 */
-    display: none; /* 初始状态隐藏 */
+    background-color: #e1e1e1; 
+    overflow: auto; 
+    display: none; 
   }
 
   .count-wrapper {
@@ -72,7 +72,7 @@
     s.parentNode.insertBefore(hm, s);
   })();
 
-  var initialDisplayStates = []; // 用于保存初始页面每个 bordered 框的显示状态
+  var initialDisplayStates = [];
 
 window.onload = function() {
   var contentBoxes = document.getElementsByClassName('bordered');
@@ -81,12 +81,17 @@ window.onload = function() {
   }
 };
 
+function removeSymbols(str) {
+  return str.replace(/[^\w\s]/g, ''); 
+}
+
 function search(keyword) {
+  keyword = removeSymbols(keyword.toLowerCase()); 
   var contentBoxes = document.getElementsByClassName('bordered');
   for (var i = 0; i < contentBoxes.length; i++) {
-    var content = contentBoxes[i].textContent;
+    var content = removeSymbols(contentBoxes[i].textContent.toLowerCase());
     if (content.includes(keyword)) {
-      contentBoxes[i].style.display = 'flex'; // 使用 flex 显示方式，将 bordered 内元素横排
+      contentBoxes[i].style.display = 'flex';
     } else {
       contentBoxes[i].style.display = 'none';
     }
@@ -96,9 +101,10 @@ function search(keyword) {
 function showAll() {
   var contentBoxes = document.getElementsByClassName('bordered');
   for (var i = 0; i < contentBoxes.length; i++) {
-    contentBoxes[i].style.display = initialDisplayStates[i]; // 恢复初始页面的显示状态
+    contentBoxes[i].style.display = initialDisplayStates[i];
   }
 }
+
   </script>
       
       <link rel="shortcut icon" href="https://imgback.yoimiya.site//ota/2023/07/03/j0g7hfkN.ico" />
