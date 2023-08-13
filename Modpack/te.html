@@ -65,28 +65,29 @@
 // 获取所有具有 class="image-container" 的元素
 const imageContainers = document.querySelectorAll('.image-container');
 
-// 创建 Intersection Observer 实例
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      scrollToMiddle(entry.target);
-      observer.unobserve(entry.target); // 一旦目标元素进入可视区域，停止观察
-    }
-  });
-}, { threshold: 0.5 }); // 可根据需要调整 threshold 的值
-
-// 针对每个具有 class="image-container" 的元素，开始观察
+// 处理锚点点击事件
 imageContainers.forEach(container => {
-  observer.observe(container);
+  const anchor = container.getAttribute('id'); // 获取每个容器的 ID 作为锚点
+  const link = document.querySelector(`a[href="#${anchor}"]`); // 找到与锚点对应的链接元素
+
+  // 添加锚点点击事件监听器
+  if (link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // 阻止默认锚点跳转行为
+      scrollToMiddle(container);
+    });
+  }
 });
 
 // 滚动到指定元素的中间位置
 function scrollToMiddle(element) {
-  const windowHeight = window.innerHeight;
   const elementTop = element.getBoundingClientRect().top + window.scrollY;
-  const scrollToPosition = elementTop - (windowHeight / 2);
+  const elementHeight = element.clientHeight;
+  const windowHeight = window.innerHeight;
+  const scrollToPosition = elementTop + elementHeight / 2 - windowHeight / 2;
   window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
 }
+
 
 </script>
 
