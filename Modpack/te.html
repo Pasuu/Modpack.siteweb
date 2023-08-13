@@ -81,15 +81,15 @@ window.onload = function() {
   }
 };
 
-function removeSymbols(str) {
-  return str.replace(/[^\w\s]/g, ''); 
+function removeSymbolsAndSpaces(str) {
+  return str.replace(/[^\w\s\u4e00-\u9fa5]/g, ''); 
 }
 
 function search(keyword) {
-  keyword = removeSymbols(keyword.toLowerCase()); 
+  keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
   var contentBoxes = document.getElementsByClassName('bordered');
   for (var i = 0; i < contentBoxes.length; i++) {
-    var content = removeSymbols(contentBoxes[i].textContent.toLowerCase());
+    var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
     if (content.includes(keyword)) {
       contentBoxes[i].style.display = 'flex';
     } else {
