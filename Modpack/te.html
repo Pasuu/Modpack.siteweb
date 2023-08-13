@@ -61,7 +61,7 @@
     var countElement = document.getElementById('count');
     countElement.textContent = countImageContainers;
   });
-  
+
   function scrollToMiddle(anchor) {
   const targetElement = document.querySelector(anchor);
   if (targetElement) {
@@ -71,6 +71,18 @@
     window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const anchors = document.querySelectorAll('a'); // 获取所有锚点元素
+
+  anchors.forEach(function (anchor) {
+    anchor.addEventListener('click', function (event) {
+      event.preventDefault(); // 阻止默认的锚点跳转行为
+      const anchorTarget = this.getAttribute('href');
+      scrollToMiddle(anchorTarget); // 调用滚动函数以将锚点滚动到中间
+    });
+  });
+});
 
 </script>
 
