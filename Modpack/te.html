@@ -61,28 +61,31 @@
     var countElement = document.getElementById('count');
     countElement.textContent = countImageContainers;
   });
+  
+  // 获取所有具有class="image-container"的元素，这些元素包含锚点
+const imageContainers = document.querySelectorAll('.image-container');
 
-  function scrollToMiddle(anchor) {
-  const targetElement = document.querySelector(anchor);
-  if (targetElement) {
-    const windowHeight = window.innerHeight;
-    const targetOffset = targetElement.getBoundingClientRect().top + window.scrollY;
-    const scrollToPosition = targetOffset - (windowHeight / 2);
-    window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
-  }
-}
+// 处理锚点点击事件
+imageContainers.forEach(function(container) {
+  const anchor = container.getAttribute('id'); // 获取每个容器的ID作为锚点
+  const link = document.querySelector(`a[href="#${anchor}"]`); // 找到与锚点对应的链接元素
 
-document.addEventListener('DOMContentLoaded', function () {
-  const anchors = document.querySelectorAll('a'); // 获取所有锚点元素
-
-  anchors.forEach(function (anchor) {
-    anchor.addEventListener('click', function (event) {
-      event.preventDefault(); // 阻止默认的锚点跳转行为
-      const anchorTarget = this.getAttribute('href');
-      scrollToMiddle(anchorTarget); // 调用滚动函数以将锚点滚动到中间
+  // 添加锚点点击事件监听器
+  if (link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // 阻止默认锚点跳转行为
+      scrollToMiddle(container);
     });
-  });
+  }
 });
+
+// 滚动到指定元素的中间位置
+function scrollToMiddle(element) {
+  const windowHeight = window.innerHeight;
+  const elementTop = element.getBoundingClientRect().top + window.scrollY;
+  const scrollToPosition = elementTop - (windowHeight / 2);
+  window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
+}
 
 </script>
 
