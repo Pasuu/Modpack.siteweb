@@ -61,6 +61,17 @@
     var countElement = document.getElementById('count');
     countElement.textContent = countImageContainers;
   });
+  
+  function scrollToMiddle(anchor) {
+  const targetElement = document.querySelector(anchor);
+  if (targetElement) {
+    const windowHeight = window.innerHeight;
+    const targetOffset = targetElement.getBoundingClientRect().top + window.scrollY;
+    const scrollToPosition = targetOffset - (windowHeight / 2);
+    window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
+  }
+}
+
 </script>
 
 <script>
