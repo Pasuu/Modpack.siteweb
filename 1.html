@@ -107,13 +107,6 @@ function search() {
     parentElement.style.flexDirection = 'column';
   }
 }
-
-function clearSearch() {
-  document.getElementById('searchInput').value = '';
-  search('');
-}
-
-
   </script>
       
       <link rel="shortcut icon" href="https://imgback.yoimiya.site//ota/2023/08/14/Ey9U1scM.gif" />
@@ -289,6 +282,7 @@ function clearSearch() {
 
   <div class="search000">
   <input type="text" id="searchInput" placeholder="输入关键词" onkeyup="search(this.value)">
+  <button onclick="showAll()">Show All</button>
 </div>
 
 
