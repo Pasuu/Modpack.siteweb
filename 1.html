@@ -108,15 +108,19 @@ function arrangeResults() {
     return element.style.display !== 'none';
   });
   
-  var contentContainer = document.querySelector('.content-container');
-  contentContainer.style.display = 'none'; // 隐藏原来的 content-container
-  
   var resultContainer = document.createElement('div');
-  resultContainer.className = 'content-container'; // 创建一个新的 content-container
+  resultContainer.className = 'result-container'; // 添加一个新的 CSS 类名
   visibleElements.forEach(function(element) {
-    resultContainer.appendChild(element);
+    var copy = element.cloneNode(true);
+    resultContainer.appendChild(copy);
   });
-  document.body.appendChild(resultContainer); // 将新的 content-container 添加到页面
+  
+  var existingResultContainer = document.querySelector('.result-container');
+  if (existingResultContainer) {
+    existingResultContainer.parentNode.removeChild(existingResultContainer);
+  }
+  
+  document.body.appendChild(resultContainer);
 }
 
 function showAll() {
@@ -125,7 +129,6 @@ function showAll() {
   }
   arrangeResults();
 }
-
 
   </script>
       
@@ -230,6 +233,20 @@ function showAll() {
   height: 100%;
 }
 
+.result-container {
+  box-shadow: 0 0 5px rgba(228, 114, 20, 0.5); /* 使用阴影代替边框 */
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: auto;
+  overflow: hidden;
+}
 
 .content-container {
   display: flex;
