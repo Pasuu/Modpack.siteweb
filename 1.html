@@ -100,13 +100,32 @@ function search(keyword) {
       borderedElement.style.display = 'none';
     }
   }
+  arrangeResults();
+}
+
+function arrangeResults() {
+  var visibleElements = Array.from(borderedElements).filter(function(element) {
+    return element.style.display !== 'none';
+  });
+  
+  var contentContainer = document.querySelector('.content-container');
+  contentContainer.style.display = 'none'; // 隐藏原来的 content-container
+  
+  var resultContainer = document.createElement('div');
+  resultContainer.className = 'content-container'; // 创建一个新的 content-container
+  visibleElements.forEach(function(element) {
+    resultContainer.appendChild(element);
+  });
+  document.body.appendChild(resultContainer); // 将新的 content-container 添加到页面
 }
 
 function showAll() {
   for (var i = 0; i < borderedElements.length; i++) {
     borderedElements[i].style.display = initialDisplayStates[i];
   }
+  arrangeResults();
 }
+
 
   </script>
       
