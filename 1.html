@@ -74,21 +74,26 @@
   })();
 
 
-  var initialFlexDirection;
+  var initialDisplayStates = [];
+var initialFlexDirection;
 
 window.onload = function() {
+  var contentBoxes = document.getElementsByClassName('bordered');
+  for (var i = 0; i < contentBoxes.length; i++) {
+    initialDisplayStates[i] = contentBoxes[i].style.display;
+  }
+
   var parentElement = document.querySelector('.content-container');
   initialFlexDirection = window.getComputedStyle(parentElement).getPropertyValue('flex-direction');
 };
 
 function removeSymbolsAndSpaces(str) {
-  return str.replace(/[^\w\s\u4e00-\u9fa5]/g, '');
+  return str.replace(/[^\w\s\u4e00-\u9fa5]/g, ''); 
 }
 
-function search() {
-  var keyword = document.getElementById('searchInput').value.toLowerCase();
+function search(keyword) {
+  keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
   var contentBoxes = document.getElementsByClassName('bordered');
-  var parentElement = document.querySelector('.content-container');
   
   for (var i = 0; i < contentBoxes.length; i++) {
     var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
@@ -96,17 +101,35 @@ function search() {
     
     if (content.includes(keyword) || boxContent.includes(keyword)) {
       contentBoxes[i].style.display = 'flex';
+      var parentElement = contentBoxes[i].closest('.content-container');
+      if (parentElement) {
+        parentElement.style.flexDirection = 'column'; // 设置竖排
+      }
     } else {
       contentBoxes[i].style.display = 'none';
+      var parentElement = contentBoxes[i].closest('.content-container');
+      if (parentElement) {
+        parentElement.style.flexDirection = 'row'; // 设置横排
+      }
     }
   }
-
-  if (keyword === '') {
-    parentElement.style.flexDirection = initialFlexDirection;
-  } else {
-    parentElement.style.flexDirection = 'column';
-  }
 }
+
+
+
+function showAll() {
+  var contentBoxes = document.getElementsByClassName('bordered');
+  for (var i = 0; i < contentBoxes.length; i++) {
+    contentBoxes[i].style.display = initialDisplayStates[i];
+  }
+  resetFlexDirection(); // 调用恢复排列函数
+}
+
+function resetFlexDirection() {
+  var parentElement = document.querySelector('.content-container');
+  parentElement.style.flexDirection = initialFlexDirection; // 恢复原始排列方式
+}
+
   </script>
       
       <link rel="shortcut icon" href="https://imgback.yoimiya.site//ota/2023/08/14/Ey9U1scM.gif" />
@@ -282,12 +305,13 @@ function search() {
 
   <div class="search000">
   <input type="text" id="searchInput" placeholder="输入关键词" onkeyup="search(this.value)">
-  <button onclick="showAll()">Show All</button>
+
 </div>
 
+<div id="searchResults"></div>
 
 
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Chroma Sky 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/03/SGkpTHPT.gif" alt="Chroma Sky 2" width="200" height="200">
@@ -323,7 +347,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="FTB Presents Integration by Parts DX">
     <img src="https://imgback.yoimiya.site//ota/2023/07/03/Z4T17Hsz.webp" alt="FTB Presents Integration by Parts DX" width="200" height="200">
@@ -359,7 +383,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="All the Mods 3 Expert - ATM3E">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/WGc6UxXw.jpeg" alt="All the Mods 3 Expert" width="200" height="200">
@@ -393,7 +417,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Antimatter Chemistry">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/PudaigBj.png" alt="Antimatter Chemistry" width="200" height="200">
@@ -427,7 +451,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Chemical Exchange">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/IETzjFC6.png" alt="Chemical Exchange" width="200" height="200">
@@ -462,7 +486,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Enigmatica 2: Expert - E2E">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/APZLVfkJ.jpeg" alt="Enigmatica 2: Expert - E2E" width="200" height="200">
@@ -496,7 +520,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="FTB Continuum">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/siAxZjdi.png" alt="FTB Continuum" width="200" height="200">
@@ -532,7 +556,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="FTB Presents SkyFactory 3">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/PsPKXpSz.png" alt="FTB Presents SkyFactory 3" width="200" height="200">
@@ -568,7 +592,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="FTB SkyFactory Challenges">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/W3aEvjax.png" alt="FTB SkyFactory Challenges" width="200" height="200">
@@ -604,7 +628,7 @@ function search() {
 </div>
      
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="GT New Horizons">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/QTNzOulP.png" alt="GT New Horizons" width="200" height="200">
@@ -638,7 +662,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="GregBlock">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/OhQ23SIK.png" alt="GregBlock" width="200" height="200">
@@ -672,7 +696,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Mass Production">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/mBpiZOy9.png" alt="Mass Production" width="200" height="200">
@@ -705,7 +729,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Modern Skyblock 3: Departed">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/zfZTYWNB.png" alt="Modern Skyblock 3: Departed" width="200" height="200">
@@ -739,7 +763,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Omnifactory">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/DhC1oiCG.jpeg" alt="Omnifactory" width="200" height="200">
@@ -772,7 +796,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Project Equivalence">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/6Hjsv7we.png" alt="Project Equivalence" width="200" height="200">
@@ -807,7 +831,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="SevTech: Ages">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/HMK7mkt2.png" alt="SevTech: Ages" width="200" height="200">
@@ -841,7 +865,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Space Astronomy 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/sflZCQFg.png" alt="Space Astronomy 2" width="200" height="200">
@@ -875,7 +899,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="FTB Presents Stoneblock 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/FuFP9BGO.png" alt="FTB Presents Stoneblock 2" width="200" height="200">
@@ -911,7 +935,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Enigmatica 6 Expert - E6E">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/RVQi9A7g.jpeg" alt="Enigmatica 6 Expert - E6E" width="200" height="200">
@@ -947,7 +971,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Andromeda Automation">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/NbrwM4FC.png" alt="Andromeda Automation" width="200" height="200">
@@ -982,7 +1006,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Restrict Skyblock">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/qAJgZic1.png" alt="Restrict Skyblock" width="200" height="200">
@@ -1018,7 +1042,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Encrypted_">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/HQNuy6pS.png" alt="Encrypted_" width="200" height="200">
@@ -1054,7 +1078,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Proletaria Expert">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/tcHqhDqb.png" alt="Proletaria Expert" width="200" height="200">
@@ -1090,7 +1114,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Greed the Resource 3: Factory">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/evTuGMQd.png" alt="Greed the Resource 3: Factory" width="200" height="200">
@@ -1125,7 +1149,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Rustic Waters II">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/VJrNGj3A.png" alt="Rustic Waters II" width="200" height="200">
@@ -1159,7 +1183,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Delivery Inc.">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/yxeFOBnn.png" alt="Delivery Inc." width="200" height="200">
@@ -1193,7 +1217,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Infernopolis">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/KnuLSt61.png" alt="Infernopolis" width="200" height="200">
@@ -1226,7 +1250,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Calculator Skies">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/BExJNvDn.png" alt="Calculator Skies" width="200" height="200">
@@ -1259,7 +1283,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Skyopolis 4">
   <img src="https://imgback.yoimiya.site//ota/2023/07/06/ps1RWVBV.jpeg"  alt="Skyopolis 4" width="200" height="200">
@@ -1293,7 +1317,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Star Factory">
   <img src="https://imgback.yoimiya.site//ota/2023/07/06/GmGz290X.png"  alt="Star Factory" width="200" height="200">
@@ -1328,7 +1352,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Chroma Endless">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/Gnnewpbp.jpeg" alt="Chroma Endless" width="200" height="200">
@@ -1364,7 +1388,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Vault Hunters 3rd Edition">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/oFyvsNlH.png" alt="Vault Hunters 3rd Edition" width="200" height="200">
@@ -1400,7 +1424,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="DawnCraft - An Adventure RPG Modpack">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/iSXwPEMd.gif" alt="DawnCraft - An Adventure RPG Modpack" width="200" height="200">
@@ -1435,7 +1459,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Rebirth of the Night (RotN)">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/ciL6NKWQ.png" alt="Rebirth of the Night (RotN)" width="200" height="200">
@@ -1468,7 +1492,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Age of Fate">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/yZfbeCNx.png" alt="Age of Fate" width="200" height="200">
@@ -1502,7 +1526,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Bliss - a peaceful-like experience">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/73liXfO6.png" alt="Bliss - a peaceful-like experience" width="200" height="200">
@@ -1537,7 +1561,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Blackstone Block">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/I2fh6uHi.png" alt="Blackstone Block" width="200" height="200">
@@ -1571,7 +1595,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Sky Bees 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/Op0IEER6.png" alt="Sky Bees 2" width="200" height="200">
@@ -1605,7 +1629,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Better MC Skyblock">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/InXvhN9R.png" alt="Better MC Skyblock" width="200" height="200">
@@ -1640,7 +1664,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="PixelGO - To the Sky">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/1gQH9LwE.png" alt="PixelGO - To the Sky" width="200" height="200">
@@ -1673,7 +1697,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Stacia Expert">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/ZIXXi0G8.png" alt="Stacia Expert" width="200" height="200">
@@ -1707,7 +1731,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="All the Mods 6 - ATM6">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/U4agIhtl.gif" alt="All the Mods 6 - ATM6" width="200" height="200">
@@ -1742,7 +1766,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Life in the village 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/KeyvP3U9.png" alt="Life in the village 2" width="200" height="200">
@@ -1777,7 +1801,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Techopolis">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/jCO8LDxe.png" alt="Techopolis" width="200" height="200">
@@ -1811,7 +1835,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Craft to Exile [Dissonance]">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/wYbcJlbb.png" alt="Craft to Exile [Dissonance]" width="200" height="200">
@@ -1845,7 +1869,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Cryptopolis">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/haqopI10.gif" alt="Cryptopolis" width="200" height="200">
@@ -1879,7 +1903,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="FTB Legend of the Eyes">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/VNUCMrxD.webp" alt="FTB Legend of the Eyes" width="200" height="200">
@@ -1912,7 +1936,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Manufactio 2 - Nuclear Edition">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/8xqInaz4.jpeg" alt="Manufactio 2 - Nuclear Edition" width="200" height="200">
@@ -1947,7 +1971,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Calibry Team - One Chunk">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/IYqzDCyU.png" alt="Calibry Team - One Chunk" width="200" height="200">
@@ -1980,7 +2004,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="DarkRPG - RPG Quest Magic & Origins Online Adventure">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/ATKMRFgg.png" alt="DarkRPG - RPG Quest Magic & Origins Online Adventure" width="200" height="200">
@@ -2013,7 +2037,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="FTB Skies">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/9V2qtP7H.webp" alt="FTB Skies" width="200" height="200">
@@ -2047,7 +2071,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="All the Mods 8 - ATM8">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/u795DIGj.png" alt="All the Mods 8 - ATM8" width="200" height="200">
@@ -2080,7 +2104,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Feed the Singularity">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/sTB6Lw2o.gif" alt="Feed the Singularity" width="200" height="200">
@@ -2113,7 +2137,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Sky Research">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/mfUacv9V.png" alt="Sky Research" width="200" height="200">
@@ -2147,7 +2171,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="OBSIDA-TECH">
     <img src="https://imgback.yoimiya.site//ota/2023/07/14/qjC5GERH.png" alt="OBSIDA-TECH" width="200" height="200">
@@ -2180,7 +2204,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Astral Magica">
     <img src="https://imgback.yoimiya.site//ota/2023/07/17/uX1ok2Pt.png" alt="Astral Magica" width="200" height="200">
@@ -2213,7 +2237,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Create Stellar">
     <img src="https://imgback.yoimiya.site//ota/2023/07/18/v9a3w67l.png" alt="Create Stellar" width="200" height="200">
@@ -2245,7 +2269,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Divine Journey 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/20/Y4UqhdAF.png" alt="Divine Journey 2" width="200" height="200">
@@ -2278,7 +2302,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Technological Journey">
     <img src="https://imgback.yoimiya.site//ota/2023/07/22/hnZU53Wt.png" alt="Technological Journey" width="200" height="200">
@@ -2313,7 +2337,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="HarvestBlock">
     <img src="https://imgback.yoimiya.site//ota/2023/07/23/CUTWbHpE.png" alt="HarvestBlock" width="200" height="200">
@@ -2347,7 +2371,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Stone Technology Ultimate">
     <img src="https://imgback.yoimiya.site//ota/2023/07/24/LWamYBNK.png" alt="Stone Technology Ultimate" width="200" height="200">
@@ -2381,7 +2405,7 @@ function search() {
 </div>
 
 </div>
-<div class="content-container" data-initial-flex-direction="row">
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Better MC [FORGE] - BMC2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/26/jb6n18QB.png" alt="Better MC [FORGE] - BMC2" width="200" height="200">
