@@ -75,10 +75,11 @@
 
 
   var initialDisplayStates = [];
+var contentContainers = []; // 将contentContainers定义在全局作用域内
 var contentBoxes = [];
 
 window.onload = function() {
-  var contentContainers = document.getElementsByClassName('content-container');
+  contentContainers = document.getElementsByClassName('content-container');
   for (var i = 0; i < contentContainers.length; i++) {
     initialDisplayStates[i] = contentContainers[i].style.display;
     contentBoxes[i] = contentContainers[i].querySelector('.bordered');
@@ -110,6 +111,7 @@ function showAll() {
     contentBoxes[i].style.display = initialDisplayStates[i];
   }
 }
+
 
 
   </script>
