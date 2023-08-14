@@ -74,27 +74,21 @@
   })();
 
 
-  var initialDisplayStates = [];
+  var initialFlexDirection;
 
 window.onload = function() {
-  var contentBoxes = document.getElementsByClassName('bordered');
-  for (var i = 0; i < contentBoxes.length; i++) {
-    initialDisplayStates[i] = contentBoxes[i].style.display;
-  }
-
-  var parentElements = document.getElementsByClassName('content-container');
-  for (var i = 0; i < parentElements.length; i++) {
-    parentElements[i].setAttribute('data-initial-flex-direction', parentElements[i].style.flexDirection);
-  }
+  var parentElement = document.querySelector('.content-container');
+  initialFlexDirection = window.getComputedStyle(parentElement).getPropertyValue('flex-direction');
 };
 
 function removeSymbolsAndSpaces(str) {
-  return str.replace(/[^\w\s\u4e00-\u9fa5]/g, ''); 
+  return str.replace(/[^\w\s\u4e00-\u9fa5]/g, '');
 }
 
-function search(keyword) {
-  keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
+function search() {
+  var keyword = document.getElementById('searchInput').value.toLowerCase();
   var contentBoxes = document.getElementsByClassName('bordered');
+  var parentElement = document.querySelector('.content-container');
   
   for (var i = 0; i < contentBoxes.length; i++) {
     var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
@@ -102,34 +96,23 @@ function search(keyword) {
     
     if (content.includes(keyword) || boxContent.includes(keyword)) {
       contentBoxes[i].style.display = 'flex';
-      var parentElement = contentBoxes[i].closest('.content-container');
-      if (parentElement) {
-        parentElement.style.flexDirection = 'column'; // 设置竖排
-      }
     } else {
       contentBoxes[i].style.display = 'none';
-      var parentElement = contentBoxes[i].closest('.content-container');
-      if (parentElement) {
-        parentElement.style.flexDirection = 'row'; // 设置横排
-      }
     }
+  }
+
+  if (keyword === '') {
+    parentElement.style.flexDirection = initialFlexDirection;
+  } else {
+    parentElement.style.flexDirection = 'column';
   }
 }
 
-function showAll() {
-  var contentBoxes = document.getElementsByClassName('bordered');
-  for (var i = 0; i < contentBoxes.length; i++) {
-    contentBoxes[i].style.display = initialDisplayStates[i];
-  }
-
-  var parentElements = document.getElementsByClassName('content-container');
-  for (var i = 0; i < parentElements.length; i++) {
-    var initialFlexDirection = parentElements[i].getAttribute('data-initial-flex-direction');
-    if (initialFlexDirection) {
-      parentElements[i].style.flexDirection = initialFlexDirection;
-    }
-  }
+function clearSearch() {
+  document.getElementById('searchInput').value = '';
+  search('');
 }
+
 
   </script>
       
