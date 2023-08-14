@@ -75,13 +75,13 @@
 
 
   var initialDisplayStates = [];
-var borderedElements = [];
+var contentBoxes = [];
+var contentContainers = document.getElementsByClassName('content-container');
 
 window.onload = function() {
-  var borderedContainers = document.querySelectorAll('.bordered');
-  for (var i = 0; i < borderedContainers.length; i++) {
-    initialDisplayStates[i] = borderedContainers[i].style.display;
-    borderedElements[i] = borderedContainers[i];
+  for (var i = 0; i < contentContainers.length; i++) {
+    initialDisplayStates[i] = contentContainers[i].style.display;
+    contentBoxes[i] = contentContainers[i].querySelector('.bordered');
   }
 };
 
@@ -90,45 +90,43 @@ function removeSymbolsAndSpaces(str) {
 }
 
 function search(keyword) {
-  keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
-  for (var i = 0; i < borderedElements.length; i++) {
-    var borderedElement = borderedElements[i];
-    var content = removeSymbolsAndSpaces(borderedElement.textContent.toLowerCase());
-    if (content.includes(keyword)) {
-      borderedElement.style.display = 'flex';
+  keyword = removeSymbolsAndSpaces(keyword.toLowerCase());
+  for (var i = 0; i < contentBoxes.length; i++) {
+    var contentBox = contentBoxes[i];
+    var content = removeSymbolsAndSpaces(contentBox.textContent.toLowerCase());
+    var boxContent = removeSymbolsAndSpaces(contentBox.querySelector('.content').textContent.toLowerCase());
+    if (content.includes(keyword) || boxContent.includes(keyword)) {
+      contentContainers[i].style.display = 'flex';
+      contentBox.style.display = 'none';
     } else {
-      borderedElement.style.display = 'none';
+      contentContainers[i].style.display = 'none';
     }
   }
-  arrangeResults();
-}
-
-function arrangeResults() {
-  var visibleElements = Array.from(borderedElements).filter(function(element) {
-    return element.style.display !== 'none';
+  
+  // 添加竖排样式
+  var visibleContentContainers = Array.from(contentContainers).filter(container => container.style.display !== 'none');
+  visibleContentContainers.forEach(container => {
+    container.style.flexDirection = 'column';
+    container.style.justifyContent = 'center';
+    container.style.alignItems = 'center';
+    container.style.marginTop = '20px';
+    container.style.border = 'none'; // 去除边框
   });
-  
-  var resultContainer = document.createElement('div');
-  resultContainer.className = 'result-container'; // 添加一个新的 CSS 类名
-  visibleElements.forEach(function(element) {
-    var copy = element.cloneNode(true);
-    resultContainer.appendChild(copy);
-  });
-  
-  var existingResultContainer = document.querySelector('.result-container');
-  if (existingResultContainer) {
-    existingResultContainer.parentNode.removeChild(existingResultContainer);
-  }
-  
-  document.body.appendChild(resultContainer);
 }
 
 function showAll() {
-  for (var i = 0; i < borderedElements.length; i++) {
-    borderedElements[i].style.display = initialDisplayStates[i];
+  for (var i = 0; i < contentContainers.length; i++) {
+    contentContainers[i].style.display = 'flex';
+    contentBoxes[i].style.display = initialDisplayStates[i];
+    // 还原样式
+    contentContainers[i].style.flexDirection = '';
+    contentContainers[i].style.justifyContent = '';
+    contentContainers[i].style.alignItems = '';
+    contentContainers[i].style.marginTop = '';
+    contentContainers[i].style.border = '';
   }
-  arrangeResults();
 }
+
 
   </script>
       
@@ -233,20 +231,6 @@ function showAll() {
   height: 100%;
 }
 
-.result-container {
-  box-shadow: 0 0 5px rgba(228, 114, 20, 0.5); /* 使用阴影代替边框 */
-  padding: 20px;
-  display: flex;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-left: auto;
-  justify-content: center;
-  align-items: center;
-  width: 700px;
-  height: auto;
-  overflow: hidden;
-}
 
 .content-container {
   display: flex;
