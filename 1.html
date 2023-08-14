@@ -97,10 +97,16 @@ function search(keyword) {
     
     if (content.includes(keyword) || boxContent.includes(keyword)) {
       contentBoxes[i].style.display = 'flex';
-      contentBoxes[i].parentElement.style.flexDirection = 'column'; // 设置竖排
+      var parentElement = contentBoxes[i].closest('.content-container');
+      if (parentElement) {
+        parentElement.style.flexDirection = 'column'; // 设置竖排
+      }
     } else {
       contentBoxes[i].style.display = 'none';
-      contentBoxes[i].parentElement.style.flexDirection = 'row'; // 设置横排
+      var parentElement = contentBoxes[i].closest('.content-container');
+      if (parentElement) {
+        parentElement.style.flexDirection = 'row'; // 设置横排
+      }
     }
   }
 }
@@ -109,8 +115,10 @@ function showAll() {
   var contentBoxes = document.getElementsByClassName('bordered');
   for (var i = 0; i < contentBoxes.length; i++) {
     contentBoxes[i].style.display = initialDisplayStates[i];
-    contentBoxes[i].parentElement.style.flexDirection = 'row'; // 恢复横排
-
+    var parentElement = contentBoxes[i].closest('.content-container');
+    if (parentElement) {
+      parentElement.style.flexDirection = 'row'; // 恢复横排
+    }
   }
 }
   </script>
@@ -216,13 +224,7 @@ function showAll() {
   height: 100%;
 }
 
-.result-container {
-  display: flex;
-  flex-direction: column; /* 横向排列项目 */
-  justify-content: space-between; /* 在项目之间添加间距 */
-  max-width: 1400px; /* 如果需要，设置最大宽度 */
-  margin: 0 auto; /* 水平居中内容 */
-}
+
 .content-container {
   display: flex;
   flex-direction: row; /* 横向排列项目 */
