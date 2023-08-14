@@ -74,7 +74,7 @@
   })();
 
 
-  var initialDisplayStates = [];
+  var initialDisplayStates = []; // 存储初始的显示状态
 
 window.onload = function() {
   var contentBoxes = document.getElementsByClassName('bordered');
@@ -90,17 +90,13 @@ function removeSymbolsAndSpaces(str) {
 function search(keyword) {
   keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
   var contentBoxes = document.getElementsByClassName('bordered');
-  
   for (var i = 0; i < contentBoxes.length; i++) {
     var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
-    var boxContent = removeSymbolsAndSpaces(contentBoxes[i].querySelector('.content').textContent.toLowerCase());
-    
+    var boxContent = removeSymbolsAndSpaces(contentBoxes[i].querySelector('.content').textContent.toLowerCase()); // 获取内容
     if (content.includes(keyword) || boxContent.includes(keyword)) {
       contentBoxes[i].style.display = 'flex';
-      contentBoxes[i].parentElement.style.flexDirection = 'column'; // 设置竖排
     } else {
       contentBoxes[i].style.display = 'none';
-      contentBoxes[i].parentElement.style.flexDirection = 'row'; // 设置横排
     }
   }
 }
@@ -109,7 +105,6 @@ function showAll() {
   var contentBoxes = document.getElementsByClassName('bordered');
   for (var i = 0; i < contentBoxes.length; i++) {
     contentBoxes[i].style.display = initialDisplayStates[i];
-    contentBoxes[i].parentElement.style.flexDirection = 'row'; // 恢复横排
   }
 }
 
