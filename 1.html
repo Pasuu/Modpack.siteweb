@@ -75,13 +75,11 @@
 
 
   var initialDisplayStates = [];
-var contentBoxes = [];
 var contentContainers = document.getElementsByClassName('content-container');
 
 window.onload = function() {
   for (var i = 0; i < contentContainers.length; i++) {
     initialDisplayStates[i] = contentContainers[i].style.display;
-    contentBoxes[i] = contentContainers[i].querySelector('.bordered');
   }
 };
 
@@ -91,36 +89,41 @@ function removeSymbolsAndSpaces(str) {
 
 function search(keyword) {
   keyword = removeSymbolsAndSpaces(keyword.toLowerCase());
-  for (var i = 0; i < contentBoxes.length; i++) {
-    var contentBox = contentBoxes[i];
+
+  for (var i = 0; i < contentContainers.length; i++) {
+    var contentContainer = contentContainers[i];
+    var contentBox = contentContainer.querySelector('.bordered');
     var content = removeSymbolsAndSpaces(contentBox.textContent.toLowerCase());
     var boxContent = removeSymbolsAndSpaces(contentBox.querySelector('.content').textContent.toLowerCase());
+
     if (content.includes(keyword) || boxContent.includes(keyword)) {
-      contentContainers[i].style.display = 'flex';
+      contentContainer.style.display = 'flex';
       contentBox.style.display = 'none';
     } else {
-      contentContainers[i].style.display = 'none';
+      contentContainer.style.display = 'none';
     }
   }
   
-  // 添加竖排样式
-  var visibleContentContainers = Array.from(contentContainers).filter(container => container.style.display !== 'none');
-  visibleContentContainers.forEach(container => {
-    container.style.flexDirection = 'column';
-    container.style.justifyContent = 'center';
-    container.style.alignItems = 'center';
-    container.style.marginTop = '20px';
-    container.style.border = 'none'; // 去除边框
-  });
+  // 调整样式
+  for (var i = 0; i < contentContainers.length; i++) {
+    var contentContainer = contentContainers[i];
+    contentContainer.style.flexDirection = 'column';
+    contentContainer.style.justifyContent = 'center';
+    contentContainer.style.alignItems = 'center';
+    contentContainer.style.marginTop = '20px';
+    contentContainer.style.border = 'none';
+  }
 }
 
 function showAll() {
   for (var i = 0; i < contentContainers.length; i++) {
     contentContainers[i].style.display = 'flex';
-    contentBoxes[i].style.display = initialDisplayStates[i];
+    var contentBox = contentContainers[i].querySelector('.bordered');
+    contentBox.style.display = initialDisplayStates[i];
+    
     // 还原样式
-    contentContainers[i].style.flexDirection = '';
-    contentContainers[i].style.justifyContent = '';
+    contentContainers[i].style.flexDirection = 'row';
+    contentContainers[i].style.justifyContent = 'space-between';
     contentContainers[i].style.alignItems = '';
     contentContainers[i].style.marginTop = '';
     contentContainers[i].style.border = '';
