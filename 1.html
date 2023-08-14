@@ -109,8 +109,10 @@ function showAll() {
   var contentBoxes = document.getElementsByClassName('bordered');
   for (var i = 0; i < contentBoxes.length; i++) {
     contentBoxes[i].style.display = initialDisplayStates[i];
+    contentBoxes[i].parentElement.style.flexDirection = 'row'; // 恢复横排
   }
 }
+
 
 
   </script>
