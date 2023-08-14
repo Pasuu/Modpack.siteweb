@@ -95,7 +95,7 @@ function search(keyword) {
   keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
   var contentBoxes = document.getElementsByClassName('bordered');
   var contentContainers = document.getElementsByClassName('content-container');
-  var hasResults = false; // 是否有匹配结果
+  var hasResults = false; 
   
   for (var i = 0; i < contentBoxes.length; i++) {
     var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
@@ -105,24 +105,24 @@ function search(keyword) {
       contentBoxes[i].style.display = 'flex';
       var parentElement = contentBoxes[i].closest('.content-container');
       if (parentElement) {
-        parentElement.style.flexDirection = 'column'; // 设置竖排
+        parentElement.style.flexDirection = 'column'; 
       }
-      hasResults = true; // 标记有匹配结果
+      hasResults = true; 
     } else {
       contentBoxes[i].style.display = 'none';
       var parentElement = contentBoxes[i].closest('.content-container');
       if (parentElement) {
-        parentElement.style.flexDirection = 'row'; // 设置横排
+        parentElement.style.flexDirection = 'row'; 
       }
     }
   }
   
-  // 设置 content-container 的横竖排
+
   for (var i = 0; i < contentContainers.length; i++) {
     if (keyword.length > 0 && hasResults) {
-      contentContainers[i].style.flexDirection = 'column'; // 有内容有结果时设置竖排
+      contentContainers[i].style.flexDirection = 'column';
     } else {
-      contentContainers[i].style.flexDirection = 'row'; // 否则设置横排
+      contentContainers[i].style.flexDirection = 'row'; 
     }
   }
 }
@@ -2463,9 +2463,18 @@ function showAll() {
       </li>
     </ul>
 
+    <span>
+      <span><img src="https://imgback.yoimiya.site//ota/2023/07/25/KeanW6su.webp" height="21px" width="21px" style="margin-bottom: -4px;"/>游客:<span id="busuanzi_value_site_uv"></span></span>
+      <span class="division">|</span>
+      <span><img src="https://imgback.yoimiya.site//ota/2023/07/25/IXJf7bUu.webp" height="21px" width="21px" style="margin-bottom: -4px;"/>查看:<span id="busuanzi_value_page_pv"></span></span>
+    </span>
 
   </div>
-</footer>       
+
+  <script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+  
+</footer>        
     </main>
 
 <style>
