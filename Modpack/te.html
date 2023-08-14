@@ -73,7 +73,8 @@
     s.parentNode.insertBefore(hm, s);
   })();
 
-  var initialDisplayStates = [];
+
+  var initialDisplayStates = []; // 存储初始的显示状态
 
 window.onload = function() {
   var contentBoxes = document.getElementsByClassName('bordered');
@@ -91,7 +92,8 @@ function search(keyword) {
   var contentBoxes = document.getElementsByClassName('bordered');
   for (var i = 0; i < contentBoxes.length; i++) {
     var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
-    if (content.includes(keyword)) {
+    var boxContent = removeSymbolsAndSpaces(contentBoxes[i].querySelector('.content').textContent.toLowerCase()); // 获取内容
+    if (content.includes(keyword) || boxContent.includes(keyword)) {
       contentBoxes[i].style.display = 'flex';
     } else {
       contentBoxes[i].style.display = 'none';
@@ -186,7 +188,7 @@ function showAll() {
 
 /* 默认样式，适用于电脑 */
 .bordered {
-  border: 2px solid #49259c;
+  box-shadow: 0 0 5px rgba(228, 114, 20, 0.5); /* 使用阴影代替边框 */
   padding: 20px;
   display: flex;
   text-align: center;
@@ -195,14 +197,27 @@ function showAll() {
   margin-left: auto;
   justify-content: center;
   align-items: center;
-  width: 1400px;
+  width: 700px;
   height: auto;
   overflow: hidden;
+}
+
+.bordered:hover {
+  box-shadow: 5px 5px 10px rgba(73, 37, 156, 0.8); /* 鼠标悬停时的阴影效果 */
 }
 
 .window {
   flex: 1;
   height: 100%;
+}
+
+
+.content-container {
+  display: flex;
+  flex-direction: row; /* 横向排列项目 */
+  justify-content: space-between; /* 在项目之间添加间距 */
+  max-width: 1400px; /* 如果需要，设置最大宽度 */
+  margin: 0 auto; /* 水平居中内容 */
 }
 
 /* 媒体查询，适用于手机 */
@@ -270,6 +285,8 @@ function showAll() {
   <input type="text" id="searchInput" placeholder="输入关键词" onkeyup="search(this.value)">
 </div>
 
+
+<div class="content-container">
 <div class="bordered">
   <div class="image-container"  class="window" id="Chroma Sky 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/03/SGkpTHPT.gif" alt="Chroma Sky 2" width="200" height="200">
@@ -284,9 +301,11 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/426.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://github.com/Pasuu-Mc/Chroma-sky-2-CN" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22"/></a>
     <a href="https://www.bilibili.com/read/cv23277706" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
-  </div> 
-  
-<div class="image-container"  class="window" id="All the Mods 7 - To the Sky - atm7sky">
+  </div>
+</div>
+
+<div class="bordered">
+  <div class="image-container"  class="window" id="All the Mods 7 - To the Sky - atm7sky">
     <img src="https://imgback.yoimiya.site//ota/2023/07/03/95bLcP2N.png" alt="ATM7-Sky" width="200" height="200">
   </div>
   <div class="content"style="overflow: hidden;">
@@ -302,8 +321,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="FTB Presents Integration by Parts DX">
+  <div class="image-container"  class="window" id="FTB Presents Integration by Parts DX">
     <img src="https://imgback.yoimiya.site//ota/2023/07/03/Z4T17Hsz.webp" alt="FTB Presents Integration by Parts DX" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -318,8 +339,10 @@ function showAll() {
     <a href="https://www.bilibili.com/read/cv24405231" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
     <a href="https://www.bilibili.com/read/cv24917493" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/dD9s20F1.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Age of Engineering">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Age of Engineering">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/s6Hnryei.png" alt="Age of Engineering" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -334,8 +357,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="All the Mods 3 Expert - ATM3E">
+  <div class="image-container"  class="window" id="All the Mods 3 Expert - ATM3E">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/WGc6UxXw.jpeg" alt="All the Mods 3 Expert" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -348,8 +373,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Amnesia">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Amnesia">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/soIgHRA4.png" alt="Amnesia" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -364,8 +391,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Antimatter Chemistry">
+  <div class="image-container"  class="window" id="Antimatter Chemistry">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/PudaigBj.png" alt="Antimatter Chemistry" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -378,8 +407,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Astroblock">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Astroblock">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/aHsBhcTC.png" alt="Astroblock" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -394,8 +425,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Chemical Exchange">
+  <div class="image-container"  class="window" id="Chemical Exchange">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/IETzjFC6.png" alt="Chemical Exchange" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -408,8 +441,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Compact Claustrophobia">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Compact Claustrophobia">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/um8owl9i.png" alt="Compact Claustrophobia" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -425,8 +460,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Enigmatica 2: Expert - E2E">
+  <div class="image-container"  class="window" id="Enigmatica 2: Expert - E2E">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/APZLVfkJ.jpeg" alt="Enigmatica 2: Expert - E2E" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -439,8 +476,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Exoria">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Exoria">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/O61HLTZK.png" alt="Exoria" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -455,8 +494,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="FTB Continuum">
+  <div class="image-container"  class="window" id="FTB Continuum">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/siAxZjdi.png" alt="FTB Continuum" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -470,8 +511,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="FTB Interactions">
+<div class="bordered">
+  <div class="image-container"  class="window" id="FTB Interactions">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/n3mLsn0A.png" alt="FTB Interactions" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -487,8 +530,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="FTB Presents SkyFactory 3">
+  <div class="image-container"  class="window" id="FTB Presents SkyFactory 3">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/PsPKXpSz.png" alt="FTB Presents SkyFactory 3" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -502,8 +547,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="FTB Pyramid Reborn 3.0">
+<div class="bordered">
+  <div class="image-container"  class="window" id="FTB Pyramid Reborn 3.0">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/eIcBANmZ.png" alt="FTB Pyramid Reborn 3.0" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -519,8 +566,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="FTB SkyFactory Challenges">
+  <div class="image-container"  class="window" id="FTB SkyFactory Challenges">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/W3aEvjax.png" alt="FTB SkyFactory Challenges" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -534,8 +583,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Farming Valley">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Farming Valley">
     <img src="https://imgback.yoimiya.site//ota/2023/07/04/oir8xBOF.png" alt="Farming Valley" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -551,8 +602,10 @@ function showAll() {
   </div>
 </div>
      
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="GT New Horizons">
+  <div class="image-container"  class="window" id="GT New Horizons">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/QTNzOulP.png" alt="GT New Horizons" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -565,8 +618,10 @@ function showAll() {
     <a href="https://github.com/Kiwi233/Translation-of-GTNH" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://gtnh.huijiwiki.com/wiki/%E9%A6%96%E9%A1%B5" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/UmbjwOpY.webp" alt="download" width="28" height="20"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Glacial Awakening">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Glacial Awakening">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/MfdcnYcb.png" alt="Glacial Awakening" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -581,8 +636,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="GregBlock">
+  <div class="image-container"  class="window" id="GregBlock">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/OhQ23SIK.png" alt="GregBlock" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -595,8 +652,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Invasion">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Invasion">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/AxUW9HjV.png" alt="Invasion" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -611,8 +670,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Mass Production">
+  <div class="image-container"  class="window" id="Mass Production">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/mBpiZOy9.png" alt="Mass Production" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -624,8 +685,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Material Energy^5: Entity">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Material Energy^5: Entity">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/ZslA7Gkc.png" alt="Material Energy^5: Entity" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -640,8 +703,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Modern Skyblock 3: Departed">
+  <div class="image-container"  class="window" id="Modern Skyblock 3: Departed">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/zfZTYWNB.png" alt="Modern Skyblock 3: Departed" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -654,8 +719,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Nomifactory">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Nomifactory">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/O9GYT1t3.png" alt="Nomifactory" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -670,8 +737,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Omnifactory">
+  <div class="image-container"  class="window" id="Omnifactory">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/DhC1oiCG.jpeg" alt="Omnifactory" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -684,8 +753,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Primal Skies">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Primal Skies">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/eowfG0Ug.png" alt="Primal Skies" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -699,8 +770,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Project Equivalence">
+  <div class="image-container"  class="window" id="Project Equivalence">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/6Hjsv7we.png" alt="Project Equivalence" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -713,8 +786,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Roguelike Adventures and Dungeons">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Roguelike Adventures and Dungeons">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/6kvNq8fO.png" alt="Roguelike Adventures and Dungeons" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -730,8 +805,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="SevTech: Ages">
+  <div class="image-container"  class="window" id="SevTech: Ages">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/HMK7mkt2.png" alt="SevTech: Ages" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -744,8 +821,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="SkyFactory 4">
+<div class="bordered">
+  <div class="image-container"  class="window" id="SkyFactory 4">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/Omt0rAmM.png" alt="SkyFactory 4" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -760,8 +839,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Space Astronomy 2">
+  <div class="image-container"  class="window" id="Space Astronomy 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/sflZCQFg.png" alt="Space Astronomy 2" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -774,8 +855,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="StoneBlock">
+<div class="bordered">
+  <div class="image-container"  class="window" id="StoneBlock">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/XH1uSsl1.png" alt="StoneBlock" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -790,8 +873,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="FTB Presents Stoneblock 2">
+  <div class="image-container"  class="window" id="FTB Presents Stoneblock 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/FuFP9BGO.png" alt="FTB Presents Stoneblock 2" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -805,8 +890,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="http://modpack.cfpa.team/" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/v9MvNCF2.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Volcano Block">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Volcano Block">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/u2Acz15p.png" alt="Volcano Block" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -822,8 +909,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Enigmatica 6 Expert - E6E">
+  <div class="image-container"  class="window" id="Enigmatica 6 Expert - E6E">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/RVQi9A7g.jpeg" alt="Enigmatica 6 Expert - E6E" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -837,8 +926,10 @@ function showAll() {
     <a href="https://github.com/Annijang/Annijang-Modpack" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="https://www.mcbbs.net/thread-1340687-1-1.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/6EKUptRr.webp" alt="download" width="20" height="20"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="FTB Inferno">
+<div class="bordered">
+  <div class="image-container"  class="window" id="FTB Inferno">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/ctjju95X.webp"  alt="FTB Inferno" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -854,8 +945,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Andromeda Automation">
+  <div class="image-container"  class="window" id="Andromeda Automation">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/NbrwM4FC.png" alt="Andromeda Automation" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -869,8 +962,10 @@ function showAll() {
     <a href="https://github.com/ShaBaiTianCN/Andromeda-Automation" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="https://www.anyijun.com/zhcn_down/?pid=31" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/8Zp9xxWn.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="FTB StoneBlock 3">
+<div class="bordered">
+  <div class="image-container"  class="window" id="FTB StoneBlock 3">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/8lJNfke0.webp"  alt="FTB StoneBlock 3" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -885,8 +980,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Restrict Skyblock">
+  <div class="image-container"  class="window" id="Restrict Skyblock">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/qAJgZic1.png" alt="Restrict Skyblock" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -900,8 +997,10 @@ function showAll() {
     <a href="https://github.com/ShaBaiTianCN/Restrict-Skyblock" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="https://www.anyijun.com/zhcn_down/?pid=29" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/8Zp9xxWn.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Jetpack Cat">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Jetpack Cat">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/UYs6DgDm.gif"  alt="Jetpack Cat" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -917,8 +1016,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Encrypted_">
+  <div class="image-container"  class="window" id="Encrypted_">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/HQNuy6pS.png" alt="Encrypted_" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -932,8 +1033,10 @@ function showAll() {
     <a href="https://github.com/ShaBaiTianCN/Encrypted_" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="https://www.anyijun.com/zhcn_down/?pid=27" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/8Zp9xxWn.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Skyopolis 5">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Skyopolis 5">
     <img src="https://imgback.yoimiya.site//ota/2023/07/05/HMIpDn46.png"  alt="Skyopolis 5" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -949,8 +1052,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Proletaria Expert">
+  <div class="image-container"  class="window" id="Proletaria Expert">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/tcHqhDqb.png" alt="Proletaria Expert" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -964,8 +1069,10 @@ function showAll() {
     <a href="https://github.com/ShaBaiTianCN/Proletaria-Expert" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="https://www.anyijun.com/zhcn_down/?pid=25" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/8Zp9xxWn.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Enigmatica 6 - E6">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Enigmatica 6 - E6">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/ZJzvVuRP.jpeg" alt="Enigmatica 6 - E6" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -981,8 +1088,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Greed the Resource 3: Factory">
+  <div class="image-container"  class="window" id="Greed the Resource 3: Factory">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/evTuGMQd.png" alt="Greed the Resource 3: Factory" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -996,8 +1105,10 @@ function showAll() {
     <a href="https://github.com/ShaBaiTianCN/Greed-the-Resource-3-Factory" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="https://www.anyijun.com/zhcn_down/?pid=23" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/8Zp9xxWn.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Not Too Complicated 2">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Not Too Complicated 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/yBste2qa.png"  alt="Not Too Complicated 2" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1012,8 +1123,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Rustic Waters II">
+  <div class="image-container"  class="window" id="Rustic Waters II">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/VJrNGj3A.png" alt="Rustic Waters II" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1026,8 +1139,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/398.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.anyijun.com/zhcn_down/?pid=21" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/8Zp9xxWn.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Create: Above and Beyond">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Create: Above and Beyond">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/DIXk8riW.png"  alt="Create: Above and Beyond" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1042,8 +1157,10 @@ function showAll() {
 </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Delivery Inc.">
+  <div class="image-container"  class="window" id="Delivery Inc.">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/yxeFOBnn.png" alt="Delivery Inc." width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1056,8 +1173,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/288.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.anyijun.com/zhcn_down/?pid=19" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/8Zp9xxWn.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="FTB OceanBlock">
+<div class="bordered">
+  <div class="image-container"  class="window" id="FTB OceanBlock">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/bFg091ji.webp"  alt="FTB OceanBlock" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1072,8 +1191,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Infernopolis">
+  <div class="image-container"  class="window" id="Infernopolis">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/KnuLSt61.png" alt="Infernopolis" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1085,8 +1206,10 @@ function showAll() {
     <a href="https://www.curseforge.com/minecraft/modpacks/infernopolis" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/begcObLR.webp" alt="Curseforge" width="20" height="20"></a>
     <a href="https://www.anyijun.com/zhcn_down/?pid=17" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/8Zp9xxWn.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Seaopolis">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Seaopolis">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/x5tPLYuV.png"  alt="Seaopolis" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1101,8 +1224,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Calculator Skies">
+  <div class="image-container"  class="window" id="Calculator Skies">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/BExJNvDn.png" alt="Calculator Skies" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1114,8 +1239,10 @@ function showAll() {
     <a href="https://www.curseforge.com/minecraft/modpacks/calculator-skies" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/begcObLR.webp" alt="Curseforge" width="20" height="20"></a>
     <a href="https://www.anyijun.com/zhcn_down/?pid=15" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/8Zp9xxWn.webp" alt="download" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Ultimate Alchemy">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Ultimate Alchemy">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/7bDP7tS9.png"  alt="Ultimate Alchemy" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1130,8 +1257,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-<div class="image-container" class="window" id="Skyopolis 4">
+  <div class="image-container"  class="window" id="Skyopolis 4">
   <img src="https://imgback.yoimiya.site//ota/2023/07/06/ps1RWVBV.jpeg"  alt="Skyopolis 4" width="200" height="200">
 </div>
 <div class="content" style="overflow: hidden;">
@@ -1143,9 +1272,11 @@ function showAll() {
   <a href="https://www.curseforge.com/minecraft/modpacks/skyopolis-4" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/begcObLR.webp" alt="Curseforge" width="20" height="20"></a>
   <a href="https://www.mcmod.cn/modpack/284.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
   <a href="https://www.anyijun.com/zhcn_down/?pid=12" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/8Zp9xxWn.webp" alt="download" width="22" height="22"/></a>
+  </div>
 </div>
 
-<div class="image-container" class="window" id="Staged Learning">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Staged Learning">
   <img src="https://imgback.yoimiya.site//ota/2023/07/06/jqH2pi4x.png" alt="Staged Learning" width="200" height="200">
 </div>
 <div class="content" style="overflow: hidden;">
@@ -1160,8 +1291,10 @@ function showAll() {
 </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-<div class="image-container" class="window" id="Star Factory">
+  <div class="image-container"  class="window" id="Star Factory">
   <img src="https://imgback.yoimiya.site//ota/2023/07/06/GmGz290X.png"  alt="Star Factory" width="200" height="200">
 </div>
 <div class="content" style="overflow: hidden;">
@@ -1174,9 +1307,11 @@ function showAll() {
   <a href="https://www.mcmod.cn/modpack/140.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
   <a href="https://www.anyijun.com/zhcn_down/?pid=9" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/8Zp9xxWn.webp" alt="download" width="22" height="22"/></a>
   <a href="https://vmct-cn.top/modpacks/star/index.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vp46Wn16.webp" alt="download" width="32.2" height="23"/></a>
+  </div>
 </div>
 
-<div class="image-container" class="window" id="Heavens of Sorcery">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Heavens of Sorcery">
   <img src="https://imgback.yoimiya.site//ota/2023/07/06/aSYir5FM.png" alt="Heavens of Sorcery" width="200" height="200">
 </div>
 <div class="content" style="overflow: hidden;">
@@ -1191,8 +1326,10 @@ function showAll() {
  </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Chroma Endless">
+  <div class="image-container"  class="window" id="Chroma Endless">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/Gnnewpbp.jpeg" alt="Chroma Endless" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1206,8 +1343,10 @@ function showAll() {
     <a href="https://github.com/ShaBaiTianCN/Chroma-Endless" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="https://github.com/ShaBaiTianCN/Chroma-Endless/releases/tag/1.1" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Githubdw" width="22" height="22" /></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Chroma Technology 2">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Chroma Technology 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/zmE6lrd1.gif"  alt="Chroma Technology 2" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1223,8 +1362,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Vault Hunters 3rd Edition">
+  <div class="image-container"  class="window" id="Vault Hunters 3rd Edition">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/oFyvsNlH.png" alt="Vault Hunters 3rd Edition" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1238,8 +1379,10 @@ function showAll() {
     <a href="https://github.com/VM-Chinese-translate-group/Vault-Hunters-1.18.2" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="https://vmct-cn.top/modpacks/vault/index.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vp46Wn16.webp" alt="download" width="32.2" height="23"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="MC Eternal">
+<div class="bordered">
+  <div class="image-container"  class="window" id="MC Eternal">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/GX3r5L5k.png"  alt="MC Eternal" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1255,8 +1398,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="DawnCraft - An Adventure RPG Modpack">
+  <div class="image-container"  class="window" id="DawnCraft - An Adventure RPG Modpack">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/iSXwPEMd.gif" alt="DawnCraft - An Adventure RPG Modpack" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1270,8 +1415,10 @@ function showAll() {
     <a href="https://github.com/VM-Chinese-translate-group/dawncraft-Chinese-patch-Pack" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="https://vmct-cn.top/modpacks/dawn/index.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vp46Wn16.webp" alt="download" width="32.2" height="23"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Ice">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Ice">
     <img src="https://imgback.yoimiya.site//ota/2023/07/06/W6IB16L0.png"  alt="Ice" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1286,8 +1433,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Rebirth of the Night (RotN)">
+  <div class="image-container"  class="window" id="Rebirth of the Night (RotN)">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/ciL6NKWQ.png" alt="Rebirth of the Night (RotN)" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1300,8 +1449,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/185.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://vmct-cn.top/modpacks/rotn/index.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vp46Wn16.webp" alt="download" width="32.2" height="23"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="FTB Presents Direwolf20 1.19">
+<div class="bordered">
+  <div class="image-container"  class="window" id="FTB Presents Direwolf20 1.19">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/mulf5o3B.webp"  alt="FTB Presents Direwolf20 1.19" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1315,8 +1466,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Age of Fate">
+  <div class="image-container"  class="window" id="Age of Fate">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/yZfbeCNx.png" alt="Age of Fate" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1329,8 +1482,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/360.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://vmct-cn.top/modpacks/fate/index.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vp46Wn16.webp" alt="download" width="32.2" height="23"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Fantasy Realm">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Fantasy Realm">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/co6fmQnq.png"  alt="Fantasy Realm" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1345,8 +1500,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Bliss - a peaceful-like experience">
+  <div class="image-container"  class="window" id="Bliss - a peaceful-like experience">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/73liXfO6.png" alt="Bliss - a peaceful-like experience" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1360,8 +1517,10 @@ function showAll() {
     <a href="https://github.com/VazkiiMods/Bliss/compare/main...nageih:Bliss:main" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="https://vmct-cn.top/modpacks/bliss/index.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vp46Wn16.webp" alt="download" width="32.2" height="23"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Infinity Foundation">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Infinity Foundation">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/YUGfGUyj.png"  alt="Infinity Foundation" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1376,8 +1535,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Blackstone Block">
+  <div class="image-container"  class="window" id="Blackstone Block">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/I2fh6uHi.png" alt="Blackstone Block" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1390,8 +1551,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/460.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://vmct-cn.top/modpacks/black/index.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vp46Wn16.webp" alt="download" width="32.2" height="23"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Caveopolis (Modpack)">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Caveopolis (Modpack)">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/va3IH1l0.png"  alt="Caveopolis (Modpack)" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1406,8 +1569,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Sky Bees 2">
+  <div class="image-container"  class="window" id="Sky Bees 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/Op0IEER6.png" alt="Sky Bees 2" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1420,8 +1585,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/550.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://vmct-cn.top/modpacks/bee/index.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vp46Wn16.webp" alt="download" width="32.2" height="23"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="The Nuclear Wasteland">
+<div class="bordered">
+  <div class="image-container"  class="window" id="The Nuclear Wasteland">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/tzsG71fB.png"  alt="The Nuclear Wasteland" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1436,8 +1603,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Better MC Skyblock">
+  <div class="image-container"  class="window" id="Better MC Skyblock">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/InXvhN9R.png" alt="Better MC Skyblock" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1449,8 +1618,10 @@ function showAll() {
     <a href="https://www.curseforge.com/minecraft/modpacks/better-mc-skyblock" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/begcObLR.webp" alt="Curseforge" width="20" height="20"></a>
     <a href="https://vmct-cn.top/modpacks/bettermc/index.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vp46Wn16.webp" alt="download" width="32.2" height="23"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="FTB Sky Odyssey">
+<div class="bordered">
+  <div class="image-container"  class="window" id="FTB Sky Odyssey">
     <img src="https://imgback.yoimiya.site//ota/2023/07/07/O3dGJQiM.webp"  alt="FTB Sky Odyssey" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1467,8 +1638,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="PixelGO - To the Sky">
+  <div class="image-container"  class="window" id="PixelGO - To the Sky">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/1gQH9LwE.png" alt="PixelGO - To the Sky" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1480,8 +1653,10 @@ function showAll() {
     <a href="https://www.curseforge.com/minecraft/modpacks/pixelgo-sky" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/begcObLR.webp" alt="Curseforge" width="20" height="20"></a>
     <a href="https://www.bilibili.com/video/BV1Em4y187ij" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Project Ozone 3 A New Way Forward">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Project Ozone 3 A New Way Forward">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/u0yOFfVy.png"  alt="Project Ozone 3 A New Way Forward" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1496,8 +1671,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Stacia Expert">
+  <div class="image-container"  class="window" id="Stacia Expert">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/ZIXXi0G8.png" alt="Stacia Expert" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1510,8 +1687,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/241.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/read/cv11321115" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="MultiSkyBlock">
+<div class="bordered">
+  <div class="image-container"  class="window" id="MultiSkyBlock">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/WYEztJB3.png"  alt="MultiSkyBlock" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1526,8 +1705,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="All the Mods 6 - ATM6">
+  <div class="image-container"  class="window" id="All the Mods 6 - ATM6">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/U4agIhtl.gif" alt="All the Mods 6 - ATM6" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1541,8 +1722,10 @@ function showAll() {
     <a href="https://github.com/KlparetlR/All-The-Mods-6" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22"/></a>
     <a href="https://www.bilibili.com/read/cv15567715" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Project Isothermal Expert">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Project Isothermal Expert">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/CiirMheX.jpeg"  alt="Project Isothermal Expert" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1557,8 +1740,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Life in the village 2">
+  <div class="image-container"  class="window" id="Life in the village 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/KeyvP3U9.png" alt="Life in the village 2" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1572,8 +1757,10 @@ function showAll() {
     <a href="https://github.com/KlparetlR/Life-In-The-Village-2" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22"/></a>
     <a href="https://www.bilibili.com/read/cv17648681" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Multiblock Madness">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Multiblock Madness">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/M0Q2OMk2.gif"  alt="Multiblock Madness" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1588,8 +1775,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Techopolis">
+  <div class="image-container"  class="window" id="Techopolis">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/jCO8LDxe.png" alt="Techopolis" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1602,8 +1791,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/302.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/read/cv18173328" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Mechanical Mastery">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Mechanical Mastery">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/7gB2B2op.png" alt="Mechanical Mastery" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1618,8 +1809,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Craft to Exile [Dissonance]">
+  <div class="image-container"  class="window" id="Craft to Exile [Dissonance]">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/wYbcJlbb.png" alt="Craft to Exile [Dissonance]" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1632,8 +1825,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/55.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/read/cv19287010" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Astropolis">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Astropolis">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/EWmC283s.png" alt="Astropolis" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1648,8 +1843,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Cryptopolis">
+  <div class="image-container"  class="window" id="Cryptopolis">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/haqopI10.gif" alt="Cryptopolis" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1662,8 +1859,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/610.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/read/cv20465853" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Feed the Factory">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Feed the Factory">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/s8Q3kcWi.png" alt="Feed the Factory" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1678,8 +1877,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="FTB Legend of the Eyes">
+  <div class="image-container"  class="window" id="FTB Legend of the Eyes">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/VNUCMrxD.webp" alt="FTB Legend of the Eyes" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1692,8 +1893,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/566.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/read/cv21293115" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Seaopolis 2">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Seaopolis 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/fWRwgCRT.png" alt="Seaopolis 2" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1707,8 +1910,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Manufactio 2 - Nuclear Edition">
+  <div class="image-container"  class="window" id="Manufactio 2 - Nuclear Edition">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/8xqInaz4.jpeg" alt="Manufactio 2 - Nuclear Edition" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1721,8 +1926,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/564.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/read/cv21437909" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Create: Astral">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Create: Astral">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/ZlheRFnN.png" alt="Create: Astral" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1738,8 +1945,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Calibry Team - One Chunk">
+  <div class="image-container"  class="window" id="Calibry Team - One Chunk">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/IYqzDCyU.png" alt="Calibry Team - One Chunk" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1751,8 +1960,10 @@ function showAll() {
     <a href="https://www.curseforge.com/minecraft/modpacks/one-chunk-1-16-5" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/begcObLR.webp" alt="Curseforge" width="20" height="20"></a>
     <a href="https://www.bilibili.com/read/cv22495646" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Aged">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Aged">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/qIpnr5aO.webp" alt="Aged" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1767,8 +1978,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="DarkRPG - RPG Quest Magic & Origins Online Adventure">
+  <div class="image-container"  class="window" id="DarkRPG - RPG Quest Magic & Origins Online Adventure">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/ATKMRFgg.png" alt="DarkRPG - RPG Quest Magic & Origins Online Adventure" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1781,8 +1994,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/406.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/read/cv22651693" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Life in the village 3">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Life in the village 3">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/1mNcQFwo.png" alt="Life in the village 3" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1796,8 +2011,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="FTB Skies">
+  <div class="image-container"  class="window" id="FTB Skies">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/9V2qtP7H.webp" alt="FTB Skies" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1810,8 +2027,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/597.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/read/cv23167156" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Techopolis 2">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Techopolis 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/jCO8LDxe.png" alt="Techopolis 2" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1826,8 +2045,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="All the Mods 8 - ATM8">
+  <div class="image-container"  class="window" id="All the Mods 8 - ATM8">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/u795DIGj.png" alt="All the Mods 8 - ATM8" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1840,8 +2061,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/532.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/read/cv23679005" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Dreamcraft [FABRIC]">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Dreamcraft [FABRIC]">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/7DcljDB4.png" alt="Dreamcraft [FABRIC]" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1855,8 +2078,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Feed the Singularity">
+  <div class="image-container"  class="window" id="Feed the Singularity">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/sTB6Lw2o.gif" alt="Feed the Singularity" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1869,8 +2094,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/293.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://vmct-cn.top/modpacks/feed/index.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vp46Wn16.webp" alt="download" width="32.2" height="23"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Evolution of the Ages 2">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Evolution of the Ages 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/KOanVLFI.png" alt="Evolution of the Ages 2" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1884,8 +2111,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Sky Research">
+  <div class="image-container"  class="window" id="Sky Research">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/mfUacv9V.png" alt="Sky Research" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1898,8 +2127,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/469.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/read/cv20532891" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Better MC [FORGE] - BMC1">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Better MC [FORGE] - BMC1">
     <img src="https://imgback.yoimiya.site//ota/2023/07/12/nVLj0LK2.png" alt="Better MC [FORGE] - BMC1" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1914,8 +2145,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="OBSIDA-TECH">
+  <div class="image-container"  class="window" id="OBSIDA-TECH">
     <img src="https://imgback.yoimiya.site//ota/2023/07/14/qjC5GERH.png" alt="OBSIDA-TECH" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1927,8 +2160,10 @@ function showAll() {
     <a href="https://www.curseforge.com/minecraft/modpacks/obsida-tech" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/begcObLR.webp" alt="Curseforge" width="20" height="20"></a>
     <a href="https://www.bilibili.com/read/cv25010284" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Roguelike Adventures and Dungeons 2">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Roguelike Adventures and Dungeons 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/14/YJeh4ow2.png" alt="Roguelike Adventures and Dungeons 2" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1943,8 +2178,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Astral Magica">
+  <div class="image-container"  class="window" id="Astral Magica">
     <img src="https://imgback.yoimiya.site//ota/2023/07/17/uX1ok2Pt.png" alt="Astral Magica" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1956,8 +2193,10 @@ function showAll() {
     <a href="https://www.curseforge.com/minecraft/modpacks/astral-magica" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/begcObLR.webp" alt="Curseforge" width="20" height="20"></a>
     <a href="https://www.bilibili.com/read/cv23380150" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="TNP Limitless 5 - LL5">
+<div class="bordered">
+  <div class="image-container"  class="window" id="TNP Limitless 5 - LL5">
     <img src="https://imgback.yoimiya.site//ota/2023/07/17/t4IFLM9D.png" alt="TNP Limitless 5 - LL5" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1972,8 +2211,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Create Stellar">
+  <div class="image-container"  class="window" id="Create Stellar">
     <img src="https://imgback.yoimiya.site//ota/2023/07/18/v9a3w67l.png" alt="Create Stellar" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -1985,8 +2226,10 @@ function showAll() {
     <a href="https://www.curseforge.com/minecraft/modpacks/create-stellar" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/begcObLR.webp" alt="Curseforge" width="20" height="20"></a>
     <a href="https://www.bilibili.com/read/cv25087836" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Dimension Hopper: The Fall">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Dimension Hopper: The Fall">
     <img src="https://imgback.yoimiya.site//ota/2023/07/20/WPV2CC9I.png" alt="Dimension Hopper: The Fall" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -2000,8 +2243,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Divine Journey 2">
+  <div class="image-container"  class="window" id="Divine Journey 2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/20/Y4UqhdAF.png" alt="Divine Journey 2" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -2014,8 +2259,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/290.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/read/cv20167434" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Musketeer - One for All">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Musketeer - One for All">
     <img src="https://imgback.yoimiya.site//ota/2023/07/21/9YYl0ecf.png" alt="Musketeer - One for All" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -2029,8 +2276,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Technological Journey">
+  <div class="image-container"  class="window" id="Technological Journey">
     <img src="https://imgback.yoimiya.site//ota/2023/07/22/hnZU53Wt.png" alt="Technological Journey" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -2043,8 +2292,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/552.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/read/cv25191741" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="SevTech: Ages of the Sky">
+<div class="bordered">
+  <div class="image-container"  class="window" id="SevTech: Ages of the Sky">
     <img src="https://imgback.yoimiya.site//ota/2023/07/23/Ff01vkGb.png" alt="SevTech: Ages of the Sky" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -2060,8 +2311,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="HarvestBlock">
+  <div class="image-container"  class="window" id="HarvestBlock">
     <img src="https://imgback.yoimiya.site//ota/2023/07/23/CUTWbHpE.png" alt="HarvestBlock" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -2074,8 +2327,10 @@ function showAll() {
     <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n/pull/144" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22" /></a>
     <a href="https://pan.baidu.com/s/15RohXQnuj47PVXfhDzaWEA?pwd=0000" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/ZcYImXSb.webp" alt="baidupan" width="22" height="22"/></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Better MC [FORGE] - BMC3">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Better MC [FORGE] - BMC3">
     <img src="https://imgback.yoimiya.site//ota/2023/07/24/BnJknBxs.png" alt="Better MC [FORGE] - BMC3" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -2090,8 +2345,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Stone Technology Ultimate">
+  <div class="image-container"  class="window" id="Stone Technology Ultimate">
     <img src="https://imgback.yoimiya.site//ota/2023/07/24/LWamYBNK.png" alt="Stone Technology Ultimate" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -2103,8 +2360,10 @@ function showAll() {
     <a href="https://www.curseforge.com/minecraft/modpacks/stone-technology-ultimate" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/begcObLR.webp" alt="Curseforge" width="20" height="20"></a>
     <a href="https://www.bilibili.com/read/cv22002645" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Create: Arcane Engineering">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Create: Arcane Engineering">
     <img src="https://imgback.yoimiya.site//ota/2023/07/24/tFaTKRPA.png" alt="Create: Arcane Engineering" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -2120,8 +2379,10 @@ function showAll() {
   </div>
 </div>
 
+</div>
+<div class="content-container">
 <div class="bordered">
-  <div class="image-container" class="window" id="Better MC [FORGE] - BMC2">
+  <div class="image-container"  class="window" id="Better MC [FORGE] - BMC2">
     <img src="https://imgback.yoimiya.site//ota/2023/07/26/jb6n18QB.png" alt="Better MC [FORGE] - BMC2" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -2134,8 +2395,10 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/205.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/video/BV1So4y1G75e" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
 
-  <div class="image-container" class="window" id="Better MC [FABRIC] - BMC1">
+<div class="bordered">
+  <div class="image-container"  class="window" id="Better MC [FABRIC] - BMC1">
     <img src="https://imgback.yoimiya.site//ota/2023/07/26/65khA1YU.png" alt="Better MC [FABRIC] - BMC1" width="200" height="200">
   </div>
   <div class="content" style="overflow: hidden;">
@@ -2148,6 +2411,8 @@ function showAll() {
     <a href="https://www.mcmod.cn/modpack/205.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://www.bilibili.com/video/BV1Dk4y157nL" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/vtNZef8r.webp" style="margin-bottom: -1px;"></a>
   </div>
+</div>
+
 </div>
 
       <footer class="footer">
