@@ -115,10 +115,11 @@ function showAll() {
   var contentBoxes = document.getElementsByClassName('bordered');
   for (var i = 0; i < contentBoxes.length; i++) {
     contentBoxes[i].style.display = initialDisplayStates[i];
-    var parentElement = contentBoxes[i].closest('.content-container');
-    if (parentElement) {
-      parentElement.style.flexDirection = 'row'; // 恢复横排
-    }
+  }
+
+  var parentElements = document.getElementsByClassName('content-container');
+  for (var i = 0; i < parentElements.length; i++) {
+    parentElements[i].style.flexDirection = 'row'; // 恢复横排
   }
 }
   </script>
