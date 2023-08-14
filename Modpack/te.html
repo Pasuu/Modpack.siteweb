@@ -74,13 +74,17 @@
   })();
 
 
-  var initialDisplayStates = []; // 存储初始的显示状态
+  var initialDisplayStates = [];
+var initialFlexDirection;
 
 window.onload = function() {
   var contentBoxes = document.getElementsByClassName('bordered');
   for (var i = 0; i < contentBoxes.length; i++) {
     initialDisplayStates[i] = contentBoxes[i].style.display;
   }
+
+  var parentElement = document.querySelector('.content-container');
+  initialFlexDirection = window.getComputedStyle(parentElement).getPropertyValue('flex-direction');
 };
 
 function removeSymbolsAndSpaces(str) {
@@ -90,13 +94,35 @@ function removeSymbolsAndSpaces(str) {
 function search(keyword) {
   keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
   var contentBoxes = document.getElementsByClassName('bordered');
+  var contentContainers = document.getElementsByClassName('content-container');
+  var hasResults = false; // 是否有匹配结果
+  
   for (var i = 0; i < contentBoxes.length; i++) {
     var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
-    var boxContent = removeSymbolsAndSpaces(contentBoxes[i].querySelector('.content').textContent.toLowerCase()); // 获取内容
+    var boxContent = removeSymbolsAndSpaces(contentBoxes[i].querySelector('.content').textContent.toLowerCase());
+    
     if (content.includes(keyword) || boxContent.includes(keyword)) {
       contentBoxes[i].style.display = 'flex';
+      var parentElement = contentBoxes[i].closest('.content-container');
+      if (parentElement) {
+        parentElement.style.flexDirection = 'column'; // 设置竖排
+      }
+      hasResults = true; // 标记有匹配结果
     } else {
       contentBoxes[i].style.display = 'none';
+      var parentElement = contentBoxes[i].closest('.content-container');
+      if (parentElement) {
+        parentElement.style.flexDirection = 'row'; // 设置横排
+      }
+    }
+  }
+  
+  // 设置 content-container 的横竖排
+  for (var i = 0; i < contentContainers.length; i++) {
+    if (keyword.length > 0 && hasResults) {
+      contentContainers[i].style.flexDirection = 'column'; // 有内容有结果时设置竖排
+    } else {
+      contentContainers[i].style.flexDirection = 'row'; // 否则设置横排
     }
   }
 }
@@ -107,7 +133,6 @@ function showAll() {
     contentBoxes[i].style.display = initialDisplayStates[i];
   }
 }
-
   </script>
       
       <link rel="shortcut icon" href="https://imgback.yoimiya.site//ota/2023/08/14/Ey9U1scM.gif" />

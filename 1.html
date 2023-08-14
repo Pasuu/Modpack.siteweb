@@ -94,6 +94,8 @@ function removeSymbolsAndSpaces(str) {
 function search(keyword) {
   keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
   var contentBoxes = document.getElementsByClassName('bordered');
+  var contentContainers = document.getElementsByClassName('content-container');
+  var hasResults = false; // 是否有匹配结果
   
   for (var i = 0; i < contentBoxes.length; i++) {
     var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
@@ -105,6 +107,7 @@ function search(keyword) {
       if (parentElement) {
         parentElement.style.flexDirection = 'column'; // 设置竖排
       }
+      hasResults = true; // 标记有匹配结果
     } else {
       contentBoxes[i].style.display = 'none';
       var parentElement = contentBoxes[i].closest('.content-container');
@@ -113,21 +116,22 @@ function search(keyword) {
       }
     }
   }
+  
+  // 设置 content-container 的横竖排
+  for (var i = 0; i < contentContainers.length; i++) {
+    if (keyword.length > 0 && hasResults) {
+      contentContainers[i].style.flexDirection = 'column'; // 有内容有结果时设置竖排
+    } else {
+      contentContainers[i].style.flexDirection = 'row'; // 否则设置横排
+    }
+  }
 }
-
-
 
 function showAll() {
   var contentBoxes = document.getElementsByClassName('bordered');
   for (var i = 0; i < contentBoxes.length; i++) {
     contentBoxes[i].style.display = initialDisplayStates[i];
   }
-  resetFlexDirection(); // 调用恢复排列函数
-}
-
-function resetFlexDirection() {
-  var parentElement = document.querySelector('.content-container');
-  parentElement.style.flexDirection = initialFlexDirection; // 恢复原始排列方式
 }
 
   </script>
