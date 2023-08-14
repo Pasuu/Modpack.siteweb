@@ -75,45 +75,43 @@
 
 
   var initialDisplayStates = [];
-var contentBoxes = [];
 
 window.onload = function() {
-  var contentContainers = document.getElementsByClassName('content-container');
-  for (var i = 0; i < contentContainers.length; i++) {
-    initialDisplayStates[i] = contentContainers[i].style.display;
-    contentBoxes[i] = contentContainers[i].querySelector('.bordered');
+  var contentBoxes = document.getElementsByClassName('bordered');
+  for (var i = 0; i < contentBoxes.length; i++) {
+    initialDisplayStates[i] = contentBoxes[i].style.display;
   }
 };
 
 function removeSymbolsAndSpaces(str) {
-  return str.replace(/[^\w\s\u4e00-\u9fa5]/g, '');
+  return str.replace(/[^\w\s\u4e00-\u9fa5]/g, ''); 
 }
 
 function search(keyword) {
   keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
+  var contentBoxes = document.getElementsByClassName('bordered');
+  
   for (var i = 0; i < contentBoxes.length; i++) {
-    var contentBox = contentBoxes[i];
-    var content = removeSymbolsAndSpaces(contentBox.textContent.toLowerCase());
-    var boxContent = removeSymbolsAndSpaces(contentBox.querySelector('.content').textContent.toLowerCase());
+    var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
+    var boxContent = removeSymbolsAndSpaces(contentBoxes[i].querySelector('.content').textContent.toLowerCase());
     
     if (content.includes(keyword) || boxContent.includes(keyword)) {
-      contentContainers[i].style.display = 'flex';
-      contentContainers[i].classList.add('result-container'); // 添加搜索结果样式
-      contentBox.style.display = 'none';
+      contentBoxes[i].style.display = 'flex';
+      contentBoxes[i].parentElement.style.flexDirection = 'column'; // 设置竖排
     } else {
-      contentContainers[i].style.display = initialDisplayStates[i];
-      contentContainers[i].classList.remove('result-container'); // 移除搜索结果样式
+      contentBoxes[i].style.display = 'none';
+      contentBoxes[i].parentElement.style.flexDirection = 'row'; // 设置横排
     }
   }
 }
 
 function showAll() {
-  for (var i = 0; i < contentContainers.length; i++) {
-    contentContainers[i].style.display = initialDisplayStates[i];
-    contentContainers[i].classList.remove('result-container'); // 移除搜索结果样式
+  var contentBoxes = document.getElementsByClassName('bordered');
+  for (var i = 0; i < contentBoxes.length; i++) {
     contentBoxes[i].style.display = initialDisplayStates[i];
   }
 }
+
 
   </script>
       
