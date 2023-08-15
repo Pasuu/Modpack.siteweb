@@ -214,7 +214,7 @@ function showAll() {
 /* 默认样式，适用于电脑 */
 .bordered {
   box-shadow: 0 0 5px rgba(228, 114, 20, 0.5); /* 使用阴影代替边框 */
-  padding: 20px;
+  padding: 40px;
   display: flex;
   text-align: center;
   margin: 0 auto;
@@ -249,12 +249,19 @@ function showAll() {
 @media screen and (max-width: 768px) {
   .bordered {
     /* 手机样式规则 */
-    width: 100%;
-    max-width: none;
-    flex-direction: row; /* 将元素水平排列 */
-    justify-content: center; /* 在主轴上居中对齐 */
-    align-items: flex-start; /* 在交叉轴上顶部对齐 */
-    flex-wrap: wrap; /* 允许元素换行 */
+    box-shadow: 0 0 5px rgba(228, 114, 20, 0.5); /* 使用阴影代替边框 */
+    flex-direction: column;
+    padding: 40px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
   }
 
   .window {
@@ -275,11 +282,18 @@ function showAll() {
     overflow: auto; /* 设置溢出内容时显示滚动条 */
     display: none; /* 初始状态隐藏 */
   }
+
+  .content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 在项目之间添加间距 */
+  margin: 0 auto; /* 水平居中内容 */
+}
 }
   
 
   .image-container {
-    margin-right: 20px;
+    margin-right: 40px;
     flex-shrink: 0; /* 防止图片收缩 */
     width:auto; /* 设置宽度 */
     height:auto; /* 设置高度 */
@@ -287,7 +301,7 @@ function showAll() {
   }
 
   .content {
-    margin-left: 20px;
+    margin-left: 40px;
     text-align: left;
     flex-grow: 1; /* 占据剩余空间 */
   } 
@@ -296,6 +310,68 @@ function showAll() {
     justify-content: center;
     align-items: center;
     height: 10vh;
+  }
+
+  #searchInput {
+    border: none; /* 移除普通边框 */
+    padding: 5px; /* 可选：添加一些内边距以使输入框内容不至于太靠近边框 */
+    font-size: 16px; /* 可选：设置字体大小 */
+    animation: shadowFlow 15s infinite linear; /* 应用阴影流动动画 */
+  }
+
+  @keyframes shadowFlow {
+    0% {
+      box-shadow: 0 0 15px rgba(228, 114, 20, 0.5);
+      color: black;
+    }
+    8.33% {
+      box-shadow:  0 0 20px red;
+      color: cyan;
+    }
+    16.67% {
+      box-shadow:  0 0 25px orange;
+      color: blue;
+    }
+    25% {
+      box-shadow:  0 0 30px yellow;
+      color: purple;
+    }
+    33.33% {
+      box-shadow:  0 0 35px green;
+      color: pink;
+    }
+    41.67% {
+      box-shadow:  0 0 40px cyan;
+      color: yellow;
+    }
+    50% {
+      box-shadow:  0 0 45px blue;
+      color: orange;
+    }
+    58.33% {
+      box-shadow:  0 0 50px purple;
+      color: green;
+    }
+    66.67% {
+      box-shadow:  0 0 45px gray;
+      color: red;
+    }
+    75% {
+      box-shadow:  0 0 40px pink;
+      color: white;
+    }
+    83.33% {
+      box-shadow:  0 0 35px black;
+      color: gray;
+    }
+    91.67% {
+      box-shadow:  0 0 30px white;
+      color: black;
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(8, 55, 109, 0.5);
+      color: white;
+    }
   }
 </style>
   

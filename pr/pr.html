@@ -159,12 +159,19 @@
 @media screen and (max-width: 768px) {
   .bordered {
     /* 手机样式规则 */
-    width: 100%;
-    max-width: none;
-    flex-direction: row; /* 将元素水平排列 */
-    justify-content: center; /* 在主轴上居中对齐 */
-    align-items: flex-start; /* 在交叉轴上顶部对齐 */
-    flex-wrap: wrap; /* 允许元素换行 */
+    box-shadow: 0 0 5px rgba(228, 114, 20, 0.5); /* 使用阴影代替边框 */
+    flex-direction: column;
+    padding: 40px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
   }
 
   .window {
@@ -172,6 +179,13 @@
     width: 100%;
     margin: 10px;
   }
+
+  .content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 在项目之间添加间距 */
+  margin: 0 auto; /* 水平居中内容 */
+}
 }
 
   .image-container {
