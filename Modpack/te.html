@@ -105,14 +105,14 @@ function search(keyword) {
       contentBoxes[i].style.display = 'flex';
       var parentElement = contentBoxes[i].closest('.content-container');
       if (parentElement) {
-        parentElement.style.flexDirection = 'column'; 
+        parentElement.style.flexDirection = isMobile() ? 'column' : 'row';
       }
       hasResults = true; 
     } else {
       contentBoxes[i].style.display = 'none';
       var parentElement = contentBoxes[i].closest('.content-container');
       if (parentElement) {
-        parentElement.style.flexDirection = 'row'; 
+        parentElement.style.flexDirection = isMobile() ? 'column' : 'row';
       }
     }
   }
@@ -132,11 +132,7 @@ function search(keyword) {
   }
 
   for (var i = 0; i < contentContainers.length; i++) {
-    if (keyword.length > 0 && hasResults) {
-      contentContainers[i].style.flexDirection = 'column';
-    } else {
-      contentContainers[i].style.flexDirection = 'row'; 
-    }
+    contentContainers[i].style.flexDirection = isMobile() ? 'column' : 'row';
   }
 }
 
@@ -146,6 +142,11 @@ function showAll() {
     contentBoxes[i].style.display = initialDisplayStates[i];
   }
 }
+
+function isMobile() {
+  return window.innerWidth <= 768; // Adjust the breakpoint as needed
+}
+
   </script>
       
       <link rel="shortcut icon" href="https://imgback.yoimiya.site//ota/2023/08/14/Ey9U1scM.gif" />
