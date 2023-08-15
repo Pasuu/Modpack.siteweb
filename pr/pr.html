@@ -82,7 +82,11 @@
       <img src="https://imgback.yoimiya.site//ota/2023/07/03/3d9SFOns.png" alt="image frame" width="1903" height="931"/>
     </div>
     <div class="cover-inner text-center text-black">
-      <h3 style="color: black;">正在进行的汉化</h3>
+      <div class="fade-container">
+        <div class="fade-text">
+          <h3 style="color: black;">正在进行的汉化</h3>
+        </div>
+      </div>
       <div id="subtitle-box" >
       
         <span id="subtitle" style="color: black;"></span>
@@ -102,24 +106,38 @@
 <script src="https://cdn.staticfile.org/typed.js/2.0.12/typed.min.js"></script>
 
 
+
 <!-- Subtitle -->
 
-  <script>
-    try {
-      var typed = new Typed("#subtitle", {
-        strings: [],
-        startDelay: 0,
-        typeSpeed: 200,
-        loop: true,
-        backSpeed: 60,
-        showCursor: true
-      });
-    } catch (err) {
-      console.log(err)
-    }
-  </script>
 
 <style>
+  .fade-container {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .fade-text {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    animation: fadeAnimation 6s infinite;
+    height: 40px; /* 设置固定的高度 */
+    display: flex;
+    align-items: center;
+  }
+
+  @keyframes fadeAnimation {
+    0% {
+      background-color: rgba(255, 255, 255, 1);
+    }
+    50% {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    100% {
+      background-color: rgba(255, 255, 255, 1);
+    }
+  }
 
 /* 默认样式，适用于电脑 */
 .bordered {
