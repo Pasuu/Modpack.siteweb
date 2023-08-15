@@ -91,6 +91,19 @@ function removeSymbolsAndSpaces(str) {
   return str.replace(/[^\w\s\u4e00-\u9fa5]/g, ''); 
 }
 
+function setFlexDirection() {
+  var contentContainers = document.getElementsByClassName('content-container');
+  
+  for (var i = 0; i < contentContainers.length; i++) {
+    var container = contentContainers[i];
+    if (window.innerWidth <= 768) {
+      container.style.flexDirection = 'column';
+    } else {
+      container.style.flexDirection = 'row';
+    }
+  }
+}
+
 function search(keyword) {
   keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
   var contentBoxes = document.getElementsByClassName('bordered');
@@ -131,30 +144,13 @@ function search(keyword) {
     resultCountElement.textContent = '0';
   }
 
-  for (var i = 0; i < contentContainers.length; i++) {
-    if (keyword.length > 0 && hasResults) {
-      contentContainers[i].style.flexDirection = 'column';
-    } else {
-      contentContainers[i].style.flexDirection = 'row'; 
-    }
-  }
+  setFlexDirection(); // Call setFlexDirection to adjust flex-direction
 }
 
 function showAll() {
   var contentBoxes = document.getElementsByClassName('bordered');
   for (var i = 0; i < contentBoxes.length; i++) {
     contentBoxes[i].style.display = initialDisplayStates[i];
-  }
-}
-
-function setFlexDirection() {
-  var contentContainers = document.getElementsByClassName('content-container');
-  
-  for (var i = 0; i < contentContainers.length; i++) {
-    var container = contentContainers[i];
-    if (window.innerWidth <= 768) {
-      container.style.flexDirection = 'column';
-    } 
   }
 }
 
