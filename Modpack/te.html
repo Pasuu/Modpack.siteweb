@@ -37,21 +37,6 @@
     display: none; 
   }
 
-  .count-wrapper {
-    text-align: center;
-  }
-  
-  .count-wrapper h5,
-  .count-wrapper p {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  .count-display {
-    font-size: 18px;
-    color: blue;
-    margin: 0;
-  }
 </style>
 <script>
   window.addEventListener('DOMContentLoaded', function() {
@@ -117,6 +102,19 @@ function search(keyword) {
     }
   }
   
+  var resultCountElement = document.getElementById('resultCount');
+
+  if (hasResults) {
+    var resultCount = 0;
+    for (var i = 0; i < contentBoxes.length; i++) {
+      if (contentBoxes[i].style.display === 'flex') {
+        resultCount++;
+      }
+    }
+    resultCountElement.textContent = '' + resultCount;
+  } else {
+    resultCountElement.textContent = '0';
+  }
 
   for (var i = 0; i < contentContainers.length; i++) {
     if (keyword.length > 0 && hasResults) {
@@ -394,16 +392,20 @@ function showAll() {
   }
 </style>
   
-<div class="count-wrapper">
-  <h5>已收录Modpack汉化数量：</h5>
-  <p id="count" class="count-display"></p>
-</div>
+
   <h5 style="font-size:xx-small; text-align: center;">注：并非所有汉化都是全汉化</h5>
   <h5 style="text-align: center;">该网页所有汉化资源均获得<b>授权</b></h5><hr>
 
   <div class="search000">
   <input type="text" id="searchInput" placeholder="输入关键词" onkeyup="search(this.value)">
 </div>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <br>
+  <span>当前匹配Modpack数量：</span>
+  <p id="resultCount"></p>
+</div>
+
 
 <div class="content-container">
 <div class="bordered">

@@ -21,6 +21,22 @@
         body {
             cursor: url('/images/mouse.cur'), auto;
         }
+
+        .count-wrapper {
+          text-align: center;
+        }
+        
+        .count-wrapper h5,
+        .count-wrapper p {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        
+        .count-display {
+          font-size: 18px;
+          color: blue;
+          margin: 0;
+  }
     </style>
 
     
@@ -121,7 +137,12 @@
   </script>
       <h5 style="text-align: center;">寻找汉化,请选择<b>Modpack</b><br>
       查看当前正在汉化的Modpack,请选择<b>翻译中</b></h5>
+      <div class="count-wrapper">
+        <h5>已收录Modpack汉化数量：</h5>
+        <p id="count" class="count-display"></p>
+      </div>
 
+      
       <footer class="footer">
   <div class="outer">
 
