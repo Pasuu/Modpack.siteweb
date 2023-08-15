@@ -1,0 +1,35 @@
+name: Update from Modpack-pro
+
+on:
+  workflow_run:
+    workflows: ["Sync Page Folder"]
+    types:
+      - completed
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Copy Page Folder from Modpack-pro
+        run: |
+          # Specify the source and destination directories
+          SOURCE_DIR="../Modpack-pro/page"
+          DESTINATION_DIR="page"
+          
+          # Remove the existing contents of the destination folder
+          rm -rf "$DESTINATION_DIR/*"
+          
+          # Copy the contents of the source folder to the destination
+          cp -r "$SOURCE_DIR"/* "$DESTINATION_DIR"
+          
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update 'page' folder from Modpack-pro"
+          git push origin master
