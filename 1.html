@@ -91,11 +91,6 @@ function removeSymbolsAndSpaces(str) {
   return str.replace(/[^\w\s\u4e00-\u9fa5]/g, ''); 
 }
 
-function shouldApplyMobileStyles() {
-  // Adjust this width threshold as needed
-  return window.innerWidth <= 768; // Example threshold for mobile
-}
-
 function applyDefaultStyles() {
   var contentContainers = document.getElementsByClassName('content-container');
   for (var i = 0; i < contentContainers.length; i++) {
@@ -108,26 +103,33 @@ function search(keyword) {
   var contentBoxes = document.getElementsByClassName('bordered');
   var contentContainers = document.getElementsByClassName('content-container');
   var hasResults = false;
-
-  // Check if the keyword is empty
+  
   if (keyword.length === 0) {
+    applyDefaultStyles();
     showAll();
-    applyDefaultStyles(); // Apply default styles when not searching
     return;
   }
 
   for (var i = 0; i < contentBoxes.length; i++) {
     var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
     var boxContent = removeSymbolsAndSpaces(contentBoxes[i].querySelector('.content').textContent.toLowerCase());
-
+    
     if (content.includes(keyword) || boxContent.includes(keyword)) {
       contentBoxes[i].style.display = 'flex';
-      hasResults = true;
+      var parentElement = contentBoxes[i].closest('.content-container');
+      if (parentElement) {
+        parentElement.style.flexDirection = 'column'; 
+      }
+      hasResults = true; 
     } else {
       contentBoxes[i].style.display = 'none';
+      var parentElement = contentBoxes[i].closest('.content-container');
+      if (parentElement) {
+        parentElement.style.flexDirection = 'row'; 
+      }
     }
   }
-
+  
   var resultCountElement = document.getElementById('resultCount');
 
   if (hasResults) {
@@ -143,11 +145,7 @@ function search(keyword) {
   }
 
   for (var i = 0; i < contentContainers.length; i++) {
-    if (shouldApplyMobileStyles()) {
-      contentContainers[i].style.flexDirection = 'column';
-    } else {
-      applyDefaultStyles();
-    }
+    contentContainers[i].style.flexDirection = 'column';
   }
 }
 
@@ -157,6 +155,7 @@ function showAll() {
     contentBoxes[i].style.display = initialDisplayStates[i];
   }
 }
+
 
 
   </script>
