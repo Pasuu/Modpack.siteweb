@@ -95,7 +95,13 @@ function search(keyword) {
   keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
   var contentBoxes = document.getElementsByClassName('bordered');
   var contentContainers = document.getElementsByClassName('content-container');
-  var hasResults = false; 
+  var hasResults = false;
+
+  // Check if the keyword is empty
+  if (keyword.length === 0) {
+    showAll(); // Show all content boxes and reset styles
+    return;
+  }
   
   for (var i = 0; i < contentBoxes.length; i++) {
     var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
@@ -132,7 +138,7 @@ function search(keyword) {
   }
 
   for (var i = 0; i < contentContainers.length; i++) {
-    if (keyword.length > 0 && hasResults) {
+    if (hasResults) {
       contentContainers[i].style.flexDirection = 'column';
     } else {
       contentContainers[i].style.flexDirection = 'row'; 
@@ -145,7 +151,16 @@ function showAll() {
   for (var i = 0; i < contentBoxes.length; i++) {
     contentBoxes[i].style.display = initialDisplayStates[i];
   }
+  
+  var contentContainers = document.getElementsByClassName('content-container');
+  for (var i = 0; i < contentContainers.length; i++) {
+    contentContainers[i].style.flexDirection = initialFlexDirection;
+  }
+  
+  var resultCountElement = document.getElementById('resultCount');
+  resultCountElement.textContent = '' + contentBoxes.length;
 }
+
   </script>
       
       <link rel="shortcut icon" href="https://imgback.yoimiya.site//ota/2023/08/14/Ey9U1scM.gif" />
