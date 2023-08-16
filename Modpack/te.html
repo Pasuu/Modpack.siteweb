@@ -409,30 +409,6 @@ function showAll() {
   }
 </style>
   
-<script>
-  // 获取下载量数据
-  async function getDownloadCount(filename) {
-      const response = await fetch(`/get_download_count/${filename}`);
-      const downloadCount = await response.text();
-      return downloadCount;
-  }
-
-  // 更新下载量显示
-  async function updateDownloadCount() {
-      const filename = "Chroma-sky-2-CN-1.0.9.rar"; // 文件名
-      const downloadCountSpan = document.getElementById(`download-count-${filename}`);
-      
-      if (downloadCountSpan) {
-          const count = await getDownloadCount(filename);
-          downloadCountSpan.textContent = count;
-      }
-  }
-
-  // 在页面加载时更新下载量显示
-  window.addEventListener('load', () => {
-      updateDownloadCount();
-  });
-</script>
 
 <div class="count-wrapper">
   <h5>已收录Modpack汉化数量：</h5>
@@ -463,12 +439,11 @@ function showAll() {
     <p><strong>游戏版本：<span style="color: rgba(12, 64, 206, 0.8);">1.16.5-Forge</span></strong></p>
     <p><strong>汉化成员：<span style="color: rgb(110, 35, 231);">Pasuu</span></strong></p>
     <p><strong><span style="color: rgb(255 0 0);">支持直链下载</span></strong></p>
-    <span id="download-count-Chroma-sky-2-CN-1.0.9.rar">0</span>
     <a href="https://space.bilibili.com/378822559" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/OrgqkX6k.webp" style="margin-bottom: -2px;"></a>
     <a href="https://www.curseforge.com/minecraft/modpacks/chroma-sky-2" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/begcObLR.webp" alt="Curseforge" width="20" height="20"></a>
     <a href="https://www.mcmod.cn/modpack/426.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
     <a href="https://github.com/Pasuu-Mc/Chroma-sky-2-CN" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/YioBOhGt.webp" alt="Github" width="22" height="22"/></a>
-    <a href="/download?filePath=/pro/Chroma-sky-2/Chroma-sky-2-CN-1.0.9.rar" Chroma-sky-2-CN-1.0.9.rar><img src="https://imgback.yoimiya.site//ota/2023/08/15/HCZXi24j.png" style="margin-bottom: -1px;"></a>
+    <a href="/pro/Chroma-sky-2/Chroma-sky-2-CN-1.0.9.rar" Chroma-sky-2-CN-1.0.9.rar><img src="https://imgback.yoimiya.site//ota/2023/08/15/HCZXi24j.png" style="margin-bottom: -1px;"></a>
   </div>
 </div>
 
