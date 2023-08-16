@@ -409,6 +409,21 @@ function showAll() {
   }
 </style>
   
+<script>
+  const downloadLink = document.querySelector('a');
+  const downloadCountSpan = document.querySelector('.download-count');
+
+  downloadLink.addEventListener('click', async () => {
+      const filePath = downloadLink.getAttribute('href');
+      
+      await fetch(`/get_download_count/${filePath}`)
+      .then(response => response.text())
+      .then(downloadCount => {
+          downloadCountSpan.textContent = downloadCount;
+      });
+  });
+</script>
+
 <div class="count-wrapper">
   <h5>已收录Modpack汉化数量：</h5>
   <p id="count" class="count-display"></p>
@@ -438,6 +453,7 @@ function showAll() {
     <p><strong>游戏版本：<span style="color: rgba(12, 64, 206, 0.8);">1.16.5-Forge</span></strong></p>
     <p><strong>汉化成员：<span style="color: rgb(110, 35, 231);">Pasuu</span></strong></p>
     <p><strong><span style="color: rgb(255 0 0);">支持直链下载</span></strong></p>
+    <p>下载量: <span class="download-count"></span></p>
     <a href="https://space.bilibili.com/378822559" target="_blank" alt="bilibili"><img src="https://imgback.yoimiya.site//ota/2023/07/25/OrgqkX6k.webp" style="margin-bottom: -2px;"></a>
     <a href="https://www.curseforge.com/minecraft/modpacks/chroma-sky-2" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/begcObLR.webp" alt="Curseforge" width="20" height="20"></a>
     <a href="https://www.mcmod.cn/modpack/426.html" target="_blank"><img src="https://imgback.yoimiya.site//ota/2023/07/25/oXWIRIbI.webp" alt="mcmod" width="21px" height="21px" /></a>
