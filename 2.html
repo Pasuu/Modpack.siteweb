@@ -92,11 +92,17 @@ function removeSymbolsAndSpaces(str) {
 }
 
 function applyDefaultStyles() {
+  var contentBoxes = document.getElementsByClassName('bordered');
+  for (var i = 0; i < contentBoxes.length; i++) {
+    contentBoxes[i].style.display = 'flex'; // 设置内容框为显示状态
+  }
+
   var contentContainers = document.getElementsByClassName('content-container');
   for (var i = 0; i < contentContainers.length; i++) {
     contentContainers[i].style.flexDirection = initialFlexDirection;
   }
 }
+
 
 function search(keyword) {
   keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
