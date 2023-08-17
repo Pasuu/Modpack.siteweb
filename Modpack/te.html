@@ -22,7 +22,77 @@
             cursor: url('/images/mouse.cur'), auto;
         }
     </style>
-    
+
+<script src="https://apis.google.com/js/client.js"></script>
+
+<script>
+  // 调用 Google Analytics Reporting API 来获取下载事件点击数据
+  function getDownloadEventClicks() {
+    gapi.client.request({
+      path: '/v4/reports:batchGet',
+      root: 'https://analyticsreporting.googleapis.com/',
+      method: 'POST',
+      body: {
+        reportRequests: [
+          {
+            viewId: '399081334',
+            dateRanges: [
+              { startDate: '2023-08-01', endDate: '2023-08-31' }
+            ],
+            metrics: [
+              { expression: 'ga:totalEvents' }
+            ],
+            dimensions: [
+              { name: 'ga:eventCategory' },
+              { name: 'ga:eventAction' },
+              { name: 'ga:eventLabel' } // 假设你使用自定义维度来记录下载链接
+            ],
+            dimensionFilterClauses: [
+              {
+                filters: [
+                  { dimensionName: 'ga:eventCategory', operator: 'EXACT', expressions: ['Download'] }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }).then(function(response) {
+      // 处理 API 响应并在网页中显示数据
+      var downloadCount = response.result.reports[0].data.totals[0].values[0];
+      document.getElementById('downloadCount').textContent = '下载量: ' + downloadCount;
+    });
+  }
+  
+  // 获取授权令牌并调用 API 请求
+  function authorizeAndGetData() {
+    gapi.auth.authorize({
+      client_id: '1078311049593-1igjqjle5rt8ls3vsaj4mo615t6i1b0p.apps.googleusercontent.com',
+      scope: 'https://www.googleapis.com/auth/analytics.readonly',
+      immediate: true
+    }, function(authResult) {
+      if (authResult && !authResult.error) {
+        // 获取授权令牌成功，调用 API 请求
+        getDownloadEventClicks();
+      }
+    });
+  }
+  
+  // 页面加载完成后调用授权并请求数据
+  window.onload = function() {
+    gapi.load('client:auth2', function() {
+      gapi.auth2.init({
+        client_id: '1078311049593-1igjqjle5rt8ls3vsaj4mo615t6i1b0p.apps.googleusercontent.com'
+      }).then(function() {
+        authorizeAndGetData();
+      });
+    });
+  };
+  </script>
+
+<!-- 在页面中显示下载量 -->
+
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFQ9030H5L"></script>
 <script>
@@ -451,6 +521,7 @@ function showAll() {
     <p><strong>游戏版本：<span style="color: rgba(12, 64, 206, 0.8);">1.16.5-Forge</span></strong></p>
     <p><strong>汉化成员：<span style="color: rgb(110, 35, 231);">Pasuu</span></strong></p>
     <p><strong><span style="color: rgb(255 0 0);">支持直链下载</span></strong></p>
+    <p id="downloadCount">Loading...</p>
     <a href="https://space.bilibili.com/378822559" target="_blank"  ><img src="https://wmimg.com/i/47/2023/08/64dcc90a1dd5f.webp" alt="bilibili" style="margin-bottom: -2px;"></a></a>
     <a href="https://www.curseforge.com/minecraft/modpacks/chroma-sky-2" target="_blank"><img src="https://wmimg.com/i/47/2023/08/64dcc915eca08.webp" alt="Curseforge" width="20" height="20"></a>
     <a href="https://www.mcmod.cn/modpack/426.html" target="_blank"><img src="https://wmimg.com/i/47/2023/08/64dcc91aeece6.webp" alt="mcmod" width="21px" height="21px" /></a>
