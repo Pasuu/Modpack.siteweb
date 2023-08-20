@@ -17,9 +17,10 @@ $(function() {
             a()
         }
         function e() {
-            u.addEventListener("mousemove", h);
-            u.addEventListener("touchmove", o);
-            u.addEventListener("touchstart", o);
+            // 移除鼠标移动事件监听器和触摸事件监听器
+            // u.addEventListener("mousemove", h);
+            // u.addEventListener("touchmove", o);
+            // u.addEventListener("touchstart", o);
             window.addEventListener("resize", n);
             // 添加点击事件监听器
             u.addEventListener("click", onClick);
@@ -31,36 +32,6 @@ $(function() {
             d.height = u.clientHeight) : (d.width = p,
             d.height = y)
         }
-        function o(t) {
-            if (t.touches.length > 0)
-                for (let i = 0; i < t.touches.length; i++)
-                    s(t.touches[i].clientX, t.touches[i].clientY, w[Math.floor(Math.random() * w.length)])
-        }
-        function h(t) {
-            if (r) {
-                const i = u.getBoundingClientRect();
-                m.x = t.clientX - i.left,
-                m.y = t.clientY - i.top
-            } else
-                m.x = t.clientX,
-                m.y = t.clientY;
-            s(m.x, m.y)
-        }
-        function s(t, i, e) {
-            g.push(new c(t,i,e))
-        }
-        function l() {
-            f.clearRect(0, 0, p, y);
-            for (let t = 0; t < g.length; t++)
-                g[t].update(f);
-            for (let t = g.length - 1; t >= 0; t--)
-                g[t].lifeSpan < 0 && g.splice(t, 1)
-        }
-        function a() {
-            l(),
-            requestAnimationFrame(a)
-        }
-
         function onClick(event) {
             if (r) {
                 const rect = u.getBoundingClientRect();
