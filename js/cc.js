@@ -17,10 +17,12 @@ $(function() {
             a()
         }
         function e() {
-            u.addEventListener("mousemove", h),
-            u.addEventListener("touchmove", o),
-            u.addEventListener("touchstart", o),
-            window.addEventListener("resize", n)
+            u.addEventListener("mousemove", h);
+            u.addEventListener("touchmove", o);
+            u.addEventListener("touchstart", o);
+            window.addEventListener("resize", n);
+            // 添加点击事件监听器
+            u.addEventListener("click", onClick);
         }
         function n(t) {
             p = window.innerWidth,
@@ -58,6 +60,18 @@ $(function() {
             l(),
             requestAnimationFrame(a)
         }
+
+        function onClick(event) {
+            if (r) {
+                const rect = u.getBoundingClientRect();
+                const clickX = event.clientX - rect.left;
+                const clickY = event.clientY - rect.top;
+                s(clickX, clickY, w[Math.floor(Math.random() * w.length)]);
+            } else {
+                s(event.clientX, event.clientY, w[Math.floor(Math.random() * w.length)]);
+            }
+        }
+
         function c(t, i, e) {
             const n = Math.floor(60 * Math.random() + 60);
             this.initialLifeSpan = n,
@@ -88,11 +102,13 @@ $(function() {
                 t.closePath()
             }
         }
+
+        
         let d, f, r = t && t.element, u = r || document.body, p = window.innerWidth, y = window.innerHeight, m = {
             x: p / 2,
             y: p / 2
         }, g = [], w = [];
         i()
     }
-    new t
+    new t();
 });
