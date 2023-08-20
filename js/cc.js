@@ -66,9 +66,15 @@ $(function() {
                 const rect = u.getBoundingClientRect();
                 const clickX = event.clientX - rect.left;
                 const clickY = event.clientY - rect.top;
-                s(clickX, clickY, w[Math.floor(Math.random() * w.length)]);
+                const numBubbles = 10; // 设置气泡数量
+                for (let i = 0; i < numBubbles; i++) {
+                    s(clickX, clickY, w[Math.floor(Math.random() * w.length)]);
+                }
             } else {
-                s(event.clientX, event.clientY, w[Math.floor(Math.random() * w.length)]);
+                const numBubbles = 10; // 设置气泡数量
+                for (let i = 0; i < numBubbles; i++) {
+                    s(event.clientX, event.clientY, w[Math.floor(Math.random() * w.length)]);
+                }
             }
         }
 
