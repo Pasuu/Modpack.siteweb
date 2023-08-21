@@ -35,6 +35,16 @@ function createPluginItem(packname, modpack) {
     d.appendChild(item);
   }
 
+  if (modpack.isdownload) {
+    const downloadLink = document.createElement("a");
+    downloadLink.textContent = "下载";
+    downloadLink.href = modpack.link.download; // 根据实际情况修改链接
+    downloadLink.addEventListener("click", () => {
+      recordDownload(packname); // 调用记录下载的函数
+    });
+    d.appendChild(downloadLink);
+  }
+
   const links = document.createElement("div");
   links.className = "links";
   if (modpack["link"]["bilibili"]) {
@@ -134,6 +144,25 @@ modpackCounter++;
 if (modpackCounter % 2 === 0) {
   currentContainer = null;
 }
+}
+
+// 向服务器记录下载
+function recordDownload(packname) {
+  const requestData = { packname };
+  fetch("/record-download", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(requestData)
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data.message); // 打印服务器响应
+    })
+    .catch((error) => {
+      console.error("Error recording download:", error);
+    });
 }
 
 function list(obj) {
