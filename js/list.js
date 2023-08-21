@@ -8,25 +8,8 @@ function createPluginItem(packname, modpack) {
     document.querySelector(".content-container").appendChild(outerDiv);
   }
 
-  const div = document.createElement("div");
-  div.className = "bordered";
-
-  // ... Create the modpack content as before
-
-  if (modpackCounter % 2 === 0) {
-    // Append the inner div to the outer container for the first modpack
-    outerDiv.appendChild(div);
-  }
-
-  modpackCounter++; // Increment the modpack counter
-}
-
-
-
-
-function createPluginItem(packname, modpack) {
   const temp = `
-  <div class="bordered">
+    <div class="bordered">
       <div class="image-container" id="${packname}">
         <img src="${modpack.img}" alt="${packname}" width="200" height="200">
       </div>
@@ -36,8 +19,10 @@ function createPluginItem(packname, modpack) {
         <p id="g-version"><strong>游戏版本：<span style="color: rgba(12, 64, 206, 0.8);">${modpack.gversion}</span></strong></p>
         <p id="i18-team"><strong>汉化成员：<span style="color: rgb(110, 35, 231);">${modpack.i18team}</span></strong></p>
       </div>
-  </div>
+    </div>
   `;
+
+
   const doc = new DOMParser().parseFromString(temp, "text/html");
   const d = doc.querySelector(".content");
   if (modpack.isdownload) {
@@ -86,14 +71,17 @@ if(modpack["link"]["bilibilidw"]){
   const bilibilidw = new DOMParser().parseFromString(`<a href="https://www.bilibili.com/read/${modpack["link"]["bilibilidw"]}" target="_blank"><img src="/images/bilibili-line-yellow.svg" alt="bilibili-line-yellow" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
   links.appendChild(bilibilidw.querySelector("a"))
 }
-  d.appendChild(links)
-  document.querySelector(".content-container").appendChild(doc.querySelector(".bordered"));
+
+d.appendChild(links)
+outerDiv.appendChild(doc.querySelector(".bordered")); // Append the modpack div to the current outer container
+
+modpackCounter++; // Increment the modpack counter
 }
 
 function list(obj) {
-  for (let i in obj) {
-    createPluginItem(i, obj[i]);
-  }
+for (let i in obj) {
+  createPluginItem(i, obj[i]);
+}
 }
 
 
