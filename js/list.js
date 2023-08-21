@@ -44,29 +44,36 @@ function createPluginItem(packname, modpack) {
       const CFPAOrg = new DOMParser().parseFromString(`<a href="https://cfpa.site/" target="_blank"><img src="/images/cfpa.svg" alt="cfpa" width="22" height="22"/></a>`, "text/html");
       links.appendChild(CFPAOrg.querySelector("a"))
   }
-  if(modpack["link"]["download"]){
-      const download = new DOMParser().parseFromString(`<a href="https://modpack.top/pro/${modpack["link"]["download"]}" all the mods 3 expert-1.9.0-windows.zip><img src="/images/file-download-line.svg" alt="file-download-line" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
-      links.appendChild(download.querySelector("a"))
-  }
+if (modpack["link"]["download"]) {
+  const download = new DOMParser().parseFromString(
+    `<a href="https://modpack.top/pro/${modpack["link"]["download"]}" download="${modpack["link"]["download"]}"><img src="/images/file-download-line.svg" alt="file-download-line" style="margin-bottom: -2px;" width="24px" height="24px"></a>`,
+    "text/html"
+  );
+  links.appendChild(download.querySelector("a"));
+}
+
   d.appendChild(links)
   document.querySelector(".content-container").appendChild(doc.querySelector(".bordered"));
 }
 
 function list(obj) {
-  for (i in obj)
-  {
-      createPluginItem(i,obj[i])
+  for (let i in obj) {
+    createPluginItem(i, obj[i]);
   }
 }
+
 
 //当前从文件获取json数据后续可以直接从后端获取
 $.ajax({
   url: "list.json",
   type: "GET",
   dataType: "json",
-  success: 
-  function (data) {
-      list(data)
+  success: function (data) {
+    list(data);
+  },
+  error: function (xhr, status, error) {
+    console.error("AJAX 请求错误：", error);
   }
 });
+
 
