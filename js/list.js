@@ -6,21 +6,22 @@ function createPluginItem(packname, modpack) {
       </div>
       <div class="content" style="overflow: hidden;">
         <p id="pack-name"><strong>${packname}</strong></p>
-        <p id="i18-version"><strong>最新汉化版本：<span>${modpack.i18version}</span></strong></p>
-        <p id="g-version"></strong>游戏版本：<span>${modpack.gversion}</span></strong></p>
-        <p id="i18-team"></strong>汉化成员：<span>${modpack.i18team}</span></strong></p>
+        <p id="i18-version"><strong>最新汉化版本：<span style="color: rgb(17, 165, 133);">${modpack.i18version}</span></strong></p>
+        <p id="g-version"><strong>游戏版本：<span style="color: rgba(12, 64, 206, 0.8);">${modpack.gversion}</span></strong></p>
+        <p id="i18-team"><strong>汉化成员：<span style="color: rgb(110, 35, 231);">${modpack.i18team}</span></strong></p>
       </div>
   </div>
   `;
   const doc = new DOMParser().parseFromString(temp, "text/html");
   const d = doc.querySelector(".content");
-  if(modpack.isdownload){
-      const item = document.createElement("p")
-      item.id = "is-download";
-      const a = document.createElement("span")
-      a.textContent = "支持直链下载";
-      item.appendChild(a)
-      d.appendChild(item)
+  if (modpack.isdownload) {
+    const item = document.createElement("p");
+    item.id = "is-download";
+    const a = document.createElement("span");
+    a.textContent = "支持直链下载";
+    a.style.color = "rgb(255, 0, 0)";
+    item.appendChild(a);
+    d.appendChild(item);
   }
   const links = document.createElement("div")
   links.className = "links";
