@@ -1,6 +1,6 @@
 {
     "Chroma Sky 2":{
-        "img":"https://media.forgecdn.net/avatars/490/364/637797577449044795.gif",
+        "img":"490/364/637797577449044795.gif",
         "i18version":"1.0.9",
         "gversion":"1.16.5-Forge",
         "i18team":"Pasuu",
@@ -15,7 +15,7 @@
         }
     },
     "All the Mods 7 - To the Sky - atm7sky":{
-        "img":"https://media.forgecdn.net/avatars/585/168/637951766687771704.png",
+        "img":"585/168/637951766687771704.png",
         "i18version":"1.2.3",
         "gversion":"1.18.2-Forge",
         "i18team":"Pasuu",
@@ -46,7 +46,7 @@
         }
     },
     "Age of Engineering":{
-        "img":"https://media.forgecdn.net/avatars/93/426/636262895770502676.png",
+        "img":"93/426/636262895770502676.png",
         "i18version":"1.1.2",
         "gversion":"1.10.2-Forge",
         "i18team":"TartaricAcid(CFPA-Team)",
@@ -61,7 +61,7 @@
         }
     },
     "All the Mods 3 Expert - ATM3E":{
-        "img":"https://media.forgecdn.net/avatars/208/41/636971687557614975.jpeg",
+        "img":"208/41/636971687557614975.jpeg",
         "i18version":"1.9.0",
         "gversion":"1.12.2-Forge",
         "i18team":"HorasHue(CFPA-Team)",
@@ -75,7 +75,7 @@
         }
     },
     "Antimatter Chemistry":{
-        "img":"https://media.forgecdn.net/avatars/204/194/636938067568424664.png",
+        "img":"204/194/636938067568424664.png",
         "i18version":"1.2.26",
         "gversion":"1.12.2-Forge",
         "i18team":"Chenwe-i-lin(CFPA-Team)",
@@ -89,7 +89,7 @@
         }
     },
     "Astroblock":{
-        "img":"https://media.forgecdn.net/avatars/193/684/636869178406138753.png",
+        "img":"193/684/636869178406138753.png",
         "i18version":"1.1.31",
         "gversion":"1.12.2-Forge",
         "i18team":"TartaricAcid(CFPA-Team)",
@@ -104,7 +104,7 @@
         }
     },
     "Chemical Exchange":{
-        "img":"https://media.forgecdn.net/avatars/232/150/637064954467862296.png",
+        "img":"232/150/637064954467862296.png",
         "i18version":"1.10",
         "gversion":"1.12.2-Forge",
         "i18team":"hujtt(CFPA-Team)",
@@ -119,7 +119,7 @@
         }
     },
     "Compact Claustrophobia":{
-        "img":"https://media.forgecdn.net/avatars/267/755/637236568517859580.png",
+        "img":"267/755/637236568517859580.png",
         "i18version":"1.3.5.2",
         "gversion":"1.12.2-Forge",
         "i18team":"安逸-Team",
@@ -132,13 +132,100 @@
             "anyijun":true,
             "download":"anyijun/Compact-Claustrophobia/汉化补丁Compact-Claustrophobia-1.3.5.2.zip"
         }
+    },
+    "Enigmatica 2: Expert - E2E":{
+        "img":"287/344/637307898262282482.jpeg",
+        "i18version":"1.81a",
+        "gversion":"1.12.2-Forge",
+        "i18team":"hujtt(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"346623115",
+            "curseforge":"enigmatica2expert",
+            "mcmod":"23",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Enigmatica 2 Expert/Enigmatica 2 Expert-1.81a-windows.zip"
+        }
+    },
+    "Exoria":{
+        "img":"153/386/636618025284561373.png",
+        "i18version":"1.3.0c",
+        "gversion":"1.12.2-Forge",
+        "i18team":"TartaricAcid(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"4435845",
+            "curseforge":"exoria",
+            "mcmod":"57",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Exoria/Exoria-1.3.0c-windows.zip"
+        }
+    },
+    "FTB Continuum":{
+        "img":"153/547/636619228771834618.png",
+        "i18version":"1.6.0",
+        "gversion":"1.12.2-Forge",
+        "i18team":"balthild(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "curseforge":"ftb-continuum",
+            "ftb":"34-ftb-continuum?tab=about",
+            "mcmod":"20",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"FTB Continuum/FTB Continuum-1.6.0-windows.zip"
+        }
+    },
+    "FTB Interactions":{
+        "img":"196/825/636888012194151974.png",
+        "i18version":"2.12.1",
+        "gversion":"1.12.2-Forge",
+        "i18team":"TartaricAcid(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"4435845",
+            "curseforge":"ftb-interactions",
+            "ftb":"5-ft b-interactions?tab=about",
+            "mcmod":"11",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"FTB Interactions/FTB Interactions-2.12.1-windows.zip"
+        }
+    },
+    "FTB Presents SkyFactory 3":{
+        "img":"298/92/637347565503876855.png",
+        "i18version":"3.0.15",
+        "gversion":"1.10.2-Forge",
+        "i18team":"TartaricAcid(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"4435845",
+            "curseforge":"ftb-presents-skyfactory-3",
+            "ftb":"25-ftb-presents-skyfactory-3?tab=about",
+            "mcmod":"37",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"FTB Presents SkyFactory 3/FTB Presents SkyFactory 3-3.0.15-windows.zip"
+        }
+    },
+    "FTB Pyramid Reborn 3.0":{
+        "img":"145/725/636564704267782150.png",
+        "i18version":"2.1.1",
+        "gversion":"1.12.2-Forge",
+        "i18team":"TartaricAcid(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"4435845",
+            "curseforge":"ftb-pyramid-reborn",
+            "ftb":"32-ftb-pyramid-reborn-30?tab=about",
+            "mcmod":"88",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"FTB Pyramid Reborn 3/FTB Pyramid Reborn-2.1.1-windows.zip"
+        }
     }
-
-
-
-
-
-
 
 
 
