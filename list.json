@@ -972,10 +972,121 @@
             "mcmod":"185",
             "VM":"modpacks/rotn/index.html"
         }
+    },
+    "FTB Presents Direwolf20 1.19":{
+        "img":"https://www.feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F97%2FDW20%201024%20x%201024.png&w=256&q=75",
+        "i18version":"未知",
+        "gversion":"1.19.2-Forge",
+        "i18team":"VM-Team",
+        "isdownload":false,
+        "link":{
+            "bilibili":"2085089798",
+            "ftb":"101-ftb-presents-direwolf20-119?tab=about",
+            "github":"VM-Chinese-translate-group/direwolf20-1.19.2"
+        }
+    },
+    "Age of Fate":{
+        "img":"https://media.forgecdn.net/avatars/371/468/637541182257023139.png",
+        "i18version":"1.6.0",
+        "gversion":"1.16.5-Forge",
+        "i18team":"VM-Team",
+        "isdownload":false,
+        "link":{
+            "bilibili":"2085089798",
+            "curseforge":"age-of-fate",
+            "mcmod":"360",
+            "VM":"modpacks/fate/index.html"
+        }
+    },
+    "Fantasy Realm":{
+        "img":"https://media.forgecdn.net/avatars/549/347/637886465721227326.png",
+        "i18version":"v8 HF",
+        "gversion":"1.19.2-Forge",
+        "i18team":"cat酱(VM-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"628493139",
+            "curseforge":"fantasy-realm",
+            "mcmod":"497",
+            "VM0":true,
+            "download":"Fantasy Realm/Fantasy Realm V8汉化.zip"
+        }
+    },
+    "Bliss - a peaceful-like experience":{
+        "img":"https://media.forgecdn.net/avatars/588/681/637958998429262283.png",
+        "i18version":"1.0.6",
+        "gversion":"1.18.2-Forge",
+        "i18team":"cat酱(VM-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"628493139",
+            "curseforge":"bliss",
+            "mcmod":"449",
+            "github":"VazkiiMods/Bliss/compare/main...nageih:Bliss:main",
+            "VM0":true,
+            "download":"Bliss/Bliss-1.0.6汉化补丁.rar"
+        }
+    },
+    "Infinity Foundation":{
+        "img":"https://media.forgecdn.net/avatars/564/314/637920478481541062.png",
+        "i18version":"2.0",
+        "gversion":"1.18.2-Forge",
+        "i18team":"自尊寺(VM-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"585255832",
+            "curseforge":"infinity-foundation",
+            "mcmod":"513",
+            "VM0":true,
+            "baidupan":"1OI533N2IMHssFsoGm5o0lg?pwd=x068",
+            "download0":"vm/Infinity Foundation/Infinity Foundation v2.0汉化补丁.zip"
+        }
+    },
+    "Blackstone Block":{
+        "img":"https://media.forgecdn.net/avatars/628/925/638026354225814649.png",
+        "i18version":"1.0.4",
+        "gversion":"1.16.5-Forge",
+        "i18team":"自尊寺和cat酱(VM-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"2085089798",
+            "curseforge":"blackstone-block",
+            "mcmod":"460",
+            "VM0":true,
+            "baidupan":"1OI533N2IMHssFsoGm5o0lg?pwd=x068",
+            "download0":"vm/blackstone block/blackstone blockv1.0.4汉化补丁.zip"
+        }
+    },
+    "Caveopolis (Modpack)":{
+        "img":"https://media.forgecdn.net/avatars/574/212/637936740640306707.png",
+        "i18version":"4.1",
+        "gversion":"1.18.2-Forge",
+        "i18team":"自尊寺(VM-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"585255832",
+            "curseforge":"caveopolis",
+            "mcmod":"493",
+            "VM0":true,
+            "baidupan":"1OI533N2IMHssFsoGm5o0lg?pwd=x068",
+            "download0":"vm/Caveopolis/Caveopolis4.1汉化补丁.zip"
+        }
+    },
+    "Sky Bees 2":{
+        "img":"https://media.forgecdn.net/avatars/524/59/637845002112327144.png",
+        "i18version":"1.4.1",
+        "gversion":"1.16.5-Forge",
+        "i18team":"自尊寺(VM-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"585255832",
+            "curseforge":"sky-bees-2",
+            "mcmod":"550",
+            "VM0":true,
+            "baidupan":"1OI533N2IMHssFsoGm5o0lg?pwd=x068",
+            "download0":"vm/Sky Bees 2/Sky Bees 2 1.4.1汉化补丁.zip"
+        }
     }
-
-
-
 
 
 
