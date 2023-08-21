@@ -873,7 +873,107 @@
             "anyijun":true,
             "download":"Heavens of Sorcery/任务书汉化Heavens of Sorcery-0.10.1.3-beta.zip"
         }
+    },
+    "Chroma Endless":{
+        "img":"https://media.forgecdn.net/avatars/627/26/638021459665750880.jpeg",
+        "i18version":"1.0.5",
+        "gversion":"1.16.5-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"chroma-endless",
+            "mcmod":"529",
+            "github":"ShaBaiTianCN/Chroma-Endless",
+            "anyijun":true,
+            "download":"anyijun/Chroma-Endless/1.1-CN-Chroma-Endless-1.0.5.zip"
+        }
+    },
+    "Chroma Technology 2":{
+        "img":"https://media.forgecdn.net/avatars/397/224/637598007192024172.gif",
+        "i18version":"3.0",
+        "gversion":"1.16.5-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"chroma-technology-2",
+            "mcmod":"314",
+            "github":"ShaBaiTianCN/Chroma-Technology-2",
+            "anyijun":true,
+            "download":"anyijun/Chroma-Technology-2/1.0-CN-Chroma-Technology-2-1.2.1.zip"
+        }
+    },
+    "Vault Hunters 3rd Edition":{
+        "img":"https://media.forgecdn.net/avatars/651/140/638051446127306822.png",
+        "i18version":"3.11.2.2",
+        "gversion":"1.18.2-Forge",
+        "i18team":"VM-Team",
+        "isdownload":false,
+        "link":{
+            "bilibili":"2085089798",
+            "curseforge":"vault-hunters-1-18-2",
+            "mcmod":"639",
+            "github":"VM-Chinese-translate-group/Vault-Hunters-1.18.2",
+            "VM":"modpacks/vault/index.html"
+        }
+    },
+    "MC Eternal":{
+        "img":"https://media.forgecdn.net/avatars/388/926/637581040113975390.png",
+        "i18version":"1.6.1",
+        "gversion":"1.12.2-Forge",
+        "i18team":"VM-Team",
+        "isdownload":false,
+        "link":{
+            "bilibili":"2085089798",
+            "curseforge":"minecraft-eternal",
+            "mcmod":"13",
+            "github":"VM-Chinese-translate-group/MC-Eternal",
+            "VM":"modpacks/mce/index.html"
+        }
+    },
+    "DawnCraft - An Adventure RPG Modpack":{
+        "img":"https://media.forgecdn.net/avatars/780/552/638125961291118791.gif",
+        "i18version":"1.27_hf",
+        "gversion":"1.18.2-Forge",
+        "i18team":"VM-Team",
+        "isdownload":false,
+        "link":{
+            "bilibili":"2085089798",
+            "curseforge":"dawn-craft",
+            "mcmod":"594",
+            "github":"VM-Chinese-translate-group/dawncraft-Chinese-patch-Pack",
+            "VM":"modpacks/dawn/index.html"
+        }
+    },
+    "*Ice*":{
+        "img":"https://media.forgecdn.net/avatars/635/372/638037006950874394.png",
+        "i18version":"1.0.7",
+        "gversion":"1.16.5-Forge",
+        "i18team":"Sine(VM-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"2085089798",
+            "curseforge":"magic-ice-tech",
+            "github":"VM-Chinese-translate-group/-ice-",
+            "VM":true,
+            "download":"vm/ice/【ice】ice整合包汉化补丁-VM汉化组-第一版.zip"
+        }
+    },
+    "Rebirth of the Night (RotN)":{
+        "img":"https://media.forgecdn.net/avatars/334/714/637468909601280183.png",
+        "i18version":"3.1.1a",
+        "gversion":"1.12.2-Forge",
+        "i18team":"VM-Team",
+        "isdownload":false,
+        "link":{
+            "bilibili":"2085089798",
+            "curseforge":"rebirth-of-the-night",
+            "mcmod":"185",
+            "VM":"modpacks/rotn/index.html"
+        }
     }
+
 
 
 
