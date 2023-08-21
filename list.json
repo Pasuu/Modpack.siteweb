@@ -74,6 +74,20 @@
             "download":"All the Mods 3 Expert/All the Mods 3 Expert-1.9.0-windows.zip"
         }
     },
+    "Amnesia":{
+        "img":"https://media.forgecdn.net/avatars/210/637/636988259523918451.png",
+        "i18version":"1.0.4",
+        "gversion":"1.12.2-Forge",
+        "i18team":"HinsonDongGua(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "curseforge":"amnesia",
+            "mcmod":"60",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Amnesia/Amnesia-1.0.4-windows.zip"
+        }
+    },
     "Antimatter Chemistry":{
         "img":"https://media.forgecdn.net/avatars/204/194/636938067568424664.png",
         "i18version":"1.2.26",
@@ -271,17 +285,208 @@
             "gtnh":"true",
             "download":"gtnh/gtnh-cn-2.3.4.rar"
         }
+    },
+    "Glacial Awakening":{
+        "img":"https://media.forgecdn.net/avatars/208/831/636977732427265815.png",
+        "i18version":"1.1.13",
+        "gversion":"1.12.2-Forge",
+        "i18team":"Chenwe-i-lin(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "curseforge":"glacial-awakening",
+            "mcmod":"142",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Glacial Awakening/Glacial Awakening-latest-windows.zip"
+        }
+    },
+    "GregBlock":{
+        "img":"https://media.forgecdn.net/avatars/176/826/636766588613534389.png",
+        "i18version":"2.2.1",
+        "gversion":"1.12.2-Forge",
+        "i18team":"IIzzaya(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "curseforge":"gregblock",
+            "mcmod":"32",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Greg Block/Greg Block-2.2.1-windows.zip"
+        }
+    },
+    "Invasion":{
+        "img":"https://media.forgecdn.net/avatars/92/984/636259653864000172.png",
+        "i18version":"1.0.9",
+        "gversion":"1.10.2-Forge",
+        "i18team":"TartaricAcid(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"4435845",
+            "curseforge":"invasion",
+            "mcmod":"231",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Invasion/Invasion-1.0.9-windows.zip"
+        }
+    },
+    "Mass Production":{
+        "img":"https://media.forgecdn.net/avatars/173/393/636743634008996415.png",
+        "i18version":"1.2.1",
+        "gversion":"1.12.2-Forge",
+        "i18team":"TartaricAcid(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"4435845",
+            "curseforge":"mass-production",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Mass Production/Mass Production-1.2.1-windows.zip"
+        }
+    },
+    "Material Energy^5: Entity":{
+        "img":"https://media.forgecdn.net/avatars/274/38/637257062778112697.png",
+        "i18version":"1.1.1",
+        "gversion":"1.12.2-Forge",
+        "i18team":"木大皮(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"3107763",
+            "curseforge":"material-energy-5-entity",
+            "mcmod":"12",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Material Energy/任务书汉化Material Energy^5- Entity-1.1.1.zip"
+        }
+    },
+    "Modern Skyblock 3: Departed":{
+        "img":"https://media.forgecdn.net/avatars/141/791/636544733395786830.png",
+        "i18version":"3.6.0",
+        "gversion":"1.12.2-Forge",
+        "i18team":"hujtt(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"346623115",
+            "curseforge":"modern-skyblock-3-departed",
+            "mcmod":"31",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Modern Skyblock 3/Modern Skyblock 3-3.6.0-windows.zip"
+        }
+    },
+    "Nomifactory":{
+        "img":"https://media.forgecdn.net/avatars/475/730/637768106795690939.png",
+        "i18version":"1.2.2.1",
+        "gversion":"1.12.2-Forge",
+        "i18team":"ChromaPIE(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "curseforge":"nomifactory",
+            "mcmod":"367",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Nomifactory/Nomifactory-dev-6ef01ed-windows(疑似1.2.2.1).zip"
+        }
+    },
+    "Omnifactory":{
+        "img":"https://media.forgecdn.net/avatars/198/486/636900272840730252.jpeg",
+        "i18version":"1.2.2",
+        "gversion":"1.12.2-Forge",
+        "i18team":"ChromaPIE(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "curseforge":"omnifactory",
+            "mcmod":"126",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Omnifactory/Omnifactory-dev-2dd8f8a-windows(疑似1.2.2).zip"
+        }
+    },
+    "Primal Skies":{
+        "img":"https://media.forgecdn.net/avatars/147/205/636575202397989034.png",
+        "i18version":"1.1.12",
+        "gversion":"1.12.2-Forge",
+        "i18team":"TartaricAcid(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"4435845",
+            "curseforge":"primal-skies",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Primal Skies/Primal Skies-1.1.12-windows.zip"
+        }
+    },
+    "Project Equivalence":{
+        "img":"https://media.forgecdn.net/avatars/284/936/637299149441088531.png",
+        "i18version":"1.4.1",
+        "gversion":"1.12.2-Forge",
+        "i18team":"TartaricAcid(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"4435845",
+            "curseforge":"project-equivalence",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Project Equivalence/Project Equivalence-1.4.1-windows.zip"
+        }
+    },
+    "Roguelike Adventures and Dungeons":{
+        "img":"https://media.forgecdn.net/avatars/144/220/636554450588038771.png",
+        "i18version":"1.52",
+        "gversion":"1.12.2-Forge",
+        "i18team":"VM-Team",
+        "isdownload":false,
+        "link":{
+            "bilibili":"2085089798",
+            "curseforge":"roguelike-adventures-and-dungeons",
+            "mcmod":"28",
+            "github":"VM-Chinese-translate-group/Roguelike-Adventures-and-Dungeons",
+            "VM":"modpacks/rad/index.html"
+        }
+    },
+    "SevTech: Ages":{
+        "img":"https://media.forgecdn.net/avatars/147/67/636574428512291945.png",
+        "i18version":"3.2.1",
+        "gversion":"1.12.2-Forge",
+        "i18team":"iMusynx(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "curseforge":"sevtech-ages",
+            "mcmod":"33",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"SevTech Ages/SevTech Ages-3.2.1-windows.zip"
+        }
+    },
+    "SkyFactory 4":{
+        "img":"https://media.forgecdn.net/avatars/199/573/636907930795697123.png",
+        "i18version":"4.1.0",
+        "gversion":"1.12.2-Forge",
+        "i18team":"hujtt(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"346623115",
+            "curseforge":"skyfactory-4",
+            "mcmod":"5",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"SkyFactory 4/SkyFactory 4-4.1.0-windows.zip"
+        }
+    },
+    "Space Astronomy 2":{
+        "img":"https://media.forgecdn.net/avatars/103/243/636336785827307922.png",
+        "i18version":"1.4.9",
+        "gversion":"1.10.2-Forge",
+        "i18team":"TartaricAcid(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"4435845",
+            "curseforge":"space-astronomy-2",
+            "mcmod":"160",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Space Astronomy 2/Space Astronomy 2-1.4.9-windows.zip"
+        }
     }
-
-
-
-
-
-
-
-
-
-
 
 
 }
