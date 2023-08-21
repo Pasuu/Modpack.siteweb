@@ -1,3 +1,29 @@
+let modpackCounter = 0; // Initialize the modpack counter
+
+function createPluginItem(packname, modpack) {
+  if (modpackCounter % 2 === 0) {
+    // Create a new container for every two modpacks
+    var outerDiv = document.createElement("div");
+    outerDiv.className = "modpack-container";
+    document.querySelector(".content-container").appendChild(outerDiv);
+  }
+
+  const div = document.createElement("div");
+  div.className = "bordered";
+
+  // ... Create the modpack content as before
+
+  if (modpackCounter % 2 === 0) {
+    // Append the inner div to the outer container for the first modpack
+    outerDiv.appendChild(div);
+  }
+
+  modpackCounter++; // Increment the modpack counter
+}
+
+
+
+
 function createPluginItem(packname, modpack) {
   const temp = `
   <div class="bordered">
@@ -18,7 +44,7 @@ function createPluginItem(packname, modpack) {
     const item = document.createElement("p");
     item.id = "is-download";
     const a = document.createElement("span");
-    a.textContent = "<strong>支持直链下载</strong>";
+    a.textContent = "支持直链下载";
     a.style.color = "rgb(255, 0, 0)";
     item.appendChild(a);
     d.appendChild(item);
