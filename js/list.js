@@ -12,7 +12,7 @@ function createPluginItem(packname, modpack) {
   const temp = `
   <div class="bordered">
       <div class="image-container" id="${packname}">
-        <img src="https://media.forgecdn.net/avatars/${modpack.img}" alt="${packname}" width="200" height="200">
+        <img src="${modpack.img}" alt="${packname}" width="200" height="200">
       </div>
       <div class="content" style="overflow: hidden;">
         <p id="pack-name"><strong>${packname}</strong></p>
@@ -62,6 +62,11 @@ function createPluginItem(packname, modpack) {
     const github = new DOMParser().parseFromString(`<a href="https://github.com/${modpack["link"]["github"]}" target="_blank"><img src="/images/github-fill.svg" alt="github-fill" width="22px" height="22px"></a>`, "text/html");
     github.querySelector("a").style.marginRight = "-1px";
     links.appendChild(github.querySelector("a"));
+  }
+  if (modpack["link"]["gtnh"]) {
+    const gtnh = new DOMParser().parseFromString(`<a href="https://gtnh.huijiwiki.com/wiki/%E9%A6%96%E9%A1%B5" target="_blank"><img src="/images/gtnh.svg" alt="gtnh" width="28" height="28"/></a>`, "text/html");
+    gtnh.querySelector("a").style.marginLeft = "1px";
+    links.appendChild(gtnh.querySelector("a"));
   }
   if (modpack["link"]["anyijun"]) {
     const anyijun = new DOMParser().parseFromString(`<a href="https://anyijun.com/" target="_blank"><img src="/images/anyijun.svg" alt="anyijun" width="22" height="22"/></a>`, "text/html");

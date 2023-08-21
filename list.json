@@ -1,6 +1,6 @@
 {
     "Chroma Sky 2":{
-        "img":"490/364/637797577449044795.gif",
+        "img":"https://media.forgecdn.net/avatars/490/364/637797577449044795.gif",
         "i18version":"1.0.9",
         "gversion":"1.16.5-Forge",
         "i18team":"Pasuu",
@@ -15,7 +15,7 @@
         }
     },
     "All the Mods 7 - To the Sky - atm7sky":{
-        "img":"585/168/637951766687771704.png",
+        "img":"https://media.forgecdn.net/avatars/585/168/637951766687771704.png",
         "i18version":"1.2.3",
         "gversion":"1.18.2-Forge",
         "i18team":"Pasuu",
@@ -46,7 +46,7 @@
         }
     },
     "Age of Engineering":{
-        "img":"93/426/636262895770502676.png",
+        "img":"https://media.forgecdn.net/avatars/93/426/636262895770502676.png",
         "i18version":"1.1.2",
         "gversion":"1.10.2-Forge",
         "i18team":"TartaricAcid(CFPA-Team)",
@@ -61,7 +61,7 @@
         }
     },
     "All the Mods 3 Expert - ATM3E":{
-        "img":"208/41/636971687557614975.jpeg",
+        "img":"https://media.forgecdn.net/avatars/208/41/636971687557614975.jpeg",
         "i18version":"1.9.0",
         "gversion":"1.12.2-Forge",
         "i18team":"HorasHue(CFPA-Team)",
@@ -75,7 +75,7 @@
         }
     },
     "Antimatter Chemistry":{
-        "img":"204/194/636938067568424664.png",
+        "img":"https://media.forgecdn.net/avatars/204/194/636938067568424664.png",
         "i18version":"1.2.26",
         "gversion":"1.12.2-Forge",
         "i18team":"Chenwe-i-lin(CFPA-Team)",
@@ -89,7 +89,7 @@
         }
     },
     "Astroblock":{
-        "img":"193/684/636869178406138753.png",
+        "img":"https://media.forgecdn.net/avatars/193/684/636869178406138753.png",
         "i18version":"1.1.31",
         "gversion":"1.12.2-Forge",
         "i18team":"TartaricAcid(CFPA-Team)",
@@ -104,7 +104,7 @@
         }
     },
     "Chemical Exchange":{
-        "img":"232/150/637064954467862296.png",
+        "img":"https://media.forgecdn.net/avatars/232/150/637064954467862296.png",
         "i18version":"1.10",
         "gversion":"1.12.2-Forge",
         "i18team":"hujtt(CFPA-Team)",
@@ -119,7 +119,7 @@
         }
     },
     "Compact Claustrophobia":{
-        "img":"267/755/637236568517859580.png",
+        "img":"https://media.forgecdn.net/avatars/267/755/637236568517859580.png",
         "i18version":"1.3.5.2",
         "gversion":"1.12.2-Forge",
         "i18team":"安逸-Team",
@@ -134,7 +134,7 @@
         }
     },
     "Enigmatica 2: Expert - E2E":{
-        "img":"287/344/637307898262282482.jpeg",
+        "img":"https://media.forgecdn.net/avatars/287/344/637307898262282482.jpeg",
         "i18version":"1.81a",
         "gversion":"1.12.2-Forge",
         "i18team":"hujtt(CFPA-Team)",
@@ -149,7 +149,7 @@
         }
     },
     "Exoria":{
-        "img":"153/386/636618025284561373.png",
+        "img":"https://media.forgecdn.net/avatars/153/386/636618025284561373.png",
         "i18version":"1.3.0c",
         "gversion":"1.12.2-Forge",
         "i18team":"TartaricAcid(CFPA-Team)",
@@ -164,7 +164,7 @@
         }
     },
     "FTB Continuum":{
-        "img":"153/547/636619228771834618.png",
+        "img":"https://media.forgecdn.net/avatars/153/547/636619228771834618.png",
         "i18version":"1.6.0",
         "gversion":"1.12.2-Forge",
         "i18team":"balthild(CFPA-Team)",
@@ -179,7 +179,7 @@
         }
     },
     "FTB Interactions":{
-        "img":"196/825/636888012194151974.png",
+        "img":"https://media.forgecdn.net/avatars/196/825/636888012194151974.png",
         "i18version":"2.12.1",
         "gversion":"1.12.2-Forge",
         "i18team":"TartaricAcid(CFPA-Team)",
@@ -195,7 +195,7 @@
         }
     },
     "FTB Presents SkyFactory 3":{
-        "img":"298/92/637347565503876855.png",
+        "img":"https://media.forgecdn.net/avatars/298/92/637347565503876855.png",
         "i18version":"3.0.15",
         "gversion":"1.10.2-Forge",
         "i18team":"TartaricAcid(CFPA-Team)",
@@ -211,7 +211,7 @@
         }
     },
     "FTB Pyramid Reborn 3.0":{
-        "img":"145/725/636564704267782150.png",
+        "img":"https://media.forgecdn.net/avatars/145/725/636564704267782150.png",
         "i18version":"2.1.1",
         "gversion":"1.12.2-Forge",
         "i18team":"TartaricAcid(CFPA-Team)",
@@ -225,10 +225,53 @@
             "CFPAOrg":true,
             "download":"FTB Pyramid Reborn 3/FTB Pyramid Reborn-2.1.1-windows.zip"
         }
+    },
+    "FTB SkyFactory Challenges":{
+        "img":"https://media.forgecdn.net/avatars/93/437/636262976670295091.png",
+        "i18version":"1.1.0",
+        "gversion":"1.10.2-Forge",
+        "i18team":"TartaricAcid(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"4435845",
+            "curseforge":"ftb-skyfactory-challenges",
+            "ftb":"26-ftb-skyfactory-challenges?tab=about",
+            "mcmod":"83",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"FTB SkyFactory Challenges/FTB Sky Factory Challenges-1.1.0-windows.zip"
+        }
+    },
+    "Farming Valley":{
+        "img":"https://media.forgecdn.net/avatars/64/883/636157249287374177.png",
+        "i18version":"1.1.0",
+        "gversion":"1.10.2-Forge",
+        "i18team":"给我带双份老鸭煲(基于CFPA的汉化更新)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"10068010",
+            "curseforge":"farming-valley",
+            "mcmod":"29",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n/pull/143/files#diff-bdc64adeef7f96134173246751992baec6e8cce50aff12395702b049f52ac8fe",
+            "CFPAOrg":true,
+            "download":"Farming Valley/Farming Valley-CN-1.0.2.rar"
+        }
+    },
+    "GT New Horizons":{
+        "img":"https://media.forgecdn.net/avatars/53/488/636125694388807951.png",
+        "i18version":"2.3.4",
+        "gversion":"1.7.10-Forge",
+        "i18team":"Kiwi233",
+        "isdownload":true,
+        "link":{
+            "curseforge":"gt-new-horizons",
+            "mcmod":"1",
+            "github":"Kiwi233/Translation-of-GTNH",
+            "CFPAOrg":false,
+            "gtnh":"true",
+            "download":"gtnh/gtnh-cn-2.3.4.rar"
+        }
     }
-
-
-
 
 
 
