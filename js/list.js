@@ -3,7 +3,6 @@ let currentContainer;
 
 function createPluginItem(packname, modpack) {
   if (modpackCounter % 2 === 0) {
-    // Create a new content container for every two modpacks
     currentContainer = document.createElement("div");
     currentContainer.className = "content-container";
     document.querySelector(".main-container").appendChild(currentContainer);
@@ -24,10 +23,9 @@ function createPluginItem(packname, modpack) {
   `;
   const doc = new DOMParser().parseFromString(temp, "text/html");
   const modpackDiv = doc.querySelector(".bordered");
-  const d = doc.querySelector(".content"); // Get the content container of the current modpack
+  const d = doc.querySelector(".content");
 
   if (modpack.isdownload) {
-    const strong = document.createElement("strong");
     const item = document.createElement("p");
     item.id = "is-download";
     const a = document.createElement("span");
@@ -104,7 +102,6 @@ currentContainer.appendChild(modpackDiv);
 modpackCounter++;
 
 if (modpackCounter % 2 === 0) {
-  // Close the current content container after every two modpacks
   currentContainer = null;
 }
 }
@@ -115,7 +112,6 @@ for (let i in obj) {
 }
 }
 
-// Load JSON data and populate modpacks
 $.ajax({
 url: "list.json",
 type: "GET",
