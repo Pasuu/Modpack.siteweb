@@ -38,41 +38,50 @@ function createPluginItem(packname, modpack) {
 
   const links = document.createElement("div");
   links.className = "links";
-  if(modpack["link"]["bilibili"]){
-      const bilibili = new DOMParser().parseFromString(`<a href="https://space.bilibili.com/${modpack["link"]["bilibili"]}" target="_blank"><img src="/images/bilibili-line-blue.svg" alt="bilibili-line-blue" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
-      links.appendChild(bilibili.querySelector("a"))
+  if (modpack["link"]["bilibili"]) {
+    const bilibili = new DOMParser().parseFromString(`<a href="https://space.bilibili.com/${modpack["link"]["bilibili"]}" target="_blank"><img src="/images/bilibili-line-blue.svg" alt="bilibili-line-blue" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
+    bilibili.querySelector("a").style.marginRight = "1px";
+    links.appendChild(bilibili.querySelector("a"));
   }
-  if(modpack["link"]["curseforge"]){
-      const curseforge = new DOMParser().parseFromString(`<a href="https://www.curseforge.com/minecraft/modpacks/${modpack["link"]["curseforge"]}" target="_blank"><img src="/images/curseforge.svg" alt="Curseforge" width="20" height="20"></a>`, "text/html");
-      links.appendChild(curseforge.querySelector("a"))
+  if (modpack["link"]["curseforge"]) {
+    const curseforge = new DOMParser().parseFromString(`<a href="https://www.curseforge.com/minecraft/modpacks/${modpack["link"]["curseforge"]}" target="_blank"><img src="/images/curseforge.svg" alt="Curseforge" width="20" height="20"></a>`, "text/html");
+    curseforge.querySelector("a").style.marginRight = "1px";
+    links.appendChild(curseforge.querySelector("a"));
   }
-  if(modpack["link"]["ftb"]){
+  if (modpack["link"]["ftb"]) {
     const ftb = new DOMParser().parseFromString(`<a href="https://feed-the-beast.com/modpacks/${modpack["link"]["ftb"]}" target="_blank"><img src="/images/ftb.svg" alt="feed-the-beast" width="32px" height="20px"></a>`, "text/html");
-    links.appendChild(ftb.querySelector("a"))
-}
-  if(modpack["link"]["mcmod"]){
-      const mcmod = new DOMParser().parseFromString(`<a href="https://www.mcmod.cn/modpack/${modpack["link"]["mcmod"]}.html" target="_blank"><img src="/images/mcmod.svg" alt="mcmod" width="21px" height="21px" /></a>`, "text/html");
-      links.appendChild(mcmod.querySelector("a"))
+    ftb.querySelector("a").style.marginRight = "1px";
+    links.appendChild(ftb.querySelector("a"));
   }
-  if(modpack["link"]["github"]){
-      const github = new DOMParser().parseFromString(`<a href="https://github.com/${modpack["link"]["github"]}" target="_blank"><img src="/images/github-fill.svg" alt="github-fill" width="22px" height="22px"></a>`, "text/html");
-      links.appendChild(github.querySelector("a"))
+  if (modpack["link"]["mcmod"]) {
+    const mcmod = new DOMParser().parseFromString(`<a href="https://www.mcmod.cn/modpack/${modpack["link"]["mcmod"]}.html" target="_blank"><img src="/images/mcmod.svg" alt="mcmod" width="21px" height="21px" /></a>`, "text/html");
+    mcmod.querySelector("a").style.marginRight = "1px";
+    links.appendChild(mcmod.querySelector("a"));
   }
-  if(modpack["link"]["CFPAOrg"]){
-      const CFPAOrg = new DOMParser().parseFromString(`<a href="https://cfpa.site/" target="_blank"><img src="/images/cfpa.svg" alt="cfpa" width="22" height="22"/></a>`, "text/html");
-      links.appendChild(CFPAOrg.querySelector("a"))
+  if (modpack["link"]["github"]) {
+    const github = new DOMParser().parseFromString(`<a href="https://github.com/${modpack["link"]["github"]}" target="_blank"><img src="/images/github-fill.svg" alt="github-fill" width="22px" height="22px"></a>`, "text/html");
+    github.querySelector("a").style.marginRight = "1px";
+    links.appendChild(github.querySelector("a"));
   }
-if (modpack["link"]["download"]) {
-  const download = new DOMParser().parseFromString(
-    `<a href="https://modpack.top/pro/${modpack["link"]["download"]}" download="${modpack["link"]["download"]}"><img src="/images/file-download-line.svg" alt="file-download-line" style="margin-bottom: -2px;" width="24px" height="24px"></a>`,
-    "text/html"
-  );
-  links.appendChild(download.querySelector("a"));
-}
-if(modpack["link"]["bilibilidw"]){
-  const bilibilidw = new DOMParser().parseFromString(`<a href="https://www.bilibili.com/read/${modpack["link"]["bilibilidw"]}" target="_blank"><img src="/images/bilibili-line-yellow.svg" alt="bilibili-line-yellow" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
-  links.appendChild(bilibilidw.querySelector("a"))
-}
+  if (modpack["link"]["CFPAOrg"]) {
+    const CFPAOrg = new DOMParser().parseFromString(`<a href="https://cfpa.site/" target="_blank"><img src="/images/cfpa.svg" alt="cfpa" width="22" height="22"/></a>`, "text/html");
+    CFPAOrg.querySelector("a").style.marginRight = "1px";
+    links.appendChild(CFPAOrg.querySelector("a"));
+  }
+  if (modpack["link"]["download"]) {
+    const download = new DOMParser().parseFromString(
+      `<a href="https://modpack.top/pro/${modpack["link"]["download"]}" download="${modpack["link"]["download"]}"><img src="/images/file-download-line.svg" alt="file-download-line" style="margin-bottom: -2px;" width="24px" height="24px"></a>`,
+      "text/html"
+    );
+    download.querySelector("a").style.marginRight = "1px";
+    links.appendChild(download.querySelector("a"));
+  }
+  if (modpack["link"]["bilibilidw"]) {
+    const bilibilidw = new DOMParser().parseFromString(`<a href="https://www.bilibili.com/read/${modpack["link"]["bilibilidw"]}" target="_blank"><img src="/images/bilibili-line-yellow.svg" alt="bilibili-line-yellow" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
+    bilibilidw.querySelector("a").style.marginRight = "1px";
+    links.appendChild(bilibilidw.querySelector("a"));
+  }
+  
 
 d.appendChild(links);
 currentContainer.appendChild(modpackDiv);
