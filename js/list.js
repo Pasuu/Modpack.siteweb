@@ -1,6 +1,14 @@
 let modpackCounter = 0;
+let currentContainer;
 
 function createPluginItem(packname, modpack) {
+  if (modpackCounter % 2 === 0) {
+    // Create a new content container for every two modpacks
+    currentContainer = document.createElement("div");
+    currentContainer.className = "content-container";
+    document.querySelector(".main-container").appendChild(currentContainer);
+  }
+
   const temp = `
     <div class="bordered">
       <div class="image-container" id="${packname}">
@@ -66,18 +74,8 @@ if(modpack["link"]["bilibilidw"]){
 
 d.appendChild(links);
 
-// Find the last modpack container or create a new one
-const container = document.querySelector(".modpack-container:last-child");
-if (!container || modpackCounter % 2 === 0) {
-  const outerDiv = document.createElement("div");
-  outerDiv.className = "modpack-container";
-  document.querySelector(".content-container").appendChild(outerDiv);
-  container = outerDiv;
-}
-
-container.appendChild(doc.querySelector(".bordered"));
-
-modpackCounter++; // Increment the modpack counter
+currentContainer.appendChild(d);
+modpackCounter++;
 }
 
 function list(obj) {
