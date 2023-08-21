@@ -1,16 +1,6 @@
-let modpackCounter = 0;
-let currentContainer;
-
 function createPluginItem(packname, modpack) {
-  if (modpackCounter % 2 === 0) {
-    // Create a new content container for every two modpacks
-    currentContainer = document.createElement("div");
-    currentContainer.className = "content-container";
-    document.querySelector(".main-container").appendChild(currentContainer);
-  }
-
   const temp = `
-    <div class="bordered">
+  <div class="bordered">
       <div class="image-container" id="${packname}">
         <img src="${modpack.img}" alt="${packname}" width="200" height="200">
       </div>
@@ -20,9 +10,8 @@ function createPluginItem(packname, modpack) {
         <p id="g-version"><strong>游戏版本：<span style="color: rgba(12, 64, 206, 0.8);">${modpack.gversion}</span></strong></p>
         <p id="i18-team"><strong>汉化成员：<span style="color: rgb(110, 35, 231);">${modpack.i18team}</span></strong></p>
       </div>
-    </div>
+  </div>
   `;
-
   const doc = new DOMParser().parseFromString(temp, "text/html");
   const d = doc.querySelector(".content");
   if (modpack.isdownload) {
@@ -34,7 +23,7 @@ function createPluginItem(packname, modpack) {
     item.appendChild(a);
     d.appendChild(item);
   }
-  const links = document.createElement("div");
+  const links = document.createElement("div")
   links.className = "links";
   if(modpack["link"]["bilibili"]){
       const bilibili = new DOMParser().parseFromString(`<a href="https://space.bilibili.com/${modpack["link"]["bilibili"]}" target="_blank"><img src="/images/bilibili-line-blue.svg" alt="bilibili-line-blue" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
@@ -71,30 +60,28 @@ if(modpack["link"]["bilibilidw"]){
   const bilibilidw = new DOMParser().parseFromString(`<a href="https://www.bilibili.com/read/${modpack["link"]["bilibilidw"]}" target="_blank"><img src="/images/bilibili-line-yellow.svg" alt="bilibili-line-yellow" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
   links.appendChild(bilibilidw.querySelector("a"))
 }
-
-d.appendChild(links);
-
-currentContainer.appendChild(d);
-modpackCounter++;
+  d.appendChild(links)
+  document.querySelector(".content-container").appendChild(doc.querySelector(".bordered"));
 }
 
 function list(obj) {
-for (let i in obj) {
-  createPluginItem(i, obj[i]);
-}
+  for (let i in obj) {
+    createPluginItem(i, obj[i]);
+  }
 }
 
-// Load JSON data and populate modpacks
+
+//当前从文件获取json数据后续可以直接从后端获取
 $.ajax({
-url: "list.json",
-type: "GET",
-dataType: "json",
-success: function (data) {
-  list(data);
-},
-error: function (xhr, status, error) {
-  console.error("AJAX 请求错误：", error);
-}
+  url: "list.json",
+  type: "GET",
+  dataType: "json",
+  success: function (data) {
+    list(data);
+  },
+  error: function (xhr, status, error) {
+    console.error("AJAX 请求错误：", error);
+  }
 });
 
 
