@@ -35,7 +35,6 @@ function createPluginItem(packname, modpack) {
     d.appendChild(item);
   }
 
-
   const links = document.createElement("div");
   links.className = "links";
   if (modpack["link"]["bilibili"]) {
@@ -98,29 +97,11 @@ function createPluginItem(packname, modpack) {
   }
   if (modpack["link"]["download"]) {
     const download = new DOMParser().parseFromString(
-      `<a><img src="/images/file-download-line.svg" alt="file-download-line" style="margin-bottom: -2px;" width="24px" height="24px"></a>`,
+      `<a href="https://modpack.top/pro/${modpack["link"]["download"]}" download="${modpack["link"]["download"]}"><img src="/images/file-download-line.svg" alt="file-download-line" style="margin-bottom: -2px;" width="24px" height="24px"></a>`,
       "text/html"
     );
     download.querySelector("a").style.marginRight = "-1px";
-    download.querySelector("a").addEventListener("click", () => {
-      downloadmodpack(packname, modpack["link"]["download"]);
-    });
     links.appendChild(download.querySelector("a"));
-  }
-  
-  function downloadmodpack(packname, link) {
-    fetch(`/download/${packname}`, { method: "POST" })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.success) {
-          window.location.href = "https://modpack.top/pro/" + link;
-        } else {
-          console.error("Error recording download:", data.error);
-        }
-      })
-      .catch((error) => {
-        console.error("Error recording download:", error);
-      });
   }
   if (modpack["link"]["baidupan"]) {
     const baidupan = new DOMParser().parseFromString(`<a href="https://pan.baidu.com/s/${modpack["link"]["baidupan"]}" target="_blank"><img src="/images/baiduyun.svg" alt="baiduyun" width="24" height="24"/></a>`, "text/html");
@@ -154,7 +135,6 @@ if (modpackCounter % 2 === 0) {
   currentContainer = null;
 }
 }
-
 
 function list(obj) {
 for (let i in obj) {
