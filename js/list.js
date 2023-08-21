@@ -27,6 +27,7 @@ function createPluginItem(packname, modpack) {
   const d = doc.querySelector(".content"); // Get the content container of the current modpack
 
   if (modpack.isdownload) {
+    const strong = document.createElement("strong");
     const item = document.createElement("p");
     item.id = "is-download";
     const a = document.createElement("span");
