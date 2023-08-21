@@ -5,10 +5,10 @@ function createPluginItem(packname, modpack) {
         <img src="${modpack.img}" alt="${packname}" width="200" height="200">
       </div>
       <div class="content" style="overflow: hidden;">
-        <p id="pack-name">${packname}</p>
-        <p id="i18-version">最新汉化版本：<span>${modpack.i18version}</span></p>
-        <p id="g-version">游戏版本：<span>${modpack.gversion}</span></p>
-        <p id="i18-team">汉化成员：<span>${modpack.i18team}</span></p>
+        <p id="pack-name"><strong>${packname}</strong></p>
+        <p id="i18-version"><strong>最新汉化版本：<span>${modpack.i18version}</span></strong></p>
+        <p id="g-version"></strong>游戏版本：<span>${modpack.gversion}</span></strong></p>
+        <p id="i18-team"></strong>汉化成员：<span>${modpack.i18team}</span></strong></p>
       </div>
   </div>
   `;
