@@ -73,9 +73,36 @@
             "CFPAOrg":true,
             "download":"All the Mods 3 Expert/All the Mods 3 Expert-1.9.0-windows.zip"
         }
+    },
+    "Antimatter Chemistry":{
+        "img":"https://media.forgecdn.net/avatars/204/194/636938067568424664.png",
+        "i18version":"1.2.26",
+        "gversion":"1.12.2-Forge",
+        "i18team":"Chenwe-i-lin(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "curseforge":"antimatter-chemistry",
+            "mcmod":"52",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Antimatter Chemistry/Antimatter Chemistry-windows疑似1.2.26.rar"
+        }
+    },
+    "Astroblock":{
+        "img":"https://media.forgecdn.net/avatars/193/684/636869178406138753.png",
+        "i18version":"1.1.31",
+        "gversion":"1.12.2-Forge",
+        "i18team":"TartaricAcid(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"4435845",
+            "curseforge":"astroblock",
+            "mcmod":"234",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"AstroBlock/AstroBlock-1.1.31-windows.zip"
+        }
     }
-
-
 
 
 }

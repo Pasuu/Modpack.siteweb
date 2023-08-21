@@ -40,17 +40,17 @@ function createPluginItem(packname, modpack) {
   links.className = "links";
   if (modpack["link"]["bilibili"]) {
     const bilibili = new DOMParser().parseFromString(`<a href="https://space.bilibili.com/${modpack["link"]["bilibili"]}" target="_blank"><img src="/images/bilibili-line-blue.svg" alt="bilibili-line-blue" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
-    bilibili.querySelector("a").style.marginRight = "1px";
+    bilibili.querySelector("a").style.marginRight = "2px";
     links.appendChild(bilibili.querySelector("a"));
   }
   if (modpack["link"]["curseforge"]) {
     const curseforge = new DOMParser().parseFromString(`<a href="https://www.curseforge.com/minecraft/modpacks/${modpack["link"]["curseforge"]}" target="_blank"><img src="/images/curseforge.svg" alt="Curseforge" width="20" height="20"></a>`, "text/html");
-    curseforge.querySelector("a").style.marginRight = "1px";
+    curseforge.querySelector("a").style.marginRight = "3px";
     links.appendChild(curseforge.querySelector("a"));
   }
   if (modpack["link"]["ftb"]) {
     const ftb = new DOMParser().parseFromString(`<a href="https://feed-the-beast.com/modpacks/${modpack["link"]["ftb"]}" target="_blank"><img src="/images/ftb.svg" alt="feed-the-beast" width="32px" height="20px"></a>`, "text/html");
-    ftb.querySelector("a").style.marginRight = "1px";
+    ftb.querySelector("a").style.marginRight = "3px";
     links.appendChild(ftb.querySelector("a"));
   }
   if (modpack["link"]["mcmod"]) {
@@ -60,7 +60,7 @@ function createPluginItem(packname, modpack) {
   }
   if (modpack["link"]["github"]) {
     const github = new DOMParser().parseFromString(`<a href="https://github.com/${modpack["link"]["github"]}" target="_blank"><img src="/images/github-fill.svg" alt="github-fill" width="22px" height="22px"></a>`, "text/html");
-    github.querySelector("a").style.marginRight = "1px";
+    github.querySelector("a").style.marginRight = "-1px";
     links.appendChild(github.querySelector("a"));
   }
   if (modpack["link"]["CFPAOrg"]) {
