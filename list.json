@@ -102,7 +102,55 @@
             "CFPAOrg":true,
             "download":"AstroBlock/AstroBlock-1.1.31-windows.zip"
         }
+    },
+    "Chemical Exchange":{
+        "img":"https://media.forgecdn.net/avatars/232/150/637064954467862296.png",
+        "i18version":"1.10",
+        "gversion":"1.12.2-Forge",
+        "i18team":"hujtt(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"346623115",
+            "curseforge":"chemical-exchange",
+            "mcmod":"86",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Chemical Exchange/Chemical Exchange-1.10-windows.zip"
+        }
+    },
+    "Compact Claustrophobia":{
+        "img":"https://media.forgecdn.net/avatars/267/755/637236568517859580.png",
+        "i18version":"1.3.5.2",
+        "gversion":"1.12.2-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"compact-claustrophobia",
+            "mcmod":"30",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "download":"anyijun/Compact-Claustrophobia/汉化补丁Compact-Claustrophobia-1.3.5.2.zip"
+        }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

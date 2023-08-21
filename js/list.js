@@ -40,7 +40,7 @@ function createPluginItem(packname, modpack) {
   links.className = "links";
   if (modpack["link"]["bilibili"]) {
     const bilibili = new DOMParser().parseFromString(`<a href="https://space.bilibili.com/${modpack["link"]["bilibili"]}" target="_blank"><img src="/images/bilibili-line-blue.svg" alt="bilibili-line-blue" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
-    bilibili.querySelector("a").style.marginRight = "2px";
+    bilibili.querySelector("a").style.marginRight = "1px";
     links.appendChild(bilibili.querySelector("a"));
   }
   if (modpack["link"]["curseforge"]) {
@@ -63,6 +63,11 @@ function createPluginItem(packname, modpack) {
     github.querySelector("a").style.marginRight = "-1px";
     links.appendChild(github.querySelector("a"));
   }
+  if (modpack["link"]["anyijun"]) {
+    const anyijun = new DOMParser().parseFromString(`<a href="https://anyijun.com/${modpack["link"]["anyijun"]}" target="_blank"><img src="/images/anyijun.svg" alt="anyijun" width="22" height="22"/></a>`, "text/html");
+    anyijun.querySelector("a").style.marginRight = "1px";
+    links.appendChild(anyijun.querySelector("a"));
+  }
   if (modpack["link"]["CFPAOrg"]) {
     const CFPAOrg = new DOMParser().parseFromString(`<a href="https://cfpa.site/" target="_blank"><img src="/images/cfpa.svg" alt="cfpa" width="22" height="22"/></a>`, "text/html");
     CFPAOrg.querySelector("a").style.marginRight = "1px";
@@ -73,7 +78,7 @@ function createPluginItem(packname, modpack) {
       `<a href="https://modpack.top/pro/${modpack["link"]["download"]}" download="${modpack["link"]["download"]}"><img src="/images/file-download-line.svg" alt="file-download-line" style="margin-bottom: -2px;" width="24px" height="24px"></a>`,
       "text/html"
     );
-    download.querySelector("a").style.marginRight = "1px";
+    download.querySelector("a").style.marginRight = "-1px";
     links.appendChild(download.querySelector("a"));
   }
   if (modpack["link"]["bilibilidw"]) {
