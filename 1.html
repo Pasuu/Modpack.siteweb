@@ -88,7 +88,7 @@ function search(keyword) {
       contentBoxes[i].style.display = 'flex';
       var parentElement = contentBoxes[i].closest('.content-container');
       if (parentElement) {
-        parentElement.style.flexDirection = 'row'; 
+        parentElement.style.flexDirection = 'column'; 
       }
       hasResults = true; 
     } else {
@@ -116,7 +116,7 @@ function search(keyword) {
 
   for (var i = 0; i < contentContainers.length; i++) {
     if (keyword.length > 0 && hasResults) {
-      contentContainers[i].style.flexDirection = 'column';
+      contentContainers[i].style.flexDirection = 'row';
     } else {
       contentContainers[i].style.flexDirection = initialFlexDirection; 
     }
