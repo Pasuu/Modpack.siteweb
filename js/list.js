@@ -1,7 +1,6 @@
-let modpackCounter = 0; 
+let modpackCounter = 0;
 
 function createPluginItem(packname, modpack) {
-
   const temp = `
     <div class="bordered">
       <div class="image-container" id="${packname}">
@@ -15,7 +14,6 @@ function createPluginItem(packname, modpack) {
       </div>
     </div>
   `;
-
 
   const doc = new DOMParser().parseFromString(temp, "text/html");
   const d = doc.querySelector(".content");
@@ -67,30 +65,38 @@ if(modpack["link"]["bilibilidw"]){
 }
 
 d.appendChild(links);
-const outerDiv = document.querySelector(".modpack-container:last-child");
-outerDiv.appendChild(doc.querySelector(".bordered"));
+
+// Find the last modpack container or create a new one
+const container = document.querySelector(".modpack-container:last-child");
+if (!container || modpackCounter % 2 === 0) {
+  const outerDiv = document.createElement("div");
+  outerDiv.className = "modpack-container";
+  document.querySelector(".content-container").appendChild(outerDiv);
+  container = outerDiv;
+}
+
+container.appendChild(doc.querySelector(".bordered"));
 
 modpackCounter++; // Increment the modpack counter
 }
 
 function list(obj) {
-  for (let i in obj) {
-    createPluginItem(i, obj[i]);
-  }
+for (let i in obj) {
+  createPluginItem(i, obj[i]);
+}
 }
 
-
-//当前从文件获取json数据后续可以直接从后端获取
+// Load JSON data and populate modpacks
 $.ajax({
-  url: "list.json",
-  type: "GET",
-  dataType: "json",
-  success: function (data) {
-    list(data);
-  },
-  error: function (xhr, status, error) {
-    console.error("AJAX 请求错误：", error);
-  }
+url: "list.json",
+type: "GET",
+dataType: "json",
+success: function (data) {
+  list(data);
+},
+error: function (xhr, status, error) {
+  console.error("AJAX 请求错误：", error);
+}
 });
 
 
