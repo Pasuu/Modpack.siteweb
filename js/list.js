@@ -35,6 +35,13 @@ function createPluginItem(packname, modpack) {
     d.appendChild(item);
   }
 
+
+  const downloadStatsElement = document.createElement("div");
+  downloadStatsElement.id = `download-stats-${packname}`;
+  downloadStatsElement.textContent = "下载量：Loading...";
+  d.appendChild(downloadStatsElement);
+
+  
   const links = document.createElement("div");
   links.className = "links";
   if (modpack["link"]["bilibili"]) {
@@ -137,9 +144,10 @@ if (modpackCounter % 2 === 0) {
 }
 
 function list(obj) {
-for (let i in obj) {
-  createPluginItem(i, obj[i]);
-}
+  for (let i in obj) {
+    createPluginItem(i, obj[i]);
+    updateDownloadStats(i);
+  }
 }
 
 $.ajax({
