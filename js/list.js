@@ -18,7 +18,7 @@ function createPluginItem(packname, modpack) {
     const item = document.createElement("p");
     item.id = "is-download";
     const a = document.createElement("span");
-    a.textContent = "支持直链下载";
+    a.textContent = "<strong>支持直链下载</strong>";
     a.style.color = "rgb(255, 0, 0)";
     item.appendChild(a);
     d.appendChild(item);
@@ -33,6 +33,10 @@ function createPluginItem(packname, modpack) {
       const curseforge = new DOMParser().parseFromString(`<a href="https://www.curseforge.com/minecraft/modpacks/${modpack["link"]["curseforge"]}" target="_blank"><img src="/images/curseforge.svg" alt="Curseforge" width="20" height="20"></a>`, "text/html");
       links.appendChild(curseforge.querySelector("a"))
   }
+  if(modpack["link"]["ftb"]){
+    const ftb = new DOMParser().parseFromString(`<a href="https://feed-the-beast.com/modpacks/${modpack["link"]["ftb"]}" target="_blank"><img src="/images/ftb.svg" alt="feed-the-beast" width="32px" height="20px"></a>`, "text/html");
+    links.appendChild(ftb.querySelector("a"))
+}
   if(modpack["link"]["mcmod"]){
       const mcmod = new DOMParser().parseFromString(`<a href="https://www.mcmod.cn/modpack/${modpack["link"]["mcmod"]}.html" target="_blank"><img src="/images/mcmod.svg" alt="mcmod" width="21px" height="21px" /></a>`, "text/html");
       links.appendChild(mcmod.querySelector("a"))
@@ -52,7 +56,10 @@ if (modpack["link"]["download"]) {
   );
   links.appendChild(download.querySelector("a"));
 }
-
+if(modpack["link"]["bilibilidw"]){
+  const bilibilidw = new DOMParser().parseFromString(`<a href="https://www.bilibili.com/read/${modpack["link"]["bilibilidw"]}" target="_blank"><img src="/images/bilibili-line-yellow.svg" alt="bilibili-line-yellow" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
+  links.appendChild(bilibilidw.querySelector("a"))
+}
   d.appendChild(links)
   document.querySelector(".content-container").appendChild(doc.querySelector(".bordered"));
 }

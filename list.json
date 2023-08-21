@@ -1,19 +1,4 @@
 {
-    "All the Mods 3 Expert - ATM3E":{
-        "img":"https://media.forgecdn.net/avatars/208/41/636971687557614975.jpeg",
-        "i18version":"1.9.0",
-        "gversion":"1.12.2-Forge",
-        "i18team":"HorasHue(CFPA-Team)",
-        "isdownload":true,
-        "link":{
-            "bilibili":"6575218",
-            "curseforge":"all-the-mods-3-expert",
-            "mcmod":"137",
-            "github":"CFPAOrg/Modpack-GuideBook-i18n",
-            "CFPAOrg":true,
-            "download":"All the Mods 3 Expert/All the Mods 3 Expert-1.9.0-windows.zip"
-        }
-    },
     "Chroma Sky 2":{
         "img":"https://media.forgecdn.net/avatars/490/364/637797577449044795.gif",
         "i18version":"1.0.9",
@@ -28,5 +13,42 @@
             "CFPAOrg":false,
             "download":"Chroma-sky-2/Chroma-sky-2-CN-1.0.9.rar"
         }
+    },
+    "All the Mods 7 - To the Sky - atm7sky":{
+        "img":"https://media.forgecdn.net/avatars/490/364/637797577449044795.gif",
+        "i18version":"1.2.3",
+        "gversion":"1.18.2-Forge",
+        "i18team":"Pasuu",
+        "isdownload":true,
+        "link":{
+            "bilibili":"378822559",
+            "curseforge":"all-the-mods-7-to-the-sky",
+            "mcmod":"559",
+            "github":"Pasuu-Mc/ATM7-Sky-quest-CN",
+            "CFPAOrg":false,
+            "download":"ATM7-Sky/ATM7-Sky任务汉化V1.2.3.rar"
+        }
+    },
+    "FTB Presents Integration by Parts DX":{
+        "img":"https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F100%2Fftb-presents-ibpdx-logo.png&w=256&q=75",
+        "i18version":"1.9.0",
+        "gversion":"1.16.5-Forge",
+        "i18team":"Pasuu/给我带双份老鸭煲",
+        "isdownload":true,
+        "link":{
+            "bilibili":"378822559",
+            "FTB":"107-ftb-presents-integration-by-parts-dx?tab=about",
+            "mcmod":"618",
+            "github":"Pasuu-Mc/FTB-Presents-Integration-by-Parts-DX-CN",
+            "CFPAOrg":false,
+            "download":"FTB Presents Integration by Parts DX/FTB Presents Integration by Parts DX-CN-1.9.0.rar",
+            "bilibilidw":"cv24917493"
+        }
     }
+
+
+
+
+
+
 }
