@@ -129,7 +129,7 @@
             "curseforge":"compact-claustrophobia",
             "mcmod":"30",
             "github":"CFPAOrg/Modpack-GuideBook-i18n",
-            "anyijun":"",
+            "anyijun":true,
             "download":"anyijun/Compact-Claustrophobia/汉化补丁Compact-Claustrophobia-1.3.5.2.zip"
         }
     }

@@ -64,7 +64,7 @@ function createPluginItem(packname, modpack) {
     links.appendChild(github.querySelector("a"));
   }
   if (modpack["link"]["anyijun"]) {
-    const anyijun = new DOMParser().parseFromString(`<a href="https://anyijun.com/${modpack["link"]["anyijun"]}" target="_blank"><img src="/images/anyijun.svg" alt="anyijun" width="22" height="22"/></a>`, "text/html");
+    const anyijun = new DOMParser().parseFromString(`<a href="https://anyijun.com/" target="_blank"><img src="/images/anyijun.svg" alt="anyijun" width="22" height="22"/></a>`, "text/html");
     anyijun.querySelector("a").style.marginRight = "1px";
     links.appendChild(anyijun.querySelector("a"));
   }
