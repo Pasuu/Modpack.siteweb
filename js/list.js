@@ -35,15 +35,6 @@ function createPluginItem(packname, modpack) {
     d.appendChild(item);
   }
 
-  if (modpack.isdownload) {
-    const downloadLink = document.createElement("a");
-    downloadLink.textContent = "下载";
-    downloadLink.href = modpack.link.download; // 根据实际情况修改链接
-    downloadLink.addEventListener("click", () => {
-      recordDownload(packname); // 调用记录下载的函数
-    });
-    d.appendChild(downloadLink);
-  }
 
   const links = document.createElement("div");
   links.className = "links";
@@ -107,11 +98,29 @@ function createPluginItem(packname, modpack) {
   }
   if (modpack["link"]["download"]) {
     const download = new DOMParser().parseFromString(
-      `<a href="https://modpack.top/pro/${modpack["link"]["download"]}" download="${modpack["link"]["download"]}"><img src="/images/file-download-line.svg" alt="file-download-line" style="margin-bottom: -2px;" width="24px" height="24px"></a>`,
+      `<a><img src="/images/file-download-line.svg" alt="file-download-line" style="margin-bottom: -2px;" width="24px" height="24px"></a>`,
       "text/html"
     );
     download.querySelector("a").style.marginRight = "-1px";
+    download.querySelector("a").addEventListener("click", () => {
+      downloadmodpack(packname, modpack["link"]["download"]);
+    });
     links.appendChild(download.querySelector("a"));
+  }
+  
+  function downloadmodpack(packname, link) {
+    fetch(`/download/${packname}`, { method: "POST" })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          window.location.href = "https://modpack.top/pro/" + link;
+        } else {
+          console.error("Error recording download:", data.error);
+        }
+      })
+      .catch((error) => {
+        console.error("Error recording download:", error);
+      });
   }
   if (modpack["link"]["baidupan"]) {
     const baidupan = new DOMParser().parseFromString(`<a href="https://pan.baidu.com/s/${modpack["link"]["baidupan"]}" target="_blank"><img src="/images/baiduyun.svg" alt="baiduyun" width="24" height="24"/></a>`, "text/html");
@@ -146,24 +155,6 @@ if (modpackCounter % 2 === 0) {
 }
 }
 
-// 向服务器记录下载
-function recordDownload(packname) {
-  const requestData = { packname };
-  fetch("/record-download", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(requestData)
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data.message); // 打印服务器响应
-    })
-    .catch((error) => {
-      console.error("Error recording download:", error);
-    });
-}
 
 function list(obj) {
 for (let i in obj) {

@@ -15,8 +15,8 @@ const pool = new Pool({
 app.use(express.json());
 
 // 处理记录下载的请求
-app.post('/record-download', async (req, res) => {
-  const packname = req.body.packname; // 获取模组名称
+app.post("/download/:packname", (req, res) => {
+  const packname = req.params.packname;
 
   try {
     await pool.query(
@@ -28,6 +28,9 @@ app.post('/record-download', async (req, res) => {
     console.error('Error recording download:', error);
     res.status(500).json({ message: 'Error recording download.' });
   }
+});
+
+  res.json({ success: true });
 });
 
 // 启动服务器
