@@ -90,6 +90,11 @@ function createPluginItem(packname, modpack) {
     VM.querySelector("a").style.marginRight = "1px";
     links.appendChild(VM.querySelector("a"));
   }
+  if (modpack["link"]["VM0"]) {
+    const VM0 = new DOMParser().parseFromString(`<a href="https://vmct-cn.top/}" target="_blank"><img src="/images/vm.svg" alt="vm" width="32.2" height="23"/></a>`, "text/html");
+    VM0.querySelector("a").style.marginRight = "1px";
+    links.appendChild(VM0.querySelector("a"));
+  }
   if (modpack["link"]["download"]) {
     const download = new DOMParser().parseFromString(
       `<a href="https://modpack.top/pro/${modpack["link"]["download"]}" download="${modpack["link"]["download"]}"><img src="/images/file-download-line.svg" alt="file-download-line" style="margin-bottom: -2px;" width="24px" height="24px"></a>`,
