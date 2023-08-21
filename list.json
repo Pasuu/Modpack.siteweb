@@ -1,0 +1,32 @@
+{
+    "All the Mods 3 Expert - ATM3E":{
+        "img":"https://media.forgecdn.net/avatars/208/41/636971687557614975.jpeg",
+        "i18version":"1.9.0",
+        "gversion":"1.12.2-Forge",
+        "i18team":"HorasHue(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"all-the-mods-3-expert",
+            "mcmod":"137",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"All the Mods 3 Expert/All the Mods 3 Expert-1.9.0-windows.zip"
+        }
+    },
+    "Chroma Sky 2":{
+        "img":"https://media.forgecdn.net/avatars/490/364/637797577449044795.gif",
+        "i18version":"1.0.9",
+        "gversion":"1.16.5-Forge",
+        "i18team":"Pasuu",
+        "isdownload":true,
+        "link":{
+            "bilibili":"378822559",
+            "curseforge":"chroma-sky-2",
+            "mcmod":"426",
+            "github":"Pasuu-Mc/Chroma-sky-2-CN",
+            "CFPAOrg":false,
+            "download":"Chroma-sky-2/Chroma-sky-2-CN-1.0.9.rar"
+        }
+    }
+}
