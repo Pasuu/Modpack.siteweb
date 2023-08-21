@@ -1,12 +1,6 @@
-let modpackCounter = 0; // Initialize the modpack counter
+let modpackCounter = 0; 
 
 function createPluginItem(packname, modpack) {
-  if (modpackCounter % 2 === 0) {
-    // Create a new container for every two modpacks
-    var outerDiv = document.createElement("div");
-    outerDiv.className = "modpack-container";
-    document.querySelector(".content-container").appendChild(outerDiv);
-  }
 
   const temp = `
     <div class="bordered">
@@ -34,7 +28,7 @@ function createPluginItem(packname, modpack) {
     item.appendChild(a);
     d.appendChild(item);
   }
-  const links = document.createElement("div")
+  const links = document.createElement("div");
   links.className = "links";
   if(modpack["link"]["bilibili"]){
       const bilibili = new DOMParser().parseFromString(`<a href="https://space.bilibili.com/${modpack["link"]["bilibili"]}" target="_blank"><img src="/images/bilibili-line-blue.svg" alt="bilibili-line-blue" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
@@ -72,16 +66,17 @@ if(modpack["link"]["bilibilidw"]){
   links.appendChild(bilibilidw.querySelector("a"))
 }
 
-d.appendChild(links)
-outerDiv.appendChild(doc.querySelector(".bordered")); // Append the modpack div to the current outer container
+d.appendChild(links);
+const outerDiv = document.querySelector(".modpack-container:last-child");
+outerDiv.appendChild(doc.querySelector(".bordered"));
 
 modpackCounter++; // Increment the modpack counter
 }
 
 function list(obj) {
-for (let i in obj) {
-  createPluginItem(i, obj[i]);
-}
+  for (let i in obj) {
+    createPluginItem(i, obj[i]);
+  }
 }
 
 
