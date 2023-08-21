@@ -72,6 +72,14 @@ function createPluginItem(packname, modpack) {
     anyijun.querySelector("a").style.marginLeft = "1px";
     links.appendChild(anyijun.querySelector("a"));
   }
+  if (modpack["link"]["download1"]) {
+    const download1 = new DOMParser().parseFromString(
+      `<a href="https://modpack.top/pro/${modpack["link"]["download1"]}" download="${modpack["link"]["download1"]}"><img src="/images/file-download-line.svg" alt="file-download-line" style="margin-bottom: -2px;" width="24px" height="24px"></a>`,
+      "text/html"
+    );
+    download1.querySelector("a").style.marginRight = "-1px";
+    links.appendChild(download1.querySelector("a"));
+  }
   if (modpack["link"]["CFPAOrg"]) {
     const CFPAOrg = new DOMParser().parseFromString(`<a href="https://cfpa.site/" target="_blank"><img src="/images/cfpa.svg" alt="cfpa" width="22" height="22"/></a>`, "text/html");
     CFPAOrg.querySelector("a").style.marginRight = "1px";
@@ -90,6 +98,11 @@ function createPluginItem(packname, modpack) {
     download.querySelector("a").style.marginRight = "-1px";
     links.appendChild(download.querySelector("a"));
   }
+  if (modpack["link"]["baidupan"]) {
+    const baidupan = new DOMParser().parseFromString(`<a href="https://pan.baidu.com/s/${modpack["link"]["baidupan"]}" target="_blank"><img src="/images/baiduyun.svg" alt="baiduyun" width="24" height="24"/></a>`, "text/html");
+    baidupan.querySelector("a").style.marginRight = "1px";
+    links.appendChild(baidupan.querySelector("a"));
+  }
   if (modpack["link"]["download0"]) {
     const download0 = new DOMParser().parseFromString(
       `<a href="https://modpack.top/pro/${modpack["link"]["download0"]}" download="${modpack["link"]["download0"]}"><img src="/images/file-download-line.svg" alt="file-download-line" style="margin-bottom: -2px;" width="24px" height="24px"></a>`,
@@ -97,11 +110,6 @@ function createPluginItem(packname, modpack) {
     );
     download0.querySelector("a").style.marginRight = "-1px";
     links.appendChild(download0.querySelector("a"));
-  }
-  if (modpack["link"]["baidupan"]) {
-    const baidupan = new DOMParser().parseFromString(`<a href="https://pan.baidu.com/s/${modpack["link"]["baidupan"]}" target="_blank"><img src="/images/baiduyun.svg" alt="baiduyun" width="24" height="24"/></a>`, "text/html");
-    baidupan.querySelector("a").style.marginRight = "1px";
-    links.appendChild(baidupan.querySelector("a"));
   }
   if (modpack["link"]["bilibilidw"]) {
     const bilibilidw = new DOMParser().parseFromString(`<a href="https://www.bilibili.com/read/${modpack["link"]["bilibilidw"]}" target="_blank"><img src="/images/bilibili-line-yellow.svg" alt="bilibili-line-yellow" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");

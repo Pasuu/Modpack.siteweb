@@ -853,14 +853,27 @@
             "curseforge":"staged-learning",
             "mcmod":"140",
             "anyijun":true,
-            "download":"anyijun/Star Factory/Star Factory-1.1.0.zip",
+            "download1":"anyijun/Star Factory/Star Factory-1.1.0.zip",
             "VM":true,
             "baidupan":"1OI533N2IMHssFsoGm5o0lg?pwd=x068",
             "download0":"vm/Star Factory/Star Factory汉化.rar"
 
         }
+    },
+    "Heavens of Sorcery":{
+        "img":"https://media.forgecdn.net/avatars/214/871/636994563667354819.png",
+        "i18version":"0.10.1.3",
+        "gversion":"1.12.2-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"heavens-of-sorcery",
+            "mcmod":"256",
+            "anyijun":true,
+            "download":"Heavens of Sorcery/任务书汉化Heavens of Sorcery-0.10.1.3-beta.zip"
+        }
     }
-
 
 
 
