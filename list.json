@@ -486,7 +486,387 @@
             "CFPAOrg":true,
             "download":"Space Astronomy 2/Space Astronomy 2-1.4.9-windows.zip"
         }
+    },
+    "StoneBlock":{
+        "img":"https://media.forgecdn.net/avatars/147/482/636576924791375629.png",
+        "i18version":"1.0.31",
+        "gversion":"1.12.2-Forge",
+        "i18team":"TartaricAcid(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"4435845",
+            "curseforge":"stoneblock",
+            "mcmod":"36",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"Stone Block/Stone Block-1.0.31-windows.zip"
+        }
+    },
+    "FTB Presents Stoneblock 2":{
+        "img":"https://media.forgecdn.net/avatars/184/286/636820598450762928.png",
+        "i18version":"1.16.0",
+        "gversion":"1.12.2-Forge",
+        "i18team":"10935336(CFPA-Team)",
+        "isdownload":true,
+        "link":{
+            "curseforge":"ftb-presents-stoneblock-2",
+            "ftb":"4-ftb-presents-stoneblock-2?tab=about",
+            "mcmod":"48",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "CFPAOrg":true,
+            "download":"FTB Presents Stoneblock 2/Stone Block 2-1.16.0-windows.zip"
+        }
+    },
+    "Volcano Block":{
+        "img":"https://media.forgecdn.net/avatars/203/797/636934775777879606.png",
+        "i18version":"1.0.40",
+        "gversion":"1.12.2-Forge",
+        "i18team":"木大皮(安逸-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"3107763",
+            "curseforge":"volcano-block",
+            "mcmod":"85",
+            "github":"CFPAOrg/Modpack-GuideBook-i18n",
+            "anyijun":true,
+            "download":"Volcano Block/任务书汉化Volcano Block-1.0.40.zip"
+        }
+    },
+    "Enigmatica 6 Expert - E6E":{
+        "img":"https://media.forgecdn.net/avatars/499/608/637816741349081609.jpeg",
+        "i18version":"1.8.0",
+        "gversion":"1.16.5-Forge",
+        "i18team":"Annijang(安妮酱)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"253695957",
+            "curseforge":"enigmatica6expert",
+            "mcmod":"399",
+            "github":"Annijang/Annijang-Modpack",
+            "download":"Enigmatica 6 Expert/Enigmatica 6 Expert-CN-1.8.0.zip"
+        }
+    },
+    "FTB Inferno":{
+        "img":"https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F94%2Flogo_inferno.png&w=256&q=75",
+        "i18version":"1.3.0",
+        "gversion":"1.18.2-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "ftb":"99-ftb-inferno?tab=about",
+            "mcmod":"568",
+            "github":"ShaBaiTianCN/FTB-Inferno",
+            "anyijun":true,
+            "download":"anyijun/FTB-Inferno/1.3-CN-FTB-Inferno-1.3.0.zip"
+        }
+    },
+    "Andromeda Automation":{
+        "img":"https://media.forgecdn.net/avatars/561/726/637914330631214572.png",
+        "i18version":"7.6.1",
+        "gversion":"1.18.2-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"andromeda-automation",
+            "mcmod":"478",
+            "github":"ShaBaiTianCN/Andromeda-Automation",
+            "anyijun":true,
+            "download":"anyijun/Compact-Claustrophobia/汉化补丁Compact-Claustrophobia-1.3.5.2.zip"
+        }
+    },
+    "FTB StoneBlock 3":{
+        "img":"https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F96%2Fstoneblock_logo.png&w=256&q=75",
+        "i18version":"1.7.1",
+        "gversion":"1.18.2-Forge",
+        "i18team":"VM-Team",
+        "isdownload":false,
+        "link":{
+            "bilibili":"2085089798",
+            "ftb":"100-ftb-stoneblock-3?tab=about",
+            "mcmod":"526",
+            "VM":"modpacks/sb3/index.html"
+        }
+    },
+    "Restrict Skyblock":{
+        "img":"https://media.forgecdn.net/avatars/391/383/637584201667117853.png",
+        "i18version":"2.5",
+        "gversion":"1.16.5-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"restrict-skyblock",
+            "mcmod":"452",
+            "github":"ShaBaiTianCN/Restrict-Skyblock",
+            "anyijun":true,
+            "download":"anyijun/Restrict Skyblock/汉化Restrict Skyblock 2.5.zip"
+        }
+    },
+    "Jetpack Cat":{
+        "img":"https://media.forgecdn.net/avatars/564/489/637920901714546714.gif",
+        "i18version":"4.2",
+        "gversion":"1.16.5-Forge",
+        "i18team":"KlparetlR(VM-Team)",
+        "isdownload":false,
+        "link":{
+            "bilibili":"435039215",
+            "curseforge":"jetpack-cat",
+            "mcmod":"482",
+            "github":"KlparetlR/Jetpack-Cat",
+            "VM":"modpacks/jetpack/index.html"
+        }
+    },
+    "Encrypted_":{
+        "img":"https://media.forgecdn.net/avatars/594/269/637967833677519483.png",
+        "i18version":"1.4",
+        "gversion":"1.18.2-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"encrypted_",
+            "mcmod":"503",
+            "github":"ShaBaiTianCN/Encrypted_",
+            "anyijun":true,
+            "download":"anyijun/Encrypted/1.1-CN-Encrypted_-1.4.zip"
+        }
+    },
+    "Skyopolis 5":{
+        "img":"https://media.forgecdn.net/avatars/548/737/637884817562140550.png",
+        "i18version":"3.0",
+        "gversion":"1.18.2-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"skyopolis-5",
+            "mcmod":"445",
+            "github":"ShaBaiTianCN/Skyopolis-5",
+            "anyijun":true,
+            "download":"anyijun/Skyopolis-5/1.1-CN-Skyopolis-5-3.0.zip"
+        }
+    },
+    "Proletaria Expert":{
+        "img":"https://media.forgecdn.net/avatars/540/225/637865358100480517.png",
+        "i18version":"1.1.1",
+        "gversion":"1.16.5-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"proletaria-expert",
+            "mcmod":"444",
+            "github":"ShaBaiTianCN/Proletaria-Expert",
+            "anyijun":true,
+            "download":"anyijun/Proletaria-Expert/1.1-CN-Proletaria-Expert-1.1.1.zip"
+        }
+    },
+    "Enigmatica 6 - E6":{
+        "img":"https://media.forgecdn.net/avatars/287/328/637307875703147764.jpeg",
+        "i18version":"1.8.0",
+        "gversion":"1.16.5-Forge",
+        "i18team":"Annijang(安妮酱)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"253695957",
+            "curseforge":"enigmatica6",
+            "mcmod":"27",
+            "github":"Annijang/Annijang-Modpack",
+            "download":"Enigmatica 6 Expert/Enigmatica 6 Expert-CN-1.8.0.zip"
+        }
+    },
+    "Greed the Resource 3: Factory":{
+        "img":"https://media.forgecdn.net/avatars/515/77/637837036778327566.png",
+        "i18version":"5.6",
+        "gversion":"1.16.5-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"greed-the-resource-3-factory",
+            "mcmod":"403",
+            "github":"ShaBaiTianCN/Greed-the-Resource-3-Factory",
+            "anyijun":true,
+            "download":"anyijun/Greed-the-Resource-3-Factory/1.0-汉化补丁-Greed-the-Resource-3-Factory-V5.6.zip"
+        }
+    },
+    "Not Too Complicated 2":{
+        "img":"https://media.forgecdn.net/avatars/396/915/637597266930760605.png",
+        "i18version":"1.4.0Release",
+        "gversion":"1.16.5-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"not-too-complicated-2",
+            "mcmod":"432",
+            "anyijun":true,
+            "download":"anyijun/Not Too Complicated 2/汉化补丁Not Too Complicated 2-1.4.0(f1.0).zip"
+        }
+    },
+    "Rustic Waters II":{
+        "img":"https://media.forgecdn.net/avatars/505/404/637821966914808777.png",
+        "i18version":"1.16",
+        "gversion":"1.16.5-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"rustic-waters-ii",
+            "mcmod":"398",
+            "anyijun":true,
+            "download":"anyijun/Rustic Waters II/任务书汉化Rustic Waters II 1.16.zip"
+        }
+    },
+    "Create: Above and Beyond":{
+        "img":"https://media.forgecdn.net/avatars/450/731/637712078711696255.png",
+        "i18version":"1.3",
+        "gversion":"1.16.5-Forge",
+        "i18team":"给我带双份老鸭煲",
+        "isdownload":false,
+        "link":{
+            "bilibili":"10068010",
+            "curseforge":"create-above-and-beyond",
+            "mcmod":"312",
+            "bilibilidw0":"cv13821073"
+        }
+    },
+    "Delivery Inc.":{
+        "img":"https://media.forgecdn.net/avatars/342/815/637487263995483119.png",
+        "i18version":"1.0.24",
+        "gversion":"1.16.5-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"delivery-inc",
+            "mcmod":"288",
+            "anyijun":true,
+            "download":"anyijun/Delivery-Inc/汉化补丁 Delivery-Inc 1.0.24.zip"
+        }
+    },
+    "FTB OceanBlock":{
+        "img":"https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F87%2Flogo.png&w=256&q=75",
+        "i18version":"1.16.0",
+        "gversion":"1.16.5-Forge",
+        "i18team":"6371peter",
+        "isdownload":false,
+        "link":{
+            "bilibili":"10546314",
+            "ftb":"91-ftb-oceanblock?tab=about",
+            "mcmod":"286",
+            "bilibilidw0":"cv13648446"
+        }
+    },
+    "Infernopolis":{
+        "img":"https://media.forgecdn.net/avatars/411/983/637630860996378589.png",
+        "i18version":"2.1",
+        "gversion":"1.16.5-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"infernopolis",
+            "anyijun":true,
+            "download":"anyijun/Infernopolis/Infernopolis_2.1_zh_cn.zip"
+        }
+    },
+    "Seaopolis":{
+        "img":"https://media.forgecdn.net/avatars/393/359/637588611822064321.png",
+        "i18version":"9.0",
+        "gversion":"1.16.5-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"seaopolis",
+            "mcmod":"218",
+            "anyijun":true,
+            "download":"anyijun/Seaopolis/Seaopolis_9.0_zh_cn.zip"
+        }
+    },
+    "Calculator Skies":{
+        "img":"https://media.forgecdn.net/avatars/479/189/637776168505672578.png",
+        "i18version":"1.14.1-Hotfix",
+        "gversion":"1.12.2-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"calculator-skies",
+            "anyijun":true,
+            "download":"anyijun/Calculator-Skies/Calculator-Skies_1.14.1-Hotfix_zh_cn.zip"
+        }
+    },
+    "Ultimate Alchemy":{
+        "img":"https://media.forgecdn.net/avatars/174/517/636751367337452114.png",
+        "i18version":"0.1.0",
+        "gversion":"1.12.2-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"3107763",
+            "curseforge":"ultimate-alchemy",
+            "mcmod":"260",
+            "anyijun":true,
+            "download":"Ultimate Alchemy/汉化补充Ultimate Alchemy-0.1.0.zip"
+        }
+    },
+    "Skyopolis 4":{
+        "img":"https://media.forgecdn.net/avatars/328/844/637453594077751137.jpeg",
+        "i18version":"7.3",
+        "gversion":"1.16.5-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"skyopolis-4",
+            "mcmod":"284",
+            "anyijun":true,
+            "download":"anyijun/Skyopolis 4/Skyopolis 4 (7.3)汉化20210406.zip"
+        }
+    },
+    "Staged Learning":{
+        "img":"https://media.forgecdn.net/avatars/242/779/637136121069467367.png",
+        "i18version":"2.1.0",
+        "gversion":"1.12.2-Forge",
+        "i18team":"安逸-Team",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"staged-learning",
+            "mcmod":"132",
+            "anyijun":true,
+            "download":"anyijun/Staged-Learning/汉化补丁 Staged-Learning-2.1.0.rar"
+        }
+    },
+    "Star Factory":{
+        "img":"https://media.forgecdn.net/avatars/314/391/637412276959625556.png",
+        "i18version":"1.1.0",
+        "gversion":"1.12.2-Forge",
+        "i18team":"安逸-Team/自尊寺(VM-Team)",
+        "isdownload":true,
+        "link":{
+            "bilibili":"6575218",
+            "curseforge":"staged-learning",
+            "mcmod":"140",
+            "anyijun":true,
+            "download":"anyijun/Star Factory/Star Factory-1.1.0.zip",
+            "VM":true,
+            "baidupan":"1OI533N2IMHssFsoGm5o0lg?pwd=x068",
+            "download0":"vm/Star Factory/Star Factory汉化.rar"
+
+        }
     }
+
+
+
+
+
+
+
 
 
 }

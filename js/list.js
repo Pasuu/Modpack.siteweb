@@ -90,12 +90,29 @@ function createPluginItem(packname, modpack) {
     download.querySelector("a").style.marginRight = "-1px";
     links.appendChild(download.querySelector("a"));
   }
+  if (modpack["link"]["download0"]) {
+    const download0 = new DOMParser().parseFromString(
+      `<a href="https://modpack.top/pro/${modpack["link"]["download0"]}" download="${modpack["link"]["download0"]}"><img src="/images/file-download-line.svg" alt="file-download-line" style="margin-bottom: -2px;" width="24px" height="24px"></a>`,
+      "text/html"
+    );
+    download0.querySelector("a").style.marginRight = "-1px";
+    links.appendChild(download0.querySelector("a"));
+  }
+  if (modpack["link"]["baidupan"]) {
+    const baidupan = new DOMParser().parseFromString(`<a href="https://pan.baidu.com/s/${modpack["link"]["baidupan"]}" target="_blank"><img src="/images/baiduyun.svg" alt="baiduyun" width="24" height="24"/></a>`, "text/html");
+    baidupan.querySelector("a").style.marginRight = "1px";
+    links.appendChild(baidupan.querySelector("a"));
+  }
   if (modpack["link"]["bilibilidw"]) {
     const bilibilidw = new DOMParser().parseFromString(`<a href="https://www.bilibili.com/read/${modpack["link"]["bilibilidw"]}" target="_blank"><img src="/images/bilibili-line-yellow.svg" alt="bilibili-line-yellow" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
     bilibilidw.querySelector("a").style.marginRight = "1px";
     links.appendChild(bilibilidw.querySelector("a"));
   }
-  
+  if (modpack["link"]["bilibilidw0"]) {
+    const bilibilidw0 = new DOMParser().parseFromString(`<a href="https://www.bilibili.com/read/${modpack["link"]["bilibilidw0"]}" target="_blank"><img src="/images/bilibili-line-red.svg" alt="bilibili-line-red" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
+    bilibilidw0.querySelector("a").style.marginRight = "1px";
+    links.appendChild(bilibilidw0.querySelector("a"));
+  }
 
 d.appendChild(links);
 currentContainer.appendChild(modpackDiv);
