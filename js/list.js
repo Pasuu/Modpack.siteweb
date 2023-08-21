@@ -91,7 +91,7 @@ function createPluginItem(packname, modpack) {
     links.appendChild(VM.querySelector("a"));
   }
   if (modpack["link"]["VM0"]) {
-    const VM0 = new DOMParser().parseFromString(`<a href="https://vmct-cn.top/}" target="_blank"><img src="/images/vm.svg" alt="vm" width="32.2" height="23"/></a>`, "text/html");
+    const VM0 = new DOMParser().parseFromString(`<a href="https://vmct-cn.top/" target="_blank"><img src="/images/cfpa.svg" alt="cfpa" width="22" height="22"/></a>`, "text/html");
     VM0.querySelector("a").style.marginRight = "1px";
     links.appendChild(VM0.querySelector("a"));
   }
