@@ -41,7 +41,7 @@ function createPluginItem(packname, modpack) {
   downloadStatsElement.textContent = "下载量：Loading...";
   d.appendChild(downloadStatsElement);
 
-  
+
   const links = document.createElement("div");
   links.className = "links";
   if (modpack["link"]["bilibili"]) {

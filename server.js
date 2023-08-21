@@ -1,6 +1,5 @@
 require('dotenv').config();
 
-
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
@@ -31,11 +30,25 @@ app.get('/api/get-download-stats', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+// Route to handle updating download stats
+app.post('/api/update-download-stats', async (req, res) => {
+  const packname = req.body.packname;
+  try {
+    const client = await pool.connect();
+    // Update the download count in the database
+    await client.query('UPDATE download_stats SET download_count = download_count + 1 WHERE packname = $1', [packname]);
+    client.release();
+    res.json({ message: 'Download stats updated successfully' });
+  } catch (error) {
+    console.error('Error updating download stats:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
 });
-
 
 app.get('/', (req, res) => {
   res.send("Welcome to Modpack SiteWeb!");
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });

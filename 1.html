@@ -24,7 +24,32 @@
     </style>
     
     <script src="/js/page.js"></script>
-
+    
+    <script>
+      const downloadLink = document.getElementById('download-link');
+      const packname = 'your-pack-name'; // Replace with the actual pack name
+      
+      downloadLink.addEventListener('click', async () => {
+        try {
+          const response = await fetch('/api/update-download-stats', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ packname }),
+          });
+      
+          if (response.ok) {
+            console.log('Download stats updated');
+            window.location.href = downloadLink.getAttribute('href');
+          } else {
+            console.error('Failed to update download stats');
+          }
+        } catch (error) {
+          console.error('Error updating download stats:', error);
+        }
+      });
+      </script>
       
 <style>
 .comment-widget {
