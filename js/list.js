@@ -52,6 +52,11 @@ function createPluginItem(packname, modpack) {
     ftb.querySelector("a").style.marginRight = "3px";
     links.appendChild(ftb.querySelector("a"));
   }
+  if (modpack["link"]["modrinth"]) {
+    const modrinth = new DOMParser().parseFromString(`<a href="https://modrinth.com/modpack/${modpack["link"]["modrinth"]}" target="_blank"><img src="/images/modrinth.svg" alt="modrinth" width="20px" height="20px"></a>`, "text/html");
+    modrinth.querySelector("a").style.marginRight = "3px";
+    links.appendChild(modrinth.querySelector("a"));
+  }
   if (modpack["link"]["mcmod"]) {
     const mcmod = new DOMParser().parseFromString(`<a href="https://www.mcmod.cn/modpack/${modpack["link"]["mcmod"]}.html" target="_blank"><img src="/images/mcmod.svg" alt="mcmod" width="21px" height="21px" /></a>`, "text/html");
     mcmod.querySelector("a").style.marginRight = "1px";
@@ -116,17 +121,21 @@ function createPluginItem(packname, modpack) {
     download0.querySelector("a").style.marginRight = "-1px";
     links.appendChild(download0.querySelector("a"));
   }
-  if (modpack["link"]["bilibilidw"]) {
-    const bilibilidw = new DOMParser().parseFromString(`<a href="https://www.bilibili.com/read/${modpack["link"]["bilibilidw"]}" target="_blank"><img src="/images/bilibili-line-yellow.svg" alt="bilibili-line-yellow" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
-    bilibilidw.querySelector("a").style.marginRight = "1px";
-    links.appendChild(bilibilidw.querySelector("a"));
+  if (modpack["link"]["bilibilidwyellow"]) {
+    const bilibilidwyellow = new DOMParser().parseFromString(`<a href="https://www.bilibili.com/read/${modpack["link"]["bilibilidwyellow"]}" target="_blank"><img src="/images/bilibili-line-yellow.svg" alt="bilibili-line-yellow" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
+    bilibilidwyellow.querySelector("a").style.marginRight = "1px";
+    links.appendChild(bilibilidwyellow.querySelector("a"));
   }
-  if (modpack["link"]["bilibilidw0"]) {
-    const bilibilidw0 = new DOMParser().parseFromString(`<a href="https://www.bilibili.com/read/${modpack["link"]["bilibilidw0"]}" target="_blank"><img src="/images/bilibili-line-red.svg" alt="bilibili-line-red" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
-    bilibilidw0.querySelector("a").style.marginRight = "1px";
-    links.appendChild(bilibilidw0.querySelector("a"));
+  if (modpack["link"]["bilibilidwred"]) {
+    const bilibilidwred = new DOMParser().parseFromString(`<a href="https://www.bilibili.com/read/${modpack["link"]["bilibilidwred"]}" target="_blank"><img src="/images/bilibili-line-red.svg" alt="bilibili-line-red" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
+    bilibilidwred.querySelector("a").style.marginRight = "1px";
+    links.appendChild(bilibilidwred.querySelector("a"));
   }
-
+  if (modpack["link"]["bilibilidwvideo"]) {
+    const bilibilidwvideo = new DOMParser().parseFromString(`<a href="https://www.bilibili.com/video/${modpack["link"]["bilibilidwvideo"]}" target="_blank"><img src="/images/bilibili-line-red.svg" alt="bilibili-line-red" style="margin-bottom: -2px;" width="24px" height="24px"></a>`, "text/html");
+    bilibilidwvideo.querySelector("a").style.marginRight = "1px";
+    links.appendChild(bilibilidwvideo.querySelector("a"));
+  }
 d.appendChild(links);
 currentContainer.appendChild(modpackDiv);
 modpackCounter++;
