@@ -152,7 +152,7 @@ for (let i in obj) {
 }
 
 $.ajax({
-url: "Modpack/list.json",
+url: "list.json",
 type: "GET",
 dataType: "json",
 success: function (data) {
