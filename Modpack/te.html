@@ -447,6 +447,14 @@
   if (window.mermaid) {
     mermaid.initialize({ theme: "forest" });
   }
+
+  window.addEventListener('DOMContentLoaded', function() {
+    var imageContainers = document.getElementsByClassName('image-container');
+    var countImageContainers = imageContainers.length;
+    
+    var countElement = document.getElementById('count');
+    countElement.textContent = countImageContainers;
+  });
 </script>
 
 <style>
