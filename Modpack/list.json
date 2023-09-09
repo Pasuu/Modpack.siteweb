@@ -999,7 +999,7 @@
             "VM":"modpacks/fate/index.html"
         }
     },
-    "Fantasy Realm":{
+    "Fantasy Realm 1.16":{
         "img":"https://media.forgecdn.net/avatars/549/347/637886465721227326.png",
         "i18version":"v8 HF",
         "gversion":"1.16.5-Forge",
@@ -1790,7 +1790,7 @@
             "download":"Mystical Block/Mystical Block-CN-V2.7.1.rar"
         }
     },
-    "Fantasy Realm":{
+    "Fantasy Realm 1.18":{
         "img":"https://media.forgecdn.net/avatars/549/347/637886465721227326.png",
         "i18version":"v1.5",
         "gversion":"1.18.2-Forge",
