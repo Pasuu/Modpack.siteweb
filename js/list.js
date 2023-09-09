@@ -58,7 +58,7 @@ function createPluginItem(packname, modpack) {
     links.appendChild(modrinth.querySelector("a"));
   }
   if (modpack["link"]["mcmod"]) {
-    const mcmod = new DOMParser().parseFromString(`<a href="https://www.mcmod.cn/modpack/${modpack["link"]["mcmod"]}.html" target="_blank"><img src="/images/mcmod.svg" alt="mcmod" width="21px" height="21px" /></a>`, "text/html");
+    const mcmod = new DOMParser().parseFromString(`<a href="https://www.mcmod.cn/modpack/${modpack["link"]["mcmod"]}.html" target="_blank"><img src="/images/mcmod.png" alt="mcmod" width="21px" height="21px" /></a>`, "text/html");
     mcmod.querySelector("a").style.marginRight = "1px";
     links.appendChild(mcmod.querySelector("a"));
   }
