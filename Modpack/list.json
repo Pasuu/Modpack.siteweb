@@ -1393,15 +1393,15 @@
     },
     "DarkRPG - RPG Quest Magic & Origins Online Adventure":{
         "img":"https://media.forgecdn.net/avatars/863/502/638272728440333451.png",
-        "i18version":"6.1.0",
-        "gversion":"1.19.2-Fabric",
+        "i18version":"7.2.X",
+        "gversion":"1.20.1-Fabric",
         "i18team":"指星汉化组",
         "isdownload":false,
         "link":{
             "bilibili":"59512919",
             "curseforge":"darkrpg", 
             "mcmod":"406",
-            "bilibilidwred":"cv22651693"
+            "bilibilidwred":"BV11G411d7sz"
         }
     },
     "Life in the village 3":{
