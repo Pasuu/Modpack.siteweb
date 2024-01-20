@@ -21,7 +21,6 @@ $(function() {
         //   u.addEventListener("touchmove", o);
         //  u.addEventListener("touchstart", o);
             window.addEventListener("resize", n);
-            // 添加点击事件监听器
             u.addEventListener("click", onClick);
         }
         function n(t) {
@@ -66,12 +65,12 @@ $(function() {
                 const rect = u.getBoundingClientRect();
                 const clickX = event.clientX - rect.left;
                 const clickY = event.clientY - rect.top;
-                const numBubbles = 10; // 设置气泡数量
+                const numBubbles = 10; 
                 for (let i = 0; i < numBubbles; i++) {
                     s(clickX, clickY, w[Math.floor(Math.random() * w.length)]);
                 }
             } else {
-                const numBubbles = 10; // 设置气泡数量
+                const numBubbles = 10; 
                 for (let i = 0; i < numBubbles; i++) {
                     s(event.clientX, event.clientY, w[Math.floor(Math.random() * w.length)]);
                 }

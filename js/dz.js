@@ -34,7 +34,7 @@ function dz() {
     return document.getElementsByTagName(n);
   }
 
-// 根据设备类型和网页宽度设置粒子数量
+
 var count = isMobile.any() || window.innerWidth <= 768 ? 40 : 150;
 
 function t() {
@@ -46,7 +46,7 @@ function t() {
     z: n(i, "zIndex", -1),
     o: n(i, "opacity", 0.5),
     c: n(i, "color", "241 156 0"),
-    count: count, // 将粒子数量修改为 count 的值，根据设备类型和网页宽度自动选择
+    count: count,
     pointSize: 1.5,
   };
 }
@@ -112,7 +112,7 @@ function t() {
     d.z +
     ";opacity:" +
     d.o +
-    ";pointer-events:none;"),  // 添加 pointer-events:none; 确保鼠标事件不会被阻挡
+    ";pointer-events:none;"),  
   e("body")[0].appendChild(m),
   o(),
   (window.onresize = o),
