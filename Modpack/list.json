@@ -31,7 +31,7 @@
     },
     "FTB Presents Integration by Parts DX":{
         "img":"https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F100%2Fftb-presents-ibpdx-logo.png&w=256&q=75",
-        "i18version":"1.9.0/1.11.0",
+        "i18version":"1.9.0/1.13.1",
         "gversion":"1.16.5-Forge",
         "i18team":"Pasuu/给我带双份老鸭煲",
         "isdownload":true,
@@ -273,7 +273,7 @@
     },
     "GT New Horizons":{
         "img":"https://media.forgecdn.net/avatars/53/488/636125694388807951.png",
-        "i18version":"2.3.4",
+        "i18version":"2.5.1",
         "gversion":"1.7.10-Forge",
         "i18team":"Kiwi233",
         "isdownload":true,
@@ -283,7 +283,7 @@
             "github":"Kiwi233/Translation-of-GTNH",
             "CFPAOrg":false,
             "gtnh":"true",
-            "download":"gtnh/gtnh-cn-2.3.4.rar"
+            "download":"gtnh/gtnh-cn-2.5.1.7z"
         }
     },
     "Glacial Awakening":{
@@ -578,7 +578,7 @@
     },
     "FTB StoneBlock 3":{
         "img":"https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F96%2Fstoneblock_logo.png&w=256&q=75",
-        "i18version":"1.7.1",
+        "i18version":"1.8.1",
         "gversion":"1.18.2-Forge",
         "i18team":"VM-Team",
         "isdownload":false,
@@ -851,11 +851,11 @@
         "isdownload":true,
         "link":{
             "bilibili":"6575218",
-            "curseforge":"staged-learning",
+            "curseforge":"star-factory",
             "mcmod":"140",
             "anyijun":true,
             "download1":"anyijun/Star Factory/Star Factory-1.1.0.zip",
-            "VM":true,
+            "VM0":true,
             "baidupan":"1OI533N2IMHssFsoGm5o0lg?pwd=x068",
             "download0":"vm/Star Factory/Star Factory汉化.rar"
 
@@ -1104,7 +1104,7 @@
     },
     "Better MC Skyblock":{
         "img":"https://media.forgecdn.net/avatars/425/802/637655262867858851.png",
-        "i18version":"5",
+        "i18version":"v5",
         "gversion":"1.16.5-Forge",
         "i18team":"cat酱(VM-Team)",
         "isdownload":true,
@@ -1277,7 +1277,7 @@
     },
     "Astropolis":{
         "img":"https://media.forgecdn.net/avatars/627/297/638022175281355875.png",
-        "i18version":"1.1",
+        "i18version":"1.2",
         "gversion":"1.19.2-Forge",
         "i18team":"大和牌阎魔刀",
         "isdownload":true,
@@ -1285,7 +1285,7 @@
             "bilibili":"3225791",
             "curseforge":"astropolis",
             "mcmod":"539",
-            "download":"astropolis/astropolis汉化补丁1.1.zip"
+            "download":"astropolis/astropolis汉化补丁1.2.zip"
         }
     },
     "Cryptopolis":{
@@ -1393,7 +1393,7 @@
     },
     "DarkRPG - RPG Quest Magic & Origins Online Adventure":{
         "img":"https://media.forgecdn.net/avatars/863/502/638272728440333451.png",
-        "i18version":"7.2.X",
+        "i18version":"7.6.6",
         "gversion":"1.20.1-Fabric",
         "i18team":"指星汉化组",
         "isdownload":false,
@@ -1418,7 +1418,7 @@
     },
     "FTB Skies":{
         "img":"https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F99%2FFTB%20Skies%20512x512.png&w=256&q=75",
-        "i18version":"1.3.1",
+        "i18version":"1.4.1",
         "gversion":"1.19.2-Forge",
         "i18team":"300魔女我爱罗",
         "isdownload":true,
@@ -1426,7 +1426,7 @@
             "bilibili":"30111191",
             "ftb":"103-ftb-skies?tab=about", 
             "mcmod":"597",
-            "download":"FTB Skies/config.zip"
+            "download":"FTB Skies/FTB Skies1.4.1.rar"
         }
     },
     "Techopolis 2":{
@@ -1534,7 +1534,7 @@
     },
     "Roguelike Adventures and Dungeons 2":{
         "img":"https://media.forgecdn.net/avatars/485/618/637786105420601729.png",
-        "i18version":"1.6",
+        "i18version":"1.8",
         "gversion":"1.16.5-Forge",
         "i18team":"给我带双份老鸭煲",
         "isdownload":false,
@@ -1572,7 +1572,7 @@
     },
     "Create Stellar":{
         "img":"https://media.forgecdn.net/avatars/808/457/638178606146310655.png",
-        "i18version":"1.1.10",
+        "i18version":"1.1.11",
         "gversion":"1.19.2-Forge",
         "i18team":"给我带双份老鸭煲",
         "isdownload":false,
@@ -1584,14 +1584,14 @@
     },
     "Dimension Hopper: The Fall":{
         "img":"https://media.forgecdn.net/avatars/373/406/637545899548889548.png",
-        "i18version":"1.3.0",
+        "i18version":"1.4.4",
         "gversion":"1.12.2-Forge",
         "i18team":"是格格巫超人哟",
         "isdownload":false,
         "link":{
             "bilibili":"481708687",
             "curseforge":"dimension-hopper-the-fall", 
-            "bilibilidwred":"cv24180216"
+            "bilibilidwred":"cv27535628"
         }
     },
     "Divine Journey 2":{
@@ -1663,7 +1663,7 @@
     },
     "Better MC [FORGE] - BMC3":{
         "img":"https://media.forgecdn.net/avatars/595/284/637969851390579025.png",
-        "i18version":"v17",
+        "i18version":"v20",
         "gversion":"1.19.2-Forge",
         "i18team":"有只龙",
         "isdownload":true,
@@ -1671,7 +1671,7 @@
             "bilibili":"179250719",
             "curseforge":"better-mc-forge-bmc3", 
             "mcmod":"205",
-            "download":"betterMC/betterMC(forge)1.19.2v17.zip"
+            "download":"betterMC/betterMC(forge)1.19.2v20.zip"
         }
     },
     "Stone Technology Ultimate":{
@@ -1688,7 +1688,7 @@
     },
     "Create: Arcane Engineering":{
         "img":"https://media.forgecdn.net/avatars/853/595/638257287979650577.png",
-        "i18version":"0.1.7",
+        "i18version":"1.9.3/0.1.7",
         "gversion":"1.18.2-Forge",
         "i18team":"Maxing·long/纯纯的Mala",
         "isdownload":true,
@@ -1696,7 +1696,7 @@
             "bilibili":"32998596",
             "curseforge":"create-arcane-engineering", 
             "github":"maxinglo/ceate-arcane-engineering-Chinese-Ver",
-            "download":"CAE/CAE0.1.7汉化补丁 v2.zip",
+            "download":"CAE/1.9.3汉化补丁.zip",
             "bilibilidwyellow":"cv25313183"
         }
     },
@@ -1715,7 +1715,7 @@
     },
     "Better MC [FABRIC] - BMC1":{
         "img":"https://media.forgecdn.net/avatars/592/944/637965415571102225.png",
-        "i18version":"v19.5",
+        "i18version":"v20",
         "gversion":"1.19.2-Fabric",
         "i18team":"有只龙",
         "isdownload":true,
@@ -1723,7 +1723,7 @@
             "bilibili":"179250719",
             "curseforge":"better-mc-fabric-bmc1", 
             "mcmod":"205",
-            "download":"betterMC/betterMC(fabric)1.19.2v19.5.zip"
+            "download":"betterMC/betterMC(fabric)1.19.2v20.zip"
         }
     },
     "Create 101 Season 2":{
@@ -1767,7 +1767,7 @@
     },
     "Multiblock Madness 2":{
         "img":"https://media.forgecdn.net/avatars/784/333/638133103976799972.png",
-        "i18version":"0.4.2 - Ore Drops and Fixes!",
+        "i18version":"0.5.5",
         "gversion":"1.18.2-Forge",
         "i18team":"Addyabbia",
         "isdownload":false,
