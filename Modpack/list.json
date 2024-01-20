@@ -907,7 +907,7 @@
     },
     "Vault Hunters 3rd Edition":{
         "img":"https://media.forgecdn.net/avatars/651/140/638051446127306822.png",
-        "i18version":"3.11.3",
+        "i18version":"3.12.4",
         "gversion":"1.18.2-Forge",
         "i18team":"VM-Team",
         "isdownload":false,
@@ -935,7 +935,7 @@
     },
     "DawnCraft - An Adventure RPG Modpack":{
         "img":"https://media.forgecdn.net/avatars/780/552/638125961291118791.gif",
-        "i18version":"1.29_f",
+        "i18version":"1.33_f",
         "gversion":"1.18.2-Forge",
         "i18team":"VM-Team",
         "isdownload":false,
@@ -1792,7 +1792,7 @@
     },
     "Fantasy Realm 1.18":{
         "img":"https://media.forgecdn.net/avatars/549/347/637886465721227326.png",
-        "i18version":"v1.5",
+        "i18version":"v3",
         "gversion":"1.18.2-Forge",
         "i18team":"VM-Team",
         "isdownload":false,
@@ -1830,6 +1830,19 @@
             "mcmod":"450",
             "github":"VM-Chinese-translate-group/The-Decursio-Project-Expert-chinese-patch",
             "VM":"modpacks/decursio/index.html"
+        }
+    },
+    "Prey: An Expansive RPG Nightmare":{
+        "img":"https://media.forgecdn.net/avatars/861/833/638269815319567383.png",
+        "i18version":"1.0.7",
+        "gversion":"1.19.2-Forge",
+        "i18team":"VM-Team",
+        "isdownload":false,
+        "link":{
+            "bilibili":"2085089798",
+            "curseforge":"prey-beta",
+            "github":"VM-Chinese-translate-group/Prey",
+            "VM":"modpacks/prey/index.html"
         }
     }
 
