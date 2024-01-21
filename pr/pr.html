@@ -60,14 +60,7 @@
         }
       </style>
 
-<style>
-  #modpack {
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 24px;
-    border-right: 2px solid #000; /* 边框的样式，可根据需要调整 */
-  }
-</style>
+
 
     </head>
 
@@ -87,7 +80,9 @@
     <div class="bg-box" style="background-color:black;">
     </div>
     <div class="cover-inner text-center text-white">
-      <h1><a href="/"><div id="modpack">Modpack</div></a></h1>
+      <h1><a href="/"><svg id="modpack" width="200" height="50" xmlns="http://www.w3.org/2000/svg">
+        <text x="10" y="40" font-family="Arial" font-size="24" fill="black">Modpack</text>
+      </svg></a></h1>
       <div id="subtitle-box">
         <span id="subtitle"></span>
         <span style="font-size: 20px;">
@@ -103,26 +98,19 @@
   </div>
 </section>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
 <script>
-  function typeWriter() {
-    let text = "Modpack";
-    let i = 0;
-    function type() {
-      if (i < text.length) {
-        document.getElementById("modpack").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(type, 200); // 调整显示速度，单位为毫秒
-      }
-    }
-    type();
-  }
-
-  window.onload = function() {
-    typeWriter();
-  };
+  anime({
+    targets: '#modpack text',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutSine',
+    duration: 1500, // 调整动画时长
+    delay: function(el, i) { return i * 200 }, // 调整每个字母的延迟时间
+    direction: 'alternate',
+    loop: true
+  });
 </script>
-
-
 
 <script src="https://cdn.staticfile.org/typed.js/2.0.12/typed.min.js"></script>
 
