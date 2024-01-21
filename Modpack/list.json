@@ -1401,7 +1401,7 @@
             "bilibili":"59512919",
             "curseforge":"darkrpg", 
             "mcmod":"406",
-            "bilibilidwvideo":"BV11G411d7sz"
+            "bilibilidwvideo":"BV1ka4y1C7nD"
         }
     },
     "Life in the village 3":{
@@ -1509,15 +1509,15 @@
     },
     "Better MC [FORGE] - BMC1":{
         "img":"https://media.forgecdn.net/avatars/593/71/637965640919658046.png",
-        "i18version":"v44",
+        "i18version":"v60.5",
         "gversion":"1.16.5-Forge",
-        "i18team":"非人NotPeople",
+        "i18team":"有只龙",
         "isdownload":true,
         "link":{
-            "bilibili":"329413914",
+            "bilibili":"179250719",
             "curseforge":"better-mc-forge-bmc1", 
             "mcmod":"205",
-            "download":"Better Minecraft【Forge】1.16.5/Better Minecraft【Forge】1.16.5 V44汉化包.rar"
+            "download":"betterMC/betterMC(forge)1.16.5v60.5.zip"
         }
     },
     "OBSIDA-TECH":{
@@ -1844,12 +1844,81 @@
             "github":"VM-Chinese-translate-group/Prey",
             "VM":"modpacks/prey/index.html"
         }
+    },
+    "Infernal Origins":{
+        "img":"https://media.forgecdn.net/avatars/904/711/638355105225386236.png",
+        "i18version":" v2.0.0 - Patch 1",
+        "gversion":"1.16.5-Forge",
+        "i18team":"是格格巫超人哟",
+        "isdownload":false,
+        "link":{
+            "bilibili":"481708687",
+            "curseforge":"infernal-rpg", 
+            "bilibilidwred":"cv28997323"
+        }
+    },
+    "Stacia 2 Expert":{
+        "img":"https://media.forgecdn.net/avatars/924/798/638393018773627370.png",
+        "i18version":"BETA TEST 0.8.5",
+        "gversion":"1.19.2-Forge",
+        "i18team":"Addyabbia",
+        "isdownload":false,
+        "link":{
+            "bilibili":"12693814",
+            "curseforge":"stacia-2-expert", 
+            "bilibilidwred":"cv28948795"
+        }
+    },
+    "Plastek":{
+        "img":"https://media.forgecdn.net/avatars/854/515/638258672026175304.png",
+        "i18version":"v1.40a",
+        "gversion":"1.19.2-Forge",
+        "i18team":"Addyabbia",
+        "isdownload":false,
+        "link":{
+            "bilibili":"12693814",
+            "curseforge":"plastek", 
+            "bilibilidwred":"cv27931927"
+        }
+    },
+    "Better MC [FORGE] - BMC4":{
+        "img":"https://media.forgecdn.net/avatars/835/282/638226792192343447.png",
+        "i18version":"v24 HF",
+        "gversion":"1.20.1-Forge",
+        "i18team":"有只龙",
+        "isdownload":true,
+        "link":{
+            "bilibili":"179250719",
+            "curseforge":"better-mc-forge-bmc4", 
+            "mcmod":"205",
+            "download":"betterMC(forge)1.20.1v24HF.zip"
+        }
+    },
+    "Medieval MC [FORGE] - MMC4":{
+        "img":"https://media.forgecdn.net/avatars/835/747/638227677956298580.png",
+        "i18version":"v19",
+        "gversion":"1.20.1-Forge",
+        "i18team":"有只龙",
+        "isdownload":true,
+        "link":{
+            "bilibili":"179250719",
+            "curseforge":"medieval-mc-mmc4", 
+            "mcmod":"255",
+            "download":"MedievalMC/MedievalMC(forge)1.20.1v19.zip"
+        }
+    },
+    "DeceasedCraft - Modern Zombie Apocalypse":{
+        "img":"https://media.forgecdn.net/avatars/878/99/638304436093750775.gif",
+        "i18version":"v4.4.6",
+        "gversion":"1.18.2-Forge",
+        "i18team":"岛村樱儿",
+        "isdownload":true,
+        "link":{
+            "bilibili":"85945827",
+            "curseforge":"deceasedcraft", 
+            "download":"DeceasedCraft/DeceasedCraft v4.4.6.zip"
+        }
     }
-
-
-
-
-
 
 
 
