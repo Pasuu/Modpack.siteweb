@@ -1264,15 +1264,15 @@
     },
     "Craft to Exile [Dissonance]":{
         "img":"https://media.forgecdn.net/avatars/292/387/637325401634526027.png",
-        "i18version":"3.1.2b",
+        "i18version":"3.1.9",
         "gversion":"1.15.2-Forge",
-        "i18team":"青岚ovo",
-        "isdownload":false,
+        "i18team":"浅白地灵",
+        "isdownload":true,
         "link":{
-            "bilibili":"89660020",
+            "bilibili":"13477959",
             "curseforge":"crafttoexiledissonance",
             "mcmod":"55",
-            "bilibilidwred":"cv19287010"
+            "download":"CTE/1.15.2-CTE-汉化包V3.1.9.zip"
         }
     },
     "Astropolis":{
@@ -1918,8 +1918,20 @@
             "curseforge":"deceasedcraft", 
             "download":"DeceasedCraft/DeceasedCraft v4.4.6.zip"
         }
+    },
+    "Craft to Exile [Harmony]":{
+        "img":"https://media.forgecdn.net/avatars/300/272/637356929160669168.png",
+        "i18version":"1.3.8",
+        "gversion":"1.16.4-Forge",
+        "i18team":"浅白地灵",
+        "isdownload":true,
+        "link":{
+            "bilibili":"13477959",
+            "curseforge":"crafttoexiledissonance",
+            "mcmod":"56",
+            "download":"CTE/CTE-Harmony-V1.3.8.rar"
+        }
     }
-
 
 
 
