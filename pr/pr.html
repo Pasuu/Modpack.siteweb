@@ -59,6 +59,16 @@
           font-size: 1.6rem;
         }
       </style>
+
+<style>
+  #modpack {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 24px;
+    border-right: 2px solid #000; /* 边框的样式，可根据需要调整 */
+  }
+</style>
+
     </head>
 
 
@@ -77,7 +87,7 @@
     <div class="bg-box" style="background-color:black;">
     </div>
     <div class="cover-inner text-center text-white">
-      <h1><a href="/">Modpack</a></h1>
+      <h1><a href="/"><div id="modpack">Modpack</div></a></h1>
       <div id="subtitle-box">
         <span id="subtitle"></span>
         <span style="font-size: 20px;">
@@ -92,6 +102,25 @@
   <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
   </div>
 </section>
+
+<script>
+  function typeWriter() {
+    let text = "Modpack";
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        document.getElementById("modpack").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 200); // 调整显示速度，单位为毫秒
+      }
+    }
+    type();
+  }
+
+  window.onload = function() {
+    typeWriter();
+  };
+</script>
 
 
 
