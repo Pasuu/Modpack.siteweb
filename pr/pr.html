@@ -80,9 +80,7 @@
     <div class="bg-box" style="background-color:black;">
     </div>
     <div class="cover-inner text-center text-white">
-      <h1><a href="/"><svg id="modpack" width="200" height="50" xmlns="http://www.w3.org/2000/svg">
-        <text x="10" y="40" font-family="Arial" font-size="24" fill="black">Modpack</text>
-      </svg></a></h1>
+      <h1><a href="/"><div id="modpack"></div></a></h1>
       <div id="subtitle-box">
         <span id="subtitle"></span>
         <span style="font-size: 20px;">
@@ -98,18 +96,32 @@
   </div>
 </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.0/svg.min.js"></script>
 
 <script>
-  anime({
-    targets: '#modpack text',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutSine',
-    duration: 1500, // 调整动画时长
-    delay: function(el, i) { return i * 200 }, // 调整每个字母的延迟时间
-    direction: 'alternate',
-    loop: true
-  });
+  // 创建 SVG 画布
+  var draw = SVG().addTo('#modpack').size(400, 100);
+
+  // 设置字体样式
+  var text = draw.text('Modpack').font({ size: 48 });
+
+  // 获取每个字符的路径数据
+  var paths = text.textPath().at(0).array().valueOf();
+
+  // 遍历每个字符
+  for (var i = 0; i < paths.length; i++) {
+    var path = draw.path(paths[i]).fill('none').stroke({ color: '#000', width: 2 });
+    
+    // 获取路径的总长度
+    var length = path.length();
+
+    // 设置起始状态
+    path.strokeDasharray(length, length);
+    path.strokeDashoffset(length);
+
+    // 使用动画实现一笔一划效果
+    path.animate(1500, '<>').strokeDashoffset(0);
+  }
 </script>
 
 <script src="https://cdn.staticfile.org/typed.js/2.0.12/typed.min.js"></script>
