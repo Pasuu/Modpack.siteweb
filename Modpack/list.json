@@ -1943,8 +1943,21 @@
             "curseforge":"craft-to-exile-2",
             "download":"CTE/CTE2-V0.1.2fix2.zip"
         }
+    },
+    "Nomifactory CEu":{
+        "img":"https://media.forgecdn.net/avatars/777/437/638120557907947036.png",
+        "i18version":"1.7-alpha-2a",
+        "gversion":"1.12.2-Forge",
+        "i18team":"凌六菌",
+        "isdownload":false,
+        "link":{
+            "bilibili":"295028615",
+            "curseforge":"nomi-ceu", 
+            "mcmod":"519",
+            "github":"zero6six/nomi-ceu-zh_cn",
+            "bilibilidwred":"cv27798771"
+        }
     }
-
 
 
 
