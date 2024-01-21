@@ -1927,12 +1927,23 @@
         "isdownload":true,
         "link":{
             "bilibili":"13477959",
-            "curseforge":"crafttoexiledissonance",
+            "curseforge":"crafttoexileharmony",
             "mcmod":"56",
             "download":"CTE/CTE-Harmony-V1.3.8.rar"
         }
+    },
+    "Craft to Exile 2":{
+        "img":"https://media.forgecdn.net/avatars/904/988/638355721851776295.gif",
+        "i18version":"0.1.2",
+        "gversion":"1.20.1-Forge",
+        "i18team":"浅白地灵",
+        "isdownload":true,
+        "link":{
+            "bilibili":"13477959",
+            "curseforge":"craft-to-exile-2",
+            "download":"CTE/CTE2-V0.1.2fix2.zip"
+        }
     }
-
 
 
 
