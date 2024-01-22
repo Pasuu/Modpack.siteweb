@@ -1957,7 +1957,40 @@
             "github":"zero6six/nomi-ceu-zh_cn",
             "bilibilidwred":"cv27798771"
         }
+    },
+    "Enigmatica 9: Expert - E9E":{
+        "img":"https://media.forgecdn.net/avatars/844/83/638240908112377505.jpeg",
+        "i18version":"1.18.0",
+        "gversion":"1.19.2-Forge",
+        "i18team":"RCqaq_",
+        "isdownload":true,
+        "link":{
+            "bilibili":"22932427",
+            "curseforge":"enigmatica9expert",
+            "mcmod":"650",
+            "github":"RCqaq/Enigmatica-9-Expert-E9E-Translation",
+            "download":"E9/Enigmatica-9-Expert-v1.18.0.zip"
+        }
+    },
+    "Enigmatica 9 - E9":{
+        "img":"https://media.forgecdn.net/avatars/557/558/637904430386629931.jpeg",
+        "i18version":"1.18.0",
+        "gversion":"1.19.2-Forge",
+        "i18team":"RCqaq_",
+        "isdownload":true,
+        "link":{
+            "bilibili":"22932427",
+            "curseforge":"enigmatica9",
+            "mcmod":"699",
+            "github":"RCqaq/Enigmatica-9-Expert-E9E-Translation",
+            "download":"E9/Enigmatica-9-Expert-v1.18.0.zip"
+        }
     }
+
+
+
+
+
 
 
 
