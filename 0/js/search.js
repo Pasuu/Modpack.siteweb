@@ -1,36 +1,38 @@
-// ==UserScript==
-// @name         New Userscript
-// @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
-// @author       You
-// @match        https://www.huya.com/raini
-// @icon         http://huya.com/favicon.ico
-// @grant        none
-// ==/UserScript==
+var initialDisplayStates = [];
+var initialFlexDirection;
 
-let removelist = []
-let list_CSS = ["#sections-vm"]
-
-window.onload = function() {
-  init();
-  console.log(removelist);
-  removelist.forEach(removebylist)
-};
-
-function removebylist(dom){
-  console.log(dom);
-  let timerId = setInterval(remove(dom,timerId), 1000);
-  setTimeout(clearInterval(timerId), 10000);
+function removeSymbolsAndSpaces(str) {
+  return str.replace(/[^\w\s\u4e00-\u9fa5]/g, '');
 }
 
-function remove(dom,timerId){
-  if(dom){
-      dom.style.display = "none";
-      clearInterval(timerId)
+function search(keyword) {
+  keyword = removeSymbolsAndSpaces(keyword.toLowerCase());
+  var contentBoxes = document.getElementsByClassName('bordered');
+
+  var hasResults = false;
+
+  for (var i = 0; i < contentBoxes.length; i++) {
+    var boxContent = removeSymbolsAndSpaces(contentBoxes[i].querySelector('#pack-name').textContent.toLowerCase());
+
+    if (boxContent.includes(keyword)) {
+      contentBoxes[i].style.display = 'flex';
+      hasResults = true;
+    } else {
+      contentBoxes[i].style.display = 'none';
+    }
   }
-}
 
-function init() {
-  list_CSS.forEach((e)=>{removelist.push(document.querySelector(e))})
+  var resultCountElement = document.getElementById('resultCount');
+
+  if (hasResults) {
+    var resultCount = 0;
+    for (var i = 0; i < contentBoxes.length; i++) {
+      if (contentBoxes[i].style.display === 'flex') {
+        resultCount++;
+      }
+    }
+    resultCountElement.textContent = resultCount;
+  } else {
+    resultCountElement.textContent = '0';
+  }
 }
