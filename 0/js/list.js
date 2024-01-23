@@ -100,33 +100,33 @@ function list(obj) {
 }
 
 function getdownloadstats(n,v) {
-    url = "http://127.0.0.1:8000/stats/get?n=" + n + "-" + v;
+    url = "http://modpack.top/stats/get?n=" + n + "-" + v;
     var result;
     $.ajax({
-        url : url,
-        type : "GET",
-        data : {},
-        async : false,
-        success : function(data) {
+        url: url,
+        type: "GET",
+        data: {},
+        async: false,
+        success: function (data) {
             result = data;
         }
     });
     return result;
-
 }
 
 function postgetdownloadstats(n, v) {
-    url = "http://127.0.0.1:8000/stats/upload?n=" + n + "-" + v;
+    url = "http://modpack.top/stats/upload?n=" + n + "-" + v;
     $.ajax({
-        url : url,
-        type : "POST",
-        data : {},
-        async : false,
-        success : function(data) {
+        url: url,
+        type: "POST",
+        data: {},
+        async: false,
+        success: function (data) {
             console.log("upload success");
         }
     });
 }
+
 
 $.ajax({
     url: "bz.json",
