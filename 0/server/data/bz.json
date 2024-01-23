@@ -10,6 +10,9 @@
             "mcmod": "426",
             "github": "Pasuu-Mc/Chroma-sky-2-CN",
             "CFPAOrg": false
+        },
+        "download": {
+            "1.0.0":["0000/00/00 00:00:00","1","382KiB","Chroma-sky-2/Chroma-sky-2-CN-1.0.9.rar"]
         }
     },
     "All the Mods 7 - To the Sky - atm7sky": {
@@ -17,12 +20,16 @@
         "i18version": "1.2.3",
         "gversion": "1.18.2-Forge",
         "i18team": "Pasuu",
+        "isdownload": true,
         "link": {
             "bilibili": "378822559",
             "curseforge": "all-the-mods-7-to-the-sky",
             "mcmod": "559",
             "github": "Pasuu-Mc/ATM7-Sky-quest-CN",
             "CFPAOrg": false
+        },
+        "download": {
+            "1.0.0":["0000/00/00 00:00:00","10","197KiB","ATM7-Sky/ATM7-Sky任务汉化V1.2.3.rar"]
         }
     }
 }
