@@ -1,0 +1,79 @@
+<div id="uploadmodpack">
+    <div class="about-card">
+        <div class="center-text">
+            <h1 style="text-align: center; color: rgb(0, 0, 0); margin-top:4%; text-align: center;">提交汉化</h1>
+        </div>
+        <div class="upload-container">
+            <div>
+                <span onclick="toggleForm()">正在汉化</span>
+                <span onclick="toggleForm()">已完成汉化</span>
+            </div>
+            <div style="display: block;" class="modpack uploadmodpack-card">
+                <div class="left-half">
+                    <div>
+                        <label>整合包名称(英文名)</label>
+                        <div class="input-group"><input type="text" placeholder="Chroma Sky 2" name="modpack-name">
+                        </div>
+                    </div>
+                    <div>
+                        <label>整合包头图链接</label>
+                        <div class="input-group"><input type="text" placeholder="https://example.com"
+                                name="modpack-img"></div>
+                    </div>
+                    <div>
+                        <label>汉化的整合包版本</label>
+                        <div class="input-group"><input type="text" placeholder="0.0.1" name="modpack-i18version"></div>
+                    </div>
+                </div>
+                <div class="right-half">
+                    <div>
+                        <label>整合包游戏版本</label>
+                        <div class="input-group"><input type="text" placeholder="1.16.5" name="modpack-gversion"></div>
+                    </div>
+                    <div>
+                        <label>汉化团队or个人</label>
+                        <div class="input-group"><input type="text" placeholder="name" name="modpack-i18team"></div>
+                    </div>
+                    <div>
+                        <label>整合包汉化链接</label>
+                        <div class="input-group"><input type="text" placeholder="https://example.com"
+                                name="modpack-packurl"></div>
+                    </div>
+                </div>
+                <button onclick="uploadmodpack()" style="
+                position: absolute;
+                right: 16px;
+                bottom: 34px;
+            ">提交</button>
+            </div>
+            <div style="display: none;" class="translating uploadmodpack-card">
+                <div>
+                    <label>整合包名称(英文名)</label>
+                    <div class="input-group"><input type="text" placeholder="Chroma Sky 2" name="modpack-name"></div>
+                </div>
+                <div>
+                    <label>整合包头图链接</label>
+                    <div class="input-group"><input type="text" placeholder="https://example.com" name="modpack-img">
+                    </div>
+                </div>
+                <div>
+                    <label>汉化的整合包版本</label>
+                    <div class="input-group"><input type="text" placeholder="0.0.1" name="modpack-i18version"></div>
+                </div>
+                <div>
+                    <label>整合包游戏版本</label>
+                    <div class="input-group"><input type="text" placeholder="1.16.5" name="modpack-gversion"></div>
+                </div>
+                <div>
+                    <label>汉化团队or个人</label>
+                    <div class="input-group"><input type="text" placeholder="name" name="modpack-i18team"></div>
+                </div>
+                <button style="
+                position: absolute;
+                right: 16px;
+                bottom: 34px;
+            ">提交</button>
+            </div>
+        </div>
+    </div>
+</div>

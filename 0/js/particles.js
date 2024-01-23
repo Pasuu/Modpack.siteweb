@@ -117,7 +117,7 @@ function dz() {
     o(),
     (window.onresize = o),
     (window.onmousemove = function (n) {
-      (n = n || window.event), (y.x = n.clientX), (y.y = n.clientY);
+      // (n = n || window.event), (y.x = n.clientX), (y.y = n.clientY);  // 鼠标互动功能（已关闭）
     }),
     (window.onmouseout = function () {
       y.x = null;

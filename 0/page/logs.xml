@@ -1,0 +1,106 @@
+<div id="logs">
+    <div class="about-card">
+        <div class="center-text">
+            <h1 style="text-align: center; color: rgb(0, 0, 0); margin-top:4%;">更新日志</h1>
+            <div class="logs" style="height: 80%;overflow-y: auto;margin-left: 10%; margin-right: 10%;">
+                <span>2023年9月1日</span>
+                <li>由<spen class="highlight">xinyihl</spen>重写网站</li>
+                <br>
+                <span>-----------------------(重写前日志)-----------------------</span>
+                <br>
+                <span>2023年9月9日</span>
+                <li>修复部分bug, 更新添加部分汉化</li>
+                <li>感谢由<spen class="highlight">Chazzing</spen>提供的汉化直链</li>
+                <br>
+                <span>2023年8月22日</span>
+                <li>感谢由<spen class="highlight">xinyihl</spen>提供的后期维护建议</li>
+                <li>感谢由<spen class="highlight">GL噬神</spen>提供的汉化直链</li>
+                <br>
+                <span>2023年8月20日</span>
+                <li>修改网站鼠标点击效果</li>
+                <br>
+                <span>2023年8月19日</span>
+                <li>取消部分图床服务,修改为图源地址,<a href="https://www.overwolf.com/legal/terms/">服务条款</a></li>
+                <li>添加<spen class="highlight">神域传人</spen>授权的汉化直链</li>
+                <li>在此，再次感谢这位的授权！</li>
+                <br>
+                <span>2023年8月18日</span>
+                <li>添加<spen class="highlight">安逸-Team</spen>(木大皮代)授权的汉化直链</li>
+                <li>添加<spen class="highlight">橡树树苗</spen>授权的汉化直链</li>
+                <li>添加<spen class="highlight">捂脸</spen>授权的汉化直链</li>
+                <li>添加<spen class="highlight">仙人掌</spen>授权的汉化直链</li>
+                <li>添加<spen class="highlight">Sine</spen>授权的汉化直链</li>
+                <li>添加<spen class="highlight">Ours_to</spen>授权的汉化直链</li>
+                <li>添加<spen class="highlight">自尊寺</spen>授权的汉化直链</li>
+                <li>在此，再次感谢各位的授权！</li>
+                <br>
+                <span>2023年8月17日</span>
+                <li>修改某些图片，从webp格式到svg格式</li>
+                <li>添加<spen class="highlight">KlparetlR</spen>授权的汉化直链</li>
+                <li>添加<spen class="highlight">hujtt</spen>授权的汉化直链</li>
+                <li>添加<spen class="highlight">HorasHue</spen>授权的汉化下载直链</li>
+                <li>添加<spen class="highlight">Shawnn</spen>授权的汉化下载直链</li>
+                <li>添加<spen class="highlight">非人NotPeople</spen>授权的汉化下载直链</li>
+                <li>添加<spen class="highlight">CFPA-Team</spen>其余汉化的下载直链<br>注意:CFPA-Team协议为CC-BY-NC-SA，<a
+                        href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n" target="_blank">具体可点击此处</a></li>
+                <li>在此，再次感谢各位的授权！</li>
+                <br>
+                <span>2023年8月16日</span>
+                <li>添加<spen class="highlight">TartaricAcid</spen>授权的汉化直链</li>
+                <li>添加<spen class="highlight">木大皮</spen>授权的汉化直链</li>
+                <li>添加<spen class="highlight">cat酱</spen>授权的汉化下载直链</li>
+                <li>添加<spen class="highlight">Kiwi233</spen>授权的汉化下载直链</li>
+                <li>添加<spen class="highlight">Annijang</spen>授权的汉化下载直链</li>
+                <li>添加<spen class="highlight">大和牌阎魔刀</spen>授权的汉化下载直链</li>
+                <li>添加<spen class="highlight">300魔女我爱罗</spen>授权的汉化下载直链</li>
+                <li>添加<spen class="highlight">八云橙子</spen>授权的汉化下载直链</li>
+                <li>添加<spen class="highlight">枫灵枭</spen>授权的汉化下载直链</li>
+                <li>添加<spen class="highlight">泽崎诚</spen>授权的汉化下载直链</li>
+                <li>添加<spen class="highlight">有只龙</spen>授权的汉化下载直链</li>
+                <li>添加<spen class="highlight">Maxing·long</spen>授权的汉化下载直链</li>
+                <li>在此，再次感谢各位的授权！</li>
+                <li>手机搜索后出现屏幕错乱bug已修复</li>
+                <br>
+                <span>2023年8月15日</span>
+                <li>针对搜索结果会出现排列不齐，其他内容的问题进行改善</li>
+                <li>重启不蒜子服务</li>
+                <li>修改部分汉化从转链下载到直链下载，搜索直链即可</li>
+                <br>
+                <span>2023年8月14日</span>
+                <li>更换网站LOGO</li>
+                <br>
+                <span>2023年8月13日</span>
+                <li>添加隐私政策，修改关于网站和捐赠方式的位置</li>
+                <li>搜索优化，添加模糊搜索</li>
+                <br>
+                <span>2023年8月11日</span>
+                <li>为Modpack页面添加搜索</li>
+                <br>
+                <span>2023年8月9日</span>
+                <li>为Modpack页面内容添加定位</li>
+                <li>链接是:<spen class="highlight">源地址</spen>+<spen class="highlight">#</spen>+<spen class="highlight">
+                        Divine Journey 2</spen>
+                </li>
+                <br>
+                <span>2023年7月26日</span>
+                <li>更换部署服务器，更快的访问速度</li>
+                <br>
+                <span>2023年7月23日</span>
+                <li>开始公测</li>
+                <br>
+                <span>2023年7月20日</span>
+                <li>更换评论系统-来必力</li>
+                <br>
+                <span>2023年7月6日</span>
+                <li>添加评论系统-Giscus</li>
+                <br>
+                <span>2023年7月3日</span>
+                <li>初步网站建设完成，开始内测</li>
+                <li>添加图床服务</li>
+                <br>
+                <span>2023年7月1日</span>
+                <li>萌生做个网站的想法</li>
+            </div>
+        </div>
+    </div>
+</div>

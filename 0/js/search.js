@@ -1,49 +1,36 @@
-var initialDisplayStates = [];
-var initialFlexDirection;
+// ==UserScript==
+// @name         New Userscript
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://www.huya.com/raini
+// @icon         http://huya.com/favicon.ico
+// @grant        none
+// ==/UserScript==
 
-window.onload = function () {
-  var contentBoxes = document.getElementsByClassName('bordered');
+let removelist = []
+let list_CSS = ["#sections-vm"]
 
-  for (var i = 0; i < contentBoxes.length; i++) {
-    initialDisplayStates[i] = contentBoxes[i].style.display;
-  }
-
-  var parentElement = document.querySelector('.content-container');
-  initialFlexDirection = window.getComputedStyle(parentElement).getPropertyValue('flex-direction');
+window.onload = function() {
+  init();
+  console.log(removelist);
+  removelist.forEach(removebylist)
 };
 
-function removeSymbolsAndSpaces(str) {
-  return str.replace(/[^\w\s\u4e00-\u9fa5]/g, '');
+function removebylist(dom){
+  console.log(dom);
+  let timerId = setInterval(remove(dom,timerId), 1000);
+  setTimeout(clearInterval(timerId), 10000);
 }
 
-function search(keyword) {
-  keyword = removeSymbolsAndSpaces(keyword.toLowerCase());
-  var contentBoxes = document.getElementsByClassName('bordered');
-  var hasResults = false;
-
-  for (var i = 0; i < contentBoxes.length; i++) {
-    var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
-    var boxContent = removeSymbolsAndSpaces(contentBoxes[i].querySelector('.content').textContent.toLowerCase());
-
-    if (content.includes(keyword) || boxContent.includes(keyword)) {
-      contentBoxes[i].style.display = 'flex';
-      hasResults = true;
-    } else {
-      contentBoxes[i].style.display = 'none';
-    }
+function remove(dom,timerId){
+  if(dom){
+      dom.style.display = "none";
+      clearInterval(timerId)
   }
+}
 
-  var resultCountElement = document.getElementById('resultCount');
-
-  if (hasResults) {
-    var resultCount = 0;
-    for (var i = 0; i < contentBoxes.length; i++) {
-      if (contentBoxes[i].style.display === 'flex') {
-        resultCount++;
-      }
-    }
-    resultCountElement.textContent = resultCount;
-  } else {
-    resultCountElement.textContent = '0';
-  }
+function init() {
+  list_CSS.forEach((e)=>{removelist.push(document.querySelector(e))})
 }

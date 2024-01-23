@@ -1,0 +1,56 @@
+<div id="modpack">
+    <div class="download-list">
+        <div class="close">
+            <span onclick="toggleDiv()" style="font-size: 30;"><i class="iconfont icon-guanbi"></i></span>
+        </div>
+        <h2>XXXXXXXXXXXXXXXXXXXXXX</h2>
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>版本</th>
+                        <th>上传时间</th>
+                        <th>下载量</th>
+                        <th>大小</th>
+                        <th>下载</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0.0.0.0</td>
+                        <td>0000/00/00 00:00:00</td>
+                        <td>0000</td>
+                        <td>0KiB</td>
+                        <td><a>点击下载</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h6 style="margin-bottom: 0;;text-align: center; color: #fd0606; font-size: 18px;">
+            从该页下载的汉化文件所有权归原作者所有,非原作者同意,不得二次修改和分发汉化文件</h6>
+    </div>
+    <div class="modpack-top">
+        <div>
+            <h1>Modpack中文补丁页</h1>
+            <h4 style="margin-bottom: 2px;">该网页所有汉化资源均获得授权</h4>
+            <span>目前已收录：</span><span id="resultCountS">*</span>
+        </div>
+        <a href="#modpack-m"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            width="50" height="50">
+            <path
+                d="M524.202667 487.381333a17.408 17.408 0 0 1-24.405334 0L226.261333 218.325333a17.408 17.408 0 0 0-24.448 0l-25.941333 25.514667a17.493333 17.493333 0 0 0 0 24.917333l323.925333 318.549334a17.408 17.408 0 0 0 24.405334 0L848.128 268.8a17.493333 17.493333 0 0 0 0-24.917333l-25.941333-25.514667a17.408 17.408 0 0 0-24.448 0l-273.493334 269.056z"
+                fill="#ffffff"></path>
+            <path
+                d="M524.202667 705.706667a17.408 17.408 0 0 1-24.405334 0l-273.536-269.013334a17.408 17.408 0 0 0-24.448 0l-25.941333 25.472a17.493333 17.493333 0 0 0 0 24.917334l323.925333 318.592a17.408 17.408 0 0 0 24.405334 0l323.925333-318.549334a17.493333 17.493333 0 0 0 0-24.96l-25.941333-25.472a17.408 17.408 0 0 0-24.448 0l-273.493334 269.013334z"
+                fill="#ffffff"></path>
+        </svg></a>
+    </div>
+    <div class="modpack-m" id="modpack-m">
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="输入关键词"
+                onkeyup="search(this.value)"><span>当前匹配Modpack数量：</span><span id="resultCount">*</span>
+        </div>
+        <h6 style="font-size:xx-small;text-align: center;margin-bottom: 0;">注：并非所有汉化都是全汉化</h6>
+        <div class="content-container"></div>
+    </div>
+</div>
