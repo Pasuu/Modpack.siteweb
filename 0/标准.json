@@ -1,0 +1,20 @@
+{
+    "Chroma Sky 2": {   //包名
+        "img": "https://media.forgecdn.net/avatars/490/364/637797577449044795.gif",     //整合包图片
+        "i18version": "1.0.9",      //最新汉化包版本
+        "gversion": "1.16.5-Forge",     //游戏版本
+        "i18team": "Pasuu",     //汉化人员
+        "link": {       //相关链接
+            "bilibili": "378822559",
+            "curseforge": "chroma-sky-2",
+            "mcmod": "426",
+            "github": "Pasuu-Mc/Chroma-sky-2-CN",
+            "CFPAOrg": false
+        },
+        "download": {       //直链下载相关内容
+            "1.0.0": ["0000/00/00 00:00:00","0000","382KiB","Chroma-sky-2/Chroma-sky-2-CN-1.0.9.rar"],
+            "1.0.1": ["0000/00/00 00:00:00","0000","382KiB","Chroma-sky-2/Chroma-sky-2-CN-1.0.9.rar"]
+        //  汉化包版本 上传日期              下载量  文件大小 下载链接
+        }
+    }
+}

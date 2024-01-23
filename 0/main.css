@@ -1,0 +1,167 @@
+:root{
+    caret-color: transparent;
+    user-select:none;
+}
+
+.table-container::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    background-color: rgb(203, 224, 247);
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    border-bottom: 2px solid #999999;
+}
+
+td {
+    padding: 4px;
+    border-bottom: 1px solid #ddd;
+}
+
+td a{
+    color: #0f8075;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+tr:hover {background-color: hsla(0, 0%, 100%, 0.3);}
+
+.table-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: none;
+    width: auto;
+    height: 405px;
+    overflow-y: auto;
+}
+
+.download-list h2{
+    text-align: center;
+}
+
+.download-list {
+    display: none;
+
+    width: 1000;
+    height: 600;
+    box-shadow: 0 0 6px rgba(93, 93, 93, 0.5);
+
+    backdrop-filter: blur(100px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 200;
+
+}
+
+.download-list .close {
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(228, 114, 20, 0.5);
+    background-color: aliceblue;
+    margin: auto;
+    padding: 10px;
+    width: 400px;
+}
+
+#searchInput {
+    margin-right: 10px;
+    caret-color:auto;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bordered {
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: 0 0 6px rgba(93, 93, 93, 0.5);
+}
+
+.bordered {
+    padding: 40px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-block: 20px;
+    margin-inline: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.bordered:hover {
+    box-shadow: 5px 5px 10px rgba(73, 37, 156, 0.8);
+}
+
+.bordered .image-container {
+    margin-right: 40px;
+    flex-shrink: 0;
+    width: auto;
+    height: auto;
+}
+
+.bordered .content {
+    margin-left: 40px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.bordered .content p {
+    font-weight: bolder;
+}
+
+#i18-version span {
+    color: rgb(17, 165, 133);
+}
+
+#g-version span {
+    color: rgba(12, 64, 206, 0.8);
+}
+
+#i18-team span {
+    color: rgb(110, 35, 231);
+}
+
+#is-download span {
+    color: rgb(255 0 0);
+}
+
+.bilibili {
+    width: 24px;
+    height: 24px;
+}
