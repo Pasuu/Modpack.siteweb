@@ -20,8 +20,8 @@ statsDict = dict()  # 内存内统计数据
 uploadtimes = 0  # 减少io
 
 # 初始化modpack列表
-f = open(file=datapath + "all-old.json", mode="r", encoding="utf-8")
-# f = open(file=datapath + "bz.json", mode="r", encoding="utf-8")
+# f = open(file=datapath + "all-old.json", mode="r", encoding="utf-8")
+f = open(file=datapath + "bz.json", mode="r", encoding="utf-8")
 content = f.read()
 modpacklists = json.loads(content)
 f.close
