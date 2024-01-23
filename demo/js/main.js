@@ -2,7 +2,7 @@ var htmltemp = new Object;  // 页面缓存
 var modpacklisttemp;    // modpack列表缓存
 var trmodpacklisttemp;  // 正在翻译modpack列表缓存
 var nowpage = "index";  // 当前页面
-const MAINAPIURL = "http://127.0.0.1:8000"; // 请求接口
+const MAINAPIURL = "https://modpack.top/"; // 请求接口
 var UUID;   // uuid
 
 // 下载弹窗是否显示切换
