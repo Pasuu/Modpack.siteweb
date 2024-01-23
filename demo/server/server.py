@@ -24,19 +24,19 @@ f = open(file=datapath + "all-old.json", mode="r", encoding="utf-8")
 # f = open(file=datapath + "bz.json", mode="r", encoding="utf-8")
 content = f.read()
 modpacklists = json.loads(content)
-f.close
+f.close()
 
 # 初始化trmodpack列表
 fd = open(file=datapath + "bz.json", mode="r", encoding="utf-8")
 content = fd.read()
 trmodpacklists = json.loads(content)
-fd.close
+fd.close()
 
 # 加载存储的统计数据
 fs = open(file=datapath + "stats.json", mode="r", encoding="utf-8")
 sd = fs.read()
 statsDict = json.loads(sd)
-fs.close
+fs.close()
 
 # fastapi初始化
 app = FastAPI()
