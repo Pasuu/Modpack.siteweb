@@ -1,5 +1,5 @@
 
-  var initialDisplayStates = [];
+var initialDisplayStates = [];
 var initialFlexDirection;
 
 window.onload = function() {
