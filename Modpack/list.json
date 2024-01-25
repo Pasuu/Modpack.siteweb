@@ -424,6 +424,7 @@
         "link":{
             "bilibili":"4435845",
             "curseforge":"project-equivalence",
+            "mcmod":"143",
             "github":"CFPAOrg/Modpack-GuideBook-i18n",
             "CFPAOrg":true,
             "download":"Project Equivalence/Project Equivalence-1.4.1-windows.zip"
@@ -1615,7 +1616,8 @@
         "isdownload":true,
         "link":{
             "bilibili":"512835396",
-            "curseforge":"musketeer", 
+            "curseforge":"musketeer",
+            "mcmod":"683",
             "VM0":true,
             "download":"vm/Musketeer/Musketeer-CN-For-beta7-0.1.2.zip"
         }
@@ -1695,6 +1697,7 @@
         "link":{
             "bilibili":"32998596",
             "curseforge":"create-arcane-engineering", 
+            "mcmod":"701",
             "github":"maxinglo/ceate-arcane-engineering-Chinese-Ver",
             "download":"CAE/1.9.3汉化补丁.zip",
             "bilibilidwyellow":"cv25313183"
