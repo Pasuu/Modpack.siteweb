@@ -1988,8 +1988,21 @@
             "github":"RCqaq/Enigmatica-9-Expert-E9E-Translation",
             "download":"E9/Enigmatica-9-Expert-v1.18.0.zip"
         }
+    },
+    "Chroma Endless 2":{
+        "img":"https://media.forgecdn.net/avatars/909/840/638363301032894630.jpeg",
+        "i18version":"1.0.7(未完成)",
+        "gversion":"1.18.2-Forge",
+        "i18team":"lrcno6",
+        "isdownload":false,
+        "link":{
+            "bilibili":"433295431",
+            "curseforge":"chroma-endless-2",
+            "mcmod":"702",
+            "github":"lrcno6/chroma-endless-2-translation",
+            "download":"chroma endless/chroma-endless-2-V-1.0.7.zip"
+        }
     }
-
 
 
 
