@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+            <meta name="description" content="我的世界整合包汉化补丁">
+
+      <meta http-equiv="Cache-Control" content="max-age=86400">
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=5"
+      />
+      <title>Modpack-CN</title>
+
+      <style>
+        body {
+            cursor: url('/images/mouse.cur'), auto;
+        }
+    </style>
+
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+ <!-- <script defer src="/_vercel/insights/script.js"></script> -->
+
+<style>
+.comment-widget {
+    position: fixed; 
+    top: 50%;       
+    left: 50%;      
+    transform: translate(-50%, -50%); 
+    width: 950px;   
+    height: 700px;  
+    margin: 0 auto;
+    background-color: #e1e1e1; 
+    overflow: auto; 
+    display: none; 
+  }
+
+  .count-wrapper {
+    text-align: center;
+  }
+  
+  .count-wrapper h5,
+  .count-wrapper p {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .count-display {
+    font-size: 18px;
+    color: blue;
+    margin: 0;
+  }
+</style>
+
+<script src="/js/myScript.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      
+      <link rel="shortcut icon" href="https://wmimg.com/i/47/2023/08/64df380cdcc0c.gif" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+<link rel="stylesheet" href="/images/mouse.cur">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+    
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    </head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+
+      
+<section class="cover">
+    
+  <div class="cover-frame">
+    <div class="bg-box">
+      <img src="https://wmimg.com/i/47/2023/08/64dccd200e4fc.webp" alt="mc1" width="1903" height="931"/>
+    </div>
+    <div class="cover-inner text-center text-black">
+      <div class="fade-container">
+        <div class="fade-text">
+          <h3 style="color: black;">Modpack中文补丁页</h3>
+        </div>
+      </div>
+      <div id="subtitle-box">
+      
+        <span id="subtitle"></span>
+      </div>
+    </div>
+  </div>
+  <div class="cover-learn-more">
+  <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
+  </div>
+</section>
+
+
+
+<!--  <script src="https://cdn.staticfile.org/typed.js/2.0.12/typed.min.js"></script>  -->
+
+
+<link rel="stylesheet" type="text/css" href="/css/style1.css">
+  
+
+<div class="count-wrapper">
+  <h5>已收录Modpack汉化数量：</h5>
+  <p id="count" class="count-display"></p>
+</div>
+
+<div style="display: flex; justify-content: center; font-size:xx-small; color: #1bb8b8;">
+  <div style="margin-right: 100px;">注：并非所有汉化都是全汉化</div>
+  <div style="margin-left: 100px;">该网页所有汉化资源均获得<b>授权</b></div>
+</div>
+
+  <h6 style="text-align: center; color: #fd0606;">从该页下载的汉化文件所有权归原作者所有,非原作者同意,不得二次修改和分发汉化文件</h6>
+
+  <div style="text-align: center;">
+    <span style="color: #8d3beb; font-size: 14px;">没找到想要的汉化?点此自动汉化吧~<a href="https://github.com/XDawned/ModpackLocalizationTools" target="_blank"><img src="/images/github-fill.svg" alt="github" width="22" height="22" style="vertical-align: -5px;"></a></span>
+    <hr>
+</div>
+
+
+  <div class="search000">
+  <input type="text" id="searchInput" placeholder="输入关键词" onkeyup="search(this.value)">
+</div>
+<div style="display: flex; justify-content: center; align-items: center; font-size: large;">
+  <br>
+  <span>当前匹配Modpack数量：</span>
+  <p id="resultCount"></p>
+</div>
+
+
+<div class="main-container">
+</div>
+
+
+<script src="/js/list.js"></script>
+
+
+
+
+      <footer class="footer">
+  <div class="outer">
+
+    <ul>
+      <li>
+       <a class="nav-item-link" href="/about.html">关于网站</a>|<a class="nav-item-link" href="/privacy.html">隐私政策</a>|<a class="nav-item-link" button id="myButton">捐赠方式</button></a>|<a class="nav-item-link" href="/logs.html">更新日志</a>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        Copyright ©2023 Pasuu by Modpack.top 版权所有<img src="/images/user-heart-line.svg" alt="user-heart-line"  style="margin-bottom: -5px;" width="21px" height="21px"></a>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <span style="display: inline-block; margin-right: 10px; white-space: nowrap;">
+          网站已经运行：<span id="days">0天0时0分0秒</span>
+        </span>
+        <!--  <a href="https://beian.miit.gov.cn/" target="_black" style="color:#9da0a4">浙ICP备88888888</a> --> 
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+    <span>
+      <span><img src="/images/user-4-line.svg" alt="user-4-line"  style="margin-bottom: -4px;" width="21px" height="21px">游客:<span id="busuanzi_value_site_uv"></span></span>
+      <span class="division">|</span>
+      <span><img src="/images/eye-fill.svg" alt="eye-fill"  style="margin-bottom: -4px;" width="21px" height="21px">查看:<span id="busuanzi_value_page_pv"></span></span>
+    </span>
+      </li>
+    </ul>
+  </div>
+
+  <script defer src="https://cn.vercount.one/js"></script>
+  
+
+  
+</footer>        
+    </main>
+
+<style>
+  .mess {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 4.2rem;
+    background-color: #c5bebe9c;
+    line-height: 4rem;
+    opacity: 0.8;
+    transition: opacity 1s ease;
+    margin-top: 1rem; 
+  }
+  
+  .mess:hover {
+    opacity: 1;
+  }
+  
+  .mess:hover img {
+    -webkit-animation: rocket .3s ease-in-out;
+    animation: rocket .3s ease-in-out;
+  }
+  
+  /* mess 元素动画 */
+  @-webkit-keyframes rocket {
+    0% { transform: translateY(0); opacity: 1; }
+    45% { transform: translateY(-3.2rem); opacity: 0; }
+    55% { transform: translateY(3.2rem); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes rocket {
+    0% { transform: translateY(0); opacity: 1; }
+    45% { transform: translateY(-3.2rem); opacity: 0; }
+    55% { transform: translateY(3.2rem); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  </style>
+
+    <div class="float_btns">
+      <div class="totop" id="totop">
+ <img src="/images/arrow-up-fill.svg" alt="arrow-up-fill" style="margin-bottom: -8px;" width="24px" height="24px">
+
+</div>
+
+<div class="todark" id="todark">
+    <img src="/images/moon-fill.svg" alt="moon-fill" style="margin-bottom: -8px;" width="24px" height="24px">
+</div>
+
+<div class="mess" id="mess">
+  <img src="/images/message-3-line.svg" alt="message-3-line" style="margin-bottom: -8px; cursor: pointer;" width="24px" height="24px">
+</div>
+
+</div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="https://wmimg.com/i/47/2023/08/64df380cdcc0c.gif" alt="Pasuu" width="40" height="42"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/Modpack/te.html">Modpack</a>
+    </li>
+    
+
+
+
+    
+  </ul>
+</nav>
+
+<script>
+  const messElement = document.getElementById("mess");
+  const commentWidget = document.querySelector(".comment-widget");
+
+  messElement.addEventListener("click", function() {
+    const commentWidget = document.querySelector(".comment-widget"); 
+
+    if (!commentWidget) {
+      console.error("评论窗口元素未找到！");
+      return;
+    }
+
+    const computedStyle = window.getComputedStyle(commentWidget);
+    const display = computedStyle.getPropertyValue("display");
+
+    if (display === "none") {
+      commentWidget.style.display = "block";
+    } else {
+      commentWidget.style.display = "none";
+    }
+  });
+    </script>
+ 
+<div class="comment-widget">
+  <!-- 来必力City版安装代码 -->
+  <div id="lv-container" data-id="city" data-uid="MTAyMC81ODc5NS8zNTI1Nw==">
+    <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+  
+         if (typeof LivereTower === 'function') { return; }
+  
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+  
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+    </script>
+  <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+  </div>
+  <!-- City版安装代码已完成 -->
+  </div>  
+ 
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<style>
+  #myImage {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 9998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    #myImage {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 225px;
+    height: 225px;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 9998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+</style>
+
+
+<img id="myImage" src="https://wmimg.com/i/47/2023/08/64df3f01dd6f3.webp">
+
+<script>
+  var button = document.getElementById("myButton");
+  var image = document.getElementById("myImage");
+
+
+  image.style.display = "none";
+
+ 
+  button.addEventListener("click", function(event) {
+    event.stopPropagation(); 
+    toggleImage();
+  });
+
+
+  document.addEventListener("click", function(event) {
+    var target = event.target;
+    if (target !== image && !image.contains(target)) {
+      image.style.display = "none";
+    }
+  });
+
+  
+  function toggleImage() {
+    if (image.style.display === "none") {
+      image.style.display = "flex";
+    } else {
+      image.style.display = "none";
+    }
+  }
+</script>
+
+<script>
+  var s0 = '2023-07-02';
+  s1 = new Date(s0.replace(/-/g, "/"));
+  s2 = new Date();
+  var days = s2.getTime() - s1.getTime();
+
+  var BootDate = new Date("2023-07-02");
+  function ShowRunTime(id) {
+    var NowDate = new Date();
+    var RunDateM = parseInt(NowDate - BootDate);
+    var RunDays = Math.floor(RunDateM / (24 * 3600 * 1000));
+    var RunHours = Math.floor(RunDateM % (24 * 3600 * 1000) / (3600 * 1000));
+    var RunMinutes = Math.floor(RunDateM % (24 * 3600 * 1000) % (3600 * 1000) / (60 * 1000));
+    var RunSeconds = Math.round(RunDateM % (24 * 3600 * 1000) % (3600 * 1000) % (60 * 1000) / 1000);
+    var days = RunDays + "天" + RunHours + "时" + RunMinutes + "分" + RunSeconds + "秒";
+    document.getElementById(id).innerHTML = days;
+  }
+  ShowRunTime('days');
+  setInterval(function() {
+    ShowRunTime('days');
+  }, 1000);
+</script>
+
+
+
+
+<!-- Tocbot -->
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+ 
+<!-- ClickBoom2 -->
+
+<script src="/js/cc.js"></script>
+
+
+ 
+<!-- CanvasBackground -->
+
+<script src="/js/dz.js"></script>
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+
+  window.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    var imageContainers = document.getElementsByClassName('image-container');
+    var countImageContainers = imageContainers.length;
+    
+    var countElement = document.getElementById('count');
+    countElement.textContent = countImageContainers;
+  }, 1500);
+});
+</script>
+
+<style>
+  #music {
+      position: fixed;
+      right: 15px;
+      bottom: 0;
+      z-index: 998;
+  }
+</style>
+  
+
+</body>
+
+</html>
