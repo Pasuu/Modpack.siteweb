@@ -579,7 +579,7 @@
     },
     "FTB StoneBlock 3":{
         "img":"https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F96%2Fstoneblock_logo.png&w=256&q=75",
-        "i18version":"1.8.1",
+        "i18version":"1.9.0",
         "gversion":"1.18.2-Forge",
         "i18team":"VM-Team",
         "isdownload":false,
@@ -908,7 +908,7 @@
     },
     "Vault Hunters 3rd Edition":{
         "img":"https://media.forgecdn.net/avatars/651/140/638051446127306822.png",
-        "i18version":"3.12.4",
+        "i18version":"3.13",
         "gversion":"1.18.2-Forge",
         "i18team":"VM-Team",
         "isdownload":false,
