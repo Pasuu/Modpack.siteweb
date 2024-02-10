@@ -33,7 +33,7 @@
 
 .totop {
     position: fixed;
-    bottom: 120px;
+    bottom: 130px;
     right: 25px;
 }
 
@@ -92,3 +92,8 @@
   right: 60px;
 }
 
+.highlight {
+  background-color: #a3a3a3;
+  padding: 1.5px 2px;
+  border-radius: 4px;
+}
