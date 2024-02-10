@@ -118,4 +118,34 @@ document.addEventListener("DOMContentLoaded", function() {
           behavior: "smooth"
       });
   });
-});
+}); /* 回到顶部 */
+
+
+var button = document.getElementById("myButton");
+  var image = document.getElementById("myImage");
+
+
+  image.style.display = "none";
+
+ 
+  button.addEventListener("click", function(event) {
+    event.stopPropagation(); 
+    toggleImage();
+  });
+
+
+  document.addEventListener("click", function(event) {
+    var target = event.target;
+    if (target !== image && !image.contains(target)) {
+      image.style.display = "none";
+    }
+  });
+
+  
+  function toggleImage() {
+    if (image.style.display === "none") {
+      image.style.display = "flex";
+    } else {
+      image.style.display = "none";
+    }
+  } /* 捐赠 */
