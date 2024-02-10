@@ -37,7 +37,7 @@ function search(keyword) {
   } else {
     resultCountElement.textContent = '0';
   }
-  if (keyword.length === 0) {
+  if (/^\s*$/.test(keyword)) {
     hasResults = false;
     contentContainers.forEach((container) => {
       container.style.flexDirection = initialFlexDirection;
