@@ -27,6 +27,11 @@
     display: none; 
   }
 
+.comment-widget.show {
+    display: block;
+}
+
+
   .mess {
     position: fixed;
     bottom: 25px;

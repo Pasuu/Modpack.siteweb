@@ -86,23 +86,28 @@ function showAll() {
   }
 }  /* 搜索 */
 
-const messElement = document.getElementById("mess");
-const commentWidget = document.querySelector(".comment-widget");
+document.addEventListener("click", function(event) {
+  const target = event.target;
 
-messElement.addEventListener("click", function() {
-  const commentWidget = document.querySelector(".comment-widget"); 
+  if (target.matches(".mess img")) {
+      const commentWidget = document.querySelector(".comment-widget"); 
 
-  if (!commentWidget) {
-    console.error("评论窗口元素未找到！");
-    return;
+      if (!commentWidget) {
+          console.error("评论窗口元素未找到！");
+          return;
+      }
+
+      const isDisplayed = commentWidget.style.display !== "none";
+
+      if (!isDisplayed) {
+          commentWidget.style.display = "block"; // 如果评论窗口隐藏，则显示它
+      } else {
+          commentWidget.style.display = "none"; // 如果评论窗口显示，则隐藏它
+      }
   }
+});
 
-  const computedStyle = window.getComputedStyle(commentWidget);
-  const display = computedStyle.getPropertyValue("display");
+$(".mess img").click(function() {
+  $(".comment-widget").toggleClass("show"); // 切换评论窗口的显示状态
+});
 
-  if (display === "none") {
-    commentWidget.style.display = "block";
-  } else {
-    commentWidget.style.display = "none";
-  }
-}); /* 评论 */
