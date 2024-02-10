@@ -131,12 +131,19 @@
       left: 25px;
   }
 
+
   #searchInput {
     border: none; 
     padding: 5px; 
     font-size: 16px;
     animation: shadowFlow 15s infinite linear;
-  }
+    display: inline-block; 
+}
+
+#resultCount {
+    display: inline-block; 
+    margin-left: 10px; 
+}
 
   @keyframes shadowFlow {
     0% {
