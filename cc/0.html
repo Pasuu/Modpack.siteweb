@@ -56,9 +56,229 @@
 <script src="/js/list.js"></script>
 
 
+
+<style>
+  .mess {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 4.2rem;
+    background-color: #c5bebe9c;
+    line-height: 4rem;
+    opacity: 0.8;
+    transition: opacity 1s ease;
+    margin-top: 1rem; 
+  }
+  
+  .mess:hover {
+    opacity: 1;
+  }
+  
+  .mess:hover img {
+    -webkit-animation: rocket .3s ease-in-out;
+    animation: rocket .3s ease-in-out;
+  }
+  
+  /* mess 元素动画 */
+  @-webkit-keyframes rocket {
+    0% { transform: translateY(0); opacity: 1; }
+    45% { transform: translateY(-3.2rem); opacity: 0; }
+    55% { transform: translateY(3.2rem); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes rocket {
+    0% { transform: translateY(0); opacity: 1; }
+    45% { transform: translateY(-3.2rem); opacity: 0; }
+    55% { transform: translateY(3.2rem); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  </style>
+
+    <div class="float_btns">
+      <div class="totop" id="totop">
+ <img src="/images/arrow-up-fill.svg" alt="arrow-up-fill" style="margin-bottom: -8px;" width="24px" height="24px">
+
+</div>
+
+<div class="todark" id="todark">
+    <img src="/images/moon-fill.svg" alt="moon-fill" style="margin-bottom: -8px;" width="24px" height="24px">
+</div>
+
+<div class="mess" id="mess">
+  <img src="/images/message-3-line.svg" alt="message-3-line" style="margin-bottom: -8px; cursor: pointer;" width="24px" height="24px">
+</div>
+
+</div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/top.gif" alt="Pasuu" width="40" height="42"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/Modpack/te.html">Modpack</a>
+    </li>
+    
+
+
+
+    
+  </ul>
+</nav>
+
+<script>
+  const messElement = document.getElementById("mess");
+  const commentWidget = document.querySelector(".comment-widget");
+
+  messElement.addEventListener("click", function() {
+    const commentWidget = document.querySelector(".comment-widget"); 
+
+    if (!commentWidget) {
+      console.error("评论窗口元素未找到！");
+      return;
+    }
+
+    const computedStyle = window.getComputedStyle(commentWidget);
+    const display = computedStyle.getPropertyValue("display");
+
+    if (display === "none") {
+      commentWidget.style.display = "block";
+    } else {
+      commentWidget.style.display = "none";
+    }
+  });
+    </script>
+ 
+<div class="comment-widget">
+  <!-- 来必力City版安装代码 -->
+  <div id="lv-container" data-id="city" data-uid="MTAyMC81ODc5NS8zNTI1Nw==">
+    <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+  
+         if (typeof LivereTower === 'function') { return; }
+  
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+  
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+    </script>
+  <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+  </div>
+  <!-- City版安装代码已完成 -->
+  </div>  
+ 
 <script src="/js/jquery-3.6.0.min.js"></script>
  
 <script src="/js/lazyload.min.js"></script>
+
+<style>
+  #myImage {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 9998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    #myImage {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 225px;
+    height: 225px;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 9998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+</style>
+
+
+<img id="myImage" src="/images/zan.png">
+
+<script>
+  var button = document.getElementById("myButton");
+  var image = document.getElementById("myImage");
+
+
+  image.style.display = "none";
+
+ 
+  button.addEventListener("click", function(event) {
+    event.stopPropagation(); 
+    toggleImage();
+  });
+
+
+  document.addEventListener("click", function(event) {
+    var target = event.target;
+    if (target !== image && !image.contains(target)) {
+      image.style.display = "none";
+    }
+  });
+
+  
+  function toggleImage() {
+    if (image.style.display === "none") {
+      image.style.display = "flex";
+    } else {
+      image.style.display = "none";
+    }
+  }
+</script>
+
+<script>
+  var s0 = '2023-07-02';
+  s1 = new Date(s0.replace(/-/g, "/"));
+  s2 = new Date();
+  var days = s2.getTime() - s1.getTime();
+
+  var BootDate = new Date("2023-07-02");
+  function ShowRunTime(id) {
+    var NowDate = new Date();
+    var RunDateM = parseInt(NowDate - BootDate);
+    var RunDays = Math.floor(RunDateM / (24 * 3600 * 1000));
+    var RunHours = Math.floor(RunDateM % (24 * 3600 * 1000) / (3600 * 1000));
+    var RunMinutes = Math.floor(RunDateM % (24 * 3600 * 1000) % (3600 * 1000) / (60 * 1000));
+    var RunSeconds = Math.round(RunDateM % (24 * 3600 * 1000) % (3600 * 1000) % (60 * 1000) / 1000);
+    var days = RunDays + "天" + RunHours + "时" + RunMinutes + "分" + RunSeconds + "秒";
+    document.getElementById(id).innerHTML = days;
+  }
+  ShowRunTime('days');
+  setInterval(function() {
+    ShowRunTime('days');
+  }, 1000);
+</script>
 
 
 
@@ -84,6 +304,30 @@
 
 <script src="/js/dz.js"></script>
 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+
+  window.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    var imageContainers = document.getElementsByClassName('image-container');
+    var countImageContainers = imageContainers.length;
+    
+    var countElement = document.getElementById('count');
+    countElement.textContent = countImageContainers;
+  }, 1500);
+});
+</script>
+
+<style>
+  #music {
+      position: fixed;
+      right: 15px;
+      bottom: 0;
+      z-index: 998;
+  }
+</style>
   
 
 </body>
