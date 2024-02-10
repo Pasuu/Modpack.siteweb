@@ -121,18 +121,17 @@ document.addEventListener("DOMContentLoaded", function() {
 }); /* 回到顶部 */
 
 
-var button = document.getElementById("myButton");
+document.addEventListener("DOMContentLoaded", function() {
+  var icons = document.querySelectorAll(".juan");
   var image = document.getElementById("myImage");
-
 
   image.style.display = "none";
 
- 
-  button.addEventListener("click", function(event) {
-    event.stopPropagation(); 
-    toggleImage();
-  });
-
+  for (var icon of icons) {
+    icon.addEventListener("click", function() {
+      image.style.display = "flex";
+    });
+  }
 
   document.addEventListener("click", function(event) {
     var target = event.target;
@@ -140,12 +139,4 @@ var button = document.getElementById("myButton");
       image.style.display = "none";
     }
   });
-
-  
-  function toggleImage() {
-    if (image.style.display === "none") {
-      image.style.display = "flex";
-    } else {
-      image.style.display = "none";
-    }
-  } /* 捐赠 */
+});
