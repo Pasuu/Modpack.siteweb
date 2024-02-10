@@ -35,6 +35,22 @@
             margin: 0;
           }
         </style>
+        
+        <script>
+            if (window.mermaid) {
+              mermaid.initialize({ theme: "forest" });
+            }
+          
+            window.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+              var imageContainers = document.getElementsByClassName('image-container');
+              var countImageContainers = imageContainers.length;
+              
+              var countElement = document.getElementById('count');
+              countElement.textContent = countImageContainers;
+            }, 1500);
+          });
+          </script>
 
 <div class="count-wrapper">
   <h5>已收录Modpack汉化数量：</h5>
