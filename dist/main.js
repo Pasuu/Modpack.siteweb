@@ -65,13 +65,12 @@ function search(keyword) {
   } else {
     resultCountElement.textContent = '0';
   }
-  contentContainers.forEach((container) => {
-    if (keyword.length > 0 && hasResults) {
-      container.style.flexDirection = 'column';
-    } else {
+  if (keyword.length === 0) {
+    hasResults = false;
+    contentContainers.forEach((container) => {
       container.style.flexDirection = initialFlexDirection;
-    }
-  });
+    });
+  }
 }
 
 function showAll() {
@@ -89,6 +88,7 @@ window.onload = function() {
   const parentElement = document.querySelector('.content-container');
   initialFlexDirection = window.getComputedStyle(parentElement).getPropertyValue('flex-direction');
 };
+
  /* 搜索 */
 
 document.addEventListener("click", function(event) {
