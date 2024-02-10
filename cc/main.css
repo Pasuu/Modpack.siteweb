@@ -33,8 +33,14 @@
 
 .totop {
     position: fixed;
-    bottom: 60px;
+    bottom: 95px;
     right: 25px;
+}
+
+.juan {
+  position: fixed;
+  bottom: 60px;
+  right: 25px;
 }
 
  .mess {
