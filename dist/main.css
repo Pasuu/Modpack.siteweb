@@ -200,10 +200,16 @@ margin-left: 10px;
   }
 
   .search000 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
+    position: fixed;
+    bottom: 780px;
+    left: 100px;
+  }
+
+  .time {
+    display: inline-block;
+    position: fixed;
+    top: 5px; 
+    left: 10px; 
   }
 
 }
