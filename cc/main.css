@@ -80,7 +80,8 @@
 }
 
 .userline {
+  display: inline-block;
   position: fixed;
-  bottom: 20px;
-  right: 210px;
+  bottom: 2px;
+  right: 25px;
 }
