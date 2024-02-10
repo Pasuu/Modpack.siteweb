@@ -35,29 +35,29 @@ function search(keyword) {
   var contentBoxes = document.getElementsByClassName('bordered');
   var contentContainers = document.getElementsByClassName('content-container');
   var hasResults = false;
- 
+  
   for (var i = 0; i < contentBoxes.length; i++) {
     var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
     var boxContent = removeSymbolsAndSpaces(contentBoxes[i].querySelector('.content').textContent.toLowerCase());
- 
+    
     if (content.includes(keyword) || boxContent.includes(keyword)) {
       contentBoxes[i].style.display = 'flex';
       var parentElement = contentBoxes[i].closest('.content-container');
       if (parentElement) {
-        parentElement.style.flexDirection = 'row';
-        parentElement.style.flexWrap = 'wrap'; 
+        parentElement.style.flexDirection = 'column'; 
       }
       hasResults = true; 
     } else {
       contentBoxes[i].style.display = 'none';
       var parentElement = contentBoxes[i].closest('.content-container');
       if (parentElement) {
-        parentElement.style.flexDirection = 'column'; 
+        parentElement.style.flexDirection = 'row'; 
       }
     }
   }
- 
+  
   var resultCountElement = document.getElementById('resultCount');
+
   if (hasResults) {
     var resultCount = 0;
     for (var i = 0; i < contentBoxes.length; i++) {
@@ -74,7 +74,7 @@ function search(keyword) {
     if (keyword.length > 0 && hasResults) {
       contentContainers[i].style.flexDirection = 'column';
     } else {
-      contentContainers[i].style.flexDirection = initialFlexDirection;
+      contentContainers[i].style.flexDirection = initialFlexDirection; // Restore default layout
     }
   }
 }
@@ -85,10 +85,6 @@ function showAll() {
     contentBoxes[i].style.display = initialDisplayStates[i];
   }
 }
-
-document.getElementById('searchInput').oninput = function() {
-  search(this.value);
-};
  /* 搜索 */
 
 document.addEventListener("click", function(event) {
