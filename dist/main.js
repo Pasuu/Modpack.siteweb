@@ -32,58 +32,64 @@ function removeSymbolsAndSpaces(str) {
 
 function search(keyword) {
   keyword = removeSymbolsAndSpaces(keyword.toLowerCase());
-  var contentBoxes = document.getElementsByClassName('bordered');
-  var contentContainers = document.getElementsByClassName('content-container');
-  var hasResults = false;
-
-  for (var i = 0; i < contentBoxes.length; i++) {
-    var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
-    var boxContent = removeSymbolsAndSpaces(contentBoxes[i].querySelector('.content').textContent.toLowerCase());
-
+  const contentBoxes = document.getElementsByClassName('bordered');
+  const contentContainers = document.getElementsByClassName('content-container');
+  let hasResults = false;
+  contentBoxes.forEach((box, index) => {
+    const content = removeSymbolsAndSpaces(box.textContent.toLowerCase());
+    const boxContent = removeSymbolsAndSpaces(box.querySelector('.content').textContent.toLowerCase());
     if (content.includes(keyword) || boxContent.includes(keyword)) {
-      contentBoxes[i].style.display = 'flex';
-      var parentElement = contentBoxes[i].closest('.content-container');
+      box.style.display = 'flex';
+      const parentElement = box.closest('.content-container');
       if (parentElement) {
         parentElement.style.flexDirection = 'column';
       }
       hasResults = true;
     } else {
-      contentBoxes[i].style.display = 'none';
-      var parentElement = contentBoxes[i].closest('.content-container');
+      box.style.display = 'none';
+      const parentElement = box.closest('.content-container');
       if (parentElement) {
         parentElement.style.flexDirection = 'row';
       }
     }
-  }
-
-  var resultCountElement = document.getElementById('resultCount');
+  });
+  const resultCountElement = document.getElementById('resultCount');
   if (hasResults) {
-    var resultCount = 0;
-    for (var i = 0; i < contentBoxes.length; i++) {
-      if (contentBoxes[i].style.display === 'flex') {
+    let resultCount = 0;
+    contentBoxes.forEach((box) => {
+      if (box.style.display === 'flex') {
         resultCount++;
       }
-    }
-    resultCountElement.textContent = '' + resultCount;
+    });
+    resultCountElement.textContent = resultCount;
   } else {
     resultCountElement.textContent = '0';
   }
-
-  for (var i = 0; i < contentContainers.length; i++) {
+  contentContainers.forEach((container) => {
     if (keyword.length > 0 && hasResults) {
-      contentContainers[i].style.flexDirection = 'column';
+      container.style.flexDirection = 'column';
     } else {
-      contentContainers[i].style.flexDirection = initialFlexDirection;
+      container.style.flexDirection = initialFlexDirection;
     }
-  }
+  });
 }
 
 function showAll() {
-  var contentBoxes = document.getElementsByClassName('bordered');
-  for (var i = 0; i < contentBoxes.length; i++) {
-    contentBoxes[i].style.display = initialDisplayStates[i];
+  const contentBoxes = document.getElementsByClassName('bordered');
+  contentBoxes.forEach((box, index) => {
+    box.style.display = initialDisplayStates[index];
+  });
+}
+
+window.onload = function() {
+  const contentBoxes = document.getElementsByClassName('bordered');
+  for (let i = 0; i < contentBoxes.length; i++) {
+    initialDisplayStates[i] = contentBoxes[i].style.display;
   }
-} /* 搜索 */
+  const parentElement = document.querySelector('.content-container');
+  initialFlexDirection = window.getComputedStyle(parentElement).getPropertyValue('flex-direction');
+};
+ /* 搜索 */
 
 document.addEventListener("click", function(event) {
   const target = event.target;
