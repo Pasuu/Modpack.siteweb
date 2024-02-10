@@ -100,14 +100,10 @@ document.addEventListener("click", function(event) {
       const isDisplayed = commentWidget.style.display !== "none";
 
       if (!isDisplayed) {
-          commentWidget.style.display = "block"; // 如果评论窗口隐藏，则显示它
+          commentWidget.style.display = "block";
       } else {
-          commentWidget.style.display = "none"; // 如果评论窗口显示，则隐藏它
+          commentWidget.style.display = "none";
       }
   }
-});
-
-$(".mess img").click(function() {
-  $(".comment-widget").toggleClass("show"); // 切换评论窗口的显示状态
-});
+}); /* 评论*/
 
