@@ -42,3 +42,14 @@
     bottom: 25px;
     right: 25px;
 }
+
+.user {
+  position: fixed;
+  bottom: 25px;
+  right: 155px;
+}
+.eye {
+  position: fixed;
+  bottom: 60px;
+  right: 155px;
+}
