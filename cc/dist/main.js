@@ -44,7 +44,8 @@ function search(keyword) {
       contentBoxes[i].style.display = 'flex';
       var parentElement = contentBoxes[i].closest('.content-container');
       if (parentElement) {
-        parentElement.style.flexDirection = 'row'; 
+        parentElement.style.flexDirection = 'row';
+        parentElement.style.flexWrap = 'wrap'; 
       }
       hasResults = true; 
     } else {
