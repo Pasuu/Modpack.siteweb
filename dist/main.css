@@ -104,3 +104,20 @@
   top: 20px; 
   left: 20px; 
 }
+
+/* 手机设置样式 */
+@media screen and (max-width: 768px) {
+  .user {
+    display: none;
+  }
+
+  .eye {
+    display: none;
+  }
+
+  .time {
+    display: none;
+  }
+
+
+}
