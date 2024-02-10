@@ -126,10 +126,9 @@
 }
   
   .search000 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
+      position: fixed;
+      bottom: 700px;
+      right: 25px;
   }
 
   #searchInput {
