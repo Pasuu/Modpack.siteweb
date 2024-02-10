@@ -1,0 +1,15 @@
+.count-wrapper {
+    text-align: center;
+  }
+  
+  .count-wrapper h5,
+  .count-wrapper p {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .count-display {
+    font-size: 18px;
+    color: blue;
+    margin: 0;
+  }

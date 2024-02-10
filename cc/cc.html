@@ -14,43 +14,12 @@
     <title>Modpack-CN</title>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="/cc/main.css">
+    <link href="/cc/main.js">
+    
 </head>
 
 <body>
-
-    <style>
-          .count-wrapper {
-            text-align: center;
-          }
-          
-          .count-wrapper h5,
-          .count-wrapper p {
-            display: inline-block;
-            vertical-align: middle;
-          }
-          
-          .count-display {
-            font-size: 18px;
-            color: blue;
-            margin: 0;
-          }
-        </style>
-        
-        <script>
-            if (window.mermaid) {
-              mermaid.initialize({ theme: "forest" });
-            }
-          
-            window.addEventListener('DOMContentLoaded', function() {
-            setTimeout(function() {
-              var imageContainers = document.getElementsByClassName('image-container');
-              var countImageContainers = imageContainers.length;
-              
-              var countElement = document.getElementById('count');
-              countElement.textContent = countImageContainers;
-            }, 1500);
-          });
-          </script>
 
 <div class="count-wrapper">
   <h5>已收录Modpack汉化数量：</h5>
