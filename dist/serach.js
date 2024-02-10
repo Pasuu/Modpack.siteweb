@@ -1,62 +1,72 @@
+var initialDisplayStates = [];
+var initialFlexDirection;
+
+window.onload = function() {
+  var contentBoxes = document.getElementsByClassName('bordered');
+  for (var i = 0; i < contentBoxes.length; i++) {
+    initialDisplayStates[i] = contentBoxes[i].style.display;
+  }
+
+  var parentElement = document.querySelector('.content-container');
+  initialFlexDirection = window.getComputedStyle(parentElement).getPropertyValue('flex-direction');
+};
+
 function removeSymbolsAndSpaces(str) {
-  return str.replace(/[^\w\s\u4e00-\u9fa5]/g, '');
+  return str.replace(/[^\w\s\u4e00-\u9fa5]/g, ''); 
 }
 
 function search(keyword) {
-  keyword = removeSymbolsAndSpaces(keyword.toLowerCase());
-  const contentBoxes = document.getElementsByClassName('bordered');
-  const contentContainers = document.getElementsByClassName('content-container');
-  let hasResults = false;
-  contentBoxes.forEach((box, index) => {
-    const content = removeSymbolsAndSpaces(box.textContent.toLowerCase());
-    const boxContent = removeSymbolsAndSpaces(box.querySelector('.content').textContent.toLowerCase());
+  keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
+  var contentBoxes = document.getElementsByClassName('bordered');
+  var contentContainers = document.getElementsByClassName('content-container');
+  var hasResults = false;
+  
+  for (var i = 0; i < contentBoxes.length; i++) {
+    var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
+    var boxContent = removeSymbolsAndSpaces(contentBoxes[i].querySelector('.content').textContent.toLowerCase());
+    
     if (content.includes(keyword) || boxContent.includes(keyword)) {
-      box.style.display = 'flex';
-      const parentElement = box.closest('.content-container');
+      contentBoxes[i].style.display = 'flex';
+      var parentElement = contentBoxes[i].closest('.content-container');
       if (parentElement) {
-        parentElement.style.flexDirection = 'column';
+        parentElement.style.flexDirection = 'column'; 
       }
-      hasResults = true;
+      hasResults = true; 
     } else {
-      box.style.display = 'none';
-      const parentElement = box.closest('.content-container');
+      contentBoxes[i].style.display = 'none';
+      var parentElement = contentBoxes[i].closest('.content-container');
       if (parentElement) {
-        parentElement.style.flexDirection = 'row';
+        parentElement.style.flexDirection = 'row'; 
       }
     }
-  });
-  const resultCountElement = document.getElementById('resultCount');
+  }
+  
+  var resultCountElement = document.getElementById('resultCount');
+
   if (hasResults) {
-    let resultCount = 0;
-    contentBoxes.forEach((box) => {
-      if (box.style.display === 'flex') {
+    var resultCount = 0;
+    for (var i = 0; i < contentBoxes.length; i++) {
+      if (contentBoxes[i].style.display === 'flex') {
         resultCount++;
       }
-    });
-    resultCountElement.textContent = resultCount;
+    }
+    resultCountElement.textContent = '' + resultCount;
   } else {
     resultCountElement.textContent = '0';
   }
-  if (/^\s*$/.test(keyword)) {
-    hasResults = false;
-    contentContainers.forEach((container) => {
-      container.style.flexDirection = initialFlexDirection;
-    });
+
+  for (var i = 0; i < contentContainers.length; i++) {
+    if (keyword.length > 0 && hasResults) {
+      contentContainers[i].style.flexDirection = 'column';
+    } else {
+      contentContainers[i].style.flexDirection = initialFlexDirection;
+    }
   }
 }
 
 function showAll() {
-  const contentBoxes = document.getElementsByClassName('bordered');
-  contentBoxes.forEach((box, index) => {
-    box.style.display = initialDisplayStates[index];
-  });
-}
-
-window.onload = function() {
-  const contentBoxes = document.getElementsByClassName('bordered');
-  for (let i = 0; i < contentBoxes.length; i++) {
-    initialDisplayStates[i] = contentBoxes[i].style.display;
+  var contentBoxes = document.getElementsByClassName('bordered');
+  for (var i = 0; i < contentBoxes.length; i++) {
+    contentBoxes[i].style.display = initialDisplayStates[i];
   }
-  const parentElement = document.querySelector('.content-container');
-  initialFlexDirection = window.getComputedStyle(parentElement).getPropertyValue('flex-direction');
-};
+}
