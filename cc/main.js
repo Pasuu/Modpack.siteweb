@@ -124,19 +124,19 @@ document.addEventListener("click", function(event) {
   const target = event.target;
 
   if (target.matches(".juan img")) {
-      const commentWidget = document.querySelector(".comment-widget"); 
+      const juantu = document.querySelector(".juantu"); 
 
-      if (!commentWidget) {
+      if (!juantu) {
           console.error("图片未找到");
           return;
       }
 
-      const isDisplayed = commentWidget.style.display !== "none";
+      const isDisplayed = juantu.style.display !== "none";
 
       if (!isDisplayed) {
-          commentWidget.style.display = "block";
+        juantu.style.display = "block";
       } else {
-          commentWidget.style.display = "none";
+        juantu.style.display = "none";
       }
   }
-}); /* 评论*/
+}); /* 捐赠 */
