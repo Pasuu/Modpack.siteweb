@@ -27,37 +27,36 @@ window.onload = function() {
 };
 
 function removeSymbolsAndSpaces(str) {
-  return str.replace(/[^\w\s\u4e00-\u9fa5]/g, ''); 
+  return str.replace(/[^\w\s\u4e00-\u9fa5]/g, '');
 }
 
 function search(keyword) {
-  keyword = removeSymbolsAndSpaces(keyword.toLowerCase()); 
+  keyword = removeSymbolsAndSpaces(keyword.toLowerCase());
   var contentBoxes = document.getElementsByClassName('bordered');
   var contentContainers = document.getElementsByClassName('content-container');
   var hasResults = false;
-  
+
   for (var i = 0; i < contentBoxes.length; i++) {
     var content = removeSymbolsAndSpaces(contentBoxes[i].textContent.toLowerCase());
     var boxContent = removeSymbolsAndSpaces(contentBoxes[i].querySelector('.content').textContent.toLowerCase());
-    
+
     if (content.includes(keyword) || boxContent.includes(keyword)) {
       contentBoxes[i].style.display = 'flex';
       var parentElement = contentBoxes[i].closest('.content-container');
       if (parentElement) {
-        parentElement.style.flexDirection = 'column'; 
+        parentElement.style.flexDirection = 'column';
       }
-      hasResults = true; 
+      hasResults = true;
     } else {
       contentBoxes[i].style.display = 'none';
       var parentElement = contentBoxes[i].closest('.content-container');
       if (parentElement) {
-        parentElement.style.flexDirection = 'row'; 
+        parentElement.style.flexDirection = 'row';
       }
     }
   }
-  
-  var resultCountElement = document.getElementById('resultCount');
 
+  var resultCountElement = document.getElementById('resultCount');
   if (hasResults) {
     var resultCount = 0;
     for (var i = 0; i < contentBoxes.length; i++) {
@@ -74,7 +73,7 @@ function search(keyword) {
     if (keyword.length > 0 && hasResults) {
       contentContainers[i].style.flexDirection = 'column';
     } else {
-      contentContainers[i].style.flexDirection = initialFlexDirection; // Restore default layout
+      contentContainers[i].style.flexDirection = initialFlexDirection;
     }
   }
 }
@@ -84,8 +83,7 @@ function showAll() {
   for (var i = 0; i < contentBoxes.length; i++) {
     contentBoxes[i].style.display = initialDisplayStates[i];
   }
-}
- /* 搜索 */
+} /* 搜索 */
 
 document.addEventListener("click", function(event) {
   const target = event.target;
