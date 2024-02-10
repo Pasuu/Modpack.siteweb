@@ -13,3 +13,54 @@
     color: blue;
     margin: 0;
   }
+
+  .comment-widget {
+    position: fixed; 
+    top: 50%;       
+    left: 50%;      
+    transform: translate(-50%, -50%); 
+    width: 950px;   
+    height: 700px;  
+    margin: 0 auto;
+    background-color: #e1e1e1; 
+    overflow: auto; 
+    display: none; 
+  }
+
+  .mess {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 4.2rem;
+    background-color: #c5bebe9c;
+    line-height: 4rem;
+    opacity: 0.8;
+    transition: opacity 1s ease;
+    margin-top: 1rem; 
+  }
+  
+  .mess:hover {
+    opacity: 1;
+  }
+  
+  .mess:hover img {
+    -webkit-animation: rocket .3s ease-in-out;
+    animation: rocket .3s ease-in-out;
+  }
+  
+  /* mess 元素动画 */
+  @-webkit-keyframes rocket {
+    0% { transform: translateY(0); opacity: 1; }
+    45% { transform: translateY(-3.2rem); opacity: 0; }
+    55% { transform: translateY(3.2rem); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes rocket {
+    0% { transform: translateY(0); opacity: 1; }
+    45% { transform: translateY(-3.2rem); opacity: 0; }
+    55% { transform: translateY(3.2rem); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
