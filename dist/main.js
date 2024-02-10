@@ -132,9 +132,10 @@ document.addEventListener("click", function(event) {
           return;
       }
 
-      const isDisplayed = juantu.style.display !== "none";
-
-      if (!isDisplayed) {
+      const computedStyle = window.getComputedStyle(juantu);
+      const display = computedStyle.getPropertyValue("display");
+    
+      if (display === "none") {
         juantu.style.display = "block";
       } else {
         juantu.style.display = "none";
