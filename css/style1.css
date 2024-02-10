@@ -128,7 +128,7 @@
   .search000 {
       position: fixed;
       bottom: 700px;
-      right: 25px;
+      left: 25px;
   }
 
   #searchInput {
