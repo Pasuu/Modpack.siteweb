@@ -33,11 +33,17 @@
 
 .totop {
     position: fixed;
-    bottom: 95px;
+    bottom: 120px;
     right: 25px;
 }
 
 .juan {
+  position: fixed;
+  bottom: 95px;
+  right: 25px;
+}
+
+.rizhi {
   position: fixed;
   bottom: 60px;
   right: 25px;
@@ -83,5 +89,6 @@
   display: inline-block;
   position: fixed;
   bottom: 2px;
-  right: 25px;
+  right: 60px;
 }
+
