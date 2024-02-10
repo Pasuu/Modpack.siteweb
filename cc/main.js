@@ -128,15 +128,15 @@ document.addEventListener("DOMContentLoaded", function() {
   image.style.display = "none";
 
   for (var icon of icons) {
-    icon.addEventListener("click", function() {
-      image.style.display = "flex";
-    });
+      icon.addEventListener("click", function() {
+          image.style.display = "flex";
+      });
   }
 
   document.addEventListener("click", function(event) {
-    var target = event.target;
-    if (target !== image && !image.contains(target)) {
-      image.style.display = "none";
-    }
+      var target = event.target;
+      if (target !== image && !image.contains(target)) {
+          image.style.display = "none";
+      }
   });
 });
