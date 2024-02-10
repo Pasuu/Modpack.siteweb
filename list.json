@@ -1994,13 +1994,13 @@
         "i18version":"1.0.8(未完成)",
         "gversion":"1.18.2-Forge",
         "i18team":"lrcno6",
-        "isdownload":false,
+        "isdownload":true,
         "link":{
             "bilibili":"433295431",
             "curseforge":"chroma-endless-2",
             "mcmod":"702",
             "github":"lrcno6/chroma-endless-2-translation",
-            "download":"chroma endless/chroma-endless-2-V-1.0.7.zip"
+            "download":"chroma endless/chroma-endless-2-V1.0.8..zip"
         }
     },
     "FTB Arcanum Institute":{
