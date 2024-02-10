@@ -120,23 +120,23 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 }); /* 回到顶部 */
 
+document.addEventListener("click", function(event) {
+  const target = event.target;
 
-document.addEventListener("DOMContentLoaded", function() {
-  var icons = document.querySelectorAll(".juan");
-  var image = document.getElementById("myImage");
+  if (target.matches(".juan img")) {
+      const commentWidget = document.querySelector(".comment-widget"); 
 
-  image.style.display = "none";
-
-  for (var icon of icons) {
-      icon.addEventListener("click", function() {
-          image.style.display = "flex";
-      });
-  }
-
-  document.addEventListener("click", function(event) {
-      var target = event.target;
-      if (target !== image && !image.contains(target)) {
-          image.style.display = "none";
+      if (!commentWidget) {
+          console.error("图片未找到");
+          return;
       }
-  });
-});
+
+      const isDisplayed = commentWidget.style.display !== "none";
+
+      if (!isDisplayed) {
+          commentWidget.style.display = "block";
+      } else {
+          commentWidget.style.display = "none";
+      }
+  }
+}); /* 评论*/
