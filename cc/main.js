@@ -107,3 +107,15 @@ document.addEventListener("click", function(event) {
   }
 }); /* 评论*/
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  var backButton = document.getElementById("totop");
+
+
+  backButton.addEventListener("click", function() {
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
+  });
+});

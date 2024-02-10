@@ -31,8 +31,13 @@
     display: block;
 }
 
+.totop {
+    position: fixed;
+    bottom: 60px;
+    right: 25px;
+}
 
-  .mess {
+ .mess {
     position: fixed;
     bottom: 25px;
     right: 25px;
