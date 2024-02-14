@@ -209,7 +209,7 @@ margin-left: 10px;
     padding: 5px;
   }
 
-  input:hover + .tooltip {
+  .search000:hover .tooltip {
     display: block;
   }
 
