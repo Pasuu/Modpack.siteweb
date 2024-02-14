@@ -201,4 +201,20 @@ margin-left: 10px;
     left: 10px; 
   }
 
+  .tooltip {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+
+  input:hover + .tooltip {
+    display: block;
+  }
+
+
+
+
+
 }
