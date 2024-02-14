@@ -15,15 +15,8 @@
   }
 
   .comment-widget {
-    position: fixed; 
-    top: 50%;       
-    left: 50%;      
-    transform: translate(-50%, -50%); 
     width: auto;   
     height: auto;  
-    margin: 0 auto;
-    background-color: #e1e1e1; 
-    overflow: auto; 
   }
 
 
