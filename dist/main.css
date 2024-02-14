@@ -27,9 +27,6 @@
     display: none; 
   }
 
-.comment-widget.show {
-    display: block;
-}
 
 .totop {
     position: fixed;

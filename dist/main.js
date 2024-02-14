@@ -13,28 +13,6 @@ setTimeout(function() {
 }); /* 计数 */
 
 
-document.addEventListener("click", function(event) {
-  const target = event.target;
-
-  if (target.matches(".mess img")) {
-      const commentWidget = document.querySelector(".comment-widget"); 
-
-      if (!commentWidget) {
-          console.error("评论窗口元素未找到！");
-          return;
-      }
-
-      const computedStyle = window.getComputedStyle(commentWidget);
-      const display = computedStyle.getPropertyValue("display");
-    
-      if (display === "none") {
-        commentWidget.style.display = "block";
-      } else {
-        commentWidget.style.display = "none";
-      }
-  }
-}); /* 评论*/
-
 
 document.addEventListener("DOMContentLoaded", function() {
   var backButton = document.getElementById("totop");
