@@ -18,6 +18,7 @@
     <script src="/dist/main.js"></script>
     <script src="/js/cc.js"></script>
     <script src="/js/serach.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
 
 <body>
@@ -79,8 +80,16 @@
       <a href="/log.html"><img src="/images/rizhi.png" alt="rizhi"  style="margin-bottom: -8px;" width="24px" height="24px"></a>
       </div>
     <div class="mess" id="mess">
-       <a href="/issue.html"><img src="/images/message-3-line.svg" alt="message-3-line" style="margin-bottom: -8px; cursor: pointer;" width="24px" height="24px"></a>
+       <img src="/images/message-3-line.svg" alt="message-3-line" style="margin-bottom: -8px; cursor: pointer;" width="24px" height="24px">
       </div>
+      <div id="vcomments"></div>
+      <script>
+          new Valine({
+              el: '#vcomments',
+              appId: 'DlSdat6GR1UJu77SbVGkztvU-gzGzoHsz',
+              appKey: 'B5tuP0Tud3yyWvU2zWSCG0dR'
+          })
+      </script>
     <div class="userline" id="userline">
       Copyright © 2024 <br>Pasuu by Modpack.top <br><a href="https://icp.gov.moe/?keyword=20240615" target="_blank">萌ICP备20240615号</a>
       </div>

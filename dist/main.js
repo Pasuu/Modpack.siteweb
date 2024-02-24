@@ -55,3 +55,25 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })(); /* 百度统计 */
+
+document.addEventListener("click", function(event) {
+  const target = event.target;
+
+  if (target.matches(".mess img")) {
+      const commentWidget = document.querySelector(".comment-widget"); 
+
+      if (!commentWidget) {
+          console.error("评论窗口元素未找到！");
+          return;
+      }
+
+      const computedStyle = window.getComputedStyle(commentWidget);
+      const display = computedStyle.getPropertyValue("display");
+
+      if (display === "none") {
+        commentWidget.style.display = "block";
+      } else {
+        commentWidget.style.display = "none";
+      }
+  }
+}); /* 评论*/
