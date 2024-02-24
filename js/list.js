@@ -11,7 +11,7 @@ function createPluginItem(packname, modpack) {
   const temp = `
   <div class="bordered">
       <div class="image-container" id="${packname}">
-        <img src="${modpack.img}" alt="${packname}" width="200" height="200">
+        <img src="${modpack.img}" loading="lazy" alt="${packname}" width="200" height="200">
       </div>
       <div class="content" style="overflow: hidden;">
         <p id="pack-name"><strong>${packname}</strong></p>
