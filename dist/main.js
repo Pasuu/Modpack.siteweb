@@ -77,3 +77,9 @@ document.addEventListener("click", function(event) {
       }
   }
 }); /* 评论*/
+
+new Valine({
+  el: '#vcomments',
+  appId: 'DlSdat6GR1UJu77SbVGkztvU-gzGzoHsz',
+  appKey: 'B5tuP0Tud3yyWvU2zWSCG0dR'
+})
