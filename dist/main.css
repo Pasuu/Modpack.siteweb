@@ -196,6 +196,9 @@ margin-left: 10px;
     left: 10px; 
   }
 
+  .v[data-class=v] {
+    width: auto;
+  }
 
 
 
