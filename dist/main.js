@@ -58,7 +58,7 @@ var _hmt = _hmt || [];
 
 document.addEventListener("DOMContentLoaded", function() {
   const messElement = document.getElementById("mess");
-  const commentWidget = document.querySelector(".vcomments");
+  const commentWidget = document.getElementById("vcomments");
 
   messElement.addEventListener("click", function() {
       if (!commentWidget) {
@@ -76,4 +76,5 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 });
+
 /* 评论*/
