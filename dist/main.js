@@ -56,4 +56,24 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })(); /* 百度统计 */
 
+document.addEventListener("DOMContentLoaded", function() {
+  const messElement = document.getElementById("mess");
+  const commentWidget = document.querySelector(".vcomments");
 
+  messElement.addEventListener("click", function() {
+      if (!commentWidget) {
+          console.error("评论窗口元素未找到！");
+          return;
+      }
+
+      const computedStyle = window.getComputedStyle(commentWidget);
+      const display = computedStyle.getPropertyValue("display");
+
+      if (display === "none") {
+          commentWidget.style.display = "block";
+      } else {
+          commentWidget.style.display = "none";
+      }
+  });
+});
+/* 评论*/
