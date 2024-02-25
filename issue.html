@@ -66,6 +66,23 @@
       Copyright © 2024 <br>Pasuu by Modpack.top
       </div>
 
+      <script>
+        function setupToggle() {
+            var messElement = document.getElementById("mess");
+            var vcommentsElement = document.getElementById("vcomments");
+        
+            messElement.addEventListener("click", function() {
+                if (vcommentsElement.style.display === "block") {
+                    vcommentsElement.style.display = "none";
+                } else {
+                    vcommentsElement.style.display = "block";
+                }
+            });
+        }
+        
+        document.addEventListener("DOMContentLoaded", setupToggle);
+        // 评论 //
+        </script>
 
 </body>
 </html>

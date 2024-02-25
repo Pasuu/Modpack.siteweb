@@ -56,15 +56,3 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })(); /* 百度统计 */
 
-var messElement = document.getElementById("mess");
-var vcommentsElement = document.getElementById("vcomments");
-
-messElement.addEventListener("click", function() {
-    if (vcommentsElement.style.display === "block") {
-        vcommentsElement.style.display = "none";
-    } else {
-        vcommentsElement.style.display = "block";
-    }
-});
-
-/* 评论*/
