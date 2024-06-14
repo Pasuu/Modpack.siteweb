@@ -273,7 +273,7 @@
     },
     "GT New Horizons":{
         "img":"https://media.forgecdn.net/avatars/53/488/636125694388807951.png",
-        "i18version":"2.5.1",
+        "i18version":"2.6.1",
         "gversion":"1.7.10-Forge",
         "i18team":"Kiwi233",
         "isdownload":true,
@@ -283,7 +283,7 @@
             "github":"Kiwi233/Translation-of-GTNH",
             "CFPAOrg":false,
             "gtnh":"true",
-            "download":"gtnh/gtnh-cn-2.5.1.7z"
+            "download":"gtnh/gtnh-cn-2.6.1.7z"
         }
     },
     "Glacial Awakening":{
@@ -587,6 +587,7 @@
             "bilibili":"2085089798",
             "ftb":"100-ftb-stoneblock-3?tab=about",
             "mcmod":"526",
+            "github":"VM-Chinese-translate-group/StoneBlock3",
             "VM":"modpacks/sb3/index.html"
         }
     },
@@ -908,7 +909,7 @@
     },
     "Vault Hunters 3rd Edition":{
         "img":"https://media.forgecdn.net/avatars/651/140/638051446127306822.png",
-        "i18version":"3.13",
+        "i18version":"3.14.3",
         "gversion":"1.18.2-Forge",
         "i18team":"VM-Team",
         "isdownload":false,
@@ -936,7 +937,7 @@
     },
     "DawnCraft - An Adventure RPG Modpack":{
         "img":"https://media.forgecdn.net/avatars/780/552/638125961291118791.gif",
-        "i18version":"1.33_f",
+        "i18version":"2.0.9_f3",
         "gversion":"1.18.2-Forge",
         "i18team":"VM-Team",
         "isdownload":false,
@@ -1419,7 +1420,7 @@
     },
     "FTB Skies":{
         "img":"https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F99%2FFTB%20Skies%20512x512.png&w=256&q=75",
-        "i18version":"1.4.1",
+        "i18version":"1.5.1",
         "gversion":"1.19.2-Forge",
         "i18team":"300魔女我爱罗",
         "isdownload":true,
@@ -1427,7 +1428,7 @@
             "bilibili":"30111191",
             "ftb":"103-ftb-skies?tab=about", 
             "mcmod":"597",
-            "download":"FTB Skies/FTB Skies1.4.1.rar"
+            "download":"FTB Skies/FTB Skies1.5.1.rar"
         }
     },
     "Techopolis 2":{
@@ -1618,13 +1619,14 @@
             "bilibili":"512835396",
             "curseforge":"musketeer",
             "mcmod":"683",
+            "github":"VM-Chinese-translate-group/Musketeer-l10n-CN",
             "VM0":true,
             "download":"vm/Musketeer/Musketeer-CN-For-beta7-0.1.2.zip"
         }
     },
     "Technological Journey":{
         "img":"https://media.forgecdn.net/avatars/378/900/637558512337007981.png",
-        "i18version":"1.2.2",
+        "i18version":"1.3",
         "gversion":"1.12.2-Forge",
         "i18team":"纯纯的Mala",
         "isdownload":false,
@@ -1770,7 +1772,7 @@
     },
     "Multiblock Madness 2":{
         "img":"https://media.forgecdn.net/avatars/784/333/638133103976799972.png",
-        "i18version":"0.5.5",
+        "i18version":"0.7.3",
         "gversion":"1.18.2-Forge",
         "i18team":"Addyabbia",
         "isdownload":false,
@@ -1837,7 +1839,7 @@
     },
     "Prey: An Expansive RPG Nightmare":{
         "img":"https://media.forgecdn.net/avatars/861/833/638269815319567383.png",
-        "i18version":"1.1.1",
+        "i18version":"1.13",
         "gversion":"1.19.2-Forge",
         "i18team":"VM-Team",
         "isdownload":false,
@@ -1862,7 +1864,7 @@
     },
     "Stacia 2 Expert":{
         "img":"https://media.forgecdn.net/avatars/924/798/638393018773627370.png",
-        "i18version":"BETA TEST 0.8.5",
+        "i18version":"Beta 0.9.6",
         "gversion":"1.19.2-Forge",
         "i18team":"Addyabbia",
         "isdownload":false,
@@ -1874,7 +1876,7 @@
     },
     "Plastek":{
         "img":"https://media.forgecdn.net/avatars/854/515/638258672026175304.png",
-        "i18version":"v1.40a",
+        "i18version":"v1.43",
         "gversion":"1.19.2-Forge",
         "i18team":"Addyabbia",
         "isdownload":false,
@@ -1886,7 +1888,7 @@
     },
     "Better MC [FORGE] - BMC4":{
         "img":"https://media.forgecdn.net/avatars/835/282/638226792192343447.png",
-        "i18version":"v24 HF",
+        "i18version":"v28",
         "gversion":"1.20.1-Forge",
         "i18team":"有只龙",
         "isdownload":true,
@@ -1963,7 +1965,7 @@
     },
     "Enigmatica 9: Expert - E9E":{
         "img":"https://media.forgecdn.net/avatars/844/83/638240908112377505.jpeg",
-        "i18version":"1.18.0",
+        "i18version":"1.22.1",
         "gversion":"1.19.2-Forge",
         "i18team":"RCqaq_",
         "isdownload":true,
@@ -1972,12 +1974,12 @@
             "curseforge":"enigmatica9expert",
             "mcmod":"650",
             "github":"RCqaq/Enigmatica-9-Expert-E9E-Translation",
-            "download":"E9/Enigmatica-9-Expert-v1.18.0.zip"
+            "download":"E9/Enigmatica-9-Expert-v1.22.1.zip"
         }
     },
     "Enigmatica 9 - E9":{
         "img":"https://media.forgecdn.net/avatars/557/558/637904430386629931.jpeg",
-        "i18version":"1.18.0",
+        "i18version":"1.22.1",
         "gversion":"1.19.2-Forge",
         "i18team":"RCqaq_",
         "isdownload":true,
@@ -1986,7 +1988,7 @@
             "curseforge":"enigmatica9",
             "mcmod":"699",
             "github":"RCqaq/Enigmatica-9-Expert-E9E-Translation",
-            "download":"E9/Enigmatica-9-Expert-v1.18.0.zip"
+            "download":"E9/Enigmatica-9-Expert-v1.22.1.zip"
         }
     },
     "Chroma Endless 2":{
