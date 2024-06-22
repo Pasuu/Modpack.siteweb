@@ -40,35 +40,26 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   }
 
-  function calculateMatchScore(item, keywords) {
-    let score = 0;
-    keywords.forEach(keyword => {
-      const regex = new RegExp(keyword, 'gi');
-      const matches = item.match(regex);
-      if (matches) {
-        score += matches.length;
-      }
-    });
-    return score;
+  function normalizeText(text) {
+    return text.toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, ' ').trim();
+  }
+
+  function fuzzyMatch(text, searchText) {
+    const normalizedText = normalizeText(text);
+    const normalizedSearchText = normalizeText(searchText);
+    return normalizedText.includes(normalizedSearchText);
   }
 
   const displaySearchResult = debounce(() => {
     if (!localSearch.isfetched) return;
-    const searchText = input.value.trim().toLowerCase();
-    const keywords = searchText.split(/[-\s]+/);
-    let resultItems = [];
+    const searchText = input.value.trim();
 
+    let resultItems = [];
     if (searchText.length > 0) {
-      resultItems = localSearch.getResultItems(keywords);
-      resultItems = resultItems.map(result => {
-        return {
-          item: result.item,
-          score: calculateMatchScore(result.item, keywords)
-        };
-      }).sort((a, b) => b.score - a.score); // 按照匹配度降序排列
+      resultItems = localSearch.getResultItems().filter(result => fuzzyMatch(result.item, searchText));
     }
 
-    if (keywords.length === 1 && keywords[0] === '') {
+    if (searchText === '') {
       container.innerHTML = `<div class="search-result-message"></div>`;
     } else if (resultItems.length === 0) {
       container.innerHTML = `<div class="search-result-message">无结果</div>`;
@@ -79,17 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
           ${resultItems.map(result => result.item).join('<div class="h-line-secondary"></div>')}
         </ul>`;
     }
-  }, 300); // 调整 delay 时间以适应你的需要
+  }, 300);
 
-  if (searchConfig.trigger === 'auto') {
-    input.addEventListener('input', displaySearchResult);
-  } else {
-    input.addEventListener('keypress', event => {
-      if (event.key === 'Enter') {
-        displaySearchResult();
-      }
-    });
-  }
+  input.addEventListener('input', displaySearchResult);
 
   window.addEventListener('search:loaded', displaySearchResult);
 });

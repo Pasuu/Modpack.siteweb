@@ -48,56 +48,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Age of Fate</title>
-    <url>/gallery/AgeofFate/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">VM-Team</td>
-<td align="center">1.6.0</td>
-<td align="center">1.16.5-Forge</td>
-</tr>
-</tbody></table>
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/2085089798">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/age-of-fate">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/360.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://vmct-cn.top/modpacks/fate/index.html">
-                <img src="/images/vm.svg" alt="vm">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>冒险</tag>
-        <tag>硬核</tag>
-        <tag>大型</tag>
-        <tag>科技</tag>
-        <tag>魔法</tag>
-        <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Age of Engineering</title>
     <url>/gallery/AgeofEngineering/</url>
     <content><![CDATA[<table>
@@ -152,6 +102,56 @@
         <tag>硬核</tag>
         <tag>大型</tag>
         <tag>科技</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Age of Fate</title>
+    <url>/gallery/AgeofFate/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">VM-Team</td>
+<td align="center">1.6.0</td>
+<td align="center">1.16.5-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/2085089798">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/age-of-fate">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/360.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://vmct-cn.top/modpacks/fate/index.html">
+                <img src="/images/vm.svg" alt="vm">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
+        <tag>任务</tag>
       </tags>
   </entry>
   <entry>
@@ -4056,6 +4056,58 @@
       </tags>
   </entry>
   <entry>
+    <title>Glacial Awakening</title>
+    <url>/gallery/GlacialAwakening/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Chenwe-i-lin(CFPA-Team)</td>
+<td align="center">1.1.13</td>
+<td align="center">1.12.2-Forge</td>
+</tr>
+</tbody></table>
+<div style="text-align: center; color: red;">支持直接下载</div>
+
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/glacial-awakening">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/142.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n">
+                <img src="/images/github-fill.svg" alt="github">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://cfpa.site/">
+                <img src="/images/cfpa.svg" alt="cfpa">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/Glacial Awakening/Glacial Awakening-latest-windows.zip">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>科技</tag>
+        <tag>任务</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Greed the Resource 3: Factory</title>
     <url>/gallery/GreedtheResource3Factory/</url>
     <content><![CDATA[<table>
@@ -4111,58 +4163,6 @@
         <tag>大型</tag>
         <tag>科技</tag>
         <tag>魔法</tag>
-        <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Glacial Awakening</title>
-    <url>/gallery/GlacialAwakening/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Chenwe-i-lin(CFPA-Team)</td>
-<td align="center">1.1.13</td>
-<td align="center">1.12.2-Forge</td>
-</tr>
-</tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/glacial-awakening">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/142.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n">
-                <img src="/images/github-fill.svg" alt="github">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://cfpa.site/">
-                <img src="/images/cfpa.svg" alt="cfpa">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://modpack.top/pro/Glacial Awakening/Glacial Awakening-latest-windows.zip">
-                <img src="/images/file-download-line.svg" alt="download">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -6072,8 +6072,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Ragnamod VII</title>
-    <url>/gallery/RagnamodVII/</url>
+    <title>RLCraft</title>
+    <url>/gallery/RLCraft/</url>
     <content><![CDATA[<table>
 <thead>
 <tr>
@@ -6083,28 +6083,30 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">Addoris</td>
-<td align="center">7.1.5</td>
-<td align="center">1.18.2-Forge</td>
+<td align="center">Ours_to</td>
+<td align="center">Release v2.9.3</td>
+<td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
+<div style="text-align: center; color: red;">支持直接下载</div>
+
 <hr>
 <div class="flex-container">
     <div class="flex-item">
-            <a href="https://space.bilibili.com/12693814">
+            <a href="https://space.bilibili.com/29918857">
                 <img src="/images/bilibili-line-blue.svg" alt="bilibili">
             </a>
         </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/ragnamod-vii">
+            <a href="https://www.curseforge.com/minecraft/modpacks/rlcraft">
                 <img src="/images/curseforge.svg" alt="curseforge">
             </a>
         </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/825.html">
+            <a href="https://www.mcmod.cn/modpack/16.html">
                 <img src="/images/mcmod.svg" alt="mcmod">
             </a>
         </div><div class="flex-item">
-            <a href="https://github.com/miao0425/Ragnamod_VII_ZH_CN">
-                <img src="/images/github-fill.svg" alt="github">
+            <a href="https://modpack.top/pro/rlcraft/rlcraft-V2.9.3-CN.rar">
+                <img src="/images/file-download-line.svg" alt="download">
             </a>
         </div>
 </div>
@@ -6114,11 +6116,9 @@
       </categories>
       <tags>
         <tag>冒险</tag>
+        <tag>硬核</tag>
         <tag>大型</tag>
-        <tag>科技</tag>
-        <tag>魔法</tag>
         <tag>任务</tag>
-        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -6171,8 +6171,8 @@
       </tags>
   </entry>
   <entry>
-    <title>RLCraft</title>
-    <url>/gallery/RLCraft/</url>
+    <title>Ragnamod VII</title>
+    <url>/gallery/RagnamodVII/</url>
     <content><![CDATA[<table>
 <thead>
 <tr>
@@ -6182,30 +6182,28 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">Ours_to</td>
-<td align="center">Release v2.9.3</td>
-<td align="center">1.12.2-Forge</td>
+<td align="center">Addoris</td>
+<td align="center">7.1.5</td>
+<td align="center">1.18.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
-            <a href="https://space.bilibili.com/29918857">
+            <a href="https://space.bilibili.com/12693814">
                 <img src="/images/bilibili-line-blue.svg" alt="bilibili">
             </a>
         </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/rlcraft">
+            <a href="https://www.curseforge.com/minecraft/modpacks/ragnamod-vii">
                 <img src="/images/curseforge.svg" alt="curseforge">
             </a>
         </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/16.html">
+            <a href="https://www.mcmod.cn/modpack/825.html">
                 <img src="/images/mcmod.svg" alt="mcmod">
             </a>
         </div><div class="flex-item">
-            <a href="https://modpack.top/pro/rlcraft/rlcraft-V2.9.3-CN.rar">
-                <img src="/images/file-download-line.svg" alt="download">
+            <a href="https://github.com/miao0425/Ragnamod_VII_ZH_CN">
+                <img src="/images/github-fill.svg" alt="github">
             </a>
         </div>
 </div>
@@ -6215,9 +6213,11 @@
       </categories>
       <tags>
         <tag>冒险</tag>
-        <tag>硬核</tag>
         <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -6691,57 +6691,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Sky Research</title>
-    <url>/gallery/SkyResearch/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">枫灵枭</td>
-<td align="center">1.15</td>
-<td align="center">1.16.5-Forge</td>
-</tr>
-</tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/294869233">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/sky-research">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/469.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://modpack.top/pro/Sky Research/Sky Research-CN-1.15.7z">
-                <img src="/images/file-download-line.svg" alt="download">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>冒险</tag>
-        <tag>科技</tag>
-        <tag>魔法</tag>
-        <tag>任务</tag>
-        <tag>空岛</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SkyFactory 4</title>
     <url>/gallery/SkyFactory4/</url>
     <content><![CDATA[<table>
@@ -6801,6 +6750,57 @@
         <tag>空岛</tag>
         <tag>休闲</tag>
         <tag>地图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Sky Research</title>
+    <url>/gallery/SkyResearch/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">枫灵枭</td>
+<td align="center">1.15</td>
+<td align="center">1.16.5-Forge</td>
+</tr>
+</tbody></table>
+<div style="text-align: center; color: red;">支持直接下载</div>
+
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/294869233">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/sky-research">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/469.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/Sky Research/Sky Research-CN-1.15.7z">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
+        <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
