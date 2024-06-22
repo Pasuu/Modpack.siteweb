@@ -1,117 +1,232 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="我的世界整合包汉化补丁">
-    <meta http-equiv="Cache-Control" content="max-age=86400">
-    <style>
-        body {
-            cursor: url('/images/mouse.cur'), auto;
-        }
-    </style>
-    <link rel="icon" href="/images/icon.png" />
-    <title>Modpack-CN</title>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/dist/main.css">
-    <script src="/dist/main.js"></script>
-    <script src="/js/cc.js"></script>
-    <script src="js/val.js"></script>
-    <script src="/js/serach.js"></script>
-</head>
+    <meta name="author" content="Pasuu">
 
-<body>
 
-  <div class="time" id="time">
-   <span style="font-size:x-small; color: #950dcb;">更新时间：2024 6.15</span>
-    </div>
+    <meta name="subtitle" content="我的世界整合包汉化">
 
-<div class="count-wrapper">
-  <h5>已收录Modpack汉化数量：</h5>
-  <p id="count" class="count-display"></p>
-</div>
 
-<div style="display: flex; justify-content: center; font-size:xx-small; color: #1bb8b8;">
-  <div style="margin-right: 100px;">注：并非所有汉化都是全汉化</div>
-  <div style="margin-left: 100px;">该网页所有汉化资源均获得<b>授权</b></div>
-</div>
+    <meta name="description" content="致力于搜集我的世界整合包汉化">
 
-  <h6 style="text-align: center; color: #fd0606;"><span style="font-size: large;">从该页下载的汉化文件所有权归原作者所有,非原作者同意,不得二次修改和分发汉化文件</span></h6>
-  <div style="text-align: center;">
-    <span style="color: #8d3beb; font-size: 14px;">没找到想要的汉化?点此自动汉化吧~<a href="https://github.com/XDawned/ModpackLocalizationTools" target="_blank"><img src="/images/github-fill.svg" alt="github" width="22" height="22" style="vertical-align: -5px;"></a></span>
-</div>
 
-<div class="search000">
-  <span style="color: brown; font-size: x-small;">请在网页完全加载后使用~</span><br>
-  <input type="text" id="searchInput" placeholder="输入关键词" onkeyup="search(this.value)">
-  <br>
-  <span font-size: large;>匹配数量：<p id="resultCount"></p>
-  <br>
-  <br>
-  <p style="color: rgba(146, 205, 223, 0.555); font-size: xx-small;">发送邮件到Admin@modpack.top<br>与我取得联系吧~</p>
-  </span>
-  
-</div>
-      
-    <div class="main-container">
-    </div>
-    <script src="/js/list.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/style1.css">
+    <meta name="keywords" content="整合包汉化">
 
-    <div class="user" id="user">
-      <img src="/images/user-4-line.svg" alt="user-4-line"  style="margin-bottom: -4px;" width="21px" height="21px">游客:<span id="busuanzi_value_site_uv"></span>
-      </div>
-    <div class="eye" id="eye">
-      <img src="/images/eye-fill.svg" alt="eye-fill"  style="margin-bottom: -4px;" width="21px" height="21px">查看:<span id="busuanzi_value_page_pv"></span>
-      </div>
-      <script defer src="https://cn.vercount.one/js"></script>
-    <div class="pules" id="pules">
-        <img src="/images/pulse-fill.svg" alt="pules"  style="margin-bottom: -4px;" width="21px" height="21px">
-        <span id="days">0天0时0分0秒</span>
-      </div>
+
+
+
+<title></title>
+
+
+
+    <link rel="icon" href="/logo.png">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
     <script src="/js/jishi.js"></script>
-    <div class="totop" id="totop">
-      <img src="/images/arrow-up-fill.svg" alt="arrow-up-fill" style="margin-bottom: -8px;" width="24px" height="24px">
-      </div>
-    <div class="juan" id="juan">
-      <a button id="myButton"><img src="/images/juan.png" alt="juan" style="margin-bottom: -8px;" width="24px" height="24px"></button></a>
-      </div>
-    <div class="juantu">
-      <img src="/images/zan.png">
-      </div>
-    <div class="rizhi" id="rizhi">
-      <a href="/log.html"><img src="/images/rizhi.png" alt="rizhi"  style="margin-bottom: -8px;" width="24px" height="24px"></a>
-      </div>
-      <div class="mess" id="mess">
-        <img src="/images/message-3-line.svg" alt="message-3-line" style="margin-bottom: -8px; cursor: pointer;" width="24px" height="24px">
-        </div>
-    <div class="userline" id="userline">
-      Copyright © 2024 <br>Pasuu by Modpack.top <br><a href="https://icp.gov.moe/?keyword=20240615" target="_blank">萌ICP备20240615号</a>
-      </div>
+    
 
-      <div id="vcomments"></div>
-      <script>
-          new Valine({
-              el: '#vcomments'
-          })
-      </script>
-      <script>
-        function setupToggle() {
-            var messElement = document.getElementById("mess");
-            var vcommentsElement = document.getElementById("vcomments");
+
+
+
+
+
+
+    <script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
+
+
+
+
+  <meta name="generator" content="Hexo 7.2.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            Modpack.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item menu-item-active">
+                <a href="/">主页</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/list/">目录</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/modpacks/gallery/">整合包</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/aboat/">关于</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">搜索</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <div class="profile">
+    <div class="profile-image">
         
-            messElement.addEventListener("click", function() {
-                if (vcommentsElement.style.display === "block") {
-                    vcommentsElement.style.display = "none";
-                } else {
-                    vcommentsElement.style.display = "block";
-                }
-            });
-        }
+            <img src="/profile_cover.svg" alt="featured_image">
+          
+    </div>
+    <div class="post-content profile-content">
+        <div class="profile-title">
+            Hi,这里是Modpack.
+        </div>
+        <div class="profile-body">
+            一个致力于收集整合包汉化的网站.
+        </div>
+        <div class="profile-text">
+            从该网站下载的汉化文件所有权归原作者所有,非原作者同意,不得二次修改和分发汉化文件
+        </div>
+        <div class="profile-text1">
+            该网站所有汉化资源均获得授权,并非所有汉化都是全汉化
+        </div>
         
-        document.addEventListener("DOMContentLoaded", setupToggle);
-        // 评论 //
-        </script>
-</body>
+            <div class="profile-link">
+                <a href="/">主页</a> 
+            </div>           
+        
+            <div class="profile-link">
+                <a href="/list/">目录</a> 
+            </div>           
+        
+            <div class="profile-link">
+                <a href="/modpacks/gallery/">整合包</a> 
+            </div>           
+        
+            <div class="profile-link">
+                <a href="/aboat/">关于</a> 
+            </div>           
+        
+            <div class="profile-link">
+                <a href="/support/">请我喝杯咖啡</a> 
+            </div>           
+        
+    </div>
+
+</div>
+
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                Copyright © 2024 Pasuu by Modpack.top | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a><br>
+                <div style="text-align: center;">
+                    已运行<span id="days">0天0时0分0秒</span>
+                    <a href="https://icp.gov.moe/?keyword=20240615" target="_blank">萌ICP备20240615号</a>
+                <span>汉化包数量：146</span>
+                <br>
+                游客:<span id="busuanzi_value_site_uv"></span>
+                查看:<span id="busuanzi_value_page_pv"></span>
+                </div>
+                <script defer src="https://cn.vercount.one/js"></script>
+            
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="随便试试吧~" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
 </html>

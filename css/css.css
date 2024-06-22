@@ -1,0 +1,20 @@
+.flex-container {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+.flex-item {
+  width: 60px;
+  height: 60px;
+  flex: 0 0 60px;
+  margin-right: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.flex-item img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 60px;
+  height: 60px;
+}

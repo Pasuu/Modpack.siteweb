@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="200" viewBox="0 0 350 200">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 150px;
+        text-anchor: middle;
+        font-family: FangSong_GB2312;
+      }
+    </style>
+  </defs>
+  <text id="中文" class="cls-1" x="172" y="142"><tspan x="172">中文</tspan></text>
+</svg>
