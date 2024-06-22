@@ -48,52 +48,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Age of Fate</title>
-    <url>/gallery/AgeofFate/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">VM-Team</td>
-<td align="center">1.6.0</td>
-<td align="center">1.16.5-Forge</td>
-</tr>
-</tbody></table>
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/2085089798">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/age-of-fate">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/360.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>冒险</tag>
-        <tag>硬核</tag>
-        <tag>大型</tag>
-        <tag>科技</tag>
-        <tag>魔法</tag>
-        <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Age of Engineering</title>
     <url>/gallery/AgeofEngineering/</url>
     <content><![CDATA[<table>
@@ -110,8 +64,6 @@
 <td align="center">1.10.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -167,8 +119,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -206,6 +156,52 @@
       </tags>
   </entry>
   <entry>
+    <title>Age of Fate</title>
+    <url>/gallery/AgeofFate/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">VM-Team</td>
+<td align="center">1.6.0</td>
+<td align="center">1.16.5-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/2085089798">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/age-of-fate">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/360.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
+        <tag>任务</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>All the Mods 6 - ATM6</title>
     <url>/gallery/AlltheMods6-ATM6/</url>
     <content><![CDATA[<table>
@@ -222,8 +218,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -277,8 +271,6 @@
 <td align="center">1.18.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -333,8 +325,6 @@
 <td align="center">1.19.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -384,8 +374,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -424,6 +412,57 @@
       </tags>
   </entry>
   <entry>
+    <title>Antimatter Chemistry</title>
+    <url>/gallery/AntimatterChemistry/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Chenwe-i-lin(CFPA-Team)</td>
+<td align="center">1.2.26</td>
+<td align="center">1.12.2-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/antimatter-chemistry">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/52.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n">
+                <img src="/images/github-fill.svg" alt="github">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://cfpa.site/">
+                <img src="/images/cfpa.svg" alt="cfpa">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/Antimatter Chemistry/Antimatter Chemistry-windows疑似1.2.26.rar">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>科技</tag>
+        <tag>任务</tag>
+        <tag>空岛</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Andromeda Automation</title>
     <url>/gallery/AndromedaAutomation/</url>
     <content><![CDATA[<table>
@@ -440,8 +479,6 @@
 <td align="center">1.18.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -483,105 +520,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Antimatter Chemistry</title>
-    <url>/gallery/AntimatterChemistry/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Chenwe-i-lin(CFPA-Team)</td>
-<td align="center">1.2.26</td>
-<td align="center">1.12.2-Forge</td>
-</tr>
-</tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/antimatter-chemistry">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/52.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n">
-                <img src="/images/github-fill.svg" alt="github">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://cfpa.site/">
-                <img src="/images/cfpa.svg" alt="cfpa">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://modpack.top/pro/Antimatter Chemistry/Antimatter Chemistry-windows疑似1.2.26.rar">
-                <img src="/images/file-download-line.svg" alt="download">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-        <tag>任务</tag>
-        <tag>空岛</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Astral Magica</title>
-    <url>/gallery/AstralMagica/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">GL噬神</td>
-<td align="center">1.17</td>
-<td align="center">1.16.5-Forge</td>
-</tr>
-</tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/526686943">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/astral-magica">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://modpack.top/pro/Astral Magica/Astral Magica1.17汉化.rar">
-                <img src="/images/file-download-line.svg" alt="download">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-        <tag>魔法</tag>
-        <tag>任务</tag>
-        <tag>轻量</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Astroblock</title>
     <url>/gallery/Astroblock/</url>
     <content><![CDATA[<table>
@@ -598,8 +536,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -639,6 +575,50 @@
       </tags>
   </entry>
   <entry>
+    <title>Astral Magica</title>
+    <url>/gallery/AstralMagica/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">GL噬神</td>
+<td align="center">1.17</td>
+<td align="center">1.16.5-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/526686943">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/astral-magica">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/Astral Magica/Astral Magica1.17汉化.rar">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>科技</tag>
+        <tag>魔法</tag>
+        <tag>任务</tag>
+        <tag>轻量</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Astropolis</title>
     <url>/gallery/Astropolis/</url>
     <content><![CDATA[<table>
@@ -655,8 +635,6 @@
 <td align="center">1.19.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -705,8 +683,6 @@
 <td align="center">1.19.2-Fabric</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -757,8 +733,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -809,8 +783,6 @@
 <td align="center">1.18.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -861,8 +833,6 @@
 <td align="center">1.19.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -913,8 +883,6 @@
 <td align="center">1.20.1-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -1064,8 +1032,6 @@
 <td align="center">1.18.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -1117,8 +1083,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -1167,8 +1131,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -1265,8 +1227,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -1307,6 +1267,60 @@
       </tags>
   </entry>
   <entry>
+    <title>Chroma Endless 2</title>
+    <url>/gallery/ChromaEndless2/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">lrcno6</td>
+<td align="center">1.0.8(未完成)</td>
+<td align="center">1.18.2-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/433295431">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/chroma-endless-2">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/702.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://github.com/lrcno6/chroma-endless-2-translation">
+                <img src="/images/github-fill.svg" alt="github">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/chroma endless/chroma-endless-2-V1.0.8.zip">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
+        <tag>任务</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Chroma Endless</title>
     <url>/gallery/ChromaEndless/</url>
     <content><![CDATA[<table>
@@ -1323,8 +1337,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -1367,62 +1379,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Chroma Endless 2</title>
-    <url>/gallery/ChromaEndless2/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">lrcno6</td>
-<td align="center">1.0.8(未完成)</td>
-<td align="center">1.18.2-Forge</td>
-</tr>
-</tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/433295431">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/chroma-endless-2">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/702.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://github.com/lrcno6/chroma-endless-2-translation">
-                <img src="/images/github-fill.svg" alt="github">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://modpack.top/pro/chroma endless/chroma-endless-2-V1.0.8.zip">
-                <img src="/images/file-download-line.svg" alt="download">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>冒险</tag>
-        <tag>硬核</tag>
-        <tag>大型</tag>
-        <tag>科技</tag>
-        <tag>魔法</tag>
-        <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Chroma Sky 2</title>
     <url>/gallery/ChromaSky2/</url>
     <content><![CDATA[<table>
@@ -1439,8 +1395,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -1479,64 +1433,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Compact Claustrophobia</title>
-    <url>/gallery/CompactClaustrophobia/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">安逸-Team</td>
-<td align="center">1.3.5.2</td>
-<td align="center">1.12.2-Forge</td>
-</tr>
-</tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/6575218">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/compact-claustrophobia">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/30.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n">
-                <img src="/images/github-fill.svg" alt="github">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://anyijun.com/">
-                <img src="/images/anyijun.svg" alt="anyijun">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://modpack.top/pro/anyijun/Compact-Claustrophobia/汉化补丁Compact-Claustrophobia-1.3.5.2.zip">
-                <img src="/images/file-download-line.svg" alt="download">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-        <tag>任务</tag>
-        <tag>空岛</tag>
-        <tag>地图</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Chroma Technology 2</title>
     <url>/gallery/ChromaTechnology2/</url>
     <content><![CDATA[<table>
@@ -1553,8 +1449,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -1597,6 +1491,62 @@
       </tags>
   </entry>
   <entry>
+    <title>Compact Claustrophobia</title>
+    <url>/gallery/CompactClaustrophobia/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">安逸-Team</td>
+<td align="center">1.3.5.2</td>
+<td align="center">1.12.2-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/6575218">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/compact-claustrophobia">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/30.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n">
+                <img src="/images/github-fill.svg" alt="github">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://anyijun.com/">
+                <img src="/images/anyijun.svg" alt="anyijun">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/anyijun/Compact-Claustrophobia/汉化补丁Compact-Claustrophobia-1.3.5.2.zip">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>科技</tag>
+        <tag>任务</tag>
+        <tag>空岛</tag>
+        <tag>地图</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Craft to Exile 2</title>
     <url>/gallery/CrafttoExile2/</url>
     <content><![CDATA[<table>
@@ -1613,8 +1563,6 @@
 <td align="center">1.20.1-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -1659,8 +1607,6 @@
 <td align="center">1.15.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -1693,6 +1639,55 @@
       </tags>
   </entry>
   <entry>
+    <title>Craft to Exile [Harmony]</title>
+    <url>/gallery/CrafttoExileHarmony/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">浅白地灵</td>
+<td align="center">1.3.8</td>
+<td align="center">1.16.4-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/13477959">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/crafttoexileharmony">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/56.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/CTE/CTE-Harmony-V1.3.8.rar">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>魔法</tag>
+        <tag>任务</tag>
+        <tag>轻量</tag>
+        <tag>PvP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Create 101 Season 2</title>
     <url>/gallery/Create101Season2/</url>
     <content><![CDATA[<table>
@@ -1709,8 +1704,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -1788,57 +1781,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Craft to Exile [Harmony]</title>
-    <url>/gallery/CrafttoExileHarmony/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">浅白地灵</td>
-<td align="center">1.3.8</td>
-<td align="center">1.16.4-Forge</td>
-</tr>
-</tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/13477959">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/crafttoexileharmony">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/56.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://modpack.top/pro/CTE/CTE-Harmony-V1.3.8.rar">
-                <img src="/images/file-download-line.svg" alt="download">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>冒险</tag>
-        <tag>魔法</tag>
-        <tag>任务</tag>
-        <tag>轻量</tag>
-        <tag>PvP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Create: Arcane Engineering</title>
     <url>/gallery/CreateArcaneEngineering/</url>
     <content><![CDATA[<table>
@@ -1855,8 +1797,6 @@
 <td align="center">1.18.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -1893,6 +1833,55 @@
         <tag>大型</tag>
         <tag>科技</tag>
         <tag>魔法</tag>
+        <tag>任务</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Create: Astral</title>
+    <url>/gallery/CreateAstral/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">VM-Team(基于HS_花露水的汉化更新)</td>
+<td align="center">v2.0.5b</td>
+<td align="center">1.18.2-Fabric</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/4138864">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/create-astral">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/510.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://github.com/HaloSense/create_astral_translation_zhcn">
+                <img src="/images/github-fill.svg" alt="github">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -1978,55 +1967,6 @@
         <tag>魔法</tag>
         <tag>任务</tag>
         <tag>空岛</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Create: Astral</title>
-    <url>/gallery/CreateAstral/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">VM-Team(基于HS_花露水的汉化更新)</td>
-<td align="center">v2.0.5b</td>
-<td align="center">1.18.2-Fabric</td>
-</tr>
-</tbody></table>
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/4138864">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/create-astral">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/510.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://github.com/HaloSense/create_astral_translation_zhcn">
-                <img src="/images/github-fill.svg" alt="github">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>冒险</tag>
-        <tag>硬核</tag>
-        <tag>大型</tag>
-        <tag>科技</tag>
-        <tag>任务</tag>
       </tags>
   </entry>
   <entry>
@@ -2145,8 +2085,6 @@
 <td align="center">1.18.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -2192,8 +2130,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -2226,59 +2162,6 @@
         <tag>科技</tag>
         <tag>任务</tag>
         <tag>轻量</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Divine Journey 2</title>
-    <url>/gallery/DivineJourney2/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">泽崎诚(基于witherw的汉化更新)</td>
-<td align="center">2.16.0</td>
-<td align="center">1.12.2-Forge</td>
-</tr>
-</tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/13553760">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/divine-journey-2">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/290.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://modpack.top/pro/Divine Journey2/Divine Journey2.16.0汉化补丁.rar">
-                <img src="/images/file-download-line.svg" alt="download">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>冒险</tag>
-        <tag>硬核</tag>
-        <tag>大型</tag>
-        <tag>科技</tag>
-        <tag>魔法</tag>
-        <tag>任务</tag>
-        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -2319,6 +2202,57 @@
         <tag>大型</tag>
         <tag>科技</tag>
         <tag>任务</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Divine Journey 2</title>
+    <url>/gallery/DivineJourney2/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">泽崎诚(基于witherw的汉化更新)</td>
+<td align="center">2.16.0</td>
+<td align="center">1.12.2-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/13553760">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/divine-journey-2">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/290.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/Divine Journey2/Divine Journey2.16.0汉化补丁.rar">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
+        <tag>任务</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -2379,8 +2313,6 @@
 <td align="center">1.18.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -2437,8 +2369,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -2495,8 +2425,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -2552,8 +2480,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -2608,8 +2534,6 @@
 <td align="center">1.19.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -2664,8 +2588,6 @@
 <td align="center">1.19.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -2719,8 +2641,6 @@
 <td align="center">1.19.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -2765,8 +2685,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -2868,8 +2786,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -2926,8 +2842,6 @@
 <td align="center">1.18.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -2985,8 +2899,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -3125,6 +3037,49 @@
       </tags>
   </entry>
   <entry>
+    <title>FTB Presents Direwolf20 1.19</title>
+    <url>/gallery/FTBPresentsDirewolf20119/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">VM-Team</td>
+<td align="center">未知</td>
+<td align="center">1.19.2-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/2085089798">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://feed-the-beast.com/modpacks/101-ftb-presents-direwolf20-119?tab=about">
+                <img src="/images/ftb.svg" alt="ftb">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://github.com/VM-Chinese-translate-group/direwolf20-1.19.2">
+                <img src="/images/github-fill.svg" alt="github">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>FTB Presents Integration by Parts DX</title>
     <url>/gallery/FTBPresentsIntegrationbyPartsDX/</url>
     <content><![CDATA[<table>
@@ -3141,8 +3096,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -3200,8 +3153,6 @@
 <td align="center">1.10.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -3262,8 +3213,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -3307,49 +3256,6 @@
       </tags>
   </entry>
   <entry>
-    <title>FTB Presents Direwolf20 1.19</title>
-    <url>/gallery/FTBPresentsDirewolf20119/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">VM-Team</td>
-<td align="center">未知</td>
-<td align="center">1.19.2-Forge</td>
-</tr>
-</tbody></table>
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/2085089798">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://feed-the-beast.com/modpacks/101-ftb-presents-direwolf20-119?tab=about">
-                <img src="/images/ftb.svg" alt="ftb">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://github.com/VM-Chinese-translate-group/direwolf20-1.19.2">
-                <img src="/images/github-fill.svg" alt="github">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>冒险</tag>
-        <tag>科技</tag>
-        <tag>魔法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>FTB Pyramid Reborn 3.0</title>
     <url>/gallery/FTBPyramidReborn30/</url>
     <content><![CDATA[<table>
@@ -3366,8 +3272,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -3426,8 +3330,6 @@
 <td align="center">1.19.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -3529,8 +3431,6 @@
 <td align="center">1.10.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -3699,8 +3599,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -3795,8 +3693,6 @@
 <td align="center">1.10.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -3852,8 +3748,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -3954,8 +3848,6 @@
 <td align="center">1.7.10-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4006,8 +3898,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4058,8 +3948,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4117,8 +4005,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4171,8 +4057,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4226,8 +4110,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4282,8 +4164,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4370,8 +4250,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4473,8 +4351,6 @@
 <td align="center">1.10.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4530,8 +4406,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4586,8 +4460,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4640,8 +4512,6 @@
 <td align="center">1.19.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4737,8 +4607,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4785,8 +4653,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4839,8 +4705,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -4993,8 +4857,6 @@
 <td align="center">1.20.1-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -5046,8 +4908,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -5241,8 +5101,6 @@
 <td align="center">1.19.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -5294,8 +5152,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -5339,8 +5195,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -5440,8 +5294,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -5496,8 +5348,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -5542,8 +5392,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -5725,8 +5573,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -5781,8 +5627,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -5932,8 +5776,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -5992,8 +5834,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -6137,8 +5977,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -6289,8 +6127,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -6343,8 +6179,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -6435,8 +6269,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -6489,8 +6321,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -6597,8 +6427,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -6659,8 +6487,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -6710,8 +6536,6 @@
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -6765,8 +6589,6 @@
 <td align="center">1.18.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -6823,8 +6645,6 @@
 <td align="center">1.10.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -6965,8 +6785,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -7074,8 +6892,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -7175,8 +6991,6 @@
 <td align="center">1.18.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -7456,8 +7270,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
@@ -7605,8 +7417,6 @@
 <td align="center">1.12.2-Forge</td>
 </tr>
 </tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
 <hr>
 <div class="flex-container">
     <div class="flex-item">
