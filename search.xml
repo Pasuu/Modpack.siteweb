@@ -42,7 +42,54 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Age of Fate</title>
+    <url>/gallery/AgeofFate/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">VM-Team</td>
+<td align="center">1.6.0</td>
+<td align="center">1.16.5-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/2085089798">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/age-of-fate">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/360.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -98,50 +145,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Age of Fate</title>
-    <url>/gallery/AgeofFate/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">VM-Team</td>
-<td align="center">1.6.0</td>
-<td align="center">1.16.5-Forge</td>
-</tr>
-</tbody></table>
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/2085089798">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/age-of-fate">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/360.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
       </tags>
   </entry>
   <entry>
@@ -192,7 +198,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -244,8 +253,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
+        <tag>水槽</tag>
       </tags>
   </entry>
   <entry>
@@ -296,8 +308,63 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>All the Mods 8 - ATM8</title>
+    <url>/gallery/AlltheMods8-ATM8/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">八云橙子</td>
+<td align="center">1.0.17</td>
+<td align="center">1.19.2-Forge</td>
+</tr>
+</tbody></table>
+<div style="text-align: center; color: red;">支持直接下载</div>
+
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/31179">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/all-the-mods-8">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/532.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/ATM8/ATM8任务书汉化V1.0.17.zip">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
+        <tag>休闲</tag>
       </tags>
   </entry>
   <entry>
@@ -348,56 +415,12 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>All the Mods 8 - ATM8</title>
-    <url>/gallery/AlltheMods8-ATM8/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">八云橙子</td>
-<td align="center">1.0.17</td>
-<td align="center">1.19.2-Forge</td>
-</tr>
-</tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/31179">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/all-the-mods-8">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/532.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://modpack.top/pro/ATM8/ATM8任务书汉化V1.0.17.zip">
-                <img src="/images/file-download-line.svg" alt="download">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -452,8 +475,11 @@
         <category>gallery</category>
       </categories>
       <tags>
+        <tag>冒险</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>空岛</tag>
-        <tag>任务</tag>
+        <tag>地图</tag>
       </tags>
   </entry>
   <entry>
@@ -504,8 +530,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -547,10 +574,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Astroblock</title>
@@ -604,7 +627,8 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -652,8 +676,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -700,8 +726,12 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
         <tag>任务</tag>
+        <tag>水槽</tag>
+        <tag>休闲</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -748,8 +778,12 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
         <tag>任务</tag>
+        <tag>水槽</tag>
+        <tag>休闲</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -796,8 +830,12 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
         <tag>任务</tag>
+        <tag>水槽</tag>
+        <tag>休闲</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -844,8 +882,12 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
         <tag>任务</tag>
+        <tag>水槽</tag>
+        <tag>休闲</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -892,8 +934,12 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
         <tag>任务</tag>
+        <tag>水槽</tag>
+        <tag>休闲</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -933,10 +979,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Blackstone Block</title>
@@ -984,9 +1026,57 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Calculator Skies</title>
+    <url>/gallery/CalculatorSkies/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">安逸-Team</td>
+<td align="center">1.14.1-Hotfix</td>
+<td align="center">1.12.2-Forge</td>
+</tr>
+</tbody></table>
+<div style="text-align: center; color: red;">支持直接下载</div>
+
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/6575218">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/calculator-skies">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://anyijun.com/">
+                <img src="/images/anyijun.svg" alt="anyijun">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/anyijun/Calculator-Skies/Calculator-Skies_1.14.1-Hotfix_zh_cn.zip">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
   </entry>
   <entry>
     <title>Bliss - a peaceful-like experience</title>
@@ -1036,56 +1126,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Calculator Skies</title>
-    <url>/gallery/CalculatorSkies/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">安逸-Team</td>
-<td align="center">1.14.1-Hotfix</td>
-<td align="center">1.12.2-Forge</td>
-</tr>
-</tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/6575218">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/calculator-skies">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://anyijun.com/">
-                <img src="/images/anyijun.svg" alt="anyijun">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://modpack.top/pro/anyijun/Calculator-Skies/Calculator-Skies_1.14.1-Hotfix_zh_cn.zip">
-                <img src="/images/file-download-line.svg" alt="download">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
+        <tag>冒险</tag>
+        <tag>休闲</tag>
+        <tag>轻量</tag>
       </tags>
   </entry>
   <entry>
@@ -1127,10 +1170,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Caveopolis (Modpack)</title>
@@ -1178,8 +1217,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -1234,8 +1274,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
+        <tag>轻量</tag>
       </tags>
   </entry>
   <entry>
@@ -1290,7 +1332,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -1342,7 +1388,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -1394,8 +1444,12 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -1450,7 +1504,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -1506,8 +1564,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
+        <tag>地图</tag>
       </tags>
   </entry>
   <entry>
@@ -1549,10 +1609,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Craft to Exile [Dissonance]</title>
@@ -1598,8 +1654,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>PvP</tag>
       </tags>
   </entry>
   <entry>
@@ -1646,8 +1704,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>轻量</tag>
+        <tag>PvP</tag>
       </tags>
   </entry>
   <entry>
@@ -1694,8 +1755,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
+        <tag>硬核</tag>
+        <tag>科技</tag>
+        <tag>轻量</tag>
+        <tag>国创</tag>
       </tags>
   </entry>
   <entry>
@@ -1736,7 +1799,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -1792,7 +1858,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -1838,7 +1906,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -1875,10 +1946,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Cryptopolis</title>
@@ -1918,54 +1985,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DarkRPG - RPG Quest Magic &amp; Origins Online Adventure</title>
-    <url>/gallery/DarkRPG-RPGQuestMagicOriginsOnlineAdventure/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">指星汉化组</td>
-<td align="center">7.6.6</td>
-<td align="center">1.20.1-Fabric</td>
-</tr>
-</tbody></table>
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/59512919">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/darkrpg">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/406.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.bilibili.com/video/BV1ka4y1C7nD">
-                <img src="/images/bilibili-line-red.svg" alt="bilibili-line-red">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
         <tag>空岛</tag>
-        <tag>任务</tag>
       </tags>
   </entry>
   <entry>
@@ -2010,8 +2034,61 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>剧情</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DarkRPG - RPG Quest Magic &amp; Origins Online Adventure</title>
+    <url>/gallery/DarkRPG-RPGQuestMagicOriginsOnlineAdventure/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">指星汉化组</td>
+<td align="center">7.6.6</td>
+<td align="center">1.20.1-Fabric</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/59512919">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/darkrpg">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/406.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.bilibili.com/video/BV1ka4y1C7nD">
+                <img src="/images/bilibili-line-red.svg" alt="bilibili-line-red">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>魔法</tag>
+        <tag>任务</tag>
+        <tag>地图</tag>
       </tags>
   </entry>
   <entry>
@@ -2053,10 +2130,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Delivery Inc.</title>
@@ -2106,8 +2179,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>轻量</tag>
       </tags>
   </entry>
   <entry>
@@ -2143,10 +2217,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Divine Journey 2</title>
@@ -2192,8 +2262,13 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -2229,10 +2304,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Encrypted_</title>
@@ -2286,7 +2357,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -2342,7 +2415,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -2394,8 +2469,13 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>休闲</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -2446,7 +2526,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -2498,8 +2582,12 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>水槽</tag>
       </tags>
   </entry>
   <entry>
@@ -2550,7 +2638,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -2593,10 +2684,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Exoria</title>
@@ -2650,8 +2737,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>剧情</tag>
       </tags>
   </entry>
   <entry>
@@ -2691,10 +2781,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>FTB Continuum</title>
@@ -2748,7 +2834,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -2804,7 +2892,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -2864,8 +2955,15 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
+        <tag>建筑</tag>
+        <tag>地图</tag>
       </tags>
   </entry>
   <entry>
@@ -2906,8 +3004,8 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
+        <tag>冒险</tag>
+        <tag>科技</tag>
       </tags>
   </entry>
   <entry>
@@ -2948,8 +3046,13 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>水槽</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -2989,10 +3092,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>FTB Presents Integration by Parts DX</title>
@@ -3046,7 +3145,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -3106,8 +3208,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -3162,8 +3266,13 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>水槽</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -3222,7 +3331,7 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -3270,8 +3379,13 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
+        <tag>地图</tag>
       </tags>
   </entry>
   <entry>
@@ -3330,8 +3444,8 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
       </tags>
   </entry>
   <entry>
@@ -3384,8 +3498,12 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
+        <tag>休闲</tag>
       </tags>
   </entry>
   <entry>
@@ -3430,8 +3548,14 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>水槽</tag>
+        <tag>空岛</tag>
+        <tag>地图</tag>
       </tags>
   </entry>
   <entry>
@@ -3478,7 +3602,8 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -3524,7 +3649,8 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -3580,8 +3706,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>轻量</tag>
       </tags>
   </entry>
   <entry>
@@ -3628,8 +3755,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>休闲</tag>
+        <tag>轻量</tag>
       </tags>
   </entry>
   <entry>
@@ -3678,8 +3807,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>休闲</tag>
+        <tag>轻量</tag>
       </tags>
   </entry>
   <entry>
@@ -3726,7 +3857,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -3778,7 +3913,7 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -3834,7 +3969,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -3886,8 +4024,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -3938,8 +4078,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -3990,8 +4133,12 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
+        <tag>剧情</tag>
       </tags>
   </entry>
   <entry>
@@ -4037,10 +4184,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Infernal Origins</title>
@@ -4075,10 +4218,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Infernopolis</title>
@@ -4123,10 +4262,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Infinity Foundation</title>
@@ -4174,8 +4309,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
+        <tag>轻量</tag>
       </tags>
   </entry>
   <entry>
@@ -4230,7 +4368,8 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -4282,8 +4421,12 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -4334,9 +4477,51 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
         <tag>任务</tag>
+        <tag>休闲</tag>
+        <tag>建筑</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Life in the village 3</title>
+    <url>/gallery/Lifeinthevillage3/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Shawnn</td>
+<td align="center">2.1</td>
+<td align="center">1.19.2-Forge</td>
+</tr>
+</tbody></table>
+<div style="text-align: center; color: red;">支持直接下载</div>
+
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/12429390">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/life-in-the-village-3">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/Life of village 3/Life_of_village3_1.19.2_v2.1汉化.zip">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
   </entry>
   <entry>
     <title>MC Eternal</title>
@@ -4380,8 +4565,13 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>休闲</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -4428,7 +4618,7 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -4479,10 +4669,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Material Energy^5: Entity</title>
@@ -4536,52 +4722,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Life in the village 3</title>
-    <url>/gallery/Lifeinthevillage3/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Shawnn</td>
-<td align="center">2.1</td>
-<td align="center">1.19.2-Forge</td>
-</tr>
-</tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/12429390">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/life-in-the-village-3">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://modpack.top/pro/Life of village 3/Life_of_village3_1.19.2_v2.1汉化.zip">
-                <img src="/images/file-download-line.svg" alt="download">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
+        <tag>冒险</tag>
+        <tag>科技</tag>
+        <tag>地图</tag>
+        <tag>轻量</tag>
       </tags>
   </entry>
   <entry>
@@ -4622,54 +4766,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Medieval MC [FABRIC] - MMC1</title>
-    <url>/gallery/MedievalMCFABRIC-MMC1/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">VM-Team</td>
-<td align="center">v23</td>
-<td align="center">1.19.2-Fabric</td>
-</tr>
-</tbody></table>
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/2085089798">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/medieval-mc-fabric-mmc1">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/255.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://github.com/VM-Chinese-translate-group/MMC-Chinese">
-                <img src="/images/github-fill.svg" alt="github">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
         <tag>空岛</tag>
-        <tag>任务</tag>
       </tags>
   </entry>
   <entry>
@@ -4716,8 +4817,64 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>地图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Medieval MC [FABRIC] - MMC1</title>
+    <url>/gallery/MedievalMCFABRIC-MMC1/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">VM-Team</td>
+<td align="center">v23</td>
+<td align="center">1.19.2-Fabric</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/2085089798">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/medieval-mc-fabric-mmc1">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/255.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://github.com/VM-Chinese-translate-group/MMC-Chinese">
+                <img src="/images/github-fill.svg" alt="github">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
+        <tag>任务</tag>
+        <tag>地图</tag>
       </tags>
   </entry>
   <entry>
@@ -4772,8 +4929,15 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>水槽</tag>
+        <tag>空岛</tag>
+        <tag>休闲</tag>
       </tags>
   </entry>
   <entry>
@@ -4814,8 +4978,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -4856,49 +5021,8 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Multiblock Madness 2</title>
-    <url>/gallery/MultiblockMadness2/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Addyabbia</td>
-<td align="center">0.7.3</td>
-<td align="center">1.18.2-Forge</td>
-</tr>
-</tbody></table>
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/12693814">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/multiblock-madness-2">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/583.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -4950,8 +5074,55 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>休闲</tag>
+        <tag>轻量</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Multiblock Madness 2</title>
+    <url>/gallery/MultiblockMadness2/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Addyabbia</td>
+<td align="center">0.7.3</td>
+<td align="center">1.18.2-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/12693814">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/multiblock-madness-2">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/583.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -4993,10 +5164,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Nomifactory</title>
@@ -5046,7 +5213,8 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -5092,7 +5260,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -5144,8 +5314,12 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -5187,10 +5361,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Omnifactory</title>
@@ -5240,7 +5410,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -5281,10 +5454,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Plastek</title>
@@ -5319,10 +5488,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Prey: An Expansive RPG Nightmare</title>
@@ -5361,10 +5526,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Primal Skies</title>
@@ -5413,9 +5574,50 @@
       <categories>
         <category>gallery</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Project Isothermal Expert</title>
+    <url>/gallery/ProjectIsothermalExpert/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">晓阳</td>
+<td align="center">1.0.7</td>
+<td align="center">1.16.5-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/26327418">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/project-isothermal-expert">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/440.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -5470,50 +5672,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Project Isothermal Expert</title>
-    <url>/gallery/ProjectIsothermalExpert/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">晓阳</td>
-<td align="center">1.0.7</td>
-<td align="center">1.16.5-Forge</td>
-</tr>
-</tbody></table>
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/26327418">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/project-isothermal-expert">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/440.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
         <tag>空岛</tag>
-        <tag>任务</tag>
       </tags>
   </entry>
   <entry>
@@ -5554,8 +5716,14 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
+        <tag>休闲</tag>
       </tags>
   </entry>
   <entry>
@@ -5610,7 +5778,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -5658,7 +5830,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -5700,7 +5874,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -5756,8 +5933,12 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>地图</tag>
       </tags>
   </entry>
   <entry>
@@ -5802,7 +5983,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -5844,7 +6027,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -5896,7 +6081,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -5948,8 +6135,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -5985,10 +6174,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>SevTech: Ages</title>
@@ -6038,7 +6223,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -6090,8 +6277,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -6140,8 +6330,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -6196,8 +6389,14 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>水槽</tag>
+        <tag>空岛</tag>
+        <tag>休闲</tag>
+        <tag>地图</tag>
       </tags>
   </entry>
   <entry>
@@ -6244,8 +6443,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -6296,64 +6498,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Space Astronomy 2</title>
-    <url>/gallery/SpaceAstronomy2/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">TartaricAcid(CFPA-Team)</td>
-<td align="center">1.4.9</td>
-<td align="center">1.10.2-Forge</td>
-</tr>
-</tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/4435845">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/space-astronomy-2">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/160.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n">
-                <img src="/images/github-fill.svg" alt="github">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://cfpa.site/">
-                <img src="/images/cfpa.svg" alt="cfpa">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://modpack.top/pro/Space Astronomy 2/Space Astronomy 2-1.4.9-windows.zip">
-                <img src="/images/file-download-line.svg" alt="download">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
         <tag>空岛</tag>
-        <tag>任务</tag>
       </tags>
   </entry>
   <entry>
@@ -6408,8 +6557,67 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Space Astronomy 2</title>
+    <url>/gallery/SpaceAstronomy2/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">TartaricAcid(CFPA-Team)</td>
+<td align="center">1.4.9</td>
+<td align="center">1.10.2-Forge</td>
+</tr>
+</tbody></table>
+<div style="text-align: center; color: red;">支持直接下载</div>
+
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/4435845">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/space-astronomy-2">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/160.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://github.com/CFPAOrg/Modpack-GuideBook-i18n">
+                <img src="/images/github-fill.svg" alt="github">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://cfpa.site/">
+                <img src="/images/cfpa.svg" alt="cfpa">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/Space Astronomy 2/Space Astronomy 2-1.4.9-windows.zip">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
       </tags>
   </entry>
   <entry>
@@ -6445,10 +6653,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>Stacia Expert</title>
@@ -6488,59 +6692,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Staged Learning</title>
-    <url>/gallery/StagedLearning/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">安逸-Team</td>
-<td align="center">2.1.0</td>
-<td align="center">1.12.2-Forge</td>
-</tr>
-</tbody></table>
-<div style="text-align: center; color: red;">支持直接下载</div>
-
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/6575218">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/staged-learning">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/132.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://anyijun.com/">
-                <img src="/images/anyijun.svg" alt="anyijun">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://modpack.top/pro/anyijun/Staged-Learning/汉化补丁 Staged-Learning-2.1.0.rar">
-                <img src="/images/file-download-line.svg" alt="download">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -6594,7 +6750,62 @@
         <category>gallery</category>
       </categories>
       <tags>
+        <tag>魔法</tag>
+        <tag>任务</tag>
         <tag>空岛</tag>
+        <tag>地图</tag>
+        <tag>轻量</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Staged Learning</title>
+    <url>/gallery/StagedLearning/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">安逸-Team</td>
+<td align="center">2.1.0</td>
+<td align="center">1.12.2-Forge</td>
+</tr>
+</tbody></table>
+<div style="text-align: center; color: red;">支持直接下载</div>
+
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/6575218">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/staged-learning">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/132.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://anyijun.com/">
+                <img src="/images/anyijun.svg" alt="anyijun">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/anyijun/Staged-Learning/汉化补丁 Staged-Learning-2.1.0.rar">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>科技</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -6650,8 +6861,13 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>水槽</tag>
+        <tag>空岛</tag>
+        <tag>地图</tag>
       </tags>
   </entry>
   <entry>
@@ -6687,10 +6903,6 @@
       <categories>
         <category>gallery</category>
       </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
   </entry>
   <entry>
     <title>TNP Limitless 5 - LL5</title>
@@ -6736,49 +6948,10 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Technological Journey</title>
-    <url>/gallery/TechnologicalJourney/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">纯纯的Mala</td>
-<td align="center">1.3</td>
-<td align="center">1.12.2-Forge</td>
-</tr>
-</tbody></table>
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/37599420">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/technologicaljourney">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/552.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -6820,7 +6993,55 @@
         <category>gallery</category>
       </categories>
       <tags>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>任务</tag>
         <tag>空岛</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Technological Journey</title>
+    <url>/gallery/TechnologicalJourney/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">纯纯的Mala</td>
+<td align="center">1.3</td>
+<td align="center">1.12.2-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/37599420">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/technologicaljourney">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/552.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -6862,8 +7083,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>科技</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
   <entry>
@@ -6908,7 +7130,11 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
       </tags>
   </entry>
@@ -6954,8 +7180,57 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ultimate Progression</title>
+    <url>/gallery/UltimateProgression/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">乌金_Blackwithking</td>
+<td align="center">1.0.3</td>
+<td align="center">1.16.5-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/6506242">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/ultimate-progression">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/346.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>硬核</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
+        <tag>建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -7006,50 +7281,11 @@
         <category>gallery</category>
       </categories>
       <tags>
+        <tag>硬核</tag>
+        <tag>科技</tag>
+        <tag>魔法</tag>
         <tag>空岛</tag>
-        <tag>任务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ultimate Progression</title>
-    <url>/gallery/UltimateProgression/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">作者</th>
-<th align="center">汉化版本</th>
-<th align="center">整合包版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">乌金_Blackwithking</td>
-<td align="center">1.0.3</td>
-<td align="center">1.16.5-Forge</td>
-</tr>
-</tbody></table>
-<hr>
-<div class="flex-container">
-    <div class="flex-item">
-            <a href="https://space.bilibili.com/6506242">
-                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.curseforge.com/minecraft/modpacks/ultimate-progression">
-                <img src="/images/curseforge.svg" alt="curseforge">
-            </a>
-        </div><div class="flex-item">
-            <a href="https://www.mcmod.cn/modpack/346.html">
-                <img src="/images/mcmod.svg" alt="mcmod">
-            </a>
-        </div>
-</div>
-]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
+        <tag>地图</tag>
       </tags>
   </entry>
   <entry>
@@ -7094,8 +7330,8 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
-        <tag>任务</tag>
+        <tag>冒险</tag>
+        <tag>大型</tag>
       </tags>
   </entry>
   <entry>
@@ -7150,8 +7386,9 @@
         <category>gallery</category>
       </categories>
       <tags>
-        <tag>空岛</tag>
+        <tag>硬核</tag>
         <tag>任务</tag>
+        <tag>空岛</tag>
       </tags>
   </entry>
 </search>
