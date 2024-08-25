@@ -34,8 +34,4 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(response => response.json())
       .then(data => {
         document.getElementById('modpackCount').textContent = `已收录${Object.keys(data).length}个汉化包.`;
-      })
-      .catch(error => {
-        console.error('Error loading modpacks:', error);
-        document.getElementById('modpackCount').textContent = '加载失败';
       });
