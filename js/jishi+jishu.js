@@ -30,8 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
     fetch('/modpacks.json')
       .then(response => response.json())
       .then(data => {
-        document.getElementById('modpackCount').textContent = `已收录${Object.keys(data).length}个汉化包.`;
+        const modpackCountElement = document.getElementById('modpackCount');
+        if (modpackCountElement) {
+          modpackCountElement.textContent = `已收录${Object.keys(data).length}个汉化包.`;
+        }
       });
+  });
