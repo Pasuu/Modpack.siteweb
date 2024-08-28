@@ -6685,6 +6685,10 @@
                 <img src="/images/curseforge.svg" alt="curseforge">
             </a>
         </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/841.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
             <a href="https://www.bilibili.com/read/cv35691375">
                 <img src="/images/bilibili-line-red.svg" alt="dwred">
             </a>
@@ -8024,6 +8028,58 @@
         <tag>硬核</tag>
         <tag>任务</tag>
         <tag>空岛</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>FTB NeoTech</title>
+    <url>/gallery/FTBNeoTech/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">VM-Team</td>
+<td align="center">1.7.0</td>
+<td align="center">1.20.4-Neoforge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/2085089798">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://feed-the-beast.com/modpacks/123-ftb-neotech">
+                <img src="/images/ftb.svg" alt="ftb">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/876.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://github.com/VM-Chinese-translate-group/FTB-Neotech">
+                <img src="/images/github-fill.svg" alt="github">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://vmct-cn.top/modpacks/neotech/">
+                <img src="/images/vm.svg" alt="vm">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>大型</tag>
+        <tag>科技</tag>
+        <tag>任务</tag>
       </tags>
   </entry>
 </search>
