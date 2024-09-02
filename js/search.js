@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!localSearch.isfetched) {
       localSearch.fetchData();
     }
-    input.focus();  // 打开搜索窗口时自动聚焦输入框
+    input.focus();  
   }
 
   function closeSearchPopup() {
@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 添加 Ctrl + K 快捷键监听器
   document.addEventListener('keydown', (event) => {
     if (event.ctrlKey && event.key === 'k') {
-      event.preventDefault(); // 阻止默认行为，如浏览器的地址栏搜索
-      openSearchPopup(); // 打开搜索窗口
+      event.preventDefault(); 
+      openSearchPopup(); 
     }
   });
 
