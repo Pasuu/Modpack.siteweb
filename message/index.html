@@ -20,7 +20,7 @@
 
 
 
-<title>Tag: 科技</title>
+<title>Message</title>
 
 
 
@@ -114,7 +114,7 @@
                    
           
             
-              <li class="menu-item">
+              <li class="menu-item menu-item-active">
                 <a href="/message/">留言</a>
               </li> 
                    
@@ -133,214 +133,47 @@
 
       <div class="main">
         <div class="flex-container">
-          <div id="tag">
-  
-
-    <p class="tag-title">
-      / <a href="/tag/">tags</a>
-      / <a href="">科技</a> /
-    </p>
-    <div class="post-list">
-    
-    
-
-        
-
-        
-            
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/gallery/ChromaEndless/">
-                
-                    Chroma Endless
-                
-                </a> 
-            </div>
-            
-            
-        </div>
-
-    
-
-        
-
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/gallery/ChemicalExchange/">
-                
-                    Chemical Exchange
-                
-                </a> 
-            </div>
-            
-            
-        </div>
-
-    
-
-        
-
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/gallery/CaveopolisModpack/">
-                
-                    Caveopolis (Modpack)
-                
-                </a> 
-            </div>
-            
-            
-        </div>
-
-    
-
-        
-
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/gallery/CalibryTeam-OneChunk/">
-                
-                    Calibry Team - One Chunk
-                
-                </a> 
-            </div>
-            
-            
-        </div>
-
-    
-
-        
-
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/gallery/CalculatorSkies/">
-                
-                    Calculator Skies
-                
-                </a> 
-            </div>
-            
-            
-        </div>
-
-    
-
-        
-
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/gallery/BlackstoneBlock/">
-                
-                    Blackstone Block
-                
-                </a> 
-            </div>
-            
-            
-        </div>
-
-    
-
-        
-
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/gallery/BigChadGuysPluswCobblemon/">
-                
-                    BigChadGuys Plus (w/ Cobblemon!)
-                
-                </a> 
-            </div>
-            
-            
-        </div>
-
-    
-
-        
-
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/gallery/Astropolis/">
-                
-                    Astropolis
-                
-                </a> 
-            </div>
-            
-            
-        </div>
-
-    
-
-        
-
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/gallery/Astroblock/">
-                
-                    Astroblock
-                
-                </a> 
-            </div>
-            
-            
-        </div>
-
-    
-
-        
-
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/gallery/AstralMagica/">
-                
-                    Astral Magica
-                
-                </a> 
-            </div>
-            
-            
-        </div>
-
-    
-    <div id="paginator">
-        
-    <div class=paginator>
-        <div class="h-line-primary"></div>
-        <nav class="pagination">
-            <a class="page-number" href="/tags/%E7%A7%91%E6%8A%80/">1</a><span class="space">&hellip;</span><a class="page-number" href="/tags/%E7%A7%91%E6%8A%80/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/tags/%E7%A7%91%E6%8A%80/page/12/">12</a>
-        </nav>
-    </div>
-
-    </div>
-</div>
-
+          <article id="post">
 
   
-
+    <div class="post-head">
+    <div class="post-info">
+        <div class="post-title">
+            
+            
+                Message
+            
+            
+        </div>
+    </div>
+    <div class="h-line-primary"></div>
 </div>
+    <div class="post-content">
+    <meta charset="UTF-8">
+        <div id="vcomments"></div>
+        <script>
+            var META = ['nick', 'mail', 'link'];
+            var meta = 'nick,mail';
+            meta = meta.split(',').filter(item => {
+                return META.includes(item);
+            });
+            new Valine({
+                el: '#vcomments',
+                appId: 'DlSdat6GR1UJu77SbVGkztvU-gzGzoHsz',
+                appKey: 'B5tuP0Tud3yyWvU2zWSCG0dR',
+                lang: 'zh-CN',
+                placeholder: '说些什么吧',
+                avatar: 'mp',
+                meta: meta
+            })
+        </script>
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+  
+</article>
         </div>
       </div>
       
