@@ -2250,9 +2250,22 @@
       "VM": "modpacks/neotech/",
       "tags": "科技,冒险,任务,大型"  
     }
+  },
+  "Hungry For Tech 2": {
+    "img": "https://media.forgecdn.net/avatars/thumbnails/1061/916/256/256/638594251476755622.png",
+    "i18version": "1.0",
+    "gversion": "1.20.1-Forge",
+    "i18team": "自尊寺(VM-Team)",
+    "isdownload": true,
+    "link": {
+      "bilibili": "585255832",
+      "curseforge": "hungry-for-tech-2",
+      "VM0": true,
+      "baidupan": "1OI533N2IMHssFsoGm5o0lg?pwd=x068",
+      "download0": "vm/Hungry For Tech 2/Hungry+For+Tech+2汉化补丁v1.0.zip",
+      "tags": "科技,任务,空岛"
+    }
   }
-
-
 
 
 

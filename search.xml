@@ -8082,4 +8082,57 @@
         <tag>空岛</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Hungry For Tech 2</title>
+    <url>/gallery/HungryForTech2/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">自尊寺(VM-Team)</td>
+<td align="center">1.0</td>
+<td align="center">1.20.1-Forge</td>
+</tr>
+</tbody></table>
+<div style="text-align: center; color: red;">支持直接下载</div>
+
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/585255832">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/hungry-for-tech-2">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://vmct-cn.top/">
+                <img src="/images/vm.svg" alt="vm">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://pan.baidu.com/s/1OI533N2IMHssFsoGm5o0lg?pwd=x068">
+                <img src="/images/baiduyun.svg" alt="panbaidu">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/vm/Hungry For Tech 2/Hungry+For+Tech+2汉化补丁v1.0.zip">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>科技</tag>
+        <tag>任务</tag>
+        <tag>空岛</tag>
+      </tags>
+  </entry>
 </search>
