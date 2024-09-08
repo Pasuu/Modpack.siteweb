@@ -618,7 +618,7 @@
   },
   "FTB StoneBlock 3": {
     "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F96%2Fstoneblock_logo.png&w=256&q=75",
-    "i18version": "1.9.0",
+    "i18version": "1.10.0",
     "gversion": "1.18.2-Forge",
     "i18team": "VM-Team",
     "isdownload": false,
@@ -659,7 +659,7 @@
       "mcmod": "482",
       "github": "KlparetlR/Jetpack-Cat",
       "VM0": true,
-      "download": "vm/Jetpack Cat/[2.1.0.0](VP-JPC-V1.1）Jetpack Cat 汉化 4.2 by KlparetlR.zip",
+      "download": "vm/Jetpack Cat（喷气背包猫）汉化-5.1-KlparetlR-V2.4.0.zip",
       "tags": "科技,冒险,建筑,任务,硬核,大型"
     }
   },
@@ -970,7 +970,7 @@
   },
   "Vault Hunters 3rd Edition": {
     "img": "https://media.forgecdn.net/avatars/651/140/638051446127306822.png",
-    "i18version": "3.14.3",
+    "i18version": "3.15.1.4",
     "gversion": "1.18.2-Forge",
     "i18team": "VM-Team",
     "isdownload": false,
@@ -1040,33 +1040,6 @@
       "mcmod": "185",
       "VM": "modpacks/rotn/index.html",
       "tags": "魔法,冒险,任务,硬核,大型"
-    }
-  },
-  "FTB Presents Direwolf20 1.19": {
-    "img": "https://www.feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F97%2FDW20%201024%20x%201024.png&w=256&q=75",
-    "i18version": "未知",
-    "gversion": "1.19.2-Forge",
-    "i18team": "VM-Team",
-    "isdownload": false,
-    "link": {
-      "bilibili": "2085089798",
-      "ftb": "101-ftb-presents-direwolf20-119?tab=about",
-      "github": "VM-Chinese-translate-group/direwolf20-1.19.2",
-      "tags": "魔法,冒险,科技"
-    }
-  },
-  "Age of Fate": {
-    "img": "https://media.forgecdn.net/avatars/371/468/637541182257023139.png",
-    "i18version": "1.6.0",
-    "gversion": "1.16.5-Forge",
-    "i18team": "VM-Team",
-    "isdownload": false,
-    "link": {
-      "bilibili": "2085089798",
-      "curseforge": "age-of-fate",
-      "mcmod": "360",
-      "VM": "modpacks/fate/index.html",
-      "tags": "科技,魔法,冒险,任务,硬核,大型"
     }
   },
   "Fantasy Realm 1.16": {
@@ -1490,9 +1463,9 @@
       "tags": "冒险,硬核,大型"
     }
   },
-  "DarkRPG - RPG Quest Magic & Origins Online Adventure": {
-    "img": "https://media.forgecdn.net/avatars/863/502/638272728440333451.png",
-    "i18version": "7.6.6",
+  "DarkRPG Fabric - RPG with Magic, Origins & Quests": {
+    "img": "https://media.forgecdn.net/avatars/thumbnails/1005/889/256/256/638527565524043606.png",
+    "i18version": "7.8.4",
     "gversion": "1.20.1-Fabric",
     "i18team": "指星汉化组",
     "isdownload": false,
@@ -1500,6 +1473,7 @@
       "bilibili": "59512919",
       "curseforge": "darkrpg",
       "mcmod": "406",
+      "github":"AimToStar-Localization-Group/DarkRPG-7.8.8hf",
       "bilibilidwvideo": "BV1ka4y1C7nD",
       "tags": "魔法,冒险,地图,任务"
     }
@@ -1519,7 +1493,7 @@
   },
   "FTB Skies": {
     "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F99%2FFTB%20Skies%20512x512.png&w=256&q=75",
-    "i18version": "1.5.1",
+    "i18version": "1.6.0",
     "gversion": "1.19.2-Forge",
     "i18team": "300魔女我爱罗",
     "isdownload": true,
@@ -1527,7 +1501,7 @@
       "bilibili": "30111191",
       "ftb": "103-ftb-skies?tab=about",
       "mcmod": "597",
-      "download": "FTB Skies/FTB Skies1.5.1.rar",
+      "download": "FTB Skies/FTB Skies1.6.0.zip",
       "tags": "科技,魔法,冒险,地图,任务,大型,空岛"
     }
   },
@@ -1625,6 +1599,7 @@
       "bilibili": "179250719",
       "curseforge": "better-mc-forge-bmc1",
       "mcmod": "205",
+      "baidupan": "1VcStAnOaH-GMQycNBmre7Q?pwd=mczh",
       "download": "betterMC/betterMC(forge)1.16.5v60.5.zip",
       "tags": "冒险,建筑,任务,休闲,大型,水槽"
     }
@@ -1794,6 +1769,7 @@
       "bilibili": "179250719",
       "curseforge": "better-mc-forge-bmc3",
       "mcmod": "205",
+      "baidupan": "1VcStAnOaH-GMQycNBmre7Q?pwd=mczh",
       "download": "betterMC/betterMC(forge)1.19.2v20.zip",
       "tags": "冒险,建筑,任务,休闲,大型,水槽"
     }
@@ -1837,6 +1813,7 @@
       "bilibili": "179250719",
       "curseforge": "better-mc-forge-bmc2",
       "mcmod": "205",
+      "baidupan": "1VcStAnOaH-GMQycNBmre7Q?pwd=mczh",
       "download": "betterMC/betterMC(forge)1.18.2v20.zip",
       "tags": "冒险,建筑,任务,休闲,大型,水槽"
     }
@@ -1851,6 +1828,7 @@
       "bilibili": "179250719",
       "curseforge": "better-mc-fabric-bmc1",
       "mcmod": "205",
+      "baidupan": "1VcStAnOaH-GMQycNBmre7Q?pwd=mczh",
       "download": "betterMC/betterMC(fabric)1.19.2v20.zip",
       "tags": "冒险,建筑,任务,休闲,大型,水槽"
     }
@@ -1899,7 +1877,7 @@
   },
   "Multiblock Madness 2": {
     "img": "https://media.forgecdn.net/avatars/784/333/638133103976799972.png",
-    "i18version": "0.7.3",
+    "i18version": "0.8.1",
     "gversion": "1.18.2-Forge",
     "i18team": "Addyabbia",
     "isdownload": false,
@@ -1941,7 +1919,7 @@
   },
   "Medieval MC [FABRIC] - MMC1": {
     "img": "https://media.forgecdn.net/avatars/594/10/637967185605583019.png",
-    "i18version": "v23",
+    "i18version": "v24",
     "gversion": "1.19.2-Fabric",
     "i18team": "VM-Team",
     "isdownload": false,
@@ -1985,14 +1963,15 @@
   },
   "Infernal Origins": {
     "img": "https://media.forgecdn.net/avatars/904/711/638355105225386236.png",
-    "i18version": " v2.0.0 - Patch 1",
+    "i18version": "v2.0.0 - Patch 2",
     "gversion": "1.16.5-Forge",
-    "i18team": "是格格巫超人哟",
+    "i18team": "VM-Team",
     "isdownload": false,
     "link": {
-      "bilibili": "481708687",
+      "bilibili": "2085089798",
       "curseforge": "infernal-rpg",
-      "bilibilidwred": "cv28997323",
+      "github": "VM-Chinese-translate-group/Infernal-Origins",
+      "VM": "modpacks/infernal/index.html",
       "tags": "魔法,冒险"
     }
   },
@@ -2011,7 +1990,7 @@
   },
   "Plastek": {
     "img": "https://media.forgecdn.net/avatars/854/515/638258672026175304.png",
-    "i18version": "v1.43",
+    "i18version": "v1.45",
     "gversion": "1.19.2-Forge",
     "i18team": "Addyabbia",
     "isdownload": false,
@@ -2024,7 +2003,7 @@
   },
   "Better MC [FORGE] - BMC4": {
     "img": "https://media.forgecdn.net/avatars/835/282/638226792192343447.png",
-    "i18version": "v28",
+    "i18version": "v32.5",
     "gversion": "1.20.1-Forge",
     "i18team": "有只龙",
     "isdownload": true,
@@ -2032,7 +2011,7 @@
       "bilibili": "179250719",
       "curseforge": "better-mc-forge-bmc4",
       "mcmod": "205",
-      "download": "betterMC/betterMC(forge)1.20.1v24HF.zip",
+      "download": "betterMC/betterMC(forge)1.20.1v32.zip",
       "tags": "冒险,建筑,任务,休闲,大型,水槽"
     }
   },
@@ -2046,20 +2025,21 @@
       "bilibili": "179250719",
       "curseforge": "medieval-mc-mmc4",
       "mcmod": "255",
+      "baidupan": "1VcStAnOaH-GMQycNBmre7Q?pwd=mczh",
       "download": "MedievalMC/MedievalMC(forge)1.20.1v19.zip",
       "tags": "科技,魔法,冒险,地图,任务,硬核,大型"
     }
   },
   "DeceasedCraft - Modern Zombie Apocalypse": {
     "img": "https://media.forgecdn.net/avatars/878/99/638304436093750775.gif",
-    "i18version": "v4.4.6",
+    "i18version": "v5.1.4",
     "gversion": "1.18.2-Forge",
     "i18team": "岛村樱儿",
     "isdownload": true,
     "link": {
       "bilibili": "85945827",
       "curseforge": "deceasedcraft",
-      "download": "DeceasedCraft/DeceasedCraft v4.4.6.zip",
+      "download": "DeceasedCraft/DeceasedCraft+v5.1.4汉化&拓展包.zip",
       "tags": "科技,冒险,任务,硬核,PvP"
     }
   },
@@ -2092,7 +2072,7 @@
   },
   "Nomifactory CEu": {
     "img": "https://media.forgecdn.net/avatars/777/437/638120557907947036.png",
-    "i18version": "1.7-alpha-2a",
+    "i18version": "1.7-alpha-4",
     "gversion": "1.12.2-Forge",
     "i18team": "凌六菌",
     "isdownload": false,
@@ -2152,7 +2132,7 @@
   },
   "FTB Arcanum Institute": {
     "img": "https://www.feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F106%2Farcanumplogo512x512.png&w=256&q=75",
-    "i18version": "1.3.0",
+    "i18version": "1.4.0",
     "gversion": "1.18.2-Forge",
     "i18team": "VM-Team",
     "isdownload": false,
@@ -2211,7 +2191,7 @@
   },
   "SkyT": {
     "img": "https://media.forgecdn.net/avatars/thumbnails/819/266/256/256/638199151417029695.png",
-    "i18version": "1.2.10",
+    "i18version": "1.2.11",
     "gversion": "1.18.2-Forge",
     "i18team": "醉冰茶",
     "isdownload": false,
@@ -2224,13 +2204,13 @@
   },
   "Seaopolis: Submerged": {
     "img": "https://media.forgecdn.net/avatars/thumbnails/996/291/256/256/638512959898606189.png",
-    "i18version": "1.0",
+    "i18version": "3.0",
     "gversion": "1.20.1-Forge",
     "i18team": "醉冰茶",
     "isdownload": false,
     "link": {
       "bilibili": "406143070",
-      "curseforge":"sseaopolis-submerged",
+      "curseforge":"seaopolis-submerged",
       "mcmod":"841",
       "bilibilidwred": "cv35691375",
       "tags": "任务,空岛,科技,冒险"
@@ -2265,8 +2245,22 @@
       "download": "vm/Hungry For Tech 2/HungryForTech2汉化补丁v1.0.zip",
       "tags": "科技,任务,空岛"
     }
+  },
+  "Better MC [NEOFORGE] - BMC5": {
+    "img": "https://media.forgecdn.net/avatars/thumbnails/1055/173/256/256/638586383082031175.png",
+    "i18version": "v3",
+    "gversion": "1.21.1-NeoForge",
+    "i18team": "有只龙",
+    "isdownload": true,
+    "link": {
+      "bilibili": "179250719",
+      "curseforge": "better-mc-neoforge-bmc5",
+      "mcmod": "205",
+      "baidupan": "1VcStAnOaH-GMQycNBmre7Q?pwd=mczh",
+      "download": "betterMC/betterMC(neoforge)1.21v3.zip",
+      "tags": "冒险,休闲,水槽"
+    }
   }
-
 
 
 }
