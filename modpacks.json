@@ -2260,6 +2260,20 @@
       "download": "betterMC/betterMC(neoforge)1.21v3.zip",
       "tags": "冒险,休闲,水槽"
     }
+  },
+  "Cottage Witch": {
+    "img": "https://media.forgecdn.net/avatars/thumbnails/623/83/256/256/638016437851477142.png",
+    "i18version": "1.16.10",
+    "gversion": "1.19.2-Forge",
+    "i18team": "VM-Team",
+    "isdownload": false,
+    "link": {
+      "bilibili": "2085089798",
+      "curseforge": "cottage-witch",
+      "github": "VM-Chinese-translate-group/Cottage-Witch",
+      "VM": "modpacks/cottage/index.html",
+      "tags": "魔法,冒险,任务"
+    }
   }
 
 

@@ -8123,4 +8123,51 @@
         <tag>休闲</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Cottage Witch</title>
+    <url>/gallery/CottageWitch/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">VM-Team</td>
+<td align="center">1.16.10</td>
+<td align="center">1.19.2-Forge</td>
+</tr>
+</tbody></table>
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/2085089798">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/cottage-witch">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://github.com/VM-Chinese-translate-group/Cottage-Witch">
+                <img src="/images/github-fill.svg" alt="github">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://vmct-cn.top/modpacks/cottage/index.html">
+                <img src="/images/vm.svg" alt="vm">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>冒险</tag>
+        <tag>魔法</tag>
+        <tag>任务</tag>
+      </tags>
+  </entry>
 </search>
