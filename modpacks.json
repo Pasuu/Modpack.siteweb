@@ -2219,7 +2219,7 @@
     "FTB NeoTech": {
         "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fcdn.feed-the-beast.com%2Fblob%2Fc8%2Fc853e9a0534b3e83a2b2dc90fd439db77b8094c5f6b06e92d8e0072212d89bb6.png&w=256&q=75",
         "i18version": "1.7.0",
-        "gversion": "1.20.4-Neoforge",
+        "gversion": "1.20.4-NeoForge",
         "i18team": "VM-Team",
         "isdownload": false,
         "link": {
@@ -2228,7 +2228,7 @@
             "mcmod": "876",
             "github": "VM-Chinese-translate-group/FTB-Neotech",
             "VM": "modpacks/neotech/",
-            "tags": "1.20.4,Neoforge,任务,冒险,大型,科技"
+            "tags": "1.20.4,NeoForge,任务,冒险,大型,科技"
         }
     },
     "Hungry For Tech 2": {
