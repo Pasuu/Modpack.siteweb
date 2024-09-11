@@ -32,7 +32,7 @@
         }
     },
     "FTB Presents Integration by Parts DX": {
-        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F100%2Fftb-presents-ibpdx-logo.png&w=256&q=75",
+        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fcdn.feed-the-beast.com%2Fblob%2F0f%2F0fda3c68ef6ee050b28ec133824c19620464deb49c4a3bc0cbcbce4ccb1e4479.png&w=256&q=75",
         "i18version": "1.9.0/1.13.3",
         "gversion": "1.16.5-Forge",
         "i18team": "Pasuu/给我带双份老鸭煲",
@@ -585,13 +585,14 @@
         }
     },
     "FTB Inferno": {
-        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F94%2Flogo_inferno.png&w=256&q=75",
+        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fcdn.feed-the-beast.com%2Fblob%2F37%2F37cf12313b5169984530dd99354fe574281c69a9c21d3e37f879ce1a628d199d.png&w=256&q=75",
         "i18version": "1.3.0",
         "gversion": "1.18.2-Forge",
         "i18team": "安逸-Team",
         "isdownload": true,
         "link": {
             "bilibili": "6575218",
+            "curseforge":"ftb-inferno",
             "ftb": "99-ftb-inferno?tab=about",
             "mcmod": "568",
             "github": "ShaBaiTianCN/FTB-Inferno",
@@ -617,13 +618,14 @@
         }
     },
     "FTB StoneBlock 3": {
-        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F96%2Fstoneblock_logo.png&w=256&q=75",
+        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fcdn.feed-the-beast.com%2Fblob%2F27%2F277ea696db174dabd3cdc1ba9f6120218c8f9c6aea916855140f6be41adf821a.png&w=256&q=75",
         "i18version": "1.10.0",
         "gversion": "1.18.2-Forge",
         "i18team": "VM-Team",
         "isdownload": false,
         "link": {
             "bilibili": "2085089798",
+            "curseforge":"ftb-stoneblock-3",
             "ftb": "100-ftb-stoneblock-3?tab=about",
             "mcmod": "526",
             "github": "VM-Chinese-translate-group/StoneBlock3",
@@ -802,13 +804,14 @@
         }
     },
     "FTB OceanBlock": {
-        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F87%2Flogo.png&w=256&q=75",
+        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fcdn.feed-the-beast.com%2Fblob%2Faf%2Faf4ef40799823b2cde0c85e46f9cbd855b92c2117304f913bba0436df72f7774.png&w=256&q=75",
         "i18version": "1.16.0",
         "gversion": "1.16.5-Forge",
         "i18team": "6371peter",
         "isdownload": false,
         "link": {
             "bilibili": "10546314",
+            "curseforge":"ftb-oceanblock",
             "ftb": "91-ftb-oceanblock?tab=about",
             "mcmod": "286",
             "bilibilidwred": "cv13648446",
@@ -1381,7 +1384,7 @@
         }
     },
     "FTB Legend of the Eyes": {
-        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F98%2Fftb-lote-logo-square.png&w=256&q=75",
+        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fcdn.feed-the-beast.com%2Fblob%2F71%2F71e309c0eb48620984c392f5ebbb1db980d2731b836f190dced8b9cb2e2e32bf.png&w=256&q=75",
         "i18version": "1.9.0",
         "gversion": "1.19.2-Fabric",
         "i18team": "给我带双份老鸭煲",
@@ -1492,13 +1495,14 @@
         }
     },
     "FTB Skies": {
-        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F99%2FFTB%20Skies%20512x512.png&w=256&q=75",
+        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fcdn.feed-the-beast.com%2Fblob%2F82%2F82f09c704f3625f3726bc34e2b9533b4d7d8b874d2651f6c2fe1ab9806c04c77.png&w=256&q=75",
         "i18version": "1.6.0",
         "gversion": "1.19.2-Forge",
         "i18team": "300魔女我爱罗",
         "isdownload": true,
         "link": {
             "bilibili": "30111191",
+            "curseforge":"ftb-skies",
             "ftb": "103-ftb-skies?tab=about",
             "mcmod": "597",
             "download": "FTB Skies/FTB Skies1.6.0.zip",
@@ -2131,13 +2135,14 @@
         }
     },
     "FTB Arcanum Institute": {
-        "img": "https://www.feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F106%2Farcanumplogo512x512.png&w=256&q=75",
+        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fcdn.feed-the-beast.com%2Fblob%2F64%2F6467e5a02b7fb71b25a9c525cca58594a6895e46a2b3adab2a039236fd9a085b.png&w=256&q=75",
         "i18version": "1.4.0",
         "gversion": "1.18.2-Forge",
         "i18team": "VM-Team",
         "isdownload": false,
         "link": {
             "bilibili": "2085089798",
+            "curseforge":"ftb-arcanum-institute",
             "ftb": "115-ftb-arcanum-institute?tab=about",
             "github": "VM-Chinese-translate-group/FTB-Arcanum-Institute-Chinese",
             "VM": "modpacks/arcanum/",
@@ -2145,13 +2150,14 @@
         }
     },
     "FTB Skies Expert": {
-        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fapps.modpacks.ch%2Fmodpacks%2Fart%2F107%2Flogo512x512.png&w=256&q=75",
+        "img": "https://feed-the-beast.com/_next/image?url=https%3A%2F%2Fcdn.feed-the-beast.com%2Fblob%2Ff6%2Ff61b2e608693b4c8970be19b781b7daa3b2aa041c436e6e5c51d9815a49b1246.png&w=256&q=75",
         "i18version": "1.8.1",
         "gversion": "1.19.2-Forge",
         "i18team": "Addoris-Team",
         "isdownload": false,
         "link": {
             "bilibili": "12693814",
+            "curseforge":"ftb-skies-expert",
             "ftb": "117-ftb-skies-expert?tab=about",
             "mcmod": "751",
             "github": "SlimeSB/FTB_Skies_Expert_ZH_CN",
@@ -2224,6 +2230,7 @@
         "isdownload": false,
         "link": {
             "bilibili": "2085089798",
+            "curseforge":"ftb-neotech",
             "ftb": "123-ftb-neotech",
             "mcmod": "876",
             "github": "VM-Chinese-translate-group/FTB-Neotech",
