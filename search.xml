@@ -13,7 +13,7 @@
 </thead>
 <tbody><tr>
 <td align="center">指星汉化组</td>
-<td align="center">2.0.4</td>
+<td align="center">3.0.2</td>
 <td align="center">1.19.2-Fabric</td>
 </tr>
 </tbody></table>
@@ -32,7 +32,7 @@
                 <img src="/images/modrinth.svg" alt="modrinth">
             </a>
         </div><div class="flex-item">
-            <a href="https://www.bilibili.com/video/BV1yc41137gv">
+            <a href="https://www.bilibili.com/video/BV1ky4meaEYm">
                 <img src="/images/bilibili-line-red.svg" alt="bilibili-line-red">
             </a>
         </div>
@@ -8500,6 +8500,62 @@
         <tag>硬核</tag>
         <tag>任务</tag>
         <tag>空岛</tag>
+        <tag>Forge</tag>
+        <tag>1.12.2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GregTech Community Pack</title>
+    <url>/gallery/GregTechCommunityPack/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">作者</th>
+<th align="center">汉化版本</th>
+<th align="center">整合包版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">雪鳢鳕鱼-CodinSnow</td>
+<td align="center">1.7.6</td>
+<td align="center">1.12.2-Forge</td>
+</tr>
+</tbody></table>
+<div style="text-align: center; color: red;">支持直接下载</div>
+
+<hr>
+<div class="flex-container">
+    <div class="flex-item">
+            <a href="https://space.bilibili.com/616473668">
+                <img src="/images/bilibili-line-blue.svg" alt="bilibili">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.curseforge.com/minecraft/modpacks/gregtech-community-pack">
+                <img src="/images/curseforge.svg" alt="curseforge">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://www.mcmod.cn/modpack/393.html">
+                <img src="/images/mcmod.svg" alt="mcmod">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://github.com/CodinSnow/GCP-TRANSL">
+                <img src="/images/github-fill.svg" alt="github">
+            </a>
+        </div><div class="flex-item">
+            <a href="https://modpack.top/pro/GCP/GCP-TRANS-CN.rar">
+                <img src="/images/file-download-line.svg" alt="download">
+            </a>
+        </div>
+</div>
+]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>硬核</tag>
+        <tag>科技</tag>
+        <tag>任务</tag>
+        <tag>轻量</tag>
         <tag>Forge</tag>
         <tag>1.12.2</tag>
       </tags>

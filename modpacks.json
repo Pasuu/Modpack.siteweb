@@ -1454,7 +1454,7 @@
     },
     "Aged": {
         "img": "https://cdn-raw.modrinth.com/data/i4XHCd7Q/08f0c63df56b34270bc77d39fa8e448de20b7c05.png",
-        "i18version": "2.0.4",
+        "i18version": "3.0.2",
         "gversion": "1.19.2-Fabric",
         "i18team": "指星汉化组",
         "isdownload": false,
@@ -1462,7 +1462,7 @@
             "bilibili": "59512919",
             "modrinth": "aged",
             "mcmod": "641",
-            "bilibilidwvideo": "BV1yc41137gv",
+            "bilibilidwvideo": "BV1ky4meaEYm",
             "tags": "1.19.2,Fabric,冒险,大型,硬核"
         }
     },
@@ -2280,6 +2280,21 @@
             "github": "VM-Chinese-translate-group/Cottage-Witch",
             "VM": "modpacks/cottage/index.html",
             "tags": "1.19.2,Forge,任务,冒险,魔法"
+        }
+    },
+    "GregTech Community Pack": {
+        "img": "https://media.forgecdn.net/avatars/thumbnails/499/436/256/256/637816110490064326.png",
+        "i18version": "1.7.6",
+        "gversion": "1.12.2-Forge",
+        "i18team": "雪鳢鳕鱼-CodinSnow",
+        "isdownload": true,
+        "link": {
+            "bilibili": "616473668",
+            "curseforge": "gregtech-community-pack",
+            "mcmod": "393",
+            "github": "CodinSnow/GCP-TRANSL",
+            "download": "GCP/GCP-TRANS-CN.rar",
+            "tags": "1.12.2,Forge,任务,轻量,硬核,科技"
         }
     }
 
