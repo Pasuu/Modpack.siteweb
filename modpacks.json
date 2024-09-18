@@ -2296,6 +2296,21 @@
             "download": "GCP/GCP-TRANS-CN.rar",
             "tags": "1.12.2,Forge,任务,轻量,硬核,科技"
         }
+    },
+    "FTB Genesis": {
+        "img": "https://media.forgecdn.net/avatars/thumbnails/1068/246/256/256/638602736438950512.png",
+        "i18version": "1.1.1",
+        "gversion": "1.19.2-Forge",
+        "i18team": "マクロライド",
+        "isdownload": true,
+        "link": {
+            "bilibili": "62420684",
+            "curseforge": "ftb-genesis",
+            "ftb":"120-ftb-genesis",
+            "mcmod": "745",
+            "download": "FTBGenesis/FTBGenesis1.1.1.zip",
+            "tags": "1.19.2,Forge,科技,魔法,冒险,任务,大型"
+        }
     }
 
 
