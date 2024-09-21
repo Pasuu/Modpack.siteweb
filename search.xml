@@ -2649,8 +2649,8 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">安逸-Team</td>
-<td align="center">1.4</td>
+<td align="center">Bieq-Shepred(基于安逸-Team的汉化更新)</td>
+<td align="center">2.2.2</td>
 <td align="center">1.18.2-Forge</td>
 </tr>
 </tbody></table>
@@ -2659,7 +2659,7 @@
 <hr>
 <div class="flex-container">
     <div class="flex-item">
-            <a href="https://space.bilibili.com/6575218">
+            <a href="https://space.bilibili.com/1387732131">
                 <img src="/images/bilibili-line-blue.svg" alt="bilibili">
             </a>
         </div><div class="flex-item">
@@ -2679,7 +2679,7 @@
                 <img src="/images/anyijun.svg" alt="anyijun">
             </a>
         </div><div class="flex-item">
-            <a href="https://modpack.top/pro/anyijun/Encrypted/1.1-CN-Encrypted_-1.4.zip">
+            <a href="https://modpack.top/pro/anyijun/Encrypted/Encrypted_汉化补丁V2.2.zip">
                 <img src="/images/file-download-line.svg" alt="download">
             </a>
         </div>
@@ -6886,7 +6886,7 @@
 </thead>
 <tbody><tr>
 <td align="center">给我带双份老鸭煲</td>
-<td align="center">1.9</td>
+<td align="center">1.12</td>
 <td align="center">1.16.5-Forge</td>
 </tr>
 </tbody></table>

@@ -667,17 +667,17 @@
     },
     "Encrypted_": {
         "img": "https://media.forgecdn.net/avatars/594/269/637967833677519483.png",
-        "i18version": "1.4",
+        "i18version": "2.2.2",
         "gversion": "1.18.2-Forge",
-        "i18team": "安逸-Team",
+        "i18team": "Bieq-Shepred(基于安逸-Team的汉化更新)",
         "isdownload": true,
         "link": {
-            "bilibili": "6575218",
+            "bilibili": "1387732131",
             "curseforge": "encrypted_",
             "mcmod": "503",
             "github": "ShaBaiTianCN/Encrypted_",
             "anyijun": true,
-            "download": "anyijun/Encrypted/1.1-CN-Encrypted_-1.4.zip",
+            "download": "anyijun/Encrypted/Encrypted_汉化补丁V2.2.zip",
             "tags": "1.18.2,Forge,任务,大型,科技,魔法"
         }
     },
@@ -1623,7 +1623,7 @@
     },
     "Roguelike Adventures and Dungeons 2": {
         "img": "https://media.forgecdn.net/avatars/485/618/637786105420601729.png",
-        "i18version": "1.9",
+        "i18version": "1.12",
         "gversion": "1.16.5-Forge",
         "i18team": "给我带双份老鸭煲",
         "isdownload": false,
